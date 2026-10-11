@@ -134,3 +134,15 @@ autoeletrica/alt-1 8478233
 autoeletrica/alt-2 6870298
 autoeletrica/alt-3 6473244
 autoeletrica/alt-4 4116193
+vitrine/cafe-1 29516134
+vitrine/cafe-2 6205779
+vitrine/cafe-3 4349767
+vitrine/pilates-1 31509827
+vitrine/pilates-2 31509828
+vitrine/pilates-3 25599833
+vitrine/dentista-1 3845810
+vitrine/dentista-2 3845983
+vitrine/dentista-3 3845550
+vitrine/arq-1 28991200
+vitrine/arq-2 19836798
+vitrine/arq-3 6492397
