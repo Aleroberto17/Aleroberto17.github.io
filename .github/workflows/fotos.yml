@@ -1,0 +1,44 @@
+name: Baixar fotos
+on:
+  push:
+    paths: ["assets/fotos.txt"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  baixar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Baixa fotos do Pexels listadas em assets/fotos.txt
+        run: |
+          set -u
+          falhas=0
+          while read -r destino id; do
+            [ -z "${destino:-}" ] && continue
+            case "$destino" in \#*) continue;; esac
+            arq="assets/img/$destino.jpg"
+            [ -s "$arq" ] && continue
+            mkdir -p "$(dirname "$arq")"
+            url="https://images.pexels.com/photos/$id/pexels-photo-$id.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            if curl -fsSL --retry 2 -o "$arq" "$url" && file "$arq" | grep -qi jpeg; then
+              echo "ok   $destino ($id)"
+            else
+              echo "FALHA $destino ($id)"; rm -f "$arq"; falhas=$((falhas+1))
+            fi
+          done < assets/fotos.txt
+          echo "falhas=$falhas"
+      - name: Gera miniaturas para conferência
+        run: |
+          sudo apt-get -qq install -y imagemagick >/dev/null
+          mkdir -p assets/conferencia
+          for d in assets/img/*/; do
+            n=$(basename "$d")
+            montage "$d"*.jpg -label '%t' -geometry 300x200+4+4 -tile 4x -pointsize 14 "assets/conferencia/$n.jpg" || true
+          done
+      - name: Salva no repositório
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898+github-actions[bot]@users.noreply.github.com"
+          git add assets
+          git diff --cached --quiet || { git commit -m "Baixa fotos"; git push; }
