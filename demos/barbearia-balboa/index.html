@@ -3,66 +3,648 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex">
-<title>Barbearia Balboa | barbearia em Tatuapé - São Paulo/SP</title>
-<meta name="description" content="Barbearia Balboa: barbearia em Tatuapé - São Paulo/SP. Fale pelo WhatsApp.">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<meta name="robots" content="noindex"><title>Barbearia Balboa | Barbearia em Tatuapé, São Paulo</title>
+<meta name="description" content="Barbearia Balboa: corte masculino, barba na navalha e acabamento em Tatuapé, São Paulo. Agende pelo WhatsApp (11) 99455-9673.">
+<meta property="og:title" content="Barbearia Balboa | Barbearia em Tatuapé">
+<meta property="og:description" content="Corte, barba e navalha com hora marcada. Agende pelo WhatsApp.">
+<meta property="og:image" content="https://aleroberto17.github.io/assets/img/barbearia/hero-1.jpg">
+<meta property="og:locale" content="pt_BR">
+<meta name="theme-color" content="#151311">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23151311' stroke='%23b8873b' stroke-width='3'/%3E%3Ctext x='32' y='41' text-anchor='middle' font-family='Arial' font-weight='900' font-size='24' fill='%23efe7da'%3EB%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Libre+Caslon+Text:ital,wght@0,400;1,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="/assets/img/barbearia/hero-1.jpg" fetchpriority="high">
 <style>
-:root{--bg:#121212;--surface:#1c1b1a;--ink:#f3efe8;--muted:#b0a89c;--accent:#c9a15a;--on:#141210;
---d:"Oswald",system-ui,sans-serif;--b:Inter,system-ui,sans-serif}
-*{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--bg);color:var(--ink);font:16px/1.6 var(--b)}
-a{color:inherit}
-.w{max-width:1000px;margin:0 auto;padding:0 16px}
-.preview{background:var(--accent);color:var(--on);text-align:center;font-size:.9rem;padding:8px 16px}
-.preview a{font-weight:600}
-header{padding:20px 0}
-header .w{display:flex;justify-content:space-between;align-items:center;gap:8px 12px;flex-wrap:wrap}
-.ig{font-size:.85rem;color:var(--muted);text-decoration:none;overflow-wrap:anywhere}
-.logo{font-family:var(--d);font-weight:600;font-size:1.3rem;letter-spacing:.01em}
-.hero{padding:56px 0 72px;position:relative;overflow:hidden}
-.hero::before{content:"";position:absolute;inset:-40% -20% auto auto;width:70vmax;height:70vmax;border-radius:50%;
-background:radial-gradient(circle,color-mix(in srgb,var(--accent) 28%,transparent),transparent 65%);pointer-events:none}
-.kicker{color:var(--accent);font-weight:600;text-transform:uppercase;letter-spacing:.12em;font-size:.8rem}
-h1{font-family:var(--d);font-weight:600;font-size:clamp(2.4rem,8vw,4.6rem);line-height:1.02;margin:12px 0 16px;max-width:14ch;text-wrap:balance;position:relative}
-.hero p{color:var(--muted);max-width:46ch;font-size:1.1rem;position:relative}
-.acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px;position:relative}
-.btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:var(--on);font-weight:600;padding:14px 22px;border-radius:10px;text-decoration:none}
-.btn.ghost{background:transparent;color:var(--ink);border:1.5px solid color-mix(in srgb,var(--ink) 25%,transparent)}
-section{padding:56px 0}
-h2{font-family:var(--d);font-weight:600;font-size:clamp(1.6rem,4vw,2.2rem);margin-bottom:24px}
-.menu{list-style:none;display:grid;gap:0;background:var(--surface);border-radius:14px;padding:8px 20px;border:1px solid color-mix(in srgb,var(--ink) 10%,transparent)}
-.menu li{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px dashed color-mix(in srgb,var(--ink) 18%,transparent)}
-.menu li:last-child{border-bottom:0}
-.menu b{color:var(--accent);white-space:nowrap}
-.why{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
-.why div{border-top:3px solid var(--accent);padding-top:14px}
-.why h3{font-size:1.05rem;margin-bottom:4px}
-.why p{color:var(--muted)}
-.info{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));align-items:start}
-.info p{color:var(--muted)}
-.info strong{color:var(--ink);display:block;margin-bottom:4px}
-footer{padding:32px 16px 96px;text-align:center;color:var(--muted);font-size:.85rem}
-.fab{position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.25)}
-.fab svg{width:30px;height:30px}
+/* Identidade: barbearia clássica. Carvão (marca), marfim (fundo claro), latão (metálico só em fios e detalhes). */
+:root{
+  --carvao:#151311; --carvao-2:#1f1b18; --carvao-3:#2a2420;
+  --marfim:#efe7da; --marfim-2:#e6dccb; --creme:#f7f2ea;
+  --latao:#b8873b; --latao-claro:#d9ad62; --vinho:#7a2e22;
+  --f-display:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;
+  --f-serif:"Libre Caslon Text",Georgia,"Times New Roman",serif;
+  --f-body:Manrope,"Segoe UI",system-ui,-apple-system,sans-serif;
+  --ease:cubic-bezier(.22,1,.36,1);
+  --r-foto:2rem; --r-card:1.5rem;
+  --sombra-foto:0 30px 60px -18px rgb(21 19 17/.55);
+  --sombra-cta:0 18px 30px -10px rgb(184 135 59/.45);
+  --linha-escura:rgb(239 231 218/.12); --linha-clara:rgb(21 19 17/.12);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:5.5rem;-webkit-text-size-adjust:100%}
+body{background:var(--carvao);color:var(--marfim);font:400 1rem/1.7 var(--f-body);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+::selection{background:var(--latao);color:var(--carvao)}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+:focus-visible{outline:2px solid var(--latao-claro);outline-offset:3px;border-radius:4px}
+.w{max-width:80rem;margin-inline:auto;padding-inline:1.25rem}
+@media(min-width:768px){.w{padding-inline:2.5rem}}
+.sec{position:relative;overflow:hidden;padding-block:6rem}
+@media(min-width:768px){.sec{padding-block:9rem}}
+.clara{background:var(--marfim);color:var(--carvao)}
+.clara-2{background:var(--creme);color:var(--carvao)}
+
+/* grain */
+.grain{position:fixed;inset:0;z-index:100;pointer-events:none;opacity:.055;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.blob{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none;z-index:0}
+@media(max-width:767px){.blob{filter:blur(48px)}}
+
+/* tipografia */
+.etq{display:flex;align-items:center;gap:.9rem;font:600 .72rem/1 var(--f-body);letter-spacing:.3em;text-transform:uppercase;color:var(--latao-claro)}
+.etq::before{content:"";width:2.5rem;height:1px;background:currentColor;opacity:.7}
+.clara .etq,.clara-2 .etq{color:var(--vinho)}
+.h2{font:800 clamp(2.5rem,7vw,4.6rem)/.95 var(--f-display);text-transform:uppercase;letter-spacing:.005em;text-wrap:balance;margin-top:1.25rem}
+.h2 em,.h1 em{display:block;font:italic 400 .56em/1.15 var(--f-serif);text-transform:none;letter-spacing:-.01em;color:var(--latao-claro);margin-top:.35em}
+.clara .h2 em,.clara-2 .h2 em{color:var(--vinho)}
+.lead{font-size:1.08rem;font-weight:300;line-height:1.75;color:rgb(239 231 218/.72);max-width:36rem;margin-top:1.5rem}
+.clara .lead,.clara-2 .lead{color:rgb(21 19 17/.68)}
+.fantasma{position:absolute;pointer-events:none;user-select:none;font:italic 400 1px/1 var(--f-serif);letter-spacing:-.03em;color:transparent;-webkit-text-stroke:1px rgb(217 173 98/.16);white-space:nowrap;z-index:0}
+.clara .fantasma,.clara-2 .fantasma{-webkit-text-stroke:1px rgb(122 46 34/.13)}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.7rem;border-radius:999px;padding:1.05rem 2rem;font:600 .78rem/1 var(--f-body);letter-spacing:.16em;text-transform:uppercase;transition:translate .3s var(--ease),background-color .3s,box-shadow .3s,color .3s,border-color .3s;white-space:nowrap}
+.btn svg{width:1.1rem;height:1.1rem;flex:none;transition:transform .3s var(--ease)}
+.btn-latao{background:var(--latao);color:var(--carvao);box-shadow:var(--sombra-cta)}
+.btn-contorno{border:1px solid rgb(239 231 218/.3);color:var(--marfim)}
+.clara .btn-contorno,.clara-2 .btn-contorno{border-color:rgb(21 19 17/.25);color:var(--carvao)}
+.btn-carvao{background:var(--carvao);color:var(--marfim);box-shadow:0 18px 30px -12px rgb(21 19 17/.45)}
+@media(hover:hover){
+  .btn-latao:hover{translate:0 -4px;background:var(--latao-claro);box-shadow:0 26px 44px -14px rgb(184 135 59/.55)}
+  .btn-latao:hover svg,.btn-carvao:hover svg{transform:scale(1.12)}
+  .btn-contorno:hover{border-color:var(--latao-claro);color:var(--latao-claro)}
+  .btn-carvao:hover{translate:0 -4px;background:var(--vinho)}
+  .seta:hover svg{transform:translateX(4px)}
+}
+
+/* faixa de prévia */
+.previa{position:relative;z-index:70;background:var(--latao);color:var(--carvao);font-size:.84rem;text-align:center;padding:.6rem 1rem;line-height:1.4}
+.previa a{font-weight:700;text-decoration:underline;text-underline-offset:3px}
+
+/* header */
+.topo{position:absolute;left:0;right:0;z-index:60;transition:background-color .5s,box-shadow .5s,translate .8s var(--ease),opacity .8s var(--ease)}
+.topo.fixo{position:fixed;top:0;background:rgb(21 19 17/.94);box-shadow:0 1px 0 0 var(--linha-escura)}
+@media(min-width:768px){.topo.fixo{background:rgb(21 19 17/.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}}
+.topo .w{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:5rem}
+.marca{display:flex;align-items:center;gap:.75rem;min-width:0;transition:scale .3s var(--ease)}
+.marca svg{width:2.9rem;height:2.9rem;flex:none}
+.marca b{font:800 1.3rem/1 var(--f-display);text-transform:uppercase;letter-spacing:.04em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+@media(hover:hover){.marca:hover{scale:1.03}}
+.nav{display:none;gap:2.2rem}
+.nav a{position:relative;font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:rgb(239 231 218/.78);transition:color .2s}
+.nav a::after{content:"";position:absolute;left:0;bottom:-6px;height:1px;width:0;background:var(--latao-claro);transition:width .3s var(--ease)}
+@media(hover:hover){.nav a:hover{color:var(--marfim)}.nav a:hover::after{width:100%}}
+.topo-acoes{display:flex;align-items:center;gap:.5rem;flex:none}
+.topo .btn{padding:.8rem 1.3rem;font-size:.72rem}
+.burger{width:2.75rem;height:2.75rem;border-radius:50%;border:1px solid rgb(239 231 218/.25);display:grid;place-items:center}
+.burger span{display:block;width:1.1rem;height:1px;background:currentColor;box-shadow:0 5px 0 currentColor,0 -5px 0 currentColor}
+@media(min-width:1024px){.nav{display:flex}.burger{display:none}}
+@media(max-width:520px){.topo .btn span{display:none}.topo .btn{padding:.8rem}}
+
+/* menu mobile */
+.mnav{position:fixed;inset:0;z-index:80;display:flex;flex-direction:column;justify-content:center;gap:1.2rem;padding:6rem 2rem 3rem;background:linear-gradient(150deg,var(--carvao),var(--carvao-3) 60%,#3a2a1c);opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s}
+.mnav.aberto{opacity:1;visibility:visible}
+.mnav a{font:800 2.6rem/1 var(--f-display);text-transform:uppercase;opacity:0;translate:-28px 0;transition:opacity .5s var(--ease),translate .5s var(--ease),color .2s;transition-delay:calc(.1s + .07s*var(--i))}
+.mnav.aberto a{opacity:1;translate:0}
+.mnav .fechar{position:absolute;top:1.2rem;right:1.25rem;width:2.75rem;height:2.75rem;border-radius:50%;border:1px solid rgb(239 231 218/.25);font-size:1.4rem}
+.mnav small{position:absolute;bottom:2rem;left:2rem;font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;color:rgb(239 231 218/.45)}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding-block:8.5rem 5rem;background:radial-gradient(120% 80% at 85% 10%,#2c241d 0%,var(--carvao) 55%)}
+.hero .w{position:relative;z-index:2;display:grid;gap:3.5rem;align-items:center}
+@media(min-width:1024px){.hero{padding-block:10rem 7rem}.hero .w{grid-template-columns:1.1fr .9fr;gap:4rem}}
+.selo-txt{display:inline-flex;align-items:center;gap:.6rem;border:1px solid rgb(217 173 98/.35);background:rgb(239 231 218/.04);border-radius:999px;padding:.55rem 1.1rem;font:600 .64rem/1.3 var(--f-body);letter-spacing:.22em;text-transform:uppercase;max-width:100%}
+.selo-txt span{background:linear-gradient(110deg,var(--latao-claro) 0 40%,#fff4dc 50%,var(--latao-claro) 60% 100%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:brilho 5s linear infinite;overflow-wrap:anywhere}
+@keyframes brilho{from{background-position:150%}to{background-position:-50%}}
+.h1{font:900 clamp(2.9rem,9.6vw,6.4rem)/.9 var(--f-display);text-transform:uppercase;letter-spacing:.005em;margin-top:1.6rem;text-wrap:balance}
+.h1 em{font-size:.5em;margin-top:.5em}
+.hero .lead{font-size:1.1rem}
+.hero .lead b{color:var(--marfim);font-weight:600}
+.acoes{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2.2rem}
+.provas{display:flex;flex-wrap:wrap;gap:.6rem 1.6rem;margin-top:2.4rem;padding-top:1.6rem;border-top:1px solid var(--linha-escura)}
+.prova{display:flex;align-items:center;gap:.6rem;font-size:.86rem;color:rgb(239 231 218/.75)}
+.prova i{width:2.2rem;height:2.2rem;border-radius:50%;display:grid;place-items:center;background:rgb(184 135 59/.14);color:var(--latao-claro);flex:none}
+.prova i svg{width:1rem;height:1rem}
+.hero .fantasma{font-size:clamp(7rem,22vw,22rem);left:-1vw;bottom:-.18em;z-index:3}
+.foto{position:relative;margin-inline:auto;width:100%;max-width:30rem}
+.foto::before{content:"";position:absolute;inset:-.8rem;rotate:-2deg;border:1px solid rgb(217 173 98/.5);border-radius:calc(var(--r-foto) + .5rem);z-index:0}
+.foto.dir::before{rotate:2deg}
+.foto img{position:relative;z-index:1;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r-foto);box-shadow:var(--sombra-foto)}
+@media(max-width:1023px){.hero .foto img{aspect-ratio:5/4.6}.hero .foto{max-width:34rem}}
+.cartao{position:absolute;z-index:2;max-width:15.5rem;padding:1.15rem 1.35rem;border-radius:1rem;background:var(--latao);color:var(--carvao);font:italic 400 1.05rem/1.4 var(--f-serif);box-shadow:0 22px 40px -14px rgb(0 0 0/.55)}
+.cartao::before{content:"✦";display:block;font-style:normal;font-size:.8rem;margin-bottom:.35rem;color:var(--carvao-3)}
+.hero .cartao{left:-1rem;bottom:-1.6rem}
+@media(min-width:768px){.hero .cartao{left:-2.5rem}}
+.rolar{position:absolute;left:50%;bottom:1.6rem;translate:-50% 0;z-index:3;display:none;flex-direction:column;align-items:center;gap:.3rem;font-size:.62rem;letter-spacing:.3em;text-transform:uppercase;color:rgb(239 231 218/.45)}
+.rolar svg{width:1rem;animation:desce 1.8s ease-in-out infinite}
+@keyframes desce{50%{transform:translateY(6px)}}
+@media(min-width:1024px){.rolar{display:flex}}
+
+/* stagger de entrada */
+.js .st{opacity:0;translate:0 36px;transition:opacity 1s var(--ease),translate 1s var(--ease)}
+.js .st-foto{opacity:0;translate:0 60px;scale:.96;transition:opacity 1.2s var(--ease) .35s,translate 1.2s var(--ease) .35s,scale 1.2s var(--ease) .35s}
+.js .topo{translate:0 -80px;opacity:0}
+.carregado .st,.carregado .st-foto{opacity:1;translate:0;scale:1}
+.carregado .topo{translate:0;opacity:1}
+
+/* marquee */
+.faixa{position:relative;z-index:3;overflow:hidden;background:var(--latao);border-block:1px solid rgb(21 19 17/.25);padding-block:1.1rem}
+.mq{display:flex;width:max-content;animation:mq 38s linear infinite}
+.mq div{display:flex;align-items:center;gap:2.4rem;padding-right:2.4rem}
+.mq span{font:italic 400 1.45rem/1 var(--f-serif);color:var(--carvao);white-space:nowrap}
+.mq i{font-style:normal;font-size:.85rem;color:var(--carvao-3)}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* reveal */
+.js .rv{opacity:0;translate:0 32px;transition:opacity .9s var(--ease) var(--d,0s),translate .9s var(--ease) var(--d,0s)}
+.js .rv.in{opacity:1;translate:0}
+
+/* 01 a casa */
+.casa .w{display:grid;gap:4.5rem;align-items:center}
+@media(min-width:1024px){.casa .w{grid-template-columns:1fr 1fr;gap:6rem}}
+.compo{position:relative;padding:0 1.5rem 4rem 0;max-width:34rem;margin-inline:auto;width:100%}
+.compo .grande{position:relative;overflow:hidden;border-radius:var(--r-foto);box-shadow:0 30px 60px -20px rgb(21 19 17/.35);clip-path:inset(10% 8% 10% 8% round 3rem);transition:clip-path 1.4s var(--ease)}
+.compo .grande img{width:100%;aspect-ratio:4/4.4;object-fit:cover;scale:1.14;transition:scale 1.6s var(--ease)}
+.compo.in .grande{clip-path:inset(0 0 0 0 round var(--r-foto))}
+.compo.in .grande img{scale:1}
+.compo .pequena{position:absolute;right:0;bottom:0;width:44%;border-radius:1.25rem;overflow:hidden;border:6px solid var(--marfim);box-shadow:0 24px 44px -16px rgb(21 19 17/.45)}
+.compo .pequena img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.compo .giro{position:absolute;left:-1.25rem;top:-1.25rem;width:7.5rem;height:7.5rem;animation:gira 28s linear infinite;z-index:2}
+@keyframes gira{to{transform:rotate(360deg)}}
+.lista-check{list-style:none;display:grid;gap:1.4rem;margin-top:2.4rem}
+.lista-check li{display:grid;grid-template-columns:2.6rem 1fr;gap:1rem;align-items:start}
+.lista-check i{width:2.6rem;height:2.6rem;border-radius:50%;display:grid;place-items:center;background:rgb(122 46 34/.08);color:var(--vinho)}
+.lista-check i svg{width:1.15rem;height:1.15rem}
+.lista-check h3{font:700 1.05rem/1.3 var(--f-body)}
+.lista-check p{font-size:.94rem;color:rgb(21 19 17/.65);margin-top:.15rem}
+.casa .acoes{margin-top:2.6rem}
+
+/* 02 serviços: carrossel fixado */
+.hs{position:relative;overflow-x:clip;background:var(--carvao)}
+.hs-fixo{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;display:flex;align-items:center;background:radial-gradient(90% 70% at 20% 30%,#2a221b 0%,var(--carvao) 60%)}
+.hs-grid{position:relative;z-index:1;width:100%;display:flex;flex-direction:column;gap:1.8rem;padding-top:4.5rem}
+@media(min-width:1024px){.hs-grid{display:grid;grid-template-columns:minmax(17rem,23rem) minmax(0,1fr);align-items:center;gap:3.5rem;padding-top:0}}
+.hs-intro .h2{font-size:clamp(2.3rem,6vw,4rem)}
+.dica{display:inline-flex;align-items:center;gap:.6rem;margin-top:1.4rem;font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;color:rgb(239 231 218/.55)}
+.dica svg{width:1.1rem;animation:empurra 1.6s ease-in-out infinite}
+@keyframes empurra{50%{transform:translateX(6px)}}
+.hs-janela{overflow:hidden;margin-right:-1.25rem}
+@media(min-width:768px){.hs-janela{margin-right:-2.5rem}}
+@media(min-width:1024px){.hs-janela{margin-right:0;-webkit-mask-image:linear-gradient(90deg,#000 0 88%,transparent);mask-image:linear-gradient(90deg,#000 0 88%,transparent);transition:mask-image .4s}
+  .hs-janela.andando{-webkit-mask-image:linear-gradient(90deg,transparent,#000 7% 88%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7% 88%,transparent)}}
+.hs-trilho{display:flex;gap:1.1rem;width:max-content;will-change:transform;padding-right:1.25rem}
+.card{position:relative;flex:none;width:17.5rem;height:clamp(19rem,50vh,24rem);display:flex;flex-direction:column;padding:1.7rem;border-radius:var(--r-card);background:linear-gradient(160deg,rgb(239 231 218/.07),rgb(239 231 218/.02));border:1px solid var(--linha-escura);transition:translate .5s var(--ease),border-color .5s,box-shadow .5s,background-color .5s;text-align:left}
+@media(min-width:640px){.card{width:20rem}}
+.card .num{position:absolute;top:1.3rem;right:1.5rem;font:italic 400 2.2rem/1 var(--f-serif);color:rgb(217 173 98/.18);transition:color .5s}
+.card .ic{width:3.3rem;height:3.3rem;border-radius:1rem;display:grid;place-items:center;background:rgb(184 135 59/.14);color:var(--latao-claro);transition:background-color .5s,color .5s}
+.card .ic svg{width:1.5rem;height:1.5rem}
+.card h3{font:800 1.7rem/1 var(--f-display);text-transform:uppercase;margin-top:1.6rem;overflow-wrap:anywhere}
+.card p{flex:1;font-size:.93rem;color:rgb(239 231 218/.62);margin-top:.7rem}
+.card .preco{font:800 1.9rem/1 var(--f-display);color:var(--latao-claro);margin-top:1rem}
+.card .preco.sob{font:italic 400 1.05rem/1 var(--f-serif)}
+.card .ir{display:inline-flex;align-items:center;gap:.5rem;margin-top:1.1rem;font-size:.7rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--latao-claro)}
+.card .ir svg{width:1rem;transition:transform .4s var(--ease)}
+@media(hover:hover){.card:hover{translate:0 -8px;border-color:rgb(217 173 98/.4);box-shadow:0 30px 60px -20px rgb(0 0 0/.6)}
+  .card:hover .num{color:rgb(217 173 98/.45)}.card:hover .ic{background:var(--latao);color:var(--carvao)}.card:hover .ir svg{transform:translateX(4px)}}
+.hs .fantasma{font-size:clamp(8rem,24vw,24rem);right:-4vw;bottom:-.2em}
+
+/* 03 galeria */
+.galeria header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:1.5rem;margin-bottom:3.5rem}
+.mosaico{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.9rem}
+@media(min-width:900px){.mosaico{grid-template-columns:repeat(4,minmax(0,1fr));gap:1.25rem}}
+.mosaico figure{overflow:hidden;border-radius:1.25rem;box-shadow:0 20px 40px -18px rgb(21 19 17/.35)}
+.mosaico img{width:100%;aspect-ratio:3/4;object-fit:cover;transition:scale .7s var(--ease)}
+@media(hover:hover){.mosaico figure:hover img{scale:1.06}}
+@media(min-width:900px){.mosaico figure:nth-child(even){margin-top:3rem}}
+.mosaico figure:nth-child(n+5){display:none}
+@media(min-width:900px){.mosaico figure:nth-child(n+5){display:block}}
+.galeria .fantasma{font-size:clamp(6rem,18vw,17rem);right:-2vw;bottom:-.15em}
+
+/* 04 como funciona */
+.como .w{display:grid;gap:5rem;align-items:center}
+@media(min-width:1024px){.como .w{grid-template-columns:1.05fr .95fr;gap:6rem}}
+.passos{position:relative;list-style:none;display:grid;gap:2.4rem;margin-top:3rem}
+.passos::before{content:"";position:absolute;left:1.5rem;top:1.5rem;bottom:1.5rem;width:1px;background:linear-gradient(rgb(217 173 98/.65),rgb(217 173 98/.2),transparent)}
+.passos li{position:relative;display:flex;gap:1.6rem}
+.passos b{position:relative;z-index:1;flex:none;width:3rem;height:3rem;border-radius:50%;display:grid;place-items:center;border:1px solid rgb(217 173 98/.55);background:var(--carvao-2);font:italic 400 1.05rem/1 var(--f-serif);color:var(--latao-claro)}
+.passos h3{font:800 1.5rem/1.1 var(--f-display);text-transform:uppercase;margin-top:.25rem}
+.passos p{font-size:.95rem;color:rgb(239 231 218/.65);margin-top:.3rem}
+.como{background:var(--carvao-2)}
+.como .cartao{left:50%;translate:-50% 0;bottom:-2rem;width:85%;max-width:20rem;text-align:center;background:rgb(239 231 218/.95);color:var(--carvao)}
+
+/* 05 faq */
+.faq .w{display:grid;gap:3rem}
+@media(min-width:1024px){.faq .w{grid-template-columns:.8fr 1.2fr;gap:5rem}.faq-tit{position:sticky;top:8rem;align-self:start}}
+.faq-item{border-bottom:1px solid var(--linha-clara)}
+.faq-item button{display:flex;width:100%;justify-content:space-between;align-items:center;gap:1.5rem;padding-block:1.5rem;text-align:left;font:700 1.08rem/1.35 var(--f-body)}
+.pm{flex:none;width:2.5rem;height:2.5rem;border-radius:50%;display:grid;place-items:center;border:1px solid rgb(21 19 17/.22);font-size:1.25rem;font-weight:300;transition:rotate .35s var(--ease),background-color .3s,color .3s,border-color .3s}
+[aria-expanded=true] .pm{rotate:45deg;background:var(--carvao);border-color:var(--carvao);color:var(--marfim)}
+.faq-r{display:grid;grid-template-rows:0fr;opacity:0;transition:grid-template-rows .45s var(--ease),opacity .45s var(--ease)}
+.faq-r>div{overflow:hidden}
+.faq-r p{padding-bottom:1.6rem;max-width:40rem;color:rgb(21 19 17/.68)}
+[aria-expanded=true]+.faq-r{grid-template-rows:1fr;opacity:1}
+
+/* chamada final */
+.final{position:relative;isolation:isolate;overflow:hidden;padding-block:8rem;text-align:center}
+@media(min-width:768px){.final{padding-block:11rem}}
+.final>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.final::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgb(21 19 17/.86),rgb(21 19 17/.72) 50%,rgb(21 19 17/.92))}
+.final .h2{font-size:clamp(2.8rem,8.5vw,6.2rem);max-width:15ch;margin-inline:auto}
+.final .h2 em{font-size:.5em}
+.final .lead{margin-inline:auto}
+.final .acoes{justify-content:center}
+.final .etq{justify-content:center}
+.final .fantasma{font-size:clamp(8rem,26vw,26rem);left:50%;translate:-50% 0;bottom:-.25em;-webkit-text-stroke:1px rgb(217 173 98/.14)}
+
+/* contato */
+.contato .w{display:grid;gap:3.5rem}
+@media(min-width:1024px){.contato .w{grid-template-columns:.9fr 1.1fr;gap:4.5rem;align-items:stretch}}
+.dados{display:grid;gap:0;margin-top:2.5rem}
+.dado{padding-block:1.3rem;border-top:1px solid var(--linha-clara)}
+.dado small{display:block;font-size:.68rem;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--vinho);margin-bottom:.35rem}
+.dado p,.dado li{color:rgb(21 19 17/.78)}
+.dado ul{list-style:none}
+.dado .tel{font:800 2rem/1 var(--f-display);color:var(--carvao)}
+.mapa{position:relative;min-height:22rem;border-radius:var(--r-foto);overflow:hidden;box-shadow:0 30px 60px -24px rgb(21 19 17/.4);background:var(--marfim-2)}
+.mapa iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(1) sepia(.25) contrast(.95)}
+@media(min-width:1024px){.mapa{min-height:100%}}
+
+/* rodapé */
+.rodape{padding-block:4.5rem 7rem;border-top:1px solid var(--linha-escura);background:var(--carvao)}
+.rodape .w{display:grid;gap:2.5rem}
+.rodape .w>*{min-width:0}
+@media(min-width:900px){.rodape .w{grid-template-columns:1.4fr 1fr 1fr}}
+.rodape p,.rodape li{font-size:.9rem;color:rgb(239 231 218/.6)}
+.rodape h4{font-size:.68rem;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--latao-claro);margin-bottom:1rem}
+.rodape ul{list-style:none;display:grid;gap:.55rem}
+@media(hover:hover){.rodape a:hover{color:var(--marfim)}}
+.base{grid-column:1/-1;display:flex;flex-wrap:wrap;justify-content:space-between;gap:.8rem;padding-top:2rem;border-top:1px solid var(--linha-escura);font-size:.78rem;color:rgb(239 231 218/.4)}
+
+/* FAB */
+.fab{position:fixed;right:1.25rem;bottom:1.25rem;z-index:65;width:3.75rem;height:3.75rem;border-radius:50%;display:grid;place-items:center;background:#25d366;color:#fff;box-shadow:0 25px 50px -12px rgb(0 0 0/.45);opacity:0;scale:.6;translate:0 24px;pointer-events:none;transition:opacity .4s var(--ease),scale .4s var(--ease),translate .4s var(--ease)}
+.fab.ver{opacity:1;scale:1;translate:0;pointer-events:auto}
+.fab::before{content:"";position:absolute;inset:0;border-radius:50%;background:inherit;z-index:-1;animation:anel 2.4s cubic-bezier(.2,.6,.36,1) infinite}
+@keyframes anel{0%{opacity:.45;transform:scale(1)}80%,100%{opacity:0;transform:scale(1.65)}}
+.fab svg{width:1.9rem;height:1.9rem}
+@media(min-width:768px){.fab{right:2rem;bottom:2rem}}
+@media(hover:hover){.fab:hover{scale:1.1}}
+
+/* modal */
+dialog{margin:auto auto 0;width:100%;max-width:100%;border:0;padding:0;background:transparent;color:var(--carvao)}
+@media(min-width:640px){dialog{margin:auto;max-width:28rem}}
+dialog::backdrop{background:rgb(21 19 17/.6);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.caixa{position:relative;overflow:hidden;background:var(--creme);border-radius:1.75rem 1.75rem 0 0;padding:2.2rem 1.5rem 2rem;box-shadow:0 30px 60px -12px rgb(0 0 0/.5)}
+@media(min-width:640px){.caixa{border-radius:1.75rem;padding:2.5rem 2.2rem}}
+dialog[open] .caixa{animation:sobe .3s var(--ease)}
+@keyframes sobe{from{opacity:0;transform:translateY(24px) scale(.98)}}
+.caixa .blob{width:11rem;height:11rem;top:-3rem;right:-3rem;background:rgb(184 135 59/.35);filter:blur(40px)}
+.caixa h3{position:relative;font:800 2.1rem/1 var(--f-display);text-transform:uppercase}
+.caixa h3 em{font:italic 400 .8em var(--f-serif);text-transform:none;color:var(--vinho)}
+.caixa>p{position:relative;font-size:.93rem;color:rgb(21 19 17/.65);margin-top:.6rem}
+.caixa form{position:relative;display:grid;gap:1rem;margin-top:1.6rem}
+.caixa label{display:grid;gap:.4rem;font-size:.7rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:rgb(21 19 17/.6)}
+.caixa input,.caixa select{font:400 1rem var(--f-body);color:var(--carvao);background:#fff;border:1px solid rgb(21 19 17/.15);border-radius:.9rem;padding:.9rem 1rem;width:100%}
+.caixa input:focus,.caixa select:focus{outline:2px solid var(--latao);outline-offset:1px}
+.caixa .btn{width:100%;margin-top:.4rem}
+.caixa .direto{display:block;text-align:center;font-size:.82rem;color:rgb(21 19 17/.55);margin-top:.2rem;text-decoration:underline;text-underline-offset:3px}
+.caixa .x{position:absolute;top:1rem;right:1rem;z-index:2;width:2.4rem;height:2.4rem;border-radius:50%;border:1px solid rgb(21 19 17/.15);font-size:1.2rem;line-height:1}
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .js .st,.js .st-foto,.js .rv,.js .topo{opacity:1;translate:0;scale:1}
+  .compo .grande{clip-path:none}.compo .grande img{scale:1}
+}
 </style>
 </head>
 <body>
-<div class="preview">Prévia de site feita para a Barbearia Balboa. <a href="https://wa.me/5511933324557?text=Ol%C3%A1%21%20Vi%20a%20pr%C3%A9via%20do%20site%20da%20Barbearia%20Balboa%20e%20quero%20saber%20mais." target="_blank" rel="noopener">Quero colocar no ar</a></div>
-<header><div class="w"><span class="logo">Barbearia Balboa</span><a class="ig" href="https://instagram.com/balboabarbearia" target="_blank" rel="noopener">@balboabarbearia</a></div></header>
-<div class="hero"><div class="w">
-<span class="kicker">barbearia · Tatuapé - São Paulo/SP</span>
-<h1>Barbearia Balboa</h1>
-<p>Estilo, cuidado e pontualidade. Fale direto com a gente pelo WhatsApp.</p>
-<div class="acts"><a class="btn" href="https://wa.me/5511994559673?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Barbearia%20Balboa%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg> Chamar no WhatsApp</a><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Barbearia%20Balboa%20Tatuap%C3%A9%20-%20S%C3%A3o%20Paulo/SP" target="_blank" rel="noopener">Ver no Google Maps</a></div>
-</div></div>
-<section><div class="w"><h2>Serviços</h2><ul class="menu"><li><span>Corte masculino</span><b>Consulte</b></li><li><span>Barba</span><b>Consulte</b></li><li><span>Corte + barba</span><b>Consulte</b></li><li><span>Sobrancelha</span><b>Consulte</b></li></ul></div></section>
-<section><div class="w"><h2>Por que a Barbearia Balboa</h2><div class="why"><div><h3>Horário marcado</h3><p>Agende pelo WhatsApp e seja atendido sem fila.</p></div><div><h3>Profissionais experientes</h3><p>Atendimento caprichado do começo ao fim.</p></div><div><h3>Ambiente confortável</h3><p>Um espaço pensado para você relaxar.</p></div></div></div></section>
-<section><div class="w info">
-<div><h2>Onde estamos</h2><p><strong>Tatuapé - São Paulo/SP</strong></p><p style="margin-top:12px"><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Barbearia%20Balboa%20Tatuap%C3%A9%20-%20S%C3%A3o%20Paulo/SP" target="_blank" rel="noopener">Ver no Google Maps</a></p></div>
-<div><h2>Horário</h2><p>Consulte pelo WhatsApp</p></div>
-</div></section>
-<footer>© 2026 Barbearia Balboa</footer>
-<a class="fab" href="https://wa.me/5511994559673?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Barbearia%20Balboa%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg></a>
+<div class="grain" aria-hidden="true"></div>
+
+<div class="previa">Prévia de site criada para a Barbearia Balboa. <a href="https://wa.me/5511933324557?text=Ol%C3%A1%21%20Vi%20a%20pr%C3%A9via%20do%20site%20da%20Barbearia%20Balboa%20e%20quero%20colocar%20no%20ar." target="_blank" rel="noopener">Quero colocar no ar</a></div>
+<header class="topo" id="topo"><div class="w">
+  <a class="marca" href="#inicio" aria-label="Barbearia Balboa, início"><svg viewBox="0 0 120 120" aria-hidden="true">
+  <defs><path id="c-topo" d="M60,60 m-45,0 a45,45 0 1,1 90,0 a45,45 0 1,1 -90,0"/></defs>
+  <circle cx="60" cy="60" r="58" fill="#151311" stroke="#b8873b" stroke-width="2"/>
+  <circle cx="60" cy="60" r="33" fill="none" stroke="#b8873b" stroke-width="1" opacity=".7"/>
+  <text font-family="Manrope,Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="3" fill="#d9ad62"><textPath href="#c-topo">BARBEARIA · TATUAPÉ · SÃO PAULO ·</textPath></text>
+  <text x="60" y="71" text-anchor="middle" font-family="'Big Shoulders Display','Arial Narrow',Impact,sans-serif" font-weight="900" font-size="31" fill="#efe7da">B</text>
+</svg><b>Barbearia Balboa</b></a>
+  <nav class="nav" aria-label="Seções"><a href="#casa">A casa</a><a href="#servicos">Serviços</a><a href="#galeria">Galeria</a><a href="#duvidas">Dúvidas</a><a href="#contato">Contato</a></nav>
+  <div class="topo-acoes">
+    <button class="btn btn-latao" data-cta><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg><span>Agendar</span></button>
+    <button class="burger" id="abrir-menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="mnav"><span></span></button>
+  </div>
+</div></header>
+
+<nav class="mnav" id="mnav" aria-label="Menu">
+  <button class="fechar" id="fechar-menu" aria-label="Fechar menu">×</button>
+  <a href="#casa">A casa</a><a href="#servicos">Serviços</a><a href="#galeria">Galeria</a><a href="#duvidas">Dúvidas</a><a href="#contato">Contato</a>
+  <small>Barbearia Balboa · Tatuapé</small>
+</nav>
+
+<main id="inicio">
+
+<section class="hero">
+  <div class="blob" style="width:34rem;height:34rem;right:-10rem;top:-8rem;background:rgb(184 135 59/.18)"></div>
+  <div class="blob" style="width:26rem;height:26rem;left:-12rem;bottom:-6rem;background:rgb(122 46 34/.22)"></div>
+  <span class="fantasma" aria-hidden="true">navalha</span>
+  <div class="w">
+    <div>
+      <p class="selo-txt st"><span>Barbearia Balboa · Barbearia em Tatuapé</span></p>
+      <h1 class="h1 st">Seu visual fala antes de você.<em>Deixa ele falar bem.</em></h1>
+      <p class="lead st">Na <b>Barbearia Balboa</b>, cada corte é feito sem pressa: degradê alinhado, barba desenhada na navalha e toalha quente no final. Você marca o horário e chega na hora, sem fila.</p>
+      <div class="acoes st">
+        <button class="btn btn-latao" data-cta><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg> Agendar meu horário</button>
+        <a class="btn btn-contorno seta" href="#servicos">Ver serviços <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+      <div class="provas st">
+        <span class="prova"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3.5 2"/></svg></i>Hora marcada pelo WhatsApp</span>
+        <span class="prova"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></i>Tatuapé, São Paulo</span>
+      </div>
+    </div>
+    <div class="foto st-foto">
+      <img src="/assets/img/barbearia/hero-1.jpg" alt="Barbeiros atendendo clientes na barbearia" width="1600" height="1067" fetchpriority="high" style="object-position:58% 50%">
+      <p class="cartao">Corte bom é aquele que dura até o próximo.</p>
+    </div>
+  </div>
+  <a class="rolar" href="#casa" aria-label="Rolar para a próxima seção">Role<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
+</section>
+
+<div class="faixa" aria-hidden="true"><div class="mq">
+<div><span>Degradê</span><i>✦</i><span>Navalha</span><i>✦</i><span>Barba desenhada</span><i>✦</i><span>Toalha quente</span><i>✦</i><span>Pigmentação</span><i>✦</i><span>Sobrancelha</span><i>✦</i><span>Pezinho</span><i>✦</i></div><div><span>Degradê</span><i>✦</i><span>Navalha</span><i>✦</i><span>Barba desenhada</span><i>✦</i><span>Toalha quente</span><i>✦</i><span>Pigmentação</span><i>✦</i><span>Sobrancelha</span><i>✦</i><span>Pezinho</span><i>✦</i></div></div></div>
+
+<section class="sec clara casa" id="casa">
+  <div class="blob" style="width:30rem;height:30rem;right:-12rem;top:10%;background:rgb(184 135 59/.18)"></div>
+  <div class="w">
+    <div class="compo rv" id="compo">
+      <div class="grande"><img src="/assets/img/barbearia/hero-2.jpg" alt="Interior da barbearia com cadeiras e espelhos" loading="lazy"></div>
+      <div class="pequena"><img src="/assets/img/barbearia/acao-3.jpg" alt="Barbeiro finalizando um corte na máquina" loading="lazy"></div>
+      <span class="giro"><svg viewBox="0 0 120 120" aria-hidden="true">
+  <defs><path id="c-giro" d="M60,60 m-45,0 a45,45 0 1,1 90,0 a45,45 0 1,1 -90,0"/></defs>
+  <circle cx="60" cy="60" r="58" fill="#151311" stroke="#b8873b" stroke-width="2"/>
+  <circle cx="60" cy="60" r="33" fill="none" stroke="#b8873b" stroke-width="1" opacity=".7"/>
+  <text font-family="Manrope,Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="3" fill="#d9ad62"><textPath href="#c-giro">BARBEARIA · TATUAPÉ · SÃO PAULO ·</textPath></text>
+  <text x="60" y="71" text-anchor="middle" font-family="'Big Shoulders Display','Arial Narrow',Impact,sans-serif" font-weight="900" font-size="31" fill="#efe7da">B</text>
+</svg></span>
+    </div>
+    <div>
+      <p class="etq rv">01 · A casa</p>
+      <h2 class="h2 rv" style="--d:.05s">Barbearia de verdade,<em>do jeito que tem que ser.</em></h2>
+      <p class="lead rv" style="--d:.1s">A Barbearia Balboa é lugar de sentar na cadeira e sair outro. Corte alinhado ao seu estilo, barba na navalha e aquele acabamento que só barbeiro de verdade faz, em Tatuapé.</p>
+      <ul class="lista-check">
+        <li class="rv" style="--d:.12s"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3.5 2"/></svg></i><div><h3>Seu horário é seu</h3><p>Você agenda pelo WhatsApp e é atendido na hora marcada, sem ficar esperando.</p></div></li>
+        <li class="rv" style="--d:.22s"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M3 20 18 5l3 3L6 23"/><path d="M14 9l3 3"/></svg></i><div><h3>Ritual clássico</h3><p>Toalha quente, navalha e produto certo para cada tipo de barba e cabelo.</p></div></li>
+        <li class="rv" style="--d:.32s"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M12 3l7 3v5c0 4.2-3 7.4-7 8.6C8 18.4 5 15.2 5 11V6l7-3z"/><path d="M9 11.5l2 2 4-4"/></svg></i><div><h3>Higiene em cada detalhe</h3><p>Ferramentas limpas e lâmina trocada a cada cliente.</p></div></li>
+      </ul>
+      <div class="acoes rv" style="--d:.4s"><button class="btn btn-carvao" data-cta><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg> Quero agendar</button></div>
+    </div>
+  </div>
+</section>
+
+<section class="hs" id="servicos">
+  <div class="hs-fixo">
+    <span class="fantasma" aria-hidden="true">estilo</span>
+    <div class="w hs-grid">
+      <div class="hs-intro">
+        <p class="etq">02 · Serviços</p>
+        <h2 class="h2">A tabela da casa,<em>escolha o seu.</em></h2>
+        <p class="dica">Role para ver os serviços <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></p>
+      </div>
+      <div class="hs-janela" id="hs-janela"><div class="hs-trilho" id="hs-trilho">
+        <button class="card" data-cta data-servico="Corte masculino" aria-label="Agendar Corte masculino">
+          <span class="num">01</span>
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4l12 16M18 4L6 20"/><circle cx="6" cy="6" r="2.4"/><circle cx="18" cy="6" r="2.4"/></svg></span>
+          <h3>Corte masculino</h3>
+          <p>Tesoura ou máquina, com lavagem e finalização.</p>
+<span class="preco sob">valor sob consulta</span>          <span class="ir">Agendar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </button>
+        <button class="card" data-cta data-servico="Barba completa" aria-label="Agendar Barba completa">
+          <span class="num">02</span>
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18c3-1 4-4 8-4s5 3 8 4"/><path d="M8 10c1.2-2 2.5-3 4-3s2.8 1 4 3"/></svg></span>
+          <h3>Barba completa</h3>
+          <p>Toalha quente, navalha e balm hidratante.</p>
+<span class="preco sob">valor sob consulta</span>          <span class="ir">Agendar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </button>
+        <button class="card" data-cta data-servico="Corte + barba" aria-label="Agendar Corte + barba">
+          <span class="num">03</span>
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20 18 5l3 3L6 23"/><path d="M14 9l3 3"/></svg></span>
+          <h3>Corte + barba</h3>
+          <p>O combo completo para sair renovado.</p>
+<span class="preco sob">valor sob consulta</span>          <span class="ir">Agendar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </button>
+        <button class="card" data-cta data-servico="Pezinho e acabamento" aria-label="Agendar Pezinho e acabamento">
+          <span class="num">04</span>
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3.5 2"/></svg></span>
+          <h3>Pezinho e acabamento</h3>
+          <p>Contorno alinhado entre um corte e outro.</p>
+<span class="preco sob">valor sob consulta</span>          <span class="ir">Agendar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </button>
+        <button class="card" data-cta data-servico="Sobrancelha" aria-label="Agendar Sobrancelha">
+          <span class="num">05</span>
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12c2-3 5-4.5 8-4.5s6 1.5 8 4.5"/><path d="M7 15c1.5-1.4 3.2-2 5-2s3.5.6 5 2"/></svg></span>
+          <h3>Sobrancelha</h3>
+          <p>Acabamento na navalha.</p>
+<span class="preco sob">valor sob consulta</span>          <span class="ir">Agendar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </button>
+        <button class="card" data-cta data-servico="Pigmentação" aria-label="Agendar Pigmentação">
+          <span class="num">06</span>
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M5 8l7-5 7 5M5 16l7 5 7-5"/></svg></span>
+          <h3>Pigmentação</h3>
+          <p>Disfarça falhas na barba e no cabelo.</p>
+<span class="preco sob">valor sob consulta</span>          <span class="ir">Agendar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </button>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec clara-2 galeria" id="galeria">
+  <span class="fantasma" aria-hidden="true">na cadeira</span>
+  <div class="w" style="position:relative;z-index:1">
+    <header>
+      <div><p class="etq rv">03 · Galeria</p><h2 class="h2 rv" style="--d:.05s">Na cadeira,<em>o resultado fala.</em></h2></div>
+<a class="btn btn-contorno seta rv" style="--d:.15s" href="https://instagram.com/balboabarbearia" target="_blank" rel="noopener">@balboabarbearia <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>    </header>
+    <div class="mosaico">
+      <figure class="rv"><img src="/assets/img/barbearia/alt-2.jpg" alt="Barbeiro fazendo corte degradê" loading="lazy"></figure>
+      <figure class="rv" style="--d:.08s"><img src="/assets/img/barbearia/alt-1.jpg" alt="Cliente com a barba alinhada" loading="lazy"></figure>
+      <figure class="rv" style="--d:.16s"><img src="/assets/img/barbearia/acao-4.jpg" alt="Tesoura de barbeiro em ação" loading="lazy"></figure>
+      <figure class="rv" style="--d:.24s"><img src="/assets/img/barbearia/alt-4.jpg" alt="Barba sendo feita com navalha" loading="lazy"></figure>
+      <figure class="rv"><img src="/assets/img/barbearia/ambiente-3.jpg" alt="Máquinas e ferramentas de barbeiro" loading="lazy" style="aspect-ratio:3/4"></figure>
+      <figure class="rv" style="--d:.08s"><img src="/assets/img/barbearia/alt-5.jpg" alt="Navalha clássica" loading="lazy"></figure>
+      <figure class="rv" style="--d:.16s"><img src="/assets/img/barbearia/hero-3.jpg" alt="Corte masculino na máquina" loading="lazy"></figure>
+      <figure class="rv" style="--d:.24s"><img src="/assets/img/barbearia/ambiente-2.jpg" alt="Ambiente da barbearia" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec como">
+  <div class="blob" style="width:28rem;height:28rem;left:-10rem;top:20%;background:rgb(184 135 59/.12)"></div>
+  <div class="w" style="position:relative;z-index:1">
+    <div>
+      <p class="etq rv">04 · Como funciona</p>
+      <h2 class="h2 rv" style="--d:.05s">Do WhatsApp à cadeira,<em>sem complicação.</em></h2>
+      <ol class="passos">
+        <li class="rv" style="--d:.1s"><b>01</b><div><h3>Você chama</h3><p>Toque em "Agendar" e diga o serviço e o melhor dia para você.</p></div></li>
+        <li class="rv" style="--d:.2s"><b>02</b><div><h3>A gente confirma</h3><p>Seu horário fica reservado e você recebe a confirmação pelo WhatsApp.</p></div></li>
+        <li class="rv" style="--d:.3s"><b>03</b><div><h3>Conversa rápida</h3><p>Antes de começar, o barbeiro entende o que você quer e sugere o que combina com você.</p></div></li>
+        <li class="rv" style="--d:.4s"><b>04</b><div><h3>Acabamento</h3><p>Toalha quente, finalização e você sai pronto para o que vier.</p></div></li>
+      </ol>
+      <div class="acoes rv" style="--d:.5s"><button class="btn btn-latao" data-cta><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg> Agendar agora</button></div>
+    </div>
+    <div class="foto dir rv" style="--d:.15s">
+      <img src="/assets/img/barbearia/acao-1.jpg" alt="Barba sendo feita na navalha com cuidado" loading="lazy" style="aspect-ratio:4/5">
+      <p class="cartao">Toalha quente, navalha e o tempo que o seu corte merece.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec clara faq" id="duvidas">
+  <div class="w">
+    <div class="faq-tit">
+      <p class="etq rv">05 · Dúvidas</p>
+      <h2 class="h2 rv" style="--d:.05s">Antes de sentar<em>na cadeira.</em></h2>
+      <p class="lead rv" style="--d:.1s">Ficou alguma dúvida? Manda no WhatsApp que a gente responde rapidinho.</p>
+    </div>
+    <div class="rv" style="--d:.1s">
+      <div class="faq-item"><button aria-expanded="true"><span>Preciso agendar ou posso chegar?</span><i class="pm" aria-hidden="true">+</i></button>
+        <div class="faq-r"><div><p>O ideal é agendar pelo WhatsApp: assim seu horário fica reservado e você não espera. Se quiser tentar um encaixe, chama antes para saber se tem cadeira livre.</p></div></div></div>
+      <div class="faq-item"><button aria-expanded="false"><span>Quanto custa o corte e a barba?</span><i class="pm" aria-hidden="true">+</i></button>
+        <div class="faq-r"><div><p>Para combos ou serviços especiais, pergunte no WhatsApp que a gente passa o valor certinho.</p></div></div></div>
+      <div class="faq-item"><button aria-expanded="false"><span>Quais formas de pagamento vocês aceitam?</span><i class="pm" aria-hidden="true">+</i></button>
+        <div class="faq-r"><div><p>Confirme as formas de pagamento direto com a gente pelo WhatsApp na hora de agendar.</p></div></div></div>
+      <div class="faq-item"><button aria-expanded="false"><span>Quanto tempo leva o atendimento?</span><i class="pm" aria-hidden="true">+</i></button>
+        <div class="faq-r"><div><p>Depende do serviço: um corte é mais rápido que o combo com barba. Quando você agendar, a gente já te fala quanto tempo reservar.</p></div></div></div>
+      <div class="faq-item"><button aria-expanded="false"><span>Onde fica a barbearia?</span><i class="pm" aria-hidden="true">+</i></button>
+        <div class="faq-r"><div><p>Tatuapé, São Paulo - SP. Veja o mapa logo abaixo ou toque em "Como chegar".</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <img src="/assets/img/barbearia/hero-1.jpg" alt="" loading="lazy" style="object-position:50% 40%">
+  <span class="fantasma" aria-hidden="true">sua vez</span>
+  <div class="w">
+    <p class="etq rv">Barbearia Balboa</p>
+    <h2 class="h2 rv" style="--d:.05s">Seu visual fala antes de você.<em>Bora deixar ele no ponto?</em></h2>
+    <p class="lead rv" style="--d:.1s">Escolha o serviço, mande no WhatsApp e garanta sua cadeira.</p>
+    <div class="acoes rv" style="--d:.2s"><button class="btn btn-latao" data-cta><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg> Agendar meu horário</button></div>
+  </div>
+</section>
+
+<section class="sec clara-2 contato" id="contato">
+  <div class="w">
+    <div>
+      <p class="etq rv">06 · Contato</p>
+      <h2 class="h2 rv" style="--d:.05s">Passa aqui,<em>a cadeira está pronta.</em></h2>
+      <div class="dados rv" style="--d:.1s">
+        <div class="dado"><small>Endereço</small><p>Tatuapé, São Paulo - SP</p></div>
+        <div class="dado"><small>Horário</small><p>Consulte os horários pelo WhatsApp.</p></div>
+        <div class="dado"><small>WhatsApp</small><a class="tel" href="https://wa.me/5511994559673?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Barbearia%20Balboa%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">(11) 99455-9673</a></div>
+      </div>
+      <div class="acoes rv" style="--d:.2s"><button class="btn btn-carvao" data-cta><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg> Agendar</button><a class="btn btn-contorno seta" href="https://www.google.com/maps/search/?api=1&amp;query=Barbearia%20Balboa%20Tatuap%C3%A9%2C%20S%C3%A3o%20Paulo%20-%20SP" target="_blank" rel="noopener">Como chegar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    </div>
+    <div class="mapa rv" style="--d:.15s"><iframe src="https://maps.google.com/maps?q=Tatuap%C3%A9%2C%20S%C3%A3o%20Paulo%20-%20SP&amp;z=15&amp;output=embed" title="Mapa com a localização da Barbearia Balboa" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  </div>
+</section>
+</main>
+
+<footer class="rodape"><div class="w">
+  <div><a class="marca" href="#inicio"><svg viewBox="0 0 120 120" aria-hidden="true">
+  <defs><path id="c-rodape" d="M60,60 m-45,0 a45,45 0 1,1 90,0 a45,45 0 1,1 -90,0"/></defs>
+  <circle cx="60" cy="60" r="58" fill="#151311" stroke="#b8873b" stroke-width="2"/>
+  <circle cx="60" cy="60" r="33" fill="none" stroke="#b8873b" stroke-width="1" opacity=".7"/>
+  <text font-family="Manrope,Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="3" fill="#d9ad62"><textPath href="#c-rodape">BARBEARIA · TATUAPÉ · SÃO PAULO ·</textPath></text>
+  <text x="60" y="71" text-anchor="middle" font-family="'Big Shoulders Display','Arial Narrow',Impact,sans-serif" font-weight="900" font-size="31" fill="#efe7da">B</text>
+</svg><b>Barbearia Balboa</b></a><p style="margin-top:1.2rem;max-width:26rem">Barbearia em Tatuapé, São Paulo. Corte, barba e navalha com hora marcada.</p></div>
+  <div><h4>Navegação</h4><ul><li><a href="#casa">A casa</a></li><li><a href="#servicos">Serviços</a></li><li><a href="#galeria">Galeria</a></li><li><a href="#duvidas">Dúvidas</a></li></ul></div>
+  <div><h4>Contato</h4><ul><li>Tatuapé, São Paulo - SP</li><li><a href="https://wa.me/5511994559673?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Barbearia%20Balboa%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">WhatsApp (11) 99455-9673</a></li><li><a href="https://instagram.com/balboabarbearia" target="_blank" rel="noopener">@balboabarbearia</a></li></ul></div>
+  <div class="base"><span>© 2026 Barbearia Balboa</span><span>Barbearia em Tatuapé · São Paulo</span></div>
+</div></footer>
+
+<button class="fab" id="fab" data-cta aria-label="Agendar pelo WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg></button>
+
+<dialog id="lead" aria-labelledby="lead-tit">
+  <div class="caixa">
+    <div class="blob" aria-hidden="true"></div>
+    <button class="x" type="button" data-fechar aria-label="Fechar">×</button>
+    <h3 id="lead-tit">Falta pouco pro seu <em>horário</em></h3>
+    <p>Diga seu nome e o serviço. A gente abre o WhatsApp da Barbearia Balboa com a mensagem pronta.</p>
+    <form id="lead-form">
+      <label for="lead-nome">Seu nome<input id="lead-nome" name="nome" autocomplete="given-name" placeholder="Como podemos te chamar?"></label>
+      <label for="lead-servico">Serviço<select id="lead-servico" name="servico">
+<option>Corte masculino</option><option>Barba completa</option><option>Corte + barba</option><option>Pezinho e acabamento</option><option>Sobrancelha</option><option>Pigmentação</option><option>Ainda não sei, quero ajuda</option>
+      </select></label>
+      <button class="btn btn-latao" type="submit"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg> Abrir WhatsApp</button>
+      <a class="direto" href="https://wa.me/5511994559673?text=Ol%C3%A1%21%20Quero%20agendar%20um%20hor%C3%A1rio%20na%20Barbearia%20Balboa." target="_blank" rel="noopener">Prefiro chamar direto</a>
+    </form>
+  </div>
+</dialog>
+
+<script>
+(function(){
+  var d=document.documentElement; d.classList.add("js");
+  var reduz=matchMedia("(prefers-reduced-motion: reduce)").matches;
+  // stagger do hero
+  document.querySelectorAll(".hero .st").forEach(function(el,i){el.style.transitionDelay=(.2+.14*i)+"s"});
+  requestAnimationFrame(function(){requestAnimationFrame(function(){d.classList.add("carregado")})});
+
+  // header e FAB
+  var topo=document.getElementById("topo"),fab=document.getElementById("fab"),previa=document.querySelector(".previa");
+  function rol(){var y=scrollY,lim=(previa?previa.offsetHeight:0)+24;topo.classList.toggle("fixo",y>lim);fab.classList.toggle("ver",y>420)}
+  addEventListener("scroll",rol,{passive:true});rol();
+
+  // menu mobile
+  var m=document.getElementById("mnav"),ab=document.getElementById("abrir-menu");
+  function menu(o){m.classList.toggle("aberto",o);ab.setAttribute("aria-expanded",String(o));document.body.style.overflow=o?"hidden":""}
+  ab.onclick=function(){menu(true)};document.getElementById("fechar-menu").onclick=function(){menu(false)};
+  m.querySelectorAll("a").forEach(function(a,i){a.style.setProperty("--i",i);a.addEventListener("click",function(){menu(false)})});
+
+  // reveal ao rolar
+  var els=document.querySelectorAll(".rv");
+  if("IntersectionObserver" in window&&!reduz){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{rootMargin:"0px 0px -60px 0px"});
+    els.forEach(function(el){io.observe(el)});
+  }else{els.forEach(function(el){el.classList.add("in")})}
+
+  // carrossel guiado pelo scroll
+  var sec=document.getElementById("servicos"),jan=document.getElementById("hs-janela"),tr=document.getElementById("hs-trilho");
+  var lg=matchMedia("(min-width:1024px)"),max=0,dist=1,raf=0;
+  function mede(){
+    max=Math.max(0,tr.scrollWidth-jan.clientWidth);
+    if(!max||reduz){sec.style.minHeight="";tr.style.transform="";jan.style.overflowX=reduz?"auto":"";return}
+    dist=max+innerHeight*(lg.matches?.7:.5);sec.style.minHeight=(innerHeight+dist)+"px";anda();
+  }
+  function anda(){raf=0;if(!max||reduz)return;var p=Math.min(Math.max(-sec.getBoundingClientRect().top,0),dist)/dist,x=p*max;
+    tr.style.transform="translate3d("+(-x)+"px,0,0)";jan.classList.toggle("andando",x>8)}
+  addEventListener("scroll",function(){if(!raf)raf=requestAnimationFrame(anda)},{passive:true});
+  addEventListener("resize",mede);if(lg.addEventListener)lg.addEventListener("change",mede);
+  if("ResizeObserver" in window)new ResizeObserver(mede).observe(tr);
+  mede();setTimeout(mede,300);if(document.fonts)document.fonts.ready.then(mede);
+
+  // FAQ
+  var itens=[].slice.call(document.querySelectorAll(".faq-item button"));
+  itens.forEach(function(b){b.addEventListener("click",function(){var ab=b.getAttribute("aria-expanded")==="true";itens.forEach(function(x){x.setAttribute("aria-expanded","false")});b.setAttribute("aria-expanded",String(!ab))})});
+
+  // modal antes do WhatsApp
+  var dlg=document.getElementById("lead"),form=document.getElementById("lead-form"),sel=document.getElementById("lead-servico");
+  var TEL="5511994559673",NEG="Barbearia Balboa";
+  function abre(serv){
+    if(serv){for(var i=0;i<sel.options.length;i++){if(sel.options[i].text===serv){sel.selectedIndex=i;break}}}
+    if(typeof dlg.showModal==="function"){dlg.showModal();document.body.style.overflow="hidden";setTimeout(function(){document.getElementById("lead-nome").focus()},60)}
+    else{location.href="https://wa.me/5511994559673?text=Ol%C3%A1%21%20Quero%20agendar%20um%20hor%C3%A1rio%20na%20Barbearia%20Balboa."}
+  }
+  document.querySelectorAll("[data-cta]").forEach(function(b){b.addEventListener("click",function(e){e.preventDefault();abre(b.getAttribute("data-servico"))})});
+  dlg.addEventListener("close",function(){document.body.style.overflow=""});
+  dlg.querySelector("[data-fechar]").addEventListener("click",function(){dlg.close()});
+  dlg.addEventListener("click",function(e){if(e.target===dlg)dlg.close()});
+  form.addEventListener("submit",function(e){
+    e.preventDefault();var n=form.nome.value.trim(),s=sel.value;
+    var msg="Olá! "+(n?"Meu nome é "+n+". ":"")+"Vi o site da "+NEG+" e quero agendar: "+s+".";
+    var btn=form.querySelector("button[type=submit]");btn.disabled=true;btn.lastChild.textContent=" Abrindo WhatsApp…";
+    var url="https://wa.me/"+TEL+"?text="+encodeURIComponent(msg),w=window.open(url,"_blank");if(!w)location.href=url;
+    setTimeout(function(){btn.disabled=false;btn.lastChild.textContent=" Abrir WhatsApp";dlg.close()},800);
+  });
+})();
+</script>
 </body>
 </html>
