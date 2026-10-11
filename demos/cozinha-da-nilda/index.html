@@ -1,0 +1,839 @@
+<!doctype html>
+<html lang="pt-BR" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex"><title>Cozinha da Nilda | Marmitaria e comida caseira em Guaianases</title>
+<meta name="description" content="Cozinha da Nilda: marmita e comida caseira em Guaianases, São Paulo. Veja o cardápio e peça pelo WhatsApp (11) 95031-4983.">
+<meta property="og:title" content="Cozinha da Nilda | Comida caseira em Guaianases">
+<meta property="og:description" content="Almoço de verdade, com tempero de casa. Peça pelo WhatsApp.">
+<meta property="og:image" content="https://aleroberto17.github.io/assets/img/marmitaria/hero-1.jpg">
+<meta name="theme-color" content="#f4ecdc">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="/assets/img/marmitaria/hero-1.jpg" fetchpriority="high">
+<script>document.documentElement.classList.replace('no-js','js')</script>
+<style>
+@font-face{font-family:"Nunito Fallback";src:local("Arial Rounded MT Bold"),local("Trebuchet MS"),local("Arial");size-adjust:101%;ascent-override:99%}
+:root{
+  --papel:#f4ecdc; --papel-2:#fbf6ec; --kraft:#dcc39b; --kraft-2:#c9a576;
+  --terra:#a8461f; --terra-2:#c35b2d; --terra-deep:#7a2f14;
+  --oliva:#56602e; --oliva-deep:#2e3419; --lousa:#262a1d;
+  --feijao:#dfa335; --feijao-2:#f0c768;
+  --cafe:#3b2416; --cafe-soft:rgb(59 36 22/.72);
+  --f-body:"Nunito","Nunito Fallback","Trebuchet MS",system-ui,sans-serif;
+  --f-hand:"Caveat","Segoe Print","Bradley Hand","Comic Sans MS",cursive;
+  --ease:cubic-bezier(.22,1,.36,1);
+  --r-card:1.75rem; --r-photo:2.5rem;
+  --sh-cta:0 20px 25px -5px rgb(122 47 20/.28),0 8px 10px -6px rgb(122 47 20/.28);
+  --sh-photo:0 25px 50px -12px rgb(122 47 20/.28);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:6rem;-webkit-text-size-adjust:100%}
+body{background:var(--papel);color:var(--cafe);font:300 1rem/1.65 var(--f-body);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit;color:inherit}
+::selection{background:var(--feijao-2);color:var(--cafe)}
+:focus-visible{outline:2px solid var(--terra);outline-offset:3px;border-radius:6px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.ctn{max-width:80rem;margin-inline:auto;padding-inline:1.25rem}
+@media (min-width:768px){.ctn{padding-inline:2.5rem}}
+.sec{position:relative;overflow:hidden;padding-block:6rem}
+@media (min-width:768px){.sec{padding-block:9rem}}
+svg.i{width:1.25rem;height:1.25rem;flex:none}
+
+/* tipografia */
+.eyebrow{display:flex;align-items:center;gap:1rem;margin-bottom:1.1rem;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.28em;color:var(--terra)}
+.eyebrow .rule{width:2.5rem;height:1px;background:var(--feijao);flex:none}
+.eyebrow.c{justify-content:center}
+.dark .eyebrow{color:var(--feijao-2)}
+.h2{font-weight:300;font-size:clamp(2.1rem,6.4vw,3.5rem);line-height:1.06;letter-spacing:-.03em;text-wrap:balance}
+.h2 em{font-style:italic;font-weight:800;color:var(--terra)}
+.dark .h2 em{color:var(--feijao-2)}
+.lead{font-size:1.1rem;line-height:1.65;color:var(--cafe-soft);max-width:36rem}
+.dark .lead{color:rgb(244 236 220/.78)}
+.hand{font-family:var(--f-hand);font-weight:700;letter-spacing:0}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.7rem;border-radius:9999px;padding:1rem 2rem;font-weight:800;font-size:.8rem;line-height:1.1;letter-spacing:.14em;text-transform:uppercase;background:var(--terra);color:var(--papel-2);box-shadow:var(--sh-cta);transition:translate .3s var(--ease),background-color .3s,box-shadow .3s,color .3s,border-color .3s;border:1px solid transparent;cursor:pointer;text-align:center}
+.btn svg{width:1.15rem;height:1.15rem;transition:transform .3s var(--ease)}
+.btn.ghost{background:transparent;color:var(--terra);border-color:rgb(168 70 31/.3);box-shadow:none}
+.btn.light{background:var(--papel-2);color:var(--terra-deep);box-shadow:0 20px 25px -5px rgb(0 0 0/.25)}
+.btn.sm{padding:.75rem 1.35rem;font-size:.72rem}
+.link{display:inline-flex;align-items:center;gap:.5rem;font-weight:800;font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--terra)}
+.link svg{width:1rem;height:1rem;transition:transform .3s var(--ease)}
+@media (hover:hover){
+  .btn:hover{translate:0 -4px;background:var(--terra-2);box-shadow:0 25px 50px -12px rgb(122 47 20/.4)}
+  .btn:hover svg{transform:scale(1.1)}
+  .btn.ghost:hover{background:rgb(223 163 53/.18);border-color:var(--terra);color:var(--terra-deep)}
+  .btn.light:hover{background:#fff;color:var(--terra)}
+  .link:hover svg{transform:translateX(4px)}
+}
+
+/* prévia */
+.previa{position:relative;z-index:70;background:var(--oliva-deep);color:var(--papel);font-size:.68rem;text-align:center;padding:.5rem .75rem;line-height:1.38;text-wrap:balance;overflow-wrap:break-word}
+@media (min-width:640px){.previa{font-size:.82rem}}
+.previa a{font-weight:800;color:var(--feijao-2);text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+
+/* header (B.3) */
+.hdr{position:fixed;left:0;right:0;top:0;z-index:50;height:5rem;transition:background-color .5s,box-shadow .5s,transform .8s var(--ease),opacity .8s var(--ease)}
+.hdr .ctn{height:100%;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.hdr.scrolled{background:rgb(244 236 220/.95);box-shadow:0 1px 0 0 rgb(122 47 20/.1)}
+@media (min-width:768px){.hdr.scrolled{background:rgb(244 236 220/.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}}
+.logo{display:flex;align-items:center;gap:.7rem;min-width:0;transition:scale .3s var(--ease)}
+.logo .mark{flex:none;width:2.6rem;height:2.6rem;border-radius:50%;display:grid;place-items:center;background:var(--terra);color:var(--papel-2);font-weight:900;font-size:.95rem;letter-spacing:-.02em;box-shadow:inset 0 0 0 3px var(--terra),inset 0 0 0 4px rgb(240 199 104/.8)}
+.logo .nm{display:block;font-weight:900;letter-spacing:-.02em;line-height:1.02;text-wrap:balance;max-width:min(58vw,16rem)}
+.logo .nm small{display:block;font-family:var(--f-hand);font-weight:700;font-size:1rem;letter-spacing:0;color:var(--terra);line-height:1;margin-top:.1rem}
+.lg-s .nm{font-size:1.25rem}.lg-m .nm{font-size:1.05rem}.lg-l .nm{font-size:.88rem}
+@media (hover:hover){.logo:hover{scale:1.03}}
+.nav{display:none;gap:2rem}
+.nav a{position:relative;white-space:nowrap;font-size:.76rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:rgb(59 36 22/.82);transition:color .15s}
+.nav a::after{content:"";position:absolute;left:0;bottom:-6px;height:1px;width:0;background:var(--feijao);transition:width .3s var(--ease)}
+@media (hover:hover){.nav a:hover{color:var(--terra)}.nav a:hover::after{width:100%}}
+.hdr-r{display:flex;align-items:center;gap:.75rem;flex:none}
+.hdr-r .btn{display:none}
+.menu-b{width:2.75rem;height:2.75rem;border-radius:50%;border:1px solid rgb(168 70 31/.22);background:rgb(251 246 236/.6);display:grid;place-items:center;cursor:pointer}
+@media (min-width:640px){.hdr-r .btn{display:inline-flex}}
+@media (min-width:1240px){.nav{display:flex}.menu-b{display:none}}
+@media (min-width:1024px){.logo .nm{max-width:15rem}}
+
+/* menu mobile (B.19) */
+.mnav{position:fixed;inset:0;z-index:60;display:flex;flex-direction:column;padding:1.25rem;background:linear-gradient(135deg,var(--oliva-deep),#4a2a14 60%,var(--terra-deep));color:var(--papel);opacity:0;visibility:hidden;transition:opacity .35s var(--ease),visibility .35s}
+.mnav.open{opacity:1;visibility:visible}
+.mnav-top{display:flex;justify-content:space-between;align-items:center;height:2.75rem}
+.mnav-top .hand{font-size:1.6rem;color:var(--feijao-2)}
+.mnav-top button{width:2.75rem;height:2.75rem;border-radius:50%;border:1px solid rgb(244 236 220/.25);background:none;display:grid;place-items:center;cursor:pointer;color:var(--papel)}
+.mnav ul{list-style:none;margin:auto 0;display:grid;gap:.6rem}
+.mnav li a{display:inline-block;font-weight:300;font-size:2.2rem;letter-spacing:-.02em;opacity:0;translate:-28px 0;transition:opacity .5s var(--ease),translate .5s var(--ease);transition-delay:calc(.1s + .07s*var(--i))}
+.mnav.open li a{opacity:1;translate:0}
+.mnav .btn{align-self:stretch}
+.mnav p{margin-top:1.25rem;font-size:.62rem;letter-spacing:.3em;text-transform:uppercase;color:rgb(244 236 220/.5);text-align:center}
+
+/* blobs + grain */
+.blob{position:absolute;border-radius:9999px;filter:blur(80px);pointer-events:none;z-index:0}
+@media (max-width:1023.98px){.blob{filter:blur(48px)}}
+.grain{position:fixed;inset:0;z-index:80;pointer-events:none;opacity:.06;transform:translateZ(0);backface-visibility:hidden;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* palavra gigante (B.5) */
+.gw{position:absolute;pointer-events:none;user-select:none;font-weight:900;font-style:italic;line-height:1;letter-spacing:-.04em;color:transparent;-webkit-text-stroke:1.2px rgb(168 70 31/.17);white-space:nowrap}
+.gw.on-dark{-webkit-text-stroke:1.2px rgb(244 236 220/.16)}
+
+/* reveal (B.2) */
+.sec>.ctn{position:relative;z-index:1}
+.js .rev{opacity:0;transform:translateY(32px);transition:opacity .9s var(--ease) var(--d,0s),transform .9s var(--ease) var(--d,0s)}
+.js .rev.in{opacity:1;transform:none}
+
+/* HERO */
+.hero{position:relative;overflow:hidden;min-height:100vh;min-height:100svh;display:flex;align-items:center;padding:6.5rem 0 5rem}
+@media (min-width:768px){.hero{padding:7.5rem 0 6rem}}
+.hero .ctn{position:relative;z-index:2;width:100%;display:grid;gap:3.5rem;align-items:center}
+@media (min-width:1024px){.hero .ctn{grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:3rem}}
+.hero-txt{text-align:center;display:flex;flex-direction:column;align-items:center}
+@media (min-width:1024px){.hero-txt{text-align:left;align-items:flex-start}}
+.tag{display:inline-flex;align-items:center;gap:.6rem;max-width:100%;padding:.55rem 1.1rem;border-radius:9999px;border:1px solid rgb(168 70 31/.18);background:rgb(251 246 236/.7);font-size:.62rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--terra);line-height:1.45;text-wrap:balance}
+.tag svg{width:.9rem;height:.9rem;color:var(--feijao);flex:none}
+@media (min-width:640px){.tag{font-size:.68rem;letter-spacing:.26em}}
+.h1{margin-top:1.6rem;font-weight:300;font-size:clamp(2.35rem,9.4vw,4.4rem);line-height:1.02;letter-spacing:-.035em;text-wrap:balance}
+@media (min-width:1024px){.h1{font-size:clamp(3.3rem,5.4vw,5rem)}}
+.h1 em{position:relative;display:inline-block;font-style:italic;font-weight:900;color:var(--terra);letter-spacing:-.04em;padding-right:.08em}
+.h1 em svg{position:absolute;left:0;right:0;bottom:-.16em;width:100%;height:.28em;color:var(--feijao);overflow:visible}
+.hero-lead{margin-top:1.6rem;font-size:1rem;color:var(--cafe-soft);max-width:34rem}
+@media (min-width:768px){.hero-lead{font-size:1.15rem}}
+.hero-lead strong{font-weight:800;color:var(--cafe)}
+.hero-cta{margin-top:2.2rem;display:flex;flex-wrap:wrap;gap:.9rem;justify-content:center}
+@media (min-width:1024px){.hero-cta{justify-content:flex-start}}
+.hero-notes{margin-top:2.4rem;display:none;gap:1.5rem;align-items:center}
+@media (min-width:1024px){.hero-notes{display:flex}}
+.hero-notes div{display:flex;align-items:center;gap:.7rem}
+.hero-notes i{width:2.6rem;height:2.6rem;border-radius:50%;display:grid;place-items:center;background:rgb(223 163 53/.22);color:var(--terra)}
+.hero-notes b{display:block;font-weight:800;font-size:.95rem;line-height:1.2}
+.hero-notes span{font-size:.62rem;letter-spacing:.24em;text-transform:uppercase;color:var(--cafe-soft)}
+.hero-notes .sep{width:1px;height:2.4rem;background:rgb(168 70 31/.18)}
+.hero-art{position:relative;width:100%;max-width:21rem;margin-inline:auto}
+@media (min-width:1024px){.hero-art{max-width:27rem;margin-right:0}}
+.hero-art::before{content:"";position:absolute;inset:-.8rem;rotate:-3deg;border:1px solid rgb(223 163 53/.7);border-radius:var(--r-photo)}
+.hero-art .ph{position:relative;aspect-ratio:4/5;border-radius:var(--r-photo);overflow:hidden;box-shadow:var(--sh-photo);background:var(--kraft)}
+.hero-art .ph img{width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.selo{position:absolute;left:-.7rem;top:-1.8rem;width:7.4rem;height:7.4rem;border-radius:50%;background:var(--feijao);color:var(--cafe);display:grid;place-items:center;box-shadow:0 14px 28px -10px rgb(122 47 20/.45);z-index:2}
+@media (min-width:1024px){.selo{left:-3rem;top:-2rem;width:8.6rem;height:8.6rem}}
+.selo svg.ring{position:absolute;inset:0;width:100%;height:100%;animation:spin 28s linear infinite}
+.selo text{font-family:var(--f-body);font-weight:900;letter-spacing:0;fill:var(--cafe)}
+.selo .ctr{position:relative;text-align:center;font-family:var(--f-hand);font-weight:700;font-size:1.25rem;line-height:.9;color:var(--terra-deep);rotate:-8deg}
+@keyframes spin{to{rotate:360deg}}
+.note{position:absolute;right:-.4rem;bottom:-1.5rem;z-index:2;background:var(--papel-2);padding:.9rem 1.2rem 1rem;border-radius:1rem;box-shadow:0 20px 25px -5px rgb(122 47 20/.2);rotate:2deg;max-width:13rem}
+.note::before{content:"";position:absolute;top:-.6rem;left:50%;translate:-50% 0;rotate:-4deg;width:4.2rem;height:1.2rem;background:rgb(220 195 155/.85);box-shadow:0 1px 2px rgb(122 47 20/.15)}
+.note p{font-family:var(--f-hand);font-weight:700;font-size:1.35rem;line-height:1.05;color:var(--terra-deep)}
+@media (min-width:1024px){.note{right:-1.6rem}}
+.hero .gw{font-size:24vw;left:-1vw;bottom:-4.2vw;z-index:1}
+.cue{position:absolute;left:50%;bottom:1.6rem;translate:-50% 0;z-index:3;display:none;flex-direction:column;align-items:center;gap:.4rem;font-size:.6rem;font-weight:700;letter-spacing:.34em;text-transform:uppercase;color:var(--cafe-soft)}
+.cue svg{width:1rem;height:1rem;animation:cue 1.8s var(--ease) infinite}
+@keyframes cue{50%{transform:translateY(6px)}}
+@media (min-width:768px){.cue{display:flex}}
+/* stagger do hero (B.1) */
+.js .hero [data-i]{opacity:0;transform:translateY(36px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.js .hero-art{opacity:0;transform:translateY(60px) scale(.96);transition:opacity 1.2s var(--ease) .35s,transform 1.2s var(--ease) .35s}
+.js .hdr{opacity:0;transform:translateY(-80px)}
+.js .cue{opacity:0;transition:opacity 1s 1.6s}
+.is-loaded .hero [data-i],.is-loaded .hero-art{opacity:1;transform:none}
+.is-loaded .hdr{opacity:1;transform:none}
+.is-loaded .cue{opacity:1}
+
+/* faixa (B.6) */
+.band{position:relative;z-index:3;overflow:hidden;background:var(--terra);border-block:1px solid rgb(223 163 53/.45);padding-block:1rem}
+.marquee{display:flex;width:max-content;animation:mq 38s linear infinite}
+.mq-set{display:flex;align-items:center;gap:2.2rem;padding-right:2.2rem}
+.mq-set span{font-family:var(--f-hand);font-weight:700;font-size:1.9rem;line-height:1;color:var(--papel-2);white-space:nowrap}
+.mq-set svg{width:1.1rem;height:1.1rem;color:var(--feijao-2);flex:none}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* 01 SOBRE */
+.grid2{display:grid;gap:4.5rem;align-items:center}
+@media (min-width:1024px){.grid2{grid-template-columns:1fr 1fr;gap:5rem}}
+.photo{position:relative;width:100%;max-width:27rem;margin-inline:auto}
+.photo::before{content:"";position:absolute;inset:-.75rem;rotate:-2deg;border:1px solid rgb(223 163 53/.7);border-radius:var(--r-photo)}
+.photo.r::before{rotate:2deg;border-color:rgb(168 70 31/.22)}
+.photo .ph{position:relative;overflow:hidden;border-radius:var(--r-photo);box-shadow:var(--sh-photo);background:var(--kraft)}
+.photo .ph img{width:100%;height:100%;object-fit:cover}
+.photo .card{position:absolute;right:-.6rem;bottom:-2rem;max-width:15rem;padding:1.2rem 1.4rem;border-radius:1rem;background:var(--terra);color:var(--papel-2);box-shadow:0 20px 25px -5px rgb(122 47 20/.32)}
+@media (min-width:768px){.photo .card{right:-2.5rem}}
+.photo .card svg{width:1.1rem;height:1.1rem;color:var(--feijao-2);margin-bottom:.4rem}
+.photo .card p{font-family:var(--f-hand);font-weight:700;font-size:1.45rem;line-height:1.05}
+.bul{list-style:none;margin-top:2.2rem;display:grid;gap:1.4rem}
+.bul li{display:flex;gap:1rem}
+.bul i{flex:none;width:2.1rem;height:2.1rem;border-radius:50%;display:grid;place-items:center;background:rgb(223 163 53/.25);color:var(--terra)}
+.bul i svg{width:1rem;height:1rem}
+.bul b{display:block;font-weight:800;font-size:1.12rem;line-height:1.3}
+.bul span{font-size:.95rem;color:var(--cafe-soft)}
+.after{margin-top:2.4rem;display:flex;flex-wrap:wrap;align-items:center;gap:1.2rem 1.6rem}
+.sig{font-family:var(--f-hand);font-weight:700;font-size:1.7rem;line-height:1;color:var(--terra)}
+.sig small{display:block;font-family:var(--f-body);font-size:.6rem;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--cafe-soft);margin-top:.3rem}
+
+/* 02 CARDÁPIO (B.8) */
+.hs{position:relative;overflow-x:clip}
+.hs-sticky{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;background:linear-gradient(var(--papel),#ead8b8 55%,var(--papel))}
+.hs-grid{position:relative;z-index:1;height:100%;display:flex;flex-direction:column;justify-content:center;gap:1.6rem;padding-top:4.5rem}
+@media (min-width:1024px){.hs-grid{display:grid;grid-template-columns:minmax(18rem,24rem) minmax(0,1fr);align-items:center;gap:3.5rem;padding-top:0}}
+.hs-intro .lead{font-size:.95rem}
+@media (min-width:1024px){.hs-intro .lead{font-size:1.1rem}}
+.hint{margin-top:1.3rem;display:inline-flex;align-items:center;gap:.7rem;font-size:.64rem;font-weight:800;letter-spacing:.26em;text-transform:uppercase;color:var(--terra)}
+.hint svg{width:1rem;height:1rem;color:var(--feijao);animation:nudge 1.6s ease-in-out infinite}
+@keyframes nudge{50%{transform:translateX(6px)}}
+.hs-intro small{display:none;margin-top:1.4rem;font-style:italic;font-size:.82rem;color:var(--cafe-soft)}
+@media (min-width:1024px){.hs-intro small{display:block}}
+.hs-viewport{overflow:hidden;padding-block:1.4rem 2rem;margin-block:-1.4rem -2rem}
+.hs-track{display:flex;gap:1.25rem;width:max-content;will-change:transform;padding-inline:.5rem}
+@media (min-width:1024px){
+  .hs-viewport{transition:mask-image .4s;-webkit-mask-image:linear-gradient(90deg,#000 0 90%,transparent);mask-image:linear-gradient(90deg,#000 0 90%,transparent)}
+  .hs-viewport.is-scrolling{-webkit-mask-image:linear-gradient(90deg,transparent,#000 7% 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7% 90%,transparent)}}
+@keyframes hs-slide{to{transform:translateX(calc(var(--max,0px)*-1))}}
+@supports (animation-timeline:view()){
+  .hs{view-timeline:--hs block}
+  .hs-track{animation:hs-slide linear both;animation-timeline:--hs;animation-range:contain}}
+.dish{position:relative;flex:none;width:17.5rem;height:clamp(18rem,44vh,23rem);display:flex;flex-direction:column;padding:1.6rem;border-radius:var(--r-card);background:rgb(251 246 236/.94);border:1px solid rgb(168 70 31/.12);box-shadow:0 1px 3px rgb(122 47 20/.08);transition:transform .5s var(--ease),border-color .5s,box-shadow .5s}
+@media (min-width:640px){.dish{width:20rem;padding:2rem}}
+@media (min-width:1024px){.dish{height:23rem}}
+@media (max-width:639.98px){.dish{height:clamp(16.5rem,40vh,20rem)}}
+.dish::before{content:"";position:absolute;top:-.55rem;left:1.8rem;width:4.6rem;height:1.15rem;rotate:-5deg;background:rgb(220 195 155/.9);box-shadow:0 1px 2px rgb(122 47 20/.15)}
+.dish .n{position:absolute;top:1.1rem;right:1.4rem;font-weight:900;font-style:italic;font-size:2.4rem;line-height:1;color:rgb(168 70 31/.12);transition:color .5s}
+.dish .ic{width:3.1rem;height:3.1rem;border-radius:1rem;display:grid;place-items:center;background:rgb(223 163 53/.25);color:var(--terra);transition:background-color .5s,color .5s}
+.dish .ic svg{width:1.5rem;height:1.5rem}
+.dish h3{margin-top:1.4rem;font-weight:800;font-size:1.4rem;line-height:1.2;letter-spacing:-.02em}
+.dish p{margin-top:.6rem;font-size:.92rem;color:var(--cafe-soft);flex:1}
+.dish .sp{flex:1}
+.dish .pr{margin-top:1rem;font-family:var(--f-hand);font-weight:700;font-size:1.5rem;line-height:1;color:var(--terra-deep)}
+.dish .pr.q{font-family:var(--f-body);font-size:.68rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgb(59 36 22/.55)}
+.dish .link{margin-top:1rem}
+@media (hover:hover){
+  .dish:hover{transform:translateY(-8px);border-color:rgb(168 70 31/.28);box-shadow:0 25px 50px -12px rgb(122 47 20/.2)}
+  .dish:hover .n{color:rgb(168 70 31/.28)}
+  .dish:hover .ic{background:var(--terra);color:var(--papel-2)}
+  .dish:hover .link svg{transform:translateX(4px)}}
+
+/* 03 CARDÁPIO DO DIA (lousa) */
+.dark{background:var(--oliva-deep);color:var(--papel)}
+.dodia .grid2{gap:4rem}
+.board{position:relative;max-width:32rem;margin-inline:auto;width:100%;rotate:-1.2deg;padding:.9rem;border-radius:1.25rem;background:linear-gradient(135deg,#9a6a3c,#6d4423 45%,#8d5e33);box-shadow:0 30px 60px -18px rgb(0 0 0/.55),inset 0 0 0 1px rgb(255 255 255/.08)}
+.board-in{position:relative;overflow:hidden;border-radius:.6rem;padding:2.2rem 1.6rem 2rem;background:radial-gradient(120% 80% at 20% 10%,rgb(255 255 255/.07),transparent 60%),radial-gradient(90% 70% at 85% 90%,rgb(255 255 255/.05),transparent 60%),var(--lousa);color:rgb(250 247 238/.92);font-family:var(--f-hand);box-shadow:inset 0 0 40px rgb(0 0 0/.45)}
+@media (min-width:640px){.board-in{padding:2.6rem 2.4rem 2.2rem}}
+.board h3{font-family:var(--f-hand);font-weight:700;font-size:clamp(2rem,8vw,2.7rem);padding-inline:1.6rem;line-height:1;text-align:center;color:#fbf7ec}
+.board .dia{display:block;text-align:center;font-size:1.35rem;font-weight:500;color:var(--feijao-2);margin-top:.3rem}
+.board .chalk{display:block;width:70%;height:10px;margin:.7rem auto 1.4rem;color:rgb(250 247 238/.5)}
+.board ul{list-style:none;display:grid;gap:.9rem}
+.board li{display:grid;grid-template-columns:auto 1fr;gap:.2rem .9rem;align-items:baseline}
+.board li b{font-weight:700;font-size:.95rem;font-family:var(--f-body);letter-spacing:.2em;text-transform:uppercase;color:rgb(240 199 104/.85);grid-column:1/-1}
+.board li span{grid-column:1/-1;font-size:1.6rem;line-height:1.1;font-weight:500}
+.board .ps{margin-top:1.6rem;padding-top:1rem;border-top:1px dashed rgb(250 247 238/.25);font-size:1.25rem;line-height:1.15;text-align:center;color:rgb(250 247 238/.72)}
+.board .doodle{position:absolute;right:.8rem;top:.7rem;width:2.2rem;height:2.2rem;color:rgb(250 247 238/.35);rotate:12deg}
+.board .chalk-piece{position:absolute;left:2.2rem;bottom:-.25rem;width:3.2rem;height:.6rem;border-radius:.3rem;background:#f4efe2;rotate:-4deg;box-shadow:0 2px 3px rgb(0 0 0/.3)}
+.dodia .gw{font-size:17vw;right:-2vw;top:2rem}
+.dodia .lead{margin-top:1.4rem}
+.dodia .chk{list-style:none;margin-top:2rem;display:grid;gap:.85rem}
+.dodia .chk li{display:flex;gap:.8rem;align-items:center;font-size:1rem;color:rgb(244 236 220/.85)}
+.dodia .chk i{flex:none;width:1.75rem;height:1.75rem;border-radius:50%;display:grid;place-items:center;background:rgb(240 199 104/.16);color:var(--feijao-2)}
+.dodia .chk i svg{width:.85rem;height:.85rem}
+.dodia .btn{margin-top:2.4rem}
+
+/* 04 COMO PEDIR (B.15) */
+.steps{list-style:none;position:relative;display:grid;gap:2.4rem;margin-top:2.6rem}
+.steps::before{content:"";position:absolute;left:1.5rem;top:1.25rem;bottom:1.25rem;width:1px;background:linear-gradient(rgb(223 163 53/.8),rgb(168 70 31/.25),transparent)}
+.step{position:relative;display:flex;gap:1.6rem}
+.step b{z-index:1;flex:none;width:3rem;height:3rem;display:grid;place-items:center;border-radius:50%;border:1px solid rgb(223 163 53/.7);background:var(--papel);font-weight:900;font-style:italic;font-size:1.05rem;color:var(--terra)}
+.step h3{font-weight:800;font-size:1.25rem;line-height:1.3;padding-top:.6rem}
+.step p{margin-top:.3rem;font-size:.95rem;color:var(--cafe-soft);max-width:28rem}
+.como .photo .card{left:50%;right:auto;translate:-50% 0;bottom:-2.2rem;width:86%;max-width:20rem;text-align:center;background:rgb(251 246 236/.95);color:var(--cafe);backdrop-filter:blur(8px)}
+.como .photo .card p{color:var(--terra-deep)}
+.como .photo .card svg{color:var(--feijao)}
+@media (min-width:1024px){.como .txt{order:-1}}
+
+/* 05 GALERIA (B.14) */
+.galeria{background:linear-gradient(var(--papel),#efe1c6)}
+.head-c{text-align:center;max-width:42rem;margin-inline:auto}
+.head-c .lead{margin:1.2rem auto 0}
+.eyebrow.c .rule{width:2.5rem}
+.ig{margin-top:4rem;display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+@media (min-width:768px){.ig{grid-template-columns:repeat(3,1fr);gap:1.75rem}}
+.ig figure{position:relative}
+.ig>:nth-child(1){margin-top:2.5rem}.ig>:nth-child(3){margin-top:1.25rem}
+@media (max-width:767.98px){.ig>:nth-child(3){grid-column:1/-1;margin-top:0}.ig>:nth-child(3) .ph{aspect-ratio:16/10}}
+.ig .ph{aspect-ratio:3/4;overflow:hidden;border-radius:1.5rem;box-shadow:0 10px 15px -3px rgb(122 47 20/.14);background:var(--kraft)}
+.ig img{width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease)}
+.ig figcaption{position:absolute;left:1rem;bottom:-.9rem;padding:.35rem .9rem .45rem;border-radius:.4rem;background:var(--kraft);font-family:var(--f-hand);font-weight:700;font-size:1.25rem;line-height:1;color:var(--cafe);rotate:-3deg;box-shadow:0 6px 12px -6px rgb(122 47 20/.4)}
+@media (hover:hover){.ig figure:hover img{transform:scale(1.07)}}
+.ig-cta{margin-top:4rem;text-align:center}
+
+/* 06 FAQ (B.16) */
+.faq-g{display:grid;gap:3rem}
+@media (min-width:1024px){.faq-g{grid-template-columns:1fr 1.6fr;gap:3.5rem}.faq-side{position:sticky;top:8rem;align-self:start}}
+.faq-side p{margin-top:1.3rem;color:var(--cafe-soft);max-width:24rem}
+.faq-side .btn{margin-top:2rem}
+.faq-item{border-bottom:1px solid rgb(168 70 31/.14)}
+.faq-item:first-child{border-top:1px solid rgb(168 70 31/.14)}
+.faq-item button{display:flex;width:100%;justify-content:space-between;align-items:center;gap:1.5rem;padding-block:1.5rem;text-align:left;background:none;border:0;cursor:pointer;font-weight:700;font-size:1.12rem;line-height:1.35;letter-spacing:-.01em}
+@media (min-width:768px){.faq-item button{font-size:1.28rem}}
+.pm{flex:none;width:2.5rem;height:2.5rem;display:grid;place-items:center;border-radius:50%;border:1px solid rgb(168 70 31/.25);color:var(--terra);transition:rotate .35s var(--ease),background-color .3s,color .3s,border-color .3s}
+.pm svg{width:1rem;height:1rem}
+[aria-expanded=true] .pm{rotate:45deg;background:var(--terra);border-color:var(--terra);color:var(--papel-2)}
+.faq-a{display:grid;grid-template-rows:0fr;opacity:0;transition:grid-template-rows .45s var(--ease),opacity .45s var(--ease)}
+.faq-a>div{overflow:hidden}
+.faq-a p{padding-bottom:1.6rem;max-width:42rem;color:var(--cafe-soft)}
+[aria-expanded=true]+.faq-a{grid-template-rows:1fr;opacity:1}
+
+/* CTA FINAL */
+.final{padding:1rem 1.25rem 6rem}
+@media (min-width:768px){.final{padding:1rem 2.5rem 8rem}}
+.final-box{position:relative;overflow:hidden;max-width:75rem;margin-inline:auto;border-radius:2.5rem;padding:5rem 1.6rem 4rem;text-align:center;color:var(--papel-2);background:linear-gradient(135deg,var(--terra-deep),var(--terra) 55%,var(--terra-2));box-shadow:0 25px 50px -12px rgb(122 47 20/.4)}
+@media (min-width:768px){.final-box{border-radius:3.5rem;padding:7rem 4rem 5rem}}
+.final-box .gw{font-size:15vw;left:50%;translate:-50% 0;top:-3.5vw}
+@media (min-width:768px){.final-box .gw{font-size:10vw;top:-2.2vw}}
+.final-box>*:not(.gw):not(.blob){position:relative;z-index:1}
+.final-box .spark{width:2rem;height:2rem;color:var(--feijao-2);margin:0 auto 1.2rem}
+.final-box .h2{max-width:46rem;margin-inline:auto;color:var(--papel-2)}
+.final-box .h2 em{color:var(--feijao-2)}
+.final-box p.l{margin:1.4rem auto 0;max-width:34rem;color:rgb(251 246 236/.82);font-size:1.05rem}
+.final-box .btn{margin-top:2.4rem;padding:1.2rem 1.7rem;font-size:.8rem;letter-spacing:.12em}
+@media (min-width:640px){.final-box .btn{padding:1.25rem 2.6rem;font-size:.85rem;letter-spacing:.14em}}
+.final-box .btn svg{color:#1faa53}
+.final-box .micro{margin-top:1rem;font-size:.66rem;letter-spacing:.24em;text-transform:uppercase;color:rgb(251 246 236/.6)}
+.final-box .alt{display:inline-block;margin-top:.6rem;font-size:.85rem;color:rgb(251 246 236/.85);text-decoration:underline;text-underline-offset:3px}
+.final-info{margin-top:2.6rem;padding-top:2rem;border-top:1px solid rgb(251 246 236/.18);display:flex;flex-direction:column;gap:1rem;align-items:center;font-size:.92rem;color:rgb(251 246 236/.85)}
+@media (min-width:768px){.final-info{flex-direction:row;justify-content:center;gap:2.5rem}}
+.final-info span{display:inline-flex;align-items:flex-start;gap:.6rem;text-align:left;max-width:26rem}
+.final-info svg{width:1.1rem;height:1.1rem;color:var(--feijao-2);margin-top:.15rem}
+
+/* CONTATO */
+.contato{padding-top:0}
+.ct-g{display:grid;gap:2rem}
+@media (min-width:1024px){.ct-g{grid-template-columns:1fr 1.25fr;gap:3rem;align-items:stretch}}
+.ct-card{padding:2rem;border-radius:var(--r-card);background:var(--papel-2);border:1px solid rgb(168 70 31/.12);box-shadow:0 10px 15px -3px rgb(122 47 20/.08)}
+@media (min-width:768px){.ct-card{padding:2.6rem}}
+.ct-card .h2{font-size:clamp(1.9rem,4.4vw,2.6rem)}
+.ct-list{list-style:none;margin-top:2rem;display:grid;gap:1.4rem}
+.ct-list li{display:flex;gap:1rem}
+.ct-list i{flex:none;width:2.6rem;height:2.6rem;border-radius:50%;display:grid;place-items:center;background:rgb(223 163 53/.22);color:var(--terra)}
+.ct-list small{display:block;font-size:.62rem;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:rgb(59 36 22/.55)}
+.ct-list span,.ct-list a{font-weight:600;font-size:1rem;line-height:1.45;overflow-wrap:break-word}
+.ct-list a{text-decoration:underline;text-decoration-color:rgb(168 70 31/.3);text-underline-offset:3px}
+.ct-card .btn{margin-top:2rem}
+.map{position:relative;min-height:20rem;border-radius:var(--r-card);overflow:hidden;box-shadow:var(--sh-photo);background:var(--kraft)}
+.map-fb{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.8rem;padding:2rem;text-align:center;font-weight:700;color:var(--terra-deep);background:radial-gradient(circle at 50% 45%,rgb(251 246 236/.7),transparent 60%),repeating-linear-gradient(45deg,rgb(168 70 31/.05) 0 2px,transparent 2px 22px),var(--kraft)}
+.map-fb svg{width:2.4rem;height:2.4rem;color:var(--terra)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:sepia(.25) saturate(.9)}
+
+/* FOOTER */
+.ft{background:var(--oliva-deep);color:rgb(244 236 220/.72);padding:4rem 0 2rem}
+@media (min-width:768px){.ft{padding-top:5rem}}
+.ft-g{display:grid;gap:2.6rem}
+@media (min-width:768px){.ft-g{grid-template-columns:1.4fr 1fr 1fr;gap:3rem}}
+.ft .logo .nm{color:var(--papel)}
+.ft .logo .nm small{color:var(--feijao-2)}
+.ft .tl{margin-top:1.2rem;font-size:.62rem;letter-spacing:.32em;text-transform:uppercase;color:rgb(244 236 220/.5)}
+.ft .fr{margin-top:1rem;max-width:22rem;font-size:.92rem}
+.ft h4{font-size:.66rem;font-weight:800;letter-spacing:.28em;text-transform:uppercase;color:var(--feijao-2);margin-bottom:1.1rem}
+.ft ul{list-style:none;display:grid;gap:.6rem;font-size:.92rem}
+.ft ul a{transition:color .3s}
+@media (hover:hover){.ft ul a:hover{color:var(--feijao-2)}}
+.ft-b{margin-top:3rem;padding-top:1.6rem;border-top:1px solid rgb(244 236 220/.1);display:flex;flex-wrap:wrap;justify-content:space-between;gap:.6rem;font-size:.75rem;color:rgb(244 236 220/.45)}
+
+/* FAB (B.20) */
+.fab{position:fixed;right:1.25rem;bottom:1.25rem;z-index:50;width:3.75rem;height:3.75rem;border-radius:50%;display:grid;place-items:center;background:#25d366;color:#fff;border:0;cursor:pointer;box-shadow:0 25px 50px -12px rgb(0 0 0/.35);opacity:0;scale:.6;translate:0 24px;pointer-events:none;transition:opacity .4s var(--ease),scale .4s var(--ease),translate .4s var(--ease)}
+.fab.show{opacity:1;scale:1;translate:0;pointer-events:auto}
+.fab::before{content:"";position:absolute;inset:0;border-radius:50%;background:inherit;animation:ring 2.4s cubic-bezier(.2,.6,.36,1) infinite;z-index:-1}
+.fab svg{width:1.8rem;height:1.8rem}
+@keyframes ring{0%{opacity:.45;transform:scale(1)}80%,100%{opacity:0;transform:scale(1.65)}}
+@media (min-width:768px){.fab{right:2rem;bottom:2rem}}
+@media (hover:hover){.fab:hover{scale:1.1}}
+
+/* MODAL (B.21) */
+.lead-d{border:0;padding:0;background:transparent;color:var(--cafe);max-width:28rem;width:calc(100% - 2rem);margin:auto;overflow:visible}
+.lead-d::backdrop{background:rgb(46 52 25/.55);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.sheet{position:relative;overflow:hidden;border-radius:2rem;background:var(--papel-2);border:1px solid rgb(168 70 31/.15);box-shadow:0 25px 50px -12px rgb(122 47 20/.35);padding:2.2rem 1.6rem 1.6rem}
+@media (min-width:640px){.sheet{padding:2.6rem 2.2rem 2rem}}
+.lead-d[open] .sheet{animation:pop .24s var(--ease)}
+.lead-d[open]::backdrop{animation:fade .2s}
+.lead-d.closing .sheet{opacity:0;transform:translateY(24px) scale(.98);transition:opacity .2s,transform .2s var(--ease)}
+@keyframes pop{from{opacity:0;transform:translateY(24px) scale(.98)}}
+@keyframes fade{from{opacity:0}}
+.sheet .blob{position:absolute;width:11rem;height:11rem;right:-4rem;top:-4rem;background:rgb(223 163 53/.45);filter:blur(40px)}
+.sheet>*:not(.blob):not(.x){position:relative}
+.x{position:absolute;right:1rem;top:1rem;width:2.5rem;height:2.5rem;border-radius:50%;border:1px solid rgb(168 70 31/.2);background:var(--papel-2);display:grid;place-items:center;cursor:pointer;color:var(--terra);z-index:2}
+.sheet h2{font-weight:300;font-size:1.9rem;line-height:1.1;letter-spacing:-.03em;padding-right:2.5rem}
+.sheet h2 em{font-style:italic;font-weight:800;color:var(--terra)}
+.sheet .sub{margin-top:.6rem;font-size:.92rem;color:var(--cafe-soft)}
+.fld{display:block;margin-top:1.3rem}
+.fld span{display:block;font-size:.64rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:rgb(59 36 22/.65);margin-bottom:.45rem}
+.fld input,.fld select,.fld textarea{width:100%;padding:.9rem 1rem;border-radius:.9rem;border:1px solid rgb(168 70 31/.22);background:#fff;font-weight:600;font-size:1rem;appearance:none;-webkit-appearance:none;transition:border-color .3s,box-shadow .3s}
+.fld select{background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23a8461f' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") right 1rem center/1rem no-repeat;padding-right:2.6rem}
+.fld input:focus,.fld select:focus,.fld textarea:focus{outline:0;border-color:var(--terra);box-shadow:0 0 0 3px rgb(223 163 53/.3)}
+.fld input[aria-invalid=true]{border-color:#c0392b;box-shadow:0 0 0 3px rgb(192 57 43/.15)}
+.err{display:none;margin-top:.4rem;font-size:.8rem;font-weight:600;color:#a93226}
+[aria-invalid=true]~.err{display:block}
+.sheet .btn{width:100%;margin-top:1.6rem}
+.sheet .btn[disabled]{opacity:.7;pointer-events:none}
+.sheet .alt{display:block;margin-top:1rem;text-align:center;font-size:.85rem;color:var(--cafe-soft)}
+.sheet .alt a{color:var(--terra);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+@media (max-width:639.98px){
+  .lead-d{width:100%;max-width:100%;margin:auto 0 0;max-height:92vh}
+  .sheet{border-radius:1.75rem 1.75rem 0 0;padding-bottom:calc(1.6rem + env(safe-area-inset-bottom))}
+  .sheet::before{content:"";display:block;width:2.6rem;height:.3rem;border-radius:9px;background:rgb(168 70 31/.2);margin:-1.2rem auto 1.2rem}
+  @keyframes pop{from{transform:translateY(100%)}}
+  .lead-d.closing .sheet{transform:translateY(100%)}
+}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .rev,.js .hero [data-i],.js .hero-art,.js .hdr,.js .cue{opacity:1;transform:none;transition:none}
+  .marquee,.selo svg.ring,.hint svg,.cue svg,.fab::before{animation:none}
+  .lead-d[open] .sheet{animation:none}
+  .hs-track{animation:none!important;transform:none!important}
+  .hs-viewport{overflow-y:hidden;scroll-snap-type:x mandatory;-webkit-mask-image:none!important;mask-image:none!important}
+  .hs-track>*{scroll-snap-align:start}
+  .hint svg{display:none}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01Zm-7.01 15.24a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.22-8.23 8.22Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28Z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M12 5v14m-6-6 6 6 6-6"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M4 8h16M4 16h16"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24"><path fill="currentColor" d="M20.5 3.5c-8.6-.4-14.9 3.3-15.9 10.2-.2 1.4 0 2.8.5 4l-2.3 2.4 1.1 1.1 2.3-2.3c1.2.6 2.6.8 4 .6C17 18.6 20.8 12.3 20.5 3.5Zm-10.6 13 6.6-8.6-8.1 7.1c-.1-.5-.1-1.1 0-1.7.7-5 5.1-8 11.5-8.4-.4 6.4-3.4 10.8-8.4 11.5-.6.1-1.1.1-1.6.1Z"/></symbol>
+  <symbol id="i-pot" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10h16v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5v-5Z"/><path d="M2 10h2m16 0h2M9 7c0-1 1-1.5 1-2.5M13 7c0-1 1-1.5 1-2.5"/><path d="M8 10V9a4 4 0 0 1 8 0v1"/></g></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M3 9h18l-1.4 9.2A2 2 0 0 1 17.6 20H6.4a2 2 0 0 1-2-1.8L3 9Z"/><path d="M2.5 9h19M12 9v11M3.6 13.5H12"/><path d="M5 9c.5-2.5 2.5-4 7-4s6.5 1.5 7 4" stroke-linecap="round"/></g></symbol>
+  <symbol id="i-bowl" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h18a9 9 0 0 1-18 0Z"/><path d="M9 20h6M8 8c1-2 3-2 4-4M14 8c.6-1 1.6-1.4 2.4-2.4"/></g></symbol>
+  <symbol id="i-flame" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M12 21c4 0 7-2.8 7-6.8 0-3.6-2.6-5.6-3.7-8.7-.3 2-1.3 3.4-2.6 4C12.7 6.4 10.7 4 9 3c.4 3.6-4 6.4-4 11.2C5 18.2 8 21 12 21Zm0 0c-1.7 0-3-1.2-3-3 0-2 1.7-2.9 2.2-4.6 1.3 1 3.8 2.5 3.8 4.6 0 1.8-1.3 3-3 3Z"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="3.5" y="5" width="17" height="15" rx="3"/><path d="M3.5 10h17M8 3v4m8-4v4"/></g></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 10V7a3 3 0 0 1 6 0v3" stroke-linecap="round"/></g></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></g></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6" fill="currentColor"/></g></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10Z"/></symbol>
+  <symbol id="i-sprig" viewBox="0 0 24 24"><g fill="currentColor"><path d="M12 22V9" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round"/><ellipse cx="8.6" cy="11" rx="3.4" ry="1.7" transform="rotate(-35 8.6 11)"/><ellipse cx="15.4" cy="11" rx="3.4" ry="1.7" transform="rotate(35 15.4 11)"/><ellipse cx="8.6" cy="16" rx="3.4" ry="1.7" transform="rotate(-35 8.6 16)"/><ellipse cx="15.4" cy="16" rx="3.4" ry="1.7" transform="rotate(35 15.4 16)"/><ellipse cx="12" cy="6" rx="1.7" ry="3.2"/></g></symbol>
+</svg>
+
+<div class="previa">Prévia de site criada para a Cozinha da Nilda. Fotos ilustrativas: no site final entram as fotos de vocês. <a href="https://wa.me/5511933324557?text=Ol%C3%A1%21%20Vi%20a%20pr%C3%A9via%20do%20site%20da%20Cozinha%20da%20Nilda%20e%20quero%20colocar%20no%20ar." target="_blank" rel="noopener">Quero colocar no ar</a></div>
+
+<header class="hdr" id="topo">
+  <div class="ctn">
+    <a class="logo lg-m" href="#inicio" aria-label="Cozinha da Nilda, início">
+      <span class="mark" aria-hidden="true">CN</span>
+      <span class="nm">Cozinha da Nilda<small>comida caseira</small></span>
+    </a>
+    <nav class="nav" aria-label="Seções">
+      <a href="#cozinha">A cozinha</a><a href="#cardapio">Cardápio</a><a href="#do-dia">Do dia</a><a href="#como-pedir">Como pedir</a><a href="#duvidas">Dúvidas</a><a href="#contato">Contato</a>
+    </nav>
+    <div class="hdr-r">
+      <a class="btn sm" href="https://wa.me/5511950314983?text=Ol%C3%A1%21%20Quero%20fazer%20um%20pedido%20na%20Cozinha%20da%20Nilda." data-cta><svg class="i"><use href="#i-wa"/></svg>Fazer pedido</a>
+      <button class="menu-b" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mnav"><svg class="i"><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<div class="mnav" id="mnav" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="mnav-top"><span class="hand">Cozinha da Nilda</span><button type="button" aria-label="Fechar menu" data-close><svg class="i"><use href="#i-x"/></svg></button></div>
+  <ul>
+    <li><a href="#cozinha">A cozinha</a></li><li><a href="#cardapio">Cardápio</a></li><li><a href="#do-dia">Cardápio do dia</a></li><li><a href="#como-pedir">Como pedir</a></li><li><a href="#duvidas">Dúvidas</a></li><li><a href="#contato">Contato</a></li>
+  </ul>
+  <a class="btn light" href="https://wa.me/5511950314983?text=Ol%C3%A1%21%20Quero%20fazer%20um%20pedido%20na%20Cozinha%20da%20Nilda." data-cta><svg class="i"><use href="#i-wa"/></svg>Peça pelo WhatsApp</a>
+  <p>Comida caseira · Guaianases</p>
+</div>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="blob" style="width:34rem;height:34rem;left:-12rem;top:-8rem;background:rgb(223 163 53/.38)"></div>
+  <div class="blob" style="width:30rem;height:30rem;right:-10rem;bottom:-6rem;background:rgb(195 91 45/.22)"></div>
+  <div class="ctn">
+    <div class="hero-txt">
+      <p class="tag" data-i><svg><use href="#i-sprig"/></svg><span>Cozinha da Nilda · Marmitaria em Guaianases</span></p>
+      <h1 class="h1" data-i>Chega de almoçar <em>qualquer coisa.<svg viewBox="0 0 200 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 8c30-6 55-6 80-2s60 5 116-3" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round"/></svg></em></h1>
+      <p class="hero-lead" data-i>Arroz soltinho, feijão bem temperado, mistura caprichada e salada fresca. A <strong>Cozinha da Nilda</strong> faz comida caseira de verdade em Guaianases, e você pede direto pelo WhatsApp.</p>
+      <div class="hero-cta" data-i>
+        <a class="btn" href="https://wa.me/5511950314983?text=Ol%C3%A1%21%20Quero%20fazer%20um%20pedido%20na%20Cozinha%20da%20Nilda." data-cta><svg class="i"><use href="#i-wa"/></svg>Peça pelo WhatsApp</a>
+        <a class="btn ghost" href="#do-dia">Ver o cardápio do dia</a>
+      </div>
+      <div class="hero-notes" data-i>
+        <div><i><svg class="i"><use href="#i-pot"/></svg></i><p><b>Feita na panela</b><span>tempero de casa</span></p></div>
+        <span class="sep" aria-hidden="true"></span>
+        <div><i><svg class="i"><use href="#i-wa"/></svg></i><p><b>Pedido rápido</b><span>direto no WhatsApp</span></p></div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="ph"><img src="/assets/img/marmitaria/hero-1.jpg" alt="Marmita caseira com frango assado, arroz e feijão" width="1600" height="1067" fetchpriority="high"></div>
+      <div class="selo" aria-hidden="true">
+        <svg class="ring" viewBox="0 0 100 100"><defs><path id="selo-c" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0"/></defs><text font-size="7.40"><textPath href="#selo-c" textLength="236" lengthAdjust="spacing">COZINHA DA NILDA · COMIDA CASEIRA · GUAIANASES · </textPath></text></svg>
+        <span class="ctr">feito<br>com amor</span>
+      </div>
+      <div class="note"><p>Tempero de casa, no meio da semana.</p></div>
+    </div>
+  </div>
+  <span class="gw" aria-hidden="true">caseiro</span>
+  <a class="cue" href="#cozinha" aria-label="Rolar para a próxima seção">Role<svg><use href="#i-down"/></svg></a>
+</section>
+
+<div class="band" aria-label="O que tem na nossa comida">
+  <div class="marquee">
+    <div class="mq-set">
+      <span>Arroz soltinho</span><svg><use href="#i-sprig"/></svg><span>Feijão temperado</span><svg><use href="#i-sprig"/></svg><span>Mistura caprichada</span><svg><use href="#i-sprig"/></svg><span>Salada fresquinha</span><svg><use href="#i-sprig"/></svg><span>Tempero de casa</span><svg><use href="#i-sprig"/></svg><span>Feito na panela</span><svg><use href="#i-sprig"/></svg>
+    </div>
+    <div class="mq-set" aria-hidden="true">
+      <span>Arroz soltinho</span><svg><use href="#i-sprig"/></svg><span>Feijão temperado</span><svg><use href="#i-sprig"/></svg><span>Mistura caprichada</span><svg><use href="#i-sprig"/></svg><span>Salada fresquinha</span><svg><use href="#i-sprig"/></svg><span>Tempero de casa</span><svg><use href="#i-sprig"/></svg><span>Feito na panela</span><svg><use href="#i-sprig"/></svg>
+    </div>
+  </div>
+</div>
+
+<section class="sec" id="cozinha">
+  <div class="blob" style="width:26rem;height:26rem;right:-10rem;top:10%;background:rgb(223 163 53/.3)"></div>
+  <div class="ctn grid2">
+    <div class="photo rev">
+      <div class="ph" style="aspect-ratio:4/5"><img src="/assets/img/marmitaria/ambiente-1.jpg" alt="Panelas grandes no fogão de uma cozinha" width="1600" height="1067" loading="lazy" style="object-position:28% 50%"></div>
+      <div class="card"><svg><use href="#i-heart"/></svg><p>Comida boa é a que lembra a casa da gente.</p></div>
+    </div>
+    <div>
+      <p class="eyebrow rev"><span class="rule"></span>01 · A cozinha</p>
+      <h2 class="h2 rev" style="--d:.05s">Feito na panela, <em>servido com carinho.</em></h2>
+      <p class="lead rev" style="--d:.1s;margin-top:1.4rem">Na Cozinha da Nilda, o almoço é preparado do jeito que se faz em casa: tempero de verdade, porção que sustenta e aquele cheiro de comida feita no fogão. Para quem trabalha, estuda ou só não quer cozinhar hoje, mas não abre mão de comer bem.</p>
+      <ul class="bul">
+        <li class="rev" style="--d:.12s"><i><svg><use href="#i-check"/></svg></i><p><b>Tempero caseiro</b><span>Comida com gosto de comida, sem cara de pronta.</span></p></li>
+        <li class="rev" style="--d:.22s"><i><svg><use href="#i-check"/></svg></i><p><b>Porção que sustenta</b><span>Marmita montada para segurar o dia até o fim do expediente.</span></p></li>
+        <li class="rev" style="--d:.32s"><i><svg><use href="#i-check"/></svg></i><p><b>Pedido sem complicação</b><span>Você chama no WhatsApp e combina tudo por lá.</span></p></li>
+      </ul>
+      <div class="after rev" style="--d:.4s">
+        <a class="btn" href="https://wa.me/5511950314983?text=Ol%C3%A1%21%20Quero%20fazer%20um%20pedido%20na%20Cozinha%20da%20Nilda." data-cta><svg class="i"><use href="#i-wa"/></svg>Fazer meu pedido</a>
+        <p class="sig">Cozinha da Nilda<small>Guaianases · São Paulo</small></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hs" id="cardapio" aria-label="Cardápio">
+  <div class="hs-sticky">
+    <div class="blob" style="width:26rem;height:26rem;left:-12rem;top:14%;background:rgb(223 163 53/.32)"></div>
+    <div class="ctn hs-grid">
+      <div class="hs-intro">
+        <p class="eyebrow"><span class="rule"></span>02 · Cardápio</p>
+        <h2 class="h2">Escolha a <em>sua marmita.</em></h2>
+        <p class="lead" style="margin-top:1rem">Opções para o almoço de todo dia. Valores e o cardápio da semana você confere direto no WhatsApp.</p>
+        <p class="hint">Role para ver as opções <svg><use href="#i-arrow"/></svg></p>
+        <small>* O cardápio varia conforme o dia. Confirme as opções ao fazer o pedido.</small>
+      </div>
+      <div class="hs-viewport">
+        <div class="hs-track">
+          <article class="dish">
+            <span class="n" aria-hidden="true">01</span>
+            <span class="ic" aria-hidden="true"><svg><use href="#i-box"/></svg></span>
+            <h3>Marmita do dia</h3>
+<p>Arroz, feijão, mistura e salada, feita hoje.</p><span class="pr q">Valor no WhatsApp</span>            <a class="link" href="https://wa.me/5511950314983?text=Ol%C3%A1%21%20Quero%20fazer%20um%20pedido%20na%20Cozinha%20da%20Nilda." data-cta data-svc="Marmita do dia">Pedir esta <svg><use href="#i-arrow"/></svg></a>
+          </article>
+          <article class="dish">
+            <span class="n" aria-hidden="true">02</span>
+            <span class="ic" aria-hidden="true"><svg><use href="#i-pot"/></svg></span>
+            <h3>Prato executivo</h3>
+<p>Opções caprichadas para o almoço.</p><span class="pr q">Valor no WhatsApp</span>            <a class="link" href="https://wa.me/5511950314983?text=Ol%C3%A1%21%20Quero%20fazer%20um%20pedido%20na%20Cozinha%20da%20Nilda." data-cta data-svc="Prato executivo">Pedir esta <svg><use href="#i-arrow"/></svg></a>
+          </article>
+          <article class="dish">
+            <span class="n" aria-hidden="true">03</span>
+            <span class="ic" aria-hidden="true"><svg><use href="#i-leaf"/></svg></span>
+            <h3>Marmita fit</h3>
+<p>Leve e balanceada, sem abrir mão do sabor.</p><span class="pr q">Valor no WhatsApp</span>            <a class="link" href="https://wa.me/5511950314983?text=Ol%C3%A1%21%20Quero%20fazer%20um%20pedido%20na%20Cozinha%20da%20Nilda." data-cta data-svc="Marmita fit">Pedir esta <svg><use href="#i-arrow"/></svg></a>
+          </article>
+          <article class="dish">
+            <span class="n" aria-hidden="true">04</span>
+            <span class="ic" aria-hidden="true"><svg><use href="#i-flame"/></svg></span>
+            <h3>Feijoada</h3>
+<p>Nos dias especiais da semana.</p><span class="pr q">Valor no WhatsApp</span>            <a class="link" href="https://wa.me/5511950314983?text=Ol%C3%A1%21%20Quero%20fazer%20um%20pedido%20na%20Cozinha%20da%20Nilda." data-cta data-svc="Feijoada">Pedir esta <svg><use href="#i-arrow"/></svg></a>
+          </article>
+          <article class="dish">
+            <span class="n" aria-hidden="true">05</span>
+            <span class="ic" aria-hidden="true"><svg><use href="#i-cal"/></svg></span>
+            <h3>Kit semanal</h3>
+<p>Marmitas congeladas para a semana toda.</p><span class="pr q">Valor no WhatsApp</span>            <a class="link" href="https://wa.me/5511950314983?text=Ol%C3%A1%21%20Quero%20fazer%20um%20pedido%20na%20Cozinha%20da%20Nilda." data-cta data-svc="Kit semanal">Pedir esta <svg><use href="#i-arrow"/></svg></a>
+          </article>
+          <article class="dish">
+            <span class="n" aria-hidden="true">06</span>
+            <span class="ic" aria-hidden="true"><svg><use href="#i-bag"/></svg></span>
+            <h3>Entrega na região</h3>
+<p>Peça pelo WhatsApp e receba quentinho.</p><span class="pr q">Valor no WhatsApp</span>            <a class="link" href="https://wa.me/5511950314983?text=Ol%C3%A1%21%20Quero%20fazer%20um%20pedido%20na%20Cozinha%20da%20Nilda." data-cta data-svc="Entrega na região">Pedir esta <svg><use href="#i-arrow"/></svg></a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec dark dodia" id="do-dia">
+  <div class="blob" style="width:28rem;height:28rem;left:-10rem;top:-6rem;background:rgb(86 96 46/.7)"></div>
+  <div class="blob" style="width:24rem;height:24rem;right:-8rem;bottom:-8rem;background:rgb(168 70 31/.35)"></div>
+  <span class="gw on-dark" aria-hidden="true">caseiro</span>
+  <div class="ctn grid2" style="position:relative;z-index:1">
+    <div>
+      <p class="eyebrow rev"><span class="rule"></span>03 · Cardápio do dia</p>
+      <h2 class="h2 rev" style="--d:.05s">O cardápio muda, <em>o capricho fica.</em></h2>
+      <p class="lead rev" style="--d:.1s">Todo dia tem panela no fogo e uma combinação diferente. O de hoje sai fresquinho na conversa: é só perguntar.</p>
+      <ul class="chk">
+        <li class="rev" style="--d:.15s"><i><svg><use href="#i-check"/></svg></i>Base de arroz e feijão, do jeito de casa</li>
+        <li class="rev" style="--d:.23s"><i><svg><use href="#i-check"/></svg></i>Mistura que varia ao longo da semana</li>
+        <li class="rev" style="--d:.31s"><i><svg><use href="#i-check"/></svg></i>Acompanhamento e salada para completar</li>
+      </ul>
+      <a class="btn light rev" style="--d:.4s" href="https://wa.me/5511950314983?text=Ol%C3%A1%21%20Quero%20fazer%20um%20pedido%20na%20Cozinha%20da%20Nilda." data-cta data-svc="Cardápio de hoje"><svg class="i"><use href="#i-wa"/></svg>Ver o cardápio de hoje</a>
+    </div>
+    <div class="board rev" style="--d:.15s" role="img" aria-label="Exemplo de cardápio do dia escrito em uma lousa">
+      <div class="board-in" aria-hidden="true">
+        <svg class="doodle" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 26h32a16 16 0 0 1-32 0Z"/><path d="M18 18c2-3 0-5 2-8M26 18c2-3 0-5 2-8"/></g></svg>
+        <h3>Cardápio do dia</h3>
+        <span class="dia" data-dia>— hoje —</span>
+        <svg class="chalk" viewBox="0 0 200 10" preserveAspectRatio="none"><path d="M2 6c40-4 70 2 100-1s60-3 96 1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <ul>
+          <li><b>A base</b><span>arroz branco soltinho e feijão temperado</span></li>
+          <li><b>A mistura</b><span>frango, carne ou a opção do dia</span></li>
+          <li><b>O acompanhamento</b><span>legumes, farofa ou macarrão</span></li>
+          <li><b>A salada</b><span>folhas, tomate e cenoura</span></li>
+        </ul>
+        <p class="ps">* exemplo de cardápio. O de hoje chega no seu WhatsApp ♡</p>
+      </div>
+      <span class="chalk-piece"></span>
+    </div>
+  </div>
+</section>
+
+<section class="sec como" id="como-pedir">
+  <div class="blob" style="width:24rem;height:24rem;left:-9rem;bottom:-4rem;background:rgb(223 163 53/.3)"></div>
+  <div class="ctn grid2">
+    <div class="photo r rev">
+      <div class="ph" style="aspect-ratio:4/5"><img src="/assets/img/marmitaria/produto-1.jpg" alt="Marmitas prontas empilhadas" width="1600" height="2037" loading="lazy" style="object-position:50% 60%"></div>
+      <div class="card"><svg><use href="#i-sprig"/></svg><p>Pediu, combinou, almoçou.</p></div>
+    </div>
+    <div class="txt">
+      <p class="eyebrow rev"><span class="rule"></span>04 · Como pedir</p>
+      <h2 class="h2 rev" style="--d:.05s">Do fogão para o seu almoço, <em>sem enrolação.</em></h2>
+      <ol class="steps">
+        <li class="step rev" style="--d:.1s"><b>01</b><div><h3>Chame no WhatsApp</h3><p>Toque em qualquer botão do site. A conversa já abre com a mensagem pronta.</p></div></li>
+        <li class="step rev" style="--d:.2s"><b>02</b><div><h3>Escolha a sua marmita</h3><p>Pergunte o cardápio do dia e diga o que vai querer.</p></div></li>
+        <li class="step rev" style="--d:.3s"><b>03</b><div><h3>Combine como receber</h3><p>Endereço, horário e pagamento, tudo acertado na mesma conversa.</p></div></li>
+        <li class="step rev" style="--d:.4s"><b>04</b><div><h3>Bom almoço</h3><p>Comida de casa no meio do seu dia. Gostou? É só pedir de novo amanhã.</p></div></li>
+      </ol>
+      <a class="btn rev" style="--d:.5s;margin-top:2.6rem" href="https://wa.me/5511950314983?text=Ol%C3%A1%21%20Quero%20fazer%20um%20pedido%20na%20Cozinha%20da%20Nilda." data-cta><svg class="i"><use href="#i-wa"/></svg>Começar meu pedido</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec galeria" aria-labelledby="gal-t">
+  <div class="ctn">
+    <div class="head-c">
+      <p class="eyebrow c rev"><span class="rule"></span>05 · Da panela<span class="rule"></span></p>
+      <h2 class="h2 rev" id="gal-t" style="--d:.05s">Comida de verdade <em>dá pra ver.</em></h2>
+      <p class="lead rev" style="--d:.1s">Panela no fogo, marmita bem montada e aquele prato que dá vontade de repetir.</p>
+    </div>
+    <div class="ig">
+      <figure class="rev"><div class="ph"><img src="/assets/img/marmitaria/ambiente-2.jpg" alt="Mãos mexendo panelas no fogão" width="1600" height="1067" loading="lazy" style="object-position:40% 50%"></div><figcaption>no fogão</figcaption></figure>
+      <figure class="rev" style="--d:.08s"><div class="ph"><img src="/assets/img/marmitaria/produto-2.jpg" alt="Marmita com divisórias, arroz, legumes e macarrão" width="1600" height="1600" loading="lazy"></div><figcaption>bem montada</figcaption></figure>
+      <figure class="rev" style="--d:.16s"><div class="ph"><img src="/assets/img/marmitaria/produto-3.jpg" alt="Prato de arroz com frango" width="1600" height="1067" loading="lazy" style="object-position:55% 60%"></div><figcaption>arroz com frango</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="duvidas" style="padding-top:5rem">
+  <div class="ctn faq-g">
+    <div class="faq-side">
+      <p class="eyebrow rev"><span class="rule"></span>06 · Dúvidas</p>
+      <h2 class="h2 rev" style="--d:.05s">Perguntas <em>frequentes</em></h2>
+      <p class="rev" style="--d:.1s">Não achou o que procurava? Manda a sua pergunta no WhatsApp que a Cozinha da Nilda responde.</p>
+      <a class="btn ghost rev" style="--d:.15s" href="https://wa.me/5511950314983?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Cozinha%20da%20Nilda%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." data-cta data-svc="Tirar uma dúvida"><svg class="i"><use href="#i-wa"/></svg>Tirar uma dúvida</a>
+    </div>
+    <div class="faq rev" style="--d:.1s">
+      <div class="faq-item"><button type="button" aria-expanded="false" id="q1" aria-controls="a1"><span>Como faço o meu pedido?</span><i class="pm"><svg><use href="#i-plus"/></svg></i></button><div class="faq-a" id="a1" role="region" aria-labelledby="q1"><div><p>Toque em qualquer botão de pedido, informe seu nome e o que quer, e o WhatsApp abre com a mensagem pronta. É só enviar e combinar os detalhes na conversa.</p></div></div></div>
+      <div class="faq-item"><button type="button" aria-expanded="false" id="q2" aria-controls="a2"><span>Qual é o cardápio de hoje?</span><i class="pm"><svg><use href="#i-plus"/></svg></i></button><div class="faq-a" id="a2" role="region" aria-labelledby="q2"><div><p>O cardápio muda conforme o dia. Pergunte pelo WhatsApp e receba as opções de hoje antes de escolher.</p></div></div></div>
+      <div class="faq-item"><button type="button" aria-expanded="false" id="q3" aria-controls="a3"><span>Quanto custa a marmita?</span><i class="pm"><svg><use href="#i-plus"/></svg></i></button><div class="faq-a" id="a3" role="region" aria-labelledby="q3"><div><p>Os valores dependem do tamanho e da opção escolhida. Peça a tabela atualizada pelo WhatsApp.</p></div></div></div>
+      <div class="faq-item"><button type="button" aria-expanded="false" id="q4" aria-controls="a4"><span>Vocês atendem o meu endereço?</span><i class="pm"><svg><use href="#i-plus"/></svg></i></button><div class="faq-a" id="a4" role="region" aria-labelledby="q4"><div><p>Mande seu endereço pelo WhatsApp. A Cozinha da Nilda confirma se atende a sua região e explica como funciona a entrega ou a retirada.</p></div></div></div>
+      <div class="faq-item"><button type="button" aria-expanded="false" id="q5" aria-controls="a5"><span>Dá para encomendar para a semana ou para um grupo?</span><i class="pm"><svg><use href="#i-plus"/></svg></i></button><div class="faq-a" id="a5" role="region" aria-labelledby="q5"><div><p>Conte pelo WhatsApp quantas marmitas precisa e para quando. A equipe responde com o que é possível fazer.</p></div></div></div>
+      <div class="faq-item"><button type="button" aria-expanded="false" id="q6" aria-controls="a6"><span>Quais são o horário e as formas de pagamento?</span><i class="pm"><svg><use href="#i-plus"/></svg></i></button><div class="faq-a" id="a6" role="region" aria-labelledby="q6"><div><p>Para confirmar o horário de hoje e as formas de pagamento aceitas, chame no WhatsApp.</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="final" aria-labelledby="final-t">
+  <div class="final-box rev">
+    <div class="blob" style="width:24rem;height:24rem;left:-8rem;top:-8rem;background:rgb(240 199 104/.3)"></div>
+    <div class="blob" style="width:26rem;height:26rem;right:-8rem;bottom:-10rem;background:rgb(86 96 46/.45)"></div>
+    <span class="gw on-dark" aria-hidden="true">caseiro</span>
+    <svg class="spark" aria-hidden="true"><use href="#i-sprig"/></svg>
+    <h2 class="h2" id="final-t">Hoje o almoço <em>não vai ser qualquer coisa.</em></h2>
+    <p class="l">Chama no WhatsApp, escolhe a sua marmita e pronto: comida de casa no meio do seu dia.</p>
+    <a class="btn light" href="https://wa.me/5511950314983?text=Ol%C3%A1%21%20Quero%20fazer%20um%20pedido%20na%20Cozinha%20da%20Nilda." data-cta><svg class="i"><use href="#i-wa"/></svg>Peça pelo WhatsApp</a>
+    <p class="micro">A conversa abre com a sua mensagem pronta</p>
+    <div class="final-info">
+      <span><svg><use href="#i-pin"/></svg>R. Barbalho Bezerra, 293 - Guaianases, 08461-360</span>
+      <span><svg><use href="#i-clock"/></svg>Horário de hoje pelo WhatsApp</span>
+    </div>
+  </div>
+</section>
+
+<section class="sec contato" id="contato" aria-labelledby="ct-t">
+  <div class="ctn ct-g">
+    <div class="ct-card rev">
+      <p class="eyebrow"><span class="rule"></span>07 · Onde estamos</p>
+      <h2 class="h2" id="ct-t">Pertinho de você, <em>em Guaianases.</em></h2>
+      <ul class="ct-list">
+        <li><i><svg class="i"><use href="#i-pin"/></svg></i><p><small>Endereço</small><a href="https://www.google.com/maps/search/?api=1&amp;query=Cozinha%20da%20Nilda%20R.%20Barbalho%20Bezerra%2C%20293%20-%20Guaianases%2C%2008461-360" target="_blank" rel="noopener">R. Barbalho Bezerra, 293 - Guaianases, 08461-360</a></p></li>
+        <li><i><svg class="i"><use href="#i-wa"/></svg></i><p><small>WhatsApp</small><a href="https://wa.me/5511950314983?text=Ol%C3%A1%21%20Quero%20fazer%20um%20pedido%20na%20Cozinha%20da%20Nilda." data-cta>(11) 95031-4983</a></p></li>
+        <li><i><svg class="i"><use href="#i-clock"/></svg></i><p><small>Horário</small><span>Consulte pelo WhatsApp</span></p></li>
+      </ul>
+      <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Cozinha%20da%20Nilda%20R.%20Barbalho%20Bezerra%2C%20293%20-%20Guaianases%2C%2008461-360" target="_blank" rel="noopener"><svg class="i"><use href="#i-pin"/></svg>Como chegar</a>
+    </div>
+    <div class="map rev" style="--d:.1s"><div class="map-fb" aria-hidden="true"><svg class="i"><use href="#i-pin"/></svg><span>R. Barbalho Bezerra, 293 - Guaianases, 08461-360</span></div><iframe src="https://maps.google.com/maps?q=R.%20Barbalho%20Bezerra%2C%20293%20-%20Guaianases%2C%2008461-360&amp;z=15&amp;output=embed" title="Mapa com a localização da Cozinha da Nilda" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  </div>
+</section>
+</main>
+
+<footer class="ft">
+  <div class="ctn">
+    <div class="ft-g">
+      <div>
+        <a class="logo lg-m" href="#inicio"><span class="mark" aria-hidden="true">CN</span><span class="nm">Cozinha da Nilda<small>comida caseira</small></span></a>
+        <p class="tl">Marmitaria · Guaianases</p>
+        <p class="fr">Comida feita na panela, com tempero de casa, para o seu almoço de todo dia.</p>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul><li><a href="#cozinha">A cozinha</a></li><li><a href="#cardapio">Cardápio</a></li><li><a href="#do-dia">Cardápio do dia</a></li><li><a href="#como-pedir">Como pedir</a></li><li><a href="#duvidas">Dúvidas</a></li></ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul><li><a href="https://www.google.com/maps/search/?api=1&amp;query=Cozinha%20da%20Nilda%20R.%20Barbalho%20Bezerra%2C%20293%20-%20Guaianases%2C%2008461-360" target="_blank" rel="noopener">R. Barbalho Bezerra, 293 - Guaianases, 08461-360</a></li><li><a href="https://wa.me/5511950314983?text=Ol%C3%A1%21%20Quero%20fazer%20um%20pedido%20na%20Cozinha%20da%20Nilda." data-cta>WhatsApp (11) 95031-4983</a></li></ul>
+      </div>
+    </div>
+    <div class="ft-b"><span>© 2026 Cozinha da Nilda</span><span>Comida caseira em Guaianases, São Paulo</span></div>
+  </div>
+</footer>
+
+<button class="fab" type="button" data-cta aria-label="Fazer pedido pelo WhatsApp"><svg><use href="#i-wa"/></svg></button>
+
+<dialog class="lead-d" id="pedido" aria-labelledby="pd-t" data-tel="5511950314983" data-neg="Cozinha da Nilda">
+  <div class="sheet">
+    <div class="blob"></div>
+    <button class="x" type="button" aria-label="Fechar" data-close><svg class="i"><use href="#i-x"/></svg></button>
+    <h2 id="pd-t">Falta pouco pro seu <em>almoço.</em></h2>
+    <p class="sub">Conta seu nome e o que vai querer. A gente abre o WhatsApp com a mensagem pronta.</p>
+    <form novalidate>
+      <label class="fld"><span>Seu nome</span><input name="nome" autocomplete="given-name" required maxlength="60" placeholder="Como podemos te chamar?"><em class="err">Digite seu nome para continuar.</em></label>
+      <label class="fld"><span>O que você quer pedir?</span>
+        <select name="svc">
+          <option value="">Ainda estou escolhendo</option>
+<option value="Marmita do dia">Marmita do dia</option><option value="Prato executivo">Prato executivo</option><option value="Marmita fit">Marmita fit</option><option value="Feijoada">Feijoada</option><option value="Kit semanal">Kit semanal</option><option value="Entrega na região">Entrega na região</option>        </select>
+      </label>
+      <button class="btn" type="submit"><svg class="i"><use href="#i-wa"/></svg><span>Continuar no WhatsApp</span></button>
+      <p class="alt">Prefere ir direto? <a href="https://wa.me/5511950314983?text=Ol%C3%A1%21%20Quero%20fazer%20um%20pedido%20na%20Cozinha%20da%20Nilda." target="_blank" rel="noopener">Abrir o WhatsApp</a></p>
+    </form>
+  </div>
+</dialog>
+
+<div class="grain" aria-hidden="true"></div>
+
+<script>
+(()=>{
+const d=document,de=d.documentElement,W=window;
+/* hero (B.1) */
+d.querySelectorAll('.hero [data-i]').forEach((el,i)=>el.style.transitionDelay=(.2+.14*i)+'s');
+requestAnimationFrame(()=>requestAnimationFrame(()=>de.classList.add('is-loaded')));
+/* header + prévia + FAB (B.3, B.20) */
+const hdr=d.querySelector('.hdr'),pv=d.querySelector('.previa'),fab=d.querySelector('.fab');
+const onS=()=>{const y=W.scrollY;hdr.classList.toggle('scrolled',y>24);if(pv)hdr.style.top=Math.max(0,pv.offsetHeight-y)+'px';fab.classList.toggle('show',y>420)};
+onS();W.addEventListener('scroll',onS,{passive:true});W.addEventListener('resize',onS);
+/* reveal (B.2) */
+if('IntersectionObserver' in W){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -60px 0px',threshold:0});
+d.querySelectorAll('.rev').forEach(el=>io.observe(el))}else d.querySelectorAll('.rev').forEach(el=>el.classList.add('in'));
+/* dia da semana na lousa */
+const dia=d.querySelector('[data-dia]');if(dia){try{dia.textContent='— '+new Intl.DateTimeFormat('pt-BR',{weekday:'long'}).format(new Date())+' —'}catch(e){}}
+/* menu (B.19) */
+const mn=d.getElementById('mnav'),mb=d.querySelector('.menu-b');
+const tgl=o=>{mn.classList.toggle('open',o);mb.setAttribute('aria-expanded',String(o));d.body.style.overflow=o?'hidden':'';if(o)mn.querySelector('a').focus();else mb.focus()};
+mb.addEventListener('click',()=>tgl(true));mn.querySelector('[data-close]').addEventListener('click',()=>tgl(false));
+mn.querySelectorAll('li a').forEach((a,i)=>{a.style.setProperty('--i',i);a.addEventListener('click',()=>tgl(false))});
+d.addEventListener('keydown',e=>{if(e.key==='Escape'&&mn.classList.contains('open'))tgl(false)});
+/* FAQ (B.16) */
+const qs=[...d.querySelectorAll('.faq-item button')];
+qs.forEach(b=>b.addEventListener('click',()=>{const o=b.getAttribute('aria-expanded')==='true';qs.forEach(x=>x.setAttribute('aria-expanded','false'));b.setAttribute('aria-expanded',String(!o))}));
+qs[0]&&qs[0].setAttribute('aria-expanded','true');
+/* carrossel horizontal guiado pelo scroll (B.8) */
+(()=>{const sec=d.querySelector('.hs');if(!sec)return;const vp=sec.querySelector('.hs-viewport'),tr=sec.querySelector('.hs-track');
+ const native=W.CSS&&CSS.supports('animation-timeline','view()')&&CSS.supports('animation-range','contain');
+ const lg=matchMedia('(min-width:1024px)');let max=0,dist=1,raf=0;
+ const reduz=matchMedia('(prefers-reduced-motion: reduce)').matches;
+ const measure=()=>{if(reduz){max=0;sec.style.minHeight='';tr.style.transform='';vp.style.overflowX='auto';vp.classList.remove('is-scrolling');return}
+   max=Math.max(0,tr.scrollWidth-vp.clientWidth);
+   if(!max){sec.style.minHeight='';sec.style.removeProperty('--max');tr.style.transform='';vp.classList.remove('is-scrolling');return}
+   dist=max+innerHeight*(lg.matches?.7:.5);sec.style.minHeight=innerHeight+dist+'px';sec.style.setProperty('--max',max+'px');update()};
+ const update=()=>{raf=0;if(!max)return;const x=Math.min(Math.max(-sec.getBoundingClientRect().top,0),dist)/dist*max;
+   if(!native)tr.style.transform='translateX('+(-x)+'px)';vp.classList.toggle('is-scrolling',x>8)};
+ W.addEventListener('scroll',()=>raf||(raf=requestAnimationFrame(update)),{passive:true});
+ W.addEventListener('resize',measure);lg.addEventListener&&lg.addEventListener('change',measure);
+ if(W.ResizeObserver)new ResizeObserver(measure).observe(tr);measure();setTimeout(measure,300);
+ d.fonts&&d.fonts.ready.then(measure)})();
+/* modal de pedido (B.21) */
+const dlg=d.getElementById('pedido'),form=dlg.querySelector('form'),sel=form.elements.svc,inp=form.elements.nome,sub=form.querySelector('[type=submit]'),subT=sub.querySelector('span');
+const TEL=dlg.dataset.tel,NEG=dlg.dataset.neg;let last=null,extra='';
+const open=(svc,ex)=>{extra=ex||'';if(svc&&![...sel.options].some(o=>o.value===svc))sel.add(new Option(svc,svc),1);sel.value=svc||'';
+  inp.removeAttribute('aria-invalid');sub.disabled=false;subT.textContent='Continuar no WhatsApp';
+  if(typeof dlg.showModal!=='function'){location.href=wa(msg(''));return}
+  dlg.showModal();d.body.style.overflow='hidden';setTimeout(()=>inp.focus(),60)};
+const close=()=>{if(!dlg.open)return;dlg.classList.add('closing');setTimeout(()=>{dlg.classList.remove('closing');dlg.close()},200)};
+const msg=n=>{const s=sel.value;let t='Olá!'+(n?' Meu nome é '+n+'.':'')+' Vi o site da '+NEG+' e quero fazer um pedido'+(s?': '+s:'')+'.';if(extra)t+='\n'+extra;return t};
+const wa=t=>'https://wa.me/'+TEL+'?text='+encodeURIComponent(t);
+dlg.addEventListener('close',()=>{d.body.style.overflow='';last&&last.focus()});
+dlg.addEventListener('cancel',e=>{e.preventDefault();close()});
+dlg.addEventListener('click',e=>{if(e.target===dlg)close()});
+dlg.querySelector('[data-close]').addEventListener('click',close);
+dlg.addEventListener('keydown',e=>{if(e.key!=='Tab')return;const f=[...dlg.querySelectorAll('a[href],button:not([disabled]),input,select')].filter(x=>x.offsetParent!==null);if(!f.length)return;
+  const a=f[0],z=f[f.length-1];if(e.shiftKey&&d.activeElement===a){e.preventDefault();z.focus()}else if(!e.shiftKey&&d.activeElement===z){e.preventDefault();a.focus()}});
+inp.addEventListener('input',()=>inp.removeAttribute('aria-invalid'));
+form.addEventListener('submit',e=>{e.preventDefault();const n=inp.value.trim();if(n.length<2){inp.setAttribute('aria-invalid','true');inp.focus();return}
+  sub.disabled=true;subT.textContent='Abrindo WhatsApp…';location.href=wa(msg(n));setTimeout(()=>{sub.disabled=false;subT.textContent='Continuar no WhatsApp';close()},2500)});
+d.querySelectorAll('[data-cta]').forEach(b=>b.addEventListener('click',e=>{e.preventDefault();last=b;if(mn.classList.contains('open')){mn.classList.remove('open');mb.setAttribute('aria-expanded','false');d.body.style.overflow=''}open(b.dataset.svc||'')}));
+})();
+</script>
+</body>
+</html>
