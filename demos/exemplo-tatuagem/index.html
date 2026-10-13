@@ -1,0 +1,961 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tinta Viva Tattoo | Estúdio de tatuagem em Vila Madalena, São Paulo</title>
+<meta name="description" content="Tinta Viva Tattoo: tatuagem autoral, fine line, blackwork, cobertura e mais em Vila Madalena, São Paulo. Peça seu orçamento pelo WhatsApp (11) 91347-9449.">
+<meta property="og:title" content="Tinta Viva Tattoo | Tatuagem em Vila Madalena">
+<meta property="og:description" content="Sua ideia transformada em arte na pele. Peça seu orçamento pelo WhatsApp.">
+<meta property="og:image" content="https://aleroberto17.github.io/assets/img/tatuagem/hero-3.jpg">
+<meta name="theme-color" content="#0e0c0b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="/assets/img/tatuagem/hero-3.jpg" fetchpriority="high">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  --tinta:#0e0c0b; --tinta-2:#161311; --tinta-3:#211c19;
+  --osso:#ebe3d4; --osso-2:#dcd1bd; --papel:#f2ebde;
+  --sangue:#c8161f; --sangue-2:#e3242d; --sangue-d:#8a0e15;
+  --soft-d:rgb(235 227 212/.64); --soft-l:rgb(14 12 11/.68);
+  --f-display:"Anton","Anton Fallback",Impact,"Arial Narrow Bold","Arial Narrow",sans-serif;
+  --f-serif:"Instrument Serif","Instrument Fallback",Georgia,"Times New Roman",serif;
+  --f-body:"Space Grotesk","Grotesk Fallback","Segoe UI",system-ui,-apple-system,sans-serif;
+  --f-mono:"Space Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+  --ease:cubic-bezier(.22,1,.36,1);
+  --hh:5rem;
+  --sh-cta:0 20px 25px -5px rgb(200 22 31/.28),0 8px 10px -6px rgb(200 22 31/.28);
+  --sh-photo:0 25px 50px -12px rgb(0 0 0/.55);
+}
+@font-face{font-family:"Anton Fallback";src:local("Impact"),local("Arial Narrow Bold"),local("Arial Bold");size-adjust:88%}
+@font-face{font-family:"Instrument Fallback";src:local("Georgia");size-adjust:92%}
+@font-face{font-family:"Grotesk Fallback";src:local("Arial");size-adjust:102%}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--hh) + 1rem);-webkit-text-size-adjust:100%}
+body{background:var(--tinta);color:var(--osso);font:400 1rem/1.65 var(--f-body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button,input,select{font:inherit;color:inherit}
+button{background:none;border:0;cursor:pointer}
+::selection{background:var(--sangue);color:var(--osso)}
+:focus-visible{outline:2px solid var(--sangue-2);outline-offset:3px}
+.wrap{max-width:80rem;margin-inline:auto;padding-inline:1.25rem}
+@media (min-width:768px){.wrap{padding-inline:2.5rem}}
+.sec{position:relative;overflow:hidden;padding-block:6rem}
+@media (min-width:768px){.sec{padding-block:9rem}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* papel (seções claras) */
+.paper{background:var(--osso);color:var(--tinta)}
+.paper::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.55;mix-blend-mode:multiply;z-index:0;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 300 300' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='p'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.6' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.45 0 0 0 0 0.38 0 0 0 0 0.28 0 0 0 0.22 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23p)'/%3E%3C/svg%3E"),
+  radial-gradient(120% 80% at 50% 0%,transparent 55%,rgb(120 96 60/.14))}
+
+/* tipografia */
+.eyebrow{display:flex;align-items:center;gap:1rem;margin-bottom:1.4rem;font:400 .7rem/1.4 var(--f-mono);text-transform:uppercase;letter-spacing:.24em;color:var(--sangue-2)}
+.paper .eyebrow{color:var(--sangue)}
+.eyebrow .rule{flex:none;width:2.5rem;height:1px;background:currentColor;opacity:.9}
+.eyebrow.center{justify-content:center}
+.h2{font-family:var(--f-display);font-weight:400;font-size:clamp(2.5rem,10vw,4.6rem);line-height:.98;letter-spacing:.005em;text-transform:uppercase;text-wrap:balance;overflow-wrap:normal}
+.h2 em{display:inline;font-family:var(--f-serif);font-style:italic;font-weight:400;text-transform:none;letter-spacing:-.01em;color:var(--sangue-2);font-size:1.08em;line-height:.9}
+.paper .h2 em{color:var(--sangue)}
+.lead{font-size:1.05rem;line-height:1.7;color:var(--soft-d);max-width:36rem}
+.paper .lead{color:var(--soft-l)}
+.h2+.lead{margin-top:1.5rem}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.75rem;max-width:100%;border-radius:.35rem;padding:1.1rem 1.9rem;font:600 .78rem/1 var(--f-body);letter-spacing:.16em;text-transform:uppercase;white-space:nowrap;transition:translate .3s var(--ease),background-color .3s,box-shadow .3s,color .3s,border-color .3s}
+.btn svg{width:1.1rem;height:1.1rem;flex:none;transition:transform .3s var(--ease)}
+.btn-p{background:var(--sangue);color:var(--osso);box-shadow:var(--sh-cta)}
+.btn-o{border:1px solid rgb(235 227 212/.3);color:var(--osso)}
+.paper .btn-o{border-color:rgb(14 12 11/.3);color:var(--tinta)}
+.btn-k{background:var(--tinta);color:var(--osso);box-shadow:0 20px 25px -5px rgb(14 12 11/.3)}
+.btn-l{background:var(--osso);color:var(--tinta);box-shadow:0 20px 25px -5px rgb(0 0 0/.4)}
+.lnk{display:inline-flex;align-items:center;gap:.6rem;font:700 .7rem/1 var(--f-mono);letter-spacing:.16em;text-transform:uppercase;color:var(--sangue)}
+.lnk svg{width:1rem;height:1rem;transition:transform .3s var(--ease)}
+@media (hover:hover){
+  .btn-p:hover{translate:0 -4px;background:var(--sangue-2);box-shadow:0 25px 50px -12px rgb(200 22 31/.45)}
+  .btn-p:hover svg,.btn-l:hover svg{transform:scale(1.1)}
+  .btn-o:hover{border-color:var(--sangue-2);color:var(--sangue-2)}
+  .paper .btn-o:hover{border-color:var(--sangue);color:var(--sangue)}
+  .btn-k:hover{translate:0 -4px;background:var(--sangue)}
+  .btn-l:hover{translate:0 -4px;background:#fff}
+  .lnk:hover svg{transform:translateX(4px)}
+}
+
+/* atmosfera */
+.blob{position:absolute;border-radius:9999px;filter:blur(80px);pointer-events:none;z-index:0}
+@media (max-width:1023.98px){.blob{filter:blur(48px)}}
+.grain{position:fixed;inset:0;z-index:80;pointer-events:none;opacity:.1;transform:translateZ(0);
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.ghost{position:absolute;pointer-events:none;user-select:none;font-family:var(--f-display);text-transform:uppercase;line-height:.8;letter-spacing:-.01em;color:transparent;-webkit-text-stroke:1px rgb(235 227 212/.1);white-space:nowrap;z-index:1}
+.ghost.red{-webkit-text-stroke:1px rgb(227 36 45/.28)}
+.paper .ghost{-webkit-text-stroke:1px rgb(14 12 11/.12)}
+
+.two,.hero-grid,.onde-g,.faq-g,.prov,.head{grid-template-columns:minmax(0,1fr)}
+@media (max-width:380px){.btn{white-space:normal;text-align:center;line-height:1.3;padding-inline:1.25rem}}
+/* reveal */
+.js .rev{opacity:0;transform:translateY(32px);transition:opacity .9s var(--ease) var(--d,0s),transform .9s var(--ease) var(--d,0s)}
+.js .rev.in{opacity:1;transform:none}
+
+/* moldura flash sheet */
+.flash{position:relative;background:var(--papel);color:var(--tinta);padding:.8rem .8rem 0;box-shadow:var(--sh-photo)}
+.flash::after{content:"";position:absolute;inset:.35rem;border:1px solid rgb(14 12 11/.5);pointer-events:none}
+.flash .ph{position:relative;overflow:hidden;background:var(--tinta-3)}
+.flash .ph img{width:100%;height:100%;object-fit:cover;filter:contrast(1.05) saturate(.9)}
+.flash figcaption,.flash .cap{display:flex;justify-content:space-between;gap:1rem;padding:.7rem .2rem .8rem;font:400 .62rem/1.3 var(--f-mono);letter-spacing:.14em;text-transform:uppercase}
+.flash .cap b{color:var(--sangue);font-weight:700}
+.tape{position:absolute;width:5.5rem;height:1.6rem;background:rgb(235 227 212/.7);box-shadow:0 1px 2px rgb(0 0 0/.15);z-index:3;mix-blend-mode:normal}
+.tape.a{top:-.7rem;left:-1.3rem;rotate:-32deg}
+.tape.b{top:-.6rem;right:-1.4rem;rotate:28deg}
+.offset{position:absolute;inset:-.9rem;border:1px solid rgb(227 36 45/.55);rotate:3deg;pointer-events:none}
+.paper .offset{border-color:rgb(14 12 11/.3)}
+
+/* ===== header ===== */
+.top{position:fixed;inset:0 0 auto;z-index:50;transition:transform .8s var(--ease),opacity .8s var(--ease)}
+.js .top{transform:translateY(-100%);opacity:0}
+.is-loaded .top{transform:none;opacity:1}
+.previa{display:block;background:var(--sangue);color:var(--osso);font-size:clamp(.62rem,2.75vw,.8rem);line-height:1.35;text-wrap:balance;text-align:center;padding:.55rem 1rem}
+.previa a{font-weight:600;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+.hdr{height:5rem;transition:background-color .5s,box-shadow .5s}
+.hdr.scrolled{background:rgb(14 12 11/.94);box-shadow:0 1px 0 0 rgb(235 227 212/.08)}
+@media (min-width:768px){.hdr.scrolled{background:rgb(14 12 11/.8);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}}
+.hdr .wrap{height:100%;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.logo{display:flex;align-items:center;gap:.75rem;min-width:0;transition:transform .3s var(--ease)}
+@media (hover:hover){.logo:hover{transform:scale(1.03)}}
+.mono{flex:none;width:2.7rem;height:2.7rem;border:1px solid var(--osso);display:grid;place-items:center;font:400 1.05rem/1 var(--f-display);letter-spacing:.04em;position:relative;rotate:-4deg;background:var(--tinta)}
+.mono::after{content:"";position:absolute;inset:3px;border:1px solid rgb(227 36 45/.8)}
+.logo-t{min-width:0;display:flex;flex-direction:column}
+.logo-n{font:400 1.15rem/1.05 var(--f-display);text-transform:uppercase;letter-spacing:.03em;overflow-wrap:normal;word-break:normal}
+.logo-s{font:400 .55rem/1.3 var(--f-mono);letter-spacing:.22em;text-transform:uppercase;color:var(--soft-d);margin-top:.3rem;white-space:nowrap}
+.logo.long .logo-n{font-size:1rem;max-width:13rem}
+@media (max-width:420px){.logo.long .logo-n{font-size:.92rem;max-width:11rem}.logo.long .logo-s{display:none}}
+.nav{display:none;gap:1.9rem}
+.nav a{position:relative;font:400 .68rem/1 var(--f-mono);letter-spacing:.16em;text-transform:uppercase;color:rgb(235 227 212/.8);transition:color .15s}
+.nav a::after{content:"";position:absolute;left:0;bottom:-7px;height:1px;width:0;background:var(--sangue-2);transition:width .3s var(--ease)}
+@media (hover:hover){.nav a:hover{color:var(--osso)}.nav a:hover::after{width:100%}}
+.hdr-r{display:flex;align-items:center;gap:.75rem;flex:none}
+.hdr .btn{display:none;padding:.8rem 1.25rem;font-size:.7rem;letter-spacing:.14em}
+.burger{width:2.75rem;height:2.75rem;border:1px solid rgb(235 227 212/.25);border-radius:.35rem;display:grid;place-items:center}
+.burger span{display:block;width:1.1rem;height:1.5px;background:currentColor;box-shadow:0 -5px 0 currentColor,0 5px 0 currentColor}
+@media (min-width:640px){.hdr .btn{display:inline-flex}}
+@media (min-width:1100px){.nav{display:flex}.burger{display:none}}
+
+/* menu mobile */
+.mnav{position:fixed;inset:0;z-index:60;display:flex;flex-direction:column;padding:1.25rem 1.25rem 2rem;background:radial-gradient(90% 60% at 100% 100%,rgb(200 22 31/.35),transparent 70%),var(--tinta);color:var(--osso);opacity:0;visibility:hidden;transition:opacity .35s var(--ease),visibility .35s}
+.mnav.open{opacity:1;visibility:visible}
+.mnav-top{display:flex;justify-content:space-between;align-items:center;gap:1rem;height:3.5rem}
+.mnav-top span{font:400 .6rem/1.4 var(--f-mono);letter-spacing:.2em;text-transform:uppercase;color:var(--sangue-2)}
+.mnav .x{flex:none;width:2.75rem;height:2.75rem;border:1px solid rgb(235 227 212/.25);border-radius:.35rem;display:grid;place-items:center;font-size:1.3rem}
+.mnav ul{list-style:none;margin:auto 0;display:grid;gap:.35rem}
+.mnav li a{display:inline-flex;align-items:baseline;gap:.8rem;font:400 clamp(1.8rem,8.6vw,2.6rem)/1.1 var(--f-display);text-transform:uppercase;opacity:0;translate:-28px 0;transition:opacity .5s var(--ease),translate .5s var(--ease),color .2s;transition-delay:calc(.1s + .07s*var(--i,0))}
+.mnav li a small{font:400 .65rem/1 var(--f-mono);color:var(--sangue-2);letter-spacing:.1em}
+.mnav.open li a{opacity:1;translate:0}
+.mnav .btn{align-self:flex-start}
+.mnav p.ft{margin-top:1.5rem;font:400 .6rem/1.5 var(--f-mono);letter-spacing:.2em;text-transform:uppercase;color:rgb(235 227 212/.5)}
+
+/* ===== hero ===== */
+.hero{position:relative;overflow:hidden;min-height:100svh;display:flex;align-items:center;padding:calc(var(--hh) + 2.5rem) 0 5rem;background:radial-gradient(80% 60% at 80% 30%,var(--tinta-3),var(--tinta) 70%)}
+.hero .blob.a{width:32rem;height:32rem;right:-12rem;top:-6rem;background:rgb(200 22 31/.28)}
+.hero .blob.b{width:26rem;height:26rem;left:-14rem;bottom:-8rem;background:rgb(138 14 21/.3)}
+.hero .ghost{font-size:46vw;left:-2vw;bottom:-.06em}
+@media (min-width:1024px){.hero .ghost{font-size:30vw}}
+.hero-grid{position:relative;z-index:2;display:grid;gap:4rem;align-items:center;width:100%}
+@media (min-width:1024px){.hero-grid{grid-template-columns:minmax(0,1.3fr) minmax(0,.7fr);gap:3rem}}
+.hero-txt{display:flex;flex-direction:column;align-items:flex-start}
+.badge{display:inline-flex;align-items:center;gap:.65rem;max-width:100%;padding:.5rem .9rem;border:1px solid rgb(235 227 212/.22);margin-bottom:1.75rem;font:400 .62rem/1.5 var(--f-mono);letter-spacing:.16em;text-transform:uppercase;color:var(--osso)}
+.badge i{flex:none;width:.5rem;height:.5rem;border-radius:50%;background:var(--sangue-2);box-shadow:0 0 0 4px rgb(227 36 45/.18)}
+@media (min-width:640px){.badge{font-size:.68rem;letter-spacing:.2em}}
+.h1{font-family:var(--f-display);font-weight:400;font-size:clamp(3.2rem,13.2vw,5.9rem);line-height:.9;text-transform:uppercase;letter-spacing:.005em}
+.h1 span{display:block}
+.h1 em{display:block;font-family:var(--f-serif);font-style:italic;text-transform:none;color:var(--sangue-2);font-size:1.12em;line-height:.95;letter-spacing:-.02em;margin-top:.04em}
+.hero .lead{margin-top:1.75rem}
+.ctas{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2.25rem}
+@media (max-width:420px){.ctas .btn{width:100%}}
+.proof{display:flex;flex-wrap:wrap;gap:.6rem 1.6rem;margin-top:2.5rem;font:400 .64rem/1.4 var(--f-mono);letter-spacing:.16em;text-transform:uppercase;color:var(--soft-d)}
+.proof span{display:inline-flex;align-items:center;gap:.55rem}
+.proof span::before{content:"✕";color:var(--sangue-2);font-size:.7rem}
+.hero-art{position:relative;width:min(84%,21rem);margin-inline:auto;rotate:-2.5deg}
+@media (min-width:1024px){.hero-art{width:min(100%,23rem)}}
+.hero-art .ph{aspect-ratio:2/3}
+.stamp{position:absolute;right:-1.75rem;bottom:3.5rem;z-index:4;width:6.5rem;height:6.5rem;border-radius:50%;background:var(--sangue);color:var(--osso);display:grid;place-items:center;text-align:center;rotate:12deg;box-shadow:0 12px 25px -6px rgb(0 0 0/.5)}
+.stamp::before{content:"";position:absolute;inset:5px;border:1px dashed rgb(235 227 212/.6);border-radius:50%}
+.stamp b{font:400 1.45rem/.9 var(--f-display);text-transform:uppercase}
+.stamp small{display:block;font:400 .5rem/1.3 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;margin-top:.25rem}
+.cue{position:absolute;left:50%;bottom:1.5rem;translate:-50% 0;z-index:3;display:none;flex-direction:column;align-items:center;gap:.4rem;font:400 .56rem/1 var(--f-mono);letter-spacing:.3em;text-transform:uppercase;color:var(--soft-d)}
+.cue svg{width:.9rem;animation:cue 1.8s ease-in-out infinite}
+@keyframes cue{50%{transform:translateY(6px)}}
+@media (min-width:768px){.cue{display:flex}}
+.js .hero [data-i]{opacity:0;transform:translateY(36px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.js .hero-art{opacity:0;transform:translateY(60px) scale(.96);transition:opacity 1.2s var(--ease) .35s,transform 1.2s var(--ease) .35s}
+.js .cue{opacity:0;transition:opacity 1s 1.6s}
+.is-loaded .hero [data-i],.is-loaded .hero-art{opacity:1;transform:none}
+.is-loaded .cue{opacity:1}
+
+/* ===== marquee ===== */
+.band{position:relative;z-index:3;overflow:hidden;background:var(--sangue);color:var(--osso);padding-block:1.05rem;border-block:1px solid var(--tinta)}
+.mq{display:flex;width:max-content;animation:mq 34s linear infinite}
+.mq-set{display:flex;align-items:center;gap:2.2rem;padding-right:2.2rem}
+.mq-set span{font:400 1.7rem/1 var(--f-display);text-transform:uppercase;letter-spacing:.02em;white-space:nowrap}
+.mq-set span:nth-child(4n+3){font:italic 400 1.95rem/1 var(--f-serif);text-transform:none}
+.mq-set i{font-style:normal;color:var(--tinta);font-size:1rem}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* ===== 01 estúdio ===== */
+.two{position:relative;z-index:2;display:grid;gap:4.5rem;align-items:center}
+@media (min-width:1024px){.two{grid-template-columns:1fr 1fr;gap:5.5rem}.two.flip>:first-child{order:2}}
+.pic{position:relative;width:min(88%,23rem);margin-inline:auto}
+.pic .ph{aspect-ratio:2/3}
+.pic.r{rotate:2deg}
+.pic.l{rotate:-1.5deg}
+.pic .note{position:absolute;left:-1.5rem;bottom:-1.75rem;z-index:4;max-width:14rem;padding:1.1rem 1.25rem;background:var(--tinta);color:var(--osso);rotate:-3deg;box-shadow:0 20px 25px -5px rgb(0 0 0/.35)}
+.note p{font:italic 400 1.2rem/1.25 var(--f-serif)}
+.note small{display:block;margin-top:.5rem;font:400 .55rem/1.3 var(--f-mono);letter-spacing:.18em;text-transform:uppercase;color:var(--sangue-2)}
+.bul{list-style:none;display:grid;gap:1.4rem;margin-top:2.25rem}
+.bul li{display:flex;gap:1rem}
+.bul .ck{flex:none;width:2rem;height:2rem;display:grid;place-items:center;border:1px solid currentColor;color:var(--sangue);font:700 .65rem/1 var(--f-mono)}
+.on-dark .bul .ck{color:var(--sangue-2)}
+.bul h3{font:400 1.25rem/1.15 var(--f-display);text-transform:uppercase;letter-spacing:.02em;margin-bottom:.3rem}
+.bul p{font-size:.92rem;line-height:1.6;color:var(--soft-l)}
+.on-dark .bul p{color:var(--soft-d)}
+.row{display:flex;flex-wrap:wrap;align-items:center;gap:1.25rem 1.75rem;margin-top:2.5rem}
+.sign{font:italic 400 1.6rem/1 var(--f-serif)}
+.sign small{display:block;margin-top:.35rem;font:400 .58rem/1.4 var(--f-mono);letter-spacing:.18em;text-transform:uppercase;color:var(--soft-l)}
+/* galeria */
+.gal{position:relative;z-index:2;margin-top:6rem}
+.gal-h{display:flex;align-items:flex-end;justify-content:space-between;gap:1rem;margin-bottom:1.75rem}
+.gal-h h3{font:italic 400 1.9rem/1 var(--f-serif)}
+.gal-h p{font:400 .6rem/1.4 var(--f-mono);letter-spacing:.18em;text-transform:uppercase;color:var(--soft-l);margin-top:.5rem}
+.arrows{display:flex;gap:.6rem;flex:none}
+.arrows button{width:2.75rem;height:2.75rem;border:1px solid rgb(14 12 11/.3);border-radius:.35rem;display:grid;place-items:center;transition:background-color .3s,color .3s}
+.arrows svg{width:1.1rem;height:1.1rem}
+.arrows button:first-child svg{rotate:180deg}
+@media (hover:hover){.arrows button:hover{background:var(--tinta);color:var(--osso)}}
+.rail{display:flex;gap:1.25rem;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin-inline:-1.25rem;padding:.5rem 1.25rem 1.5rem;scroll-padding-inline:1.25rem}
+@media (min-width:768px){.rail{margin-inline:-2.5rem;padding-inline:2.5rem;scroll-padding-inline:2.5rem}}
+.rail::-webkit-scrollbar{display:none}
+.rail .flash{flex:none;width:15.5rem;scroll-snap-align:start}
+@media (min-width:768px){.rail .flash{width:18rem}}
+.rail .flash:nth-child(odd){rotate:-1deg}.rail .flash:nth-child(even){rotate:1.2deg}
+.rail .ph{aspect-ratio:4/5}
+.rail img{transition:transform .7s var(--ease)}
+@media (hover:hover){.rail .flash:hover img{transform:scale(1.05)}}
+
+/* ===== 02 serviços (carrossel) ===== */
+.hs{position:relative;overflow-x:clip}
+.hs-sticky{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;background:linear-gradient(var(--tinta),var(--tinta-2) 50%,var(--tinta))}
+.hs-sticky .blob{width:26rem;height:26rem;left:-12rem;top:14%;background:rgb(200 22 31/.2)}
+.hs-sticky .ghost{font-size:34vw;right:-4vw;bottom:-.1em}
+@media (min-width:1024px){.hs-sticky .ghost{font-size:20vw}}
+.hs-grid{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:center;gap:1.75rem;padding-top:var(--hh)}
+@media (min-width:1024px){.hs-grid{display:grid;grid-template-columns:minmax(18rem,24rem) minmax(0,1fr);align-items:center;gap:3.5rem}}
+.hs-intro .lead{font-size:.95rem}
+@media (min-width:1024px){.hs-intro .lead{font-size:1.05rem}}
+@media (max-height:760px) and (max-width:1023.98px){.hs-intro .lead{display:none}.hs-intro .h2{font-size:2.4rem}}
+.hint{display:flex;align-items:center;gap:.75rem;margin-top:1.5rem;font:400 .62rem/1 var(--f-mono);letter-spacing:.2em;text-transform:uppercase;color:var(--soft-d)}
+.hint svg{width:1rem;color:var(--sangue-2);animation:nudge 1.6s ease-in-out infinite}
+@keyframes nudge{50%{transform:translateX(6px)}}
+.hs-note{display:none;margin-top:1.75rem;font:italic 400 1.05rem/1.4 var(--f-serif);color:var(--soft-d)}
+@media (min-width:1024px){.hs-note{display:block}}
+.hs-vp{overflow:hidden;margin-inline:-1.25rem;padding:1.25rem 1.25rem 2.5rem}
+@media (min-width:1024px){
+  .hs-vp{margin:0;padding:1.25rem 0 2.5rem;-webkit-mask-image:linear-gradient(90deg,#000 0 90%,transparent);mask-image:linear-gradient(90deg,#000 0 90%,transparent)}
+  .hs-vp.is-scrolling{-webkit-mask-image:linear-gradient(90deg,transparent,#000 7% 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7% 90%,transparent)}}
+.hs-track{display:flex;gap:1.25rem;width:max-content;will-change:transform;padding-left:.25rem}
+@keyframes hs-slide{to{transform:translateX(calc(var(--max,0px)*-1))}}
+@supports (animation-timeline:view()){
+  .hs{view-timeline:--hs block}
+  .hs-track{animation:hs-slide linear both;animation-timeline:--hs;animation-range:contain}}
+.card{position:relative;flex:none;width:17rem;height:clamp(19rem,46vh,23.5rem);display:flex;flex-direction:column;padding:1.75rem 1.6rem 1.6rem;background:var(--papel);color:var(--tinta);box-shadow:0 1px 3px rgb(0 0 0/.3);transition:translate .5s var(--ease),box-shadow .5s,rotate .5s var(--ease)}
+.card::before{content:"";position:absolute;inset:.45rem;border:1px solid rgb(14 12 11/.55);pointer-events:none}
+.card::after{content:"";position:absolute;inset:.75rem;border:1px dashed rgb(14 12 11/.18);pointer-events:none}
+.card:nth-child(odd){rotate:-.8deg}.card:nth-child(even){rotate:.8deg}
+@media (min-width:640px){.card{width:20rem;padding:2.1rem 2rem 1.9rem}}
+.card .tag{display:flex;justify-content:space-between;font:700 .62rem/1 var(--f-mono);letter-spacing:.16em;text-transform:uppercase}
+.card .tag b{color:var(--sangue)}
+.card .big{margin-top:1.1rem;font:400 4.2rem/.8 var(--f-display);color:transparent;-webkit-text-stroke:1.2px var(--tinta);transition:color .5s,-webkit-text-stroke-color .5s}
+.card h3{margin-top:1.25rem;font:400 1.75rem/1 var(--f-display);text-transform:uppercase;letter-spacing:.01em;text-wrap:balance;overflow-wrap:normal}
+.card p{margin-top:.7rem;flex:1;font-size:.9rem;line-height:1.55;color:var(--soft-l)}
+.card .price{display:block;margin-top:.75rem;font:italic 400 1.5rem/1 var(--f-serif);color:var(--sangue)}
+.card .lnk{position:relative;z-index:2;margin-top:1rem}
+@media (hover:hover){
+  .card:hover{translate:0 -8px;rotate:0deg;box-shadow:0 25px 50px -12px rgb(0 0 0/.6)}
+  .card:hover .big{color:var(--sangue);-webkit-text-stroke-color:var(--sangue)}
+  .card:hover .lnk svg{transform:translateX(4px)}}
+
+/* ===== 03 estilos ===== */
+.est .ghost{font-size:30vw;right:-3vw;top:3rem}
+@media (min-width:1024px){.est .ghost{font-size:16vw}}
+.head{position:relative;z-index:2;display:grid;gap:1.5rem;margin-bottom:3.5rem}
+@media (min-width:1024px){.head{grid-template-columns:1.1fr .9fr;align-items:end;gap:4rem}}
+.sheet{position:relative;z-index:2;border:1px solid rgb(14 12 11/.6);padding:.45rem;background:rgb(242 235 222/.55)}
+.sheet-h{display:flex;justify-content:space-between;gap:1rem;padding:.7rem .9rem;border:1px solid rgb(14 12 11/.25);border-bottom:0;font:700 .6rem/1.3 var(--f-mono);letter-spacing:.18em;text-transform:uppercase}
+.sheet-h b{color:var(--sangue)}
+.styles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid rgb(14 12 11/.25);border-left:1px solid rgb(14 12 11/.25)}
+@media (min-width:900px){.styles{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.sty{position:relative;display:flex;flex-direction:column;min-width:0;padding:1.3rem .9rem 1.3rem;border-right:1px solid rgb(14 12 11/.25);border-bottom:1px solid rgb(14 12 11/.25);transition:background-color .5s var(--ease),color .5s var(--ease)}
+@media (min-width:640px){.sty{padding:2rem 1.75rem}}
+.sty .n{font:400 .6rem/1 var(--f-mono);letter-spacing:.14em;color:var(--soft-l);transition:color .5s}
+.sty svg{width:4.2rem;height:4.2rem;margin:1.1rem 0 1.25rem;color:var(--tinta);transition:color .5s,transform .7s var(--ease)}
+@media (min-width:640px){.sty svg{width:5.25rem;height:5.25rem}}
+.sty .acc{color:var(--sangue)}
+.sty h3{font:400 clamp(1.05rem,4.4vw,1.45rem)/1 var(--f-display);text-transform:uppercase;letter-spacing:.01em}
+@media (min-width:640px){.sty h3{font-size:1.85rem}}
+.sty p{margin-top:.55rem;font-size:.85rem;line-height:1.55;color:var(--soft-l);transition:color .5s}
+.sty small{display:block;margin-top:auto;padding-top:1rem;font:400 .56rem/1.5 var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--sangue)}
+@media (max-width:420px){.sty p{font-size:.8rem}}
+@media (hover:hover){
+  .sty:hover{background:var(--tinta);color:var(--osso)}
+  .sty:hover svg{color:var(--osso);transform:rotate(-6deg) scale(1.05)}
+  .sty:hover p,.sty:hover .n{color:var(--soft-d)}}
+.est .after{position:relative;z-index:2;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1.25rem;margin-top:2.5rem}
+.est .after p{font:italic 400 1.35rem/1.3 var(--f-serif);max-width:30rem}
+
+/* ===== 04 biossegurança ===== */
+.bio{background:var(--tinta-2)}
+.bio .blob{width:28rem;height:28rem;right:-10rem;top:-6rem;background:rgb(200 22 31/.18)}
+.bio .ghost{font-size:24vw;left:-2vw;bottom:-.08em}
+@media (min-width:1024px){.bio .ghost{font-size:14vw}}
+.duo{position:relative;width:min(100%,30rem);margin-inline:auto;padding-bottom:5rem}
+.duo .flash.big{rotate:-1.5deg}
+.duo .flash.big .ph{aspect-ratio:3/2}
+.duo .flash.sm{position:absolute;right:-.5rem;bottom:0;width:58%;rotate:3deg;z-index:3}
+.duo .flash.sm .ph{aspect-ratio:3/2}
+@media (min-width:1280px){.duo .flash.sm{right:-2.5rem}}
+.duo .offset{inset:-.9rem -.9rem 4.1rem;rotate:-3.5deg}
+.chk{list-style:none;display:grid;gap:0;margin-top:2.25rem;border-top:1px solid rgb(235 227 212/.12)}
+.chk li{display:flex;gap:1rem;align-items:flex-start;padding:1.05rem 0;border-bottom:1px solid rgb(235 227 212/.12)}
+.chk .ck{flex:none;width:1.6rem;height:1.6rem;display:grid;place-items:center;background:var(--sangue);color:var(--osso);margin-top:.1rem}
+.chk .ck svg{width:.9rem;height:.9rem}
+.chk b{display:block;font:400 1.15rem/1.15 var(--f-display);text-transform:uppercase;letter-spacing:.02em}
+.chk span{display:block;font-size:.9rem;color:var(--soft-d);margin-top:.2rem}
+.bio .obs{margin-top:1.5rem;font:italic 400 1.1rem/1.4 var(--f-serif);color:var(--soft-d)}
+
+/* ===== 05 orçamento ===== */
+.steps{list-style:none;position:relative;display:grid;gap:2.4rem;margin-top:2.5rem}
+.steps::before{content:"";position:absolute;left:1.5rem;top:1.25rem;bottom:1.25rem;width:1px;background:linear-gradient(var(--sangue),rgb(14 12 11/.3),transparent)}
+.steps li{position:relative;display:flex;gap:1.5rem}
+.steps b{z-index:1;flex:none;width:3rem;height:3rem;display:grid;place-items:center;border:1px solid var(--tinta);background:var(--osso);font:700 .8rem/1 var(--f-mono);color:var(--sangue);rotate:-3deg}
+.steps li:nth-child(even) b{rotate:3deg}
+.steps h3{font:400 1.4rem/1.1 var(--f-display);text-transform:uppercase;letter-spacing:.02em;margin-top:.45rem}
+.steps p{font-size:.93rem;color:var(--soft-l);margin-top:.35rem;max-width:30rem}
+
+/* ===== 06 faq ===== */
+.faq-s .blob{width:24rem;height:24rem;left:-10rem;bottom:-8rem;background:rgb(200 22 31/.16)}
+.faq-g{position:relative;z-index:2;display:grid;gap:3rem}
+@media (min-width:1024px){.faq-g{grid-template-columns:1fr 1.6fr;gap:3.5rem}.faq-l{position:sticky;top:8rem;align-self:start}}
+.faq-l p{margin-top:1.25rem;color:var(--soft-d);max-width:22rem}
+.faq-l .btn{margin-top:2rem}
+.qa{border-bottom:1px solid rgb(235 227 212/.14)}
+.qa:first-child{border-top:1px solid rgb(235 227 212/.14)}
+.qa h3{font:inherit}
+.qa button{display:flex;width:100%;justify-content:space-between;align-items:center;gap:1.5rem;padding-block:1.4rem;text-align:left;font:400 1.3rem/1.15 var(--f-display);text-transform:uppercase;letter-spacing:.02em;color:var(--osso)}
+@media (min-width:768px){.qa button{font-size:1.55rem}}
+.pm{flex:none;width:2.5rem;height:2.5rem;display:grid;place-items:center;border:1px solid rgb(235 227 212/.25);border-radius:.35rem;color:var(--sangue-2);font:300 1.35rem/1 var(--f-body);transition:rotate .35s var(--ease),background-color .3s,color .3s,border-color .3s}
+.qa button[aria-expanded=true] .pm{rotate:45deg;background:var(--sangue);border-color:var(--sangue);color:var(--osso)}
+.qa-a{display:grid;grid-template-rows:0fr;opacity:0;transition:grid-template-rows .45s var(--ease),opacity .45s var(--ease)}
+.qa-a>div{overflow:hidden}
+.qa-a p{padding-bottom:1.6rem;max-width:40rem;line-height:1.7;color:var(--soft-d)}
+.qa button[aria-expanded=true]+.qa-a{grid-template-rows:1fr;opacity:1}
+@media (hover:hover){.qa button:hover .pm{border-color:var(--sangue-2)}}
+
+/* ===== 07 onde ===== */
+.onde-g{position:relative;z-index:2;display:grid;gap:3rem;align-items:center}
+@media (min-width:1024px){.onde-g{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:4.5rem}}
+.info{list-style:none;display:grid;gap:1.4rem;margin-top:2rem}
+.info li{display:flex;gap:1rem;align-items:flex-start}
+.info .ic{flex:none;width:2.6rem;height:2.6rem;border:1px solid rgb(14 12 11/.35);display:grid;place-items:center;color:var(--sangue)}
+.info .ic svg{width:1.05rem;height:1.05rem}
+.info small{display:block;font:400 .58rem/1.4 var(--f-mono);letter-spacing:.2em;text-transform:uppercase;color:var(--soft-l);margin-bottom:.2rem}
+.info span,.info a{font-size:1rem;line-height:1.5;overflow-wrap:anywhere}
+.info a{text-decoration:underline;text-decoration-color:rgb(200 22 31/.45);text-underline-offset:4px}
+.map{width:calc(100% - 1rem);margin-inline:auto}
+@media (min-width:1024px){.map{width:auto;margin-inline:0;rotate:1deg}}
+.map .ph{width:100%;height:clamp(18rem,70vw,27rem)}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(1) contrast(1.1) sepia(.12)}
+
+/* ===== cta final ===== */
+.final{padding:6rem 1.25rem}
+@media (min-width:768px){.final{padding:9rem 2.5rem}}
+.final-box{position:relative;overflow:hidden;max-width:75rem;margin-inline:auto;padding:5rem 1.5rem 4rem;text-align:center;background:radial-gradient(70% 90% at 50% 120%,rgb(200 22 31/.55),transparent 70%),var(--tinta-3);border:1px solid rgb(235 227 212/.14);box-shadow:0 25px 50px -12px rgb(0 0 0/.6)}
+.final-box::before{content:"";position:absolute;inset:.6rem;border:1px solid rgb(235 227 212/.12);pointer-events:none}
+@media (min-width:768px){.final-box{padding:8rem 4rem 6rem}}
+.final-box .blob.a{width:24rem;height:24rem;left:-8rem;top:-8rem;background:rgb(200 22 31/.22)}
+.final-box .ghost{font-size:44vw;left:50%;top:-.12em;translate:-50% 0}
+@media (min-width:1024px){.final-box .ghost{font-size:24vw}}
+.final-box>*:not(.blob):not(.ghost){position:relative;z-index:2}
+.final-box .h2{font-size:clamp(2.7rem,9vw,5.6rem);max-width:52rem;margin-inline:auto}
+.final-box .h2 em{display:block}
+.final-box .lead{margin:1.5rem auto 0}
+.final-box .btn{margin-top:2.5rem;padding:1.25rem 2.5rem;font-size:.8rem}
+.final-box .btn svg{color:#25d366}
+@media (max-width:480px){.final-box .btn{padding:1.15rem 1.4rem;font-size:.74rem;letter-spacing:.12em;width:100%}}
+.alt{display:block;margin-top:1.25rem;font-size:.85rem;color:var(--soft-d)}
+.alt a{color:var(--osso);text-decoration:underline;text-underline-offset:3px}
+.final-meta{margin-top:3rem;padding-top:2rem;border-top:1px dashed rgb(235 227 212/.18);display:flex;flex-wrap:wrap;justify-content:center;gap:.75rem 2.25rem;font-size:.88rem;color:var(--soft-d)}
+.final-meta span{display:inline-flex;align-items:center;gap:.55rem;text-align:left}
+.final-meta svg{flex:none;width:1rem;height:1rem;color:var(--sangue-2)}
+
+/* ===== footer ===== */
+.foot{background:#080706;color:var(--soft-d);padding:4rem 0 2rem;border-top:1px solid rgb(235 227 212/.08)}
+@media (min-width:768px){.foot{padding-top:5rem}}
+.foot-g{display:grid;gap:3rem}
+@media (min-width:768px){.foot-g{grid-template-columns:1.4fr 1fr 1fr}}
+.foot .logo-n{color:var(--osso);font-size:1.5rem;max-width:18rem}
+.foot .tl{margin-top:1.1rem;font:400 .58rem/1.5 var(--f-mono);letter-spacing:.2em;text-transform:uppercase;color:var(--sangue-2)}
+.foot p.fr{margin-top:1rem;max-width:22rem;font-size:.9rem}
+.foot h4{font:700 .62rem/1 var(--f-mono);letter-spacing:.2em;text-transform:uppercase;color:var(--osso);margin-bottom:1.25rem}
+.foot ul{list-style:none;display:grid;gap:.7rem;font-size:.9rem}
+.foot ul a{transition:color .2s}
+@media (hover:hover){.foot ul a:hover{color:var(--sangue-2)}}
+.foot-b{margin-top:3.5rem;padding-top:1.5rem;border-top:1px solid rgb(235 227 212/.1);display:flex;flex-wrap:wrap;gap:.5rem 2rem;justify-content:space-between;font:400 .66rem/1.5 var(--f-mono);letter-spacing:.08em;color:rgb(235 227 212/.42)}
+
+/* ===== FAB ===== */
+.fab{position:fixed;right:1.25rem;bottom:1.25rem;z-index:50;width:3.75rem;height:3.75rem;border-radius:50%;display:grid;place-items:center;background:#25d366;color:#fff;box-shadow:0 25px 50px -12px rgb(0 0 0/.5);opacity:0;scale:.6;translate:0 24px;pointer-events:none;transition:opacity .4s var(--ease),scale .4s var(--ease),translate .4s var(--ease)}
+.fab.show{opacity:1;scale:1;translate:0;pointer-events:auto}
+.fab::before{content:"";position:absolute;inset:0;border-radius:50%;background:inherit;animation:ring 2.4s cubic-bezier(.2,.6,.36,1) infinite;z-index:-1}
+.fab svg{width:1.65rem;height:1.65rem}
+@keyframes ring{0%{opacity:.45;transform:scale(1)}80%,100%{opacity:0;transform:scale(1.65)}}
+@media (min-width:768px){.fab{right:2rem;bottom:2rem}}
+@media (hover:hover){.fab:hover{scale:1.1}}
+
+/* ===== modal ===== */
+.lead-d{border:0;padding:0;background:transparent;color:var(--tinta);max-width:none;max-height:none;width:100%;height:100%;inset:0;margin:0;display:none}
+.lead-d[open]{display:flex;align-items:flex-end;justify-content:center}
+@media (min-width:640px){.lead-d[open]{align-items:center;padding:1.5rem}}
+.lead-d::backdrop{background:rgb(8 7 6/.6);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);opacity:0;transition:opacity .2s}
+.lead-d.on::backdrop{opacity:1}
+.lead-bg{position:absolute;inset:0}
+.box{position:relative;width:100%;max-width:29rem;max-height:92svh;overflow-y:auto;background:var(--papel);border-radius:1rem 1rem 0 0;padding:2.25rem 1.5rem calc(1.75rem + env(safe-area-inset-bottom));box-shadow:0 25px 50px -12px rgb(0 0 0/.6);opacity:0;transform:translateY(24px) scale(.98);transition:opacity .24s var(--ease),transform .24s var(--ease)}
+.box::before{content:"";position:absolute;inset:.45rem;border:1px solid rgb(14 12 11/.4);border-radius:.6rem .6rem 0 0;pointer-events:none}
+@media (min-width:640px){.box{border-radius:.5rem;padding:2.5rem 2.25rem}.box::before{border-radius:.2rem}}
+.lead-d.on .box{opacity:1;transform:none}
+.box>*{position:relative}
+.box .grab{display:block;width:2.5rem;height:4px;border-radius:4px;background:rgb(14 12 11/.2);margin:-1.25rem auto 1.25rem}
+@media (min-width:640px){.box .grab{display:none}}
+.box .x{position:absolute;right:1.1rem;top:1.1rem;width:2.5rem;height:2.5rem;border:1px solid rgb(14 12 11/.25);border-radius:.35rem;display:grid;place-items:center;font-size:1.25rem;z-index:2}
+.box .k{padding-right:3rem;font:700 .6rem/1.4 var(--f-mono);letter-spacing:.18em;text-transform:uppercase;color:var(--sangue)}
+.box h2{margin-top:.6rem;font:400 2.1rem/1 var(--f-display);text-transform:uppercase;padding-right:2.5rem}
+.box h2 em{font-family:var(--f-serif);font-style:italic;text-transform:none;color:var(--sangue)}
+.box>p{margin-top:.6rem;font-size:.92rem;color:var(--soft-l)}
+.fld{display:block;margin-top:1.1rem}
+.fld span{display:block;font:400 .6rem/1.3 var(--f-mono);letter-spacing:.16em;text-transform:uppercase;color:var(--soft-l);margin-bottom:.45rem}
+.fld input,.fld select{width:100%;height:3.2rem;padding:0 1rem;border-radius:.35rem;border:1px solid rgb(14 12 11/.25);background:#fbf7f0;font-size:1rem;transition:border-color .2s,box-shadow .2s;-webkit-appearance:none;appearance:none}
+.fld select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23c8161f' stroke-width='1.8'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .9rem center;background-size:1.1rem;padding-right:2.6rem}
+.fld input:focus,.fld select:focus{outline:none;border-color:var(--sangue);box-shadow:0 0 0 3px rgb(200 22 31/.15)}
+.fld input[aria-invalid=true]{border-color:var(--sangue)}
+.duo-f{display:grid;grid-template-columns:1fr 1fr;gap:0 .75rem}
+.err{display:none;margin-top:.4rem;font-size:.8rem;color:var(--sangue)}
+.err.on{display:block}
+.box .btn{width:100%;margin-top:1.5rem}
+.box .btn svg{color:#fff}
+.box .alt{color:var(--soft-l);text-align:center;font-size:.82rem}
+.box .alt a{color:var(--sangue)}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition-duration:.01ms!important;transition-delay:0s!important}
+  .js .rev,.js .hero [data-i],.js .hero-art,.js .top{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.64-2.05-.17-.3-.02-.46.13-.6.13-.14.3-.35.44-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35M12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.32l-.34-.2-3.57.94.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.23-9.43 9.44-9.43 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.67c0 5.2-4.23 9.43-9.44 9.43m8.03-17.46A11.3 11.3 0 0 0 12.05.72C5.79.72.7 5.8.7 12.07c0 2 .52 3.95 1.52 5.67L.6 23.6l6-1.57a11.33 11.33 0 0 0 5.43 1.38h.01c6.26 0 11.35-5.09 11.35-11.35 0-3.03-1.18-5.88-3.32-8.02"/></symbol>
+  <symbol id="i-ar" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" d="M4 12h15M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-ck" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square" d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+  <symbol id="i-clk" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g></symbol>
+  <symbol id="i-tel" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" d="M5 3.5h3.5l1.7 4.3-2.2 1.4a11 11 0 0 0 6.8 6.8l1.4-2.2 4.3 1.7V19a1.5 1.5 0 0 1-1.6 1.5C10.6 20 4 13.4 3.5 5.1A1.5 1.5 0 0 1 5 3.5z"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6" fill="currentColor"/></g></symbol>
+</svg>
+
+<header class="top" id="top">
+  <div class="hdr" id="hdr">
+    <div class="wrap">
+      <a href="#inicio" class="logo" aria-label="Tinta Viva Tattoo, início">
+        <span class="mono" aria-hidden="true">TV</span>
+        <span class="logo-t"><span class="logo-n">Tinta Viva Tattoo</span><span class="logo-s">Tattoo · Vila Madalena</span></span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="#estudio">Estúdio</a><a href="#servicos">Serviços</a><a href="#estilos">Estilos</a><a href="#seguranca">Biossegurança</a><a href="#orcamento">Orçamento</a><a href="#duvidas">Dúvidas</a>
+      </nav>
+      <div class="hdr-r">
+        <a class="btn btn-p" href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20Tinta%20Viva%20Tattoo." data-lead><svg aria-hidden="true"><use href="#i-wa"/></svg>Orçamento</a>
+        <button class="burger" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mnav" id="burger"><span></span></button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="mnav" id="mnav" role="dialog" aria-modal="true" aria-label="Menu" hidden>
+  <div class="mnav-top"><span>Tinta Viva Tattoo</span><button class="x" type="button" aria-label="Fechar menu" id="mclose">×</button></div>
+  <ul>
+    <li><a href="#estudio"><small>01</small>Estúdio</a></li>
+    <li><a href="#servicos"><small>02</small>Serviços</a></li>
+    <li><a href="#estilos"><small>03</small>Estilos</a></li>
+    <li><a href="#seguranca"><small>04</small>Biossegurança</a></li>
+    <li><a href="#orcamento"><small>05</small>Orçamento</a></li>
+    <li><a href="#duvidas"><small>06</small>Dúvidas</a></li>
+    <li><a href="#onde"><small>07</small>Onde estamos</a></li>
+  </ul>
+  <a class="btn btn-p" href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20Tinta%20Viva%20Tattoo." data-lead><svg aria-hidden="true"><use href="#i-wa"/></svg>Pedir orçamento</a>
+  <p class="ft">Arte na pele em Vila Madalena · São Paulo</p>
+</div>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="inicio" aria-labelledby="h1">
+  <span class="blob a" aria-hidden="true"></span><span class="blob b" aria-hidden="true"></span>
+  <span class="ghost red" aria-hidden="true">tinta</span>
+  <div class="wrap hero-grid">
+    <div class="hero-txt">
+      <p class="badge" data-i><i aria-hidden="true"></i><span>Tinta Viva Tattoo · Arte na pele em Vila Madalena</span></p>
+      <h1 class="h1" id="h1" data-i><span>Pra sempre</span> <span>merece ser</span> <em>bem feito.</em></h1>
+      <p class="lead" data-i>Tatuagem não tem botão de desfazer. Por isso a sua ideia ganha desenho pensado pra você, conversa honesta sobre tamanho e local, e traço firme do primeiro ao último detalhe.</p>
+      <div class="ctas" data-i>
+        <a class="btn btn-p" href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20Tinta%20Viva%20Tattoo." data-lead><svg aria-hidden="true"><use href="#i-wa"/></svg>Pedir meu orçamento</a>
+        <a class="btn btn-o" href="#estilos">Ver estilos</a>
+      </div>
+      <p class="proof" data-i><span>Desenho autoral</span><span>Material descartável</span><span>Orçamento pelo WhatsApp</span></p>
+    </div>
+    <div class="hero-art">
+      <span class="offset" aria-hidden="true"></span>
+      <figure class="flash">
+        <span class="tape a" aria-hidden="true"></span><span class="tape b" aria-hidden="true"></span>
+        <div class="ph"><img src="/assets/img/tatuagem/hero-3.jpg" alt="Foto da Tinta Viva Tattoo" width="1600" height="2400" fetchpriority="high"></div>
+        <figcaption class="cap"><span>Flash <b>Nº 01</b></span><span>Vila Madalena · SP</span></figcaption>
+      </figure>
+      <div class="stamp" aria-hidden="true"><div><b>Arte</b><small>na pele</small></div></div>
+    </div>
+  </div>
+  <span class="cue" aria-hidden="true">Role<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M6 13l6 6 6-6"/></svg></span>
+</section>
+
+<!-- MARQUEE -->
+<div class="band" aria-label="Tatuagem autoral, Fine line, Blackwork, Cobertura, Piercing, Retoque">
+  <div class="mq">
+    <div class="mq-set">
+<span>Tatuagem autoral</span><i>✕</i><span>Fine line</span><i>✕</i><span>Blackwork</span><i>✕</i><span>Cobertura</span><i>✕</i><span>Piercing</span><i>✕</i><span>Retoque</span><i>✕</i><span>Tatuagem autoral</span><i>✕</i><span>Fine line</span><i>✕</i><span>Blackwork</span><i>✕</i><span>Cobertura</span><i>✕</i><span>Piercing</span><i>✕</i><span>Retoque</span><i>✕</i>    </div>
+    <div class="mq-set" aria-hidden="true">
+<span>Tatuagem autoral</span><i>✕</i><span>Fine line</span><i>✕</i><span>Blackwork</span><i>✕</i><span>Cobertura</span><i>✕</i><span>Piercing</span><i>✕</i><span>Retoque</span><i>✕</i><span>Tatuagem autoral</span><i>✕</i><span>Fine line</span><i>✕</i><span>Blackwork</span><i>✕</i><span>Cobertura</span><i>✕</i><span>Piercing</span><i>✕</i><span>Retoque</span><i>✕</i>    </div>
+  </div>
+</div>
+
+<!-- 01 ESTÚDIO -->
+<section class="sec paper" id="estudio" aria-labelledby="t1">
+  <div class="wrap two">
+    <div class="pic l rev">
+      <span class="offset" aria-hidden="true"></span>
+      <figure class="flash">
+        <span class="tape a" aria-hidden="true"></span>
+        <div class="ph"><img src="/assets/img/tatuagem/acao-2.jpg" alt="Foto da Tinta Viva Tattoo" width="1600" height="2400" loading="lazy"></div>
+        <figcaption class="cap"><span>Sessão</span><span><b>Nº 02</b></span></figcaption>
+      </figure>
+      <div class="note"><p>“Primeiro a conversa. Depois a tinta.”</p><small>Tinta Viva Tattoo</small></div>
+    </div>
+    <div>
+      <p class="eyebrow rev"><span class="rule"></span>01 · O estúdio</p>
+      <h2 class="h2 rev" id="t1">Sua ideia, <em>traço por traço</em></h2>
+      <p class="lead rev" style="--d:.1s">Na Tinta Viva Tattoo, cada tatuagem começa ouvindo você: a história, a referência que você guardou, o lugar do corpo. A partir daí a ideia vira um desenho que faz sentido na sua pele, e não só na tela do celular.</p>
+      <ul class="bul">
+        <li class="rev" style="--d:.12s"><span class="ck">01</span><div><h3>Desenho pensado pra você</h3><p>Sua referência é o ponto de partida, não um molde pra copiar.</p></div></li>
+        <li class="rev" style="--d:.22s"><span class="ck">02</span><div><h3>Conversa sem enrolação</h3><p>Tamanho, local e estilo discutidos com sinceridade antes de qualquer agulha.</p></div></li>
+        <li class="rev" style="--d:.32s"><span class="ck">03</span><div><h3>Cuidado até cicatrizar</h3><p>Você sai da sessão sabendo exatamente como cuidar da tatuagem nova.</p></div></li>
+      </ul>
+      <div class="row rev" style="--d:.4s">
+        <a class="btn btn-k" href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20Tinta%20Viva%20Tattoo." data-lead>Contar minha ideia<svg aria-hidden="true"><use href="#i-ar"/></svg></a>
+        <p class="sign">Tinta Viva Tattoo<small>Arte na pele em Vila Madalena</small></p>
+      </div>
+    </div>
+  </div>
+  <div class="wrap gal">
+    <div class="gal-h rev">
+      <div><h3>Na bancada</h3><p>arraste para o lado</p></div>
+      <div class="arrows"><button type="button" data-rail="-1" aria-label="Fotos anteriores"><svg><use href="#i-ar"/></svg></button><button type="button" data-rail="1" aria-label="Próximas fotos"><svg><use href="#i-ar"/></svg></button></div>
+    </div>
+    <div class="rail rev" style="--d:.1s" id="rail" tabindex="0" aria-label="Galeria de fotos">
+      <figure class="flash"><div class="ph"><img src="/assets/img/tatuagem/acao-1.jpg" alt="Foto da Tinta Viva Tattoo" loading="lazy"></div><figcaption class="cap"><span>Contorno</span><span><b>Nº 03</b></span></figcaption></figure>
+      <figure class="flash"><div class="ph"><img src="/assets/img/tatuagem/hero-1.jpg" alt="Foto da Tinta Viva Tattoo" loading="lazy"></div><figcaption class="cap"><span>Traço</span><span><b>Nº 04</b></span></figcaption></figure>
+      <figure class="flash"><div class="ph"><img src="/assets/img/tatuagem/acao-3.jpg" alt="Foto da Tinta Viva Tattoo" loading="lazy"></div><figcaption class="cap"><span>Linha fina</span><span><b>Nº 05</b></span></figcaption></figure>
+      <figure class="flash"><div class="ph"><img src="/assets/img/tatuagem/hero-2.jpg" alt="Foto da Tinta Viva Tattoo" loading="lazy"></div><figcaption class="cap"><span>Detalhe</span><span><b>Nº 06</b></span></figcaption></figure>
+      <figure class="flash"><div class="ph"><img src="/assets/img/tatuagem/alt-1.jpg" alt="Foto da Tinta Viva Tattoo" loading="lazy"></div><figcaption class="cap"><span>Bancada</span><span><b>Nº 07</b></span></figcaption></figure>
+      <figure class="flash"><div class="ph"><img src="/assets/img/tatuagem/acao-4.jpg" alt="Foto da Tinta Viva Tattoo" loading="lazy"></div><figcaption class="cap"><span>Preparo</span><span><b>Nº 08</b></span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- 02 SERVIÇOS -->
+<section class="hs" id="servicos" aria-labelledby="t2">
+  <div class="hs-sticky">
+    <span class="blob" aria-hidden="true"></span>
+    <span class="ghost" aria-hidden="true">arte</span>
+    <div class="wrap hs-grid">
+      <div class="hs-intro">
+        <p class="eyebrow"><span class="rule"></span>02 · Serviços</p>
+        <h2 class="h2" id="t2">Escolha <em>por onde começar</em></h2>
+        <p class="lead">Da primeira tattoo ao fechamento, da cobertura ao retoque. Diga o que você quer e a gente monta o orçamento.</p>
+        <p class="hint" aria-hidden="true">Role para ver os serviços<svg viewBox="0 0 24 24"><use href="#i-ar"/></svg></p>
+        <p class="hs-note">O valor depende de tamanho, detalhe e região do corpo.</p>
+      </div>
+      <div class="hs-vp" id="hsvp">
+        <div class="hs-track" id="hstrack" role="list">
+          <article class="card" role="listitem">
+            <p class="tag"><span>Flash</span><b>Nº 01</b></p>
+            <span class="big" aria-hidden="true">01</span>
+            <h3>Tatuagem autoral</h3>
+            <p>Arte criada do zero a partir da sua ideia.</p>
+            <a class="lnk" href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20Tinta%20Viva%20Tattoo." data-lead data-serv="Tatuagem autoral">Orçar este<span class="sr">: Tatuagem autoral</span><svg aria-hidden="true"><use href="#i-ar"/></svg></a>
+          </article>
+          <article class="card" role="listitem">
+            <p class="tag"><span>Flash</span><b>Nº 02</b></p>
+            <span class="big" aria-hidden="true">02</span>
+            <h3>Fine line</h3>
+            <p>Traços finos e delicados.</p>
+            <a class="lnk" href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20Tinta%20Viva%20Tattoo." data-lead data-serv="Fine line">Orçar este<span class="sr">: Fine line</span><svg aria-hidden="true"><use href="#i-ar"/></svg></a>
+          </article>
+          <article class="card" role="listitem">
+            <p class="tag"><span>Flash</span><b>Nº 03</b></p>
+            <span class="big" aria-hidden="true">03</span>
+            <h3>Blackwork</h3>
+            <p>Contraste forte em preto sólido.</p>
+            <a class="lnk" href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20Tinta%20Viva%20Tattoo." data-lead data-serv="Blackwork">Orçar este<span class="sr">: Blackwork</span><svg aria-hidden="true"><use href="#i-ar"/></svg></a>
+          </article>
+          <article class="card" role="listitem">
+            <p class="tag"><span>Flash</span><b>Nº 04</b></p>
+            <span class="big" aria-hidden="true">04</span>
+            <h3>Cobertura</h3>
+            <p>Transformamos a tatuagem antiga em arte nova.</p>
+            <a class="lnk" href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20Tinta%20Viva%20Tattoo." data-lead data-serv="Cobertura">Orçar este<span class="sr">: Cobertura</span><svg aria-hidden="true"><use href="#i-ar"/></svg></a>
+          </article>
+          <article class="card" role="listitem">
+            <p class="tag"><span>Flash</span><b>Nº 05</b></p>
+            <span class="big" aria-hidden="true">05</span>
+            <h3>Piercing</h3>
+            <p>Aplicação com joias de titânio e material esterilizado.</p>
+            <a class="lnk" href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20Tinta%20Viva%20Tattoo." data-lead data-serv="Piercing">Orçar este<span class="sr">: Piercing</span><svg aria-hidden="true"><use href="#i-ar"/></svg></a>
+          </article>
+          <article class="card" role="listitem">
+            <p class="tag"><span>Flash</span><b>Nº 06</b></p>
+            <span class="big" aria-hidden="true">06</span>
+            <h3>Retoque</h3>
+            <p>Cores e traços renovados.</p>
+            <a class="lnk" href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20Tinta%20Viva%20Tattoo." data-lead data-serv="Retoque">Orçar este<span class="sr">: Retoque</span><svg aria-hidden="true"><use href="#i-ar"/></svg></a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 ESTILOS -->
+<section class="sec paper est" id="estilos" aria-labelledby="t3">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <p class="eyebrow rev"><span class="rule"></span>03 · Estilos</p>
+        <h2 class="h2 rev" id="t3">Cada traço <em>tem sua linguagem</em></h2>
+      </div>
+      <p class="lead rev" style="--d:.1s">Conheça os estilos mais pedidos e descubra qual conversa com a sua ideia. No orçamento a gente te diz o que funciona melhor para o tamanho e o local escolhidos.</p>
+    </div>
+    <div class="sheet rev" style="--d:.15s">
+      <p class="sheet-h" aria-hidden="true"><span>Folha de flash</span><b>Estilos · 06</b></p>
+      <div class="styles">
+        <article class="sty"><span class="n">Nº 01</span>
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" aria-hidden="true"><path d="M10 74C24 62 26 46 36 36S58 20 66 6"/><path d="M33 40c-8-3-12-11-10-19 7 2 11 9 10 19zM44 29c2-8 9-13 17-12-1 8-8 13-17 12zM24 55c-8 0-14-5-15-12 7-1 13 4 15 12zM50 18c-4-5-4-11 0-15 4 4 4 10 0 15z"/><circle cx="66" cy="6" r="2.2" class="acc" fill="currentColor" stroke="none"/></svg>
+          <h3>Fine line</h3><p>Traços finos e delicados, para desenhos minimalistas e discretos.</p><small>Bom para: pulso, costela, nuca</small></article>
+        <article class="sty"><span class="n">Nº 02</span>
+          <svg viewBox="0 0 80 80" aria-hidden="true"><path fill="currentColor" d="M44 10a30 30 0 1 0 26 44A26 26 0 0 1 44 10z"/><circle cx="62" cy="22" r="3" class="acc" fill="currentColor"/></svg>
+          <h3>Blackwork</h3><p>Preto sólido e contraste forte, com presença de longe.</p><small>Bom para: braço, perna, costas</small></article>
+        <article class="sty"><span class="n">Nº 03</span>
+          <svg viewBox="0 0 80 80" aria-hidden="true"><text x="6" y="56" font-family="Instrument Serif, Georgia, serif" font-style="italic" font-size="48" fill="currentColor">Aa</text><path d="M8 66h64" stroke="currentColor" class="acc" stroke-width="1.5"/></svg>
+          <h3>Lettering</h3><p>Nomes, datas e frases com a tipografia certa para cada mensagem.</p><small>Bom para: antebraço, clavícula</small></article>
+        <article class="sty"><span class="n">Nº 04</span>
+          <svg viewBox="0 0 80 80" aria-hidden="true"><path class="acc" fill="currentColor" stroke="#0e0c0b" stroke-width="3.5" stroke-linejoin="round" d="m40 8 8.8 20.4 22 2-16.7 14.6 5 21.6L40 55.2 20.9 66.6l5-21.6L9.2 30.4l22-2z"/></svg>
+          <h3>Tradicional</h3><p>Contorno grosso e cores chapadas, o clássico que envelhece bem.</p><small>Bom para: braço, panturrilha</small></article>
+        <article class="sty"><span class="n">Nº 05</span>
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><circle cx="40" cy="40" r="28"/><path d="M40 12 64 54H16z"/><path d="M40 68 16 26h48z" opacity=".55"/><circle cx="40" cy="40" r="3" class="acc" fill="currentColor" stroke="none"/></svg>
+          <h3>Geométrico</h3><p>Formas, simetria e linhas precisas que se encaixam no corpo.</p><small>Bom para: antebraço, ombro</small></article>
+        <article class="sty"><span class="n">Nº 06</span>
+          <svg viewBox="0 0 80 80" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="0.6"/><circle cx="23" cy="12" r="0.9"/><circle cx="34" cy="12" r="1.2"/><circle cx="45" cy="12" r="1.6"/><circle cx="56" cy="12" r="1.9"/><circle cx="67" cy="12" r="2.2"/><circle cx="12" cy="23" r="0.9"/><circle cx="23" cy="23" r="1.2"/><circle cx="34" cy="23" r="1.6"/><circle cx="45" cy="23" r="1.9"/><circle cx="56" cy="23" r="2.2"/><circle cx="67" cy="23" r="2.5"/><circle cx="12" cy="34" r="1.2"/><circle cx="23" cy="34" r="1.6"/><circle cx="34" cy="34" r="1.9"/><circle cx="45" cy="34" r="2.2"/><circle cx="56" cy="34" r="2.5"/><circle cx="67" cy="34" r="2.8"/><circle cx="12" cy="45" r="1.6"/><circle cx="23" cy="45" r="1.9"/><circle cx="34" cy="45" r="2.2"/><circle cx="45" cy="45" r="2.5"/><circle cx="56" cy="45" r="2.8"/><circle cx="67" cy="45" r="3.2"/><circle cx="12" cy="56" r="1.9"/><circle cx="23" cy="56" r="2.2"/><circle cx="34" cy="56" r="2.5"/><circle cx="45" cy="56" r="2.8"/><circle cx="56" cy="56" r="3.2"/><circle cx="67" cy="56" r="3.5"/><circle cx="12" cy="67" r="2.2"/><circle cx="23" cy="67" r="2.5"/><circle cx="34" cy="67" r="2.8"/><circle cx="45" cy="67" r="3.2"/><circle cx="56" cy="67" r="3.5"/><circle cx="67" cy="67" r="3.8"/></svg>
+          <h3>Pontilhismo</h3><p>Sombras feitas de pontos, com degradês suaves e textura única.</p><small>Bom para: mandalas, sombreados</small></article>
+      </div>
+    </div>
+    <div class="after rev">
+      <p>Não achou o seu estilo? Mande a referência, a gente conversa.</p>
+      <a class="btn btn-k" href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20Tinta%20Viva%20Tattoo." data-lead>Mandar minha referência<svg aria-hidden="true"><use href="#i-ar"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- 04 BIOSSEGURANÇA -->
+<section class="sec bio on-dark" id="seguranca" aria-labelledby="t4">
+  <span class="blob" aria-hidden="true"></span>
+  <div class="wrap two flip">
+    <div class="duo rev">
+      <span class="offset" aria-hidden="true"></span>
+      <figure class="flash big"><span class="tape b" aria-hidden="true"></span><div class="ph"><img src="/assets/img/tatuagem/ambiente-3.jpg" alt="Foto da Tinta Viva Tattoo" width="1600" height="1067" loading="lazy"></div><figcaption class="cap"><span>Bancada</span><span><b>Nº 09</b></span></figcaption></figure>
+      <figure class="flash sm"><div class="ph"><img src="/assets/img/tatuagem/ambiente-2.jpg" alt="Foto da Tinta Viva Tattoo" width="1600" height="1068" loading="lazy"></div><figcaption class="cap"><span>Preparo</span><span><b>Nº 10</b></span></figcaption></figure>
+    </div>
+    <div>
+      <p class="eyebrow rev"><span class="rule"></span>04 · Biossegurança</p>
+      <h2 class="h2 rev" id="t4">Arte com atitude, <em>segurança sem negociar</em></h2>
+      <p class="lead rev" style="--d:.1s">Tatuagem é um procedimento na pele, e um estúdio sério trata cada sessão assim. Estes são os cuidados que você deve esperar:</p>
+      <ul class="chk">
+        <li class="rev" style="--d:.12s"><span class="ck"><svg aria-hidden="true"><use href="#i-ck"/></svg></span><div><b>Descartáveis de uso único</b><span>Agulhas, cartuchos e batoques usados uma vez só.</span></div></li>
+        <li class="rev" style="--d:.2s"><span class="ck"><svg aria-hidden="true"><use href="#i-ck"/></svg></span><div><b>Esterilização</b><span>Tudo o que é reutilizável passa por esterilização adequada.</span></div></li>
+        <li class="rev" style="--d:.28s"><span class="ck"><svg aria-hidden="true"><use href="#i-ck"/></svg></span><div><b>Bancada protegida</b><span>Barreiras descartáveis na maca, na máquina e nos cabos.</span></div></li>
+        <li class="rev" style="--d:.36s"><span class="ck"><svg aria-hidden="true"><use href="#i-ck"/></svg></span><div><b>Orientação pós-tattoo</b><span>Você sai sabendo como lavar, hidratar e proteger a pele.</span></div></li>
+      </ul>
+      <p class="obs rev" style="--d:.42s">Ficou com alguma dúvida sobre o processo? Pergunte, faz parte.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 05 ORÇAMENTO -->
+<section class="sec paper" id="orcamento" aria-labelledby="t5">
+  <div class="wrap two">
+    <div class="pic r rev">
+      <span class="offset" aria-hidden="true"></span>
+      <figure class="flash">
+        <span class="tape b" aria-hidden="true"></span>
+        <div class="ph"><img src="/assets/img/tatuagem/alt-2.jpg" alt="Foto da Tinta Viva Tattoo" width="1600" height="2125" loading="lazy"></div>
+        <figcaption class="cap"><span>Estudo</span><span><b>Nº 11</b></span></figcaption>
+      </figure>
+      <div class="note"><p>“Você sabe o valor antes de marcar.”</p><small>Orçamento pelo WhatsApp</small></div>
+    </div>
+    <div>
+      <p class="eyebrow rev"><span class="rule"></span>05 · Orçamento</p>
+      <h2 class="h2 rev" id="t5">Como funciona <em>o orçamento</em></h2>
+      <ol class="steps">
+        <li class="rev" style="--d:.1s"><b>01</b><div><h3>Mande sua ideia</h3><p>Pelo WhatsApp: referências, local do corpo e tamanho aproximado. Uma foto da região ajuda muito.</p></div></li>
+        <li class="rev" style="--d:.2s"><b>02</b><div><h3>Conversa e ajustes</h3><p>A gente entende o que você quer e sugere o que funciona melhor em traço, tamanho e posição.</p></div></li>
+        <li class="rev" style="--d:.3s"><b>03</b><div><h3>Valor combinado</h3><p>O preço depende de tamanho, detalhe e região do corpo, e é combinado antes de marcar.</p></div></li>
+        <li class="rev" style="--d:.4s"><b>04</b><div><h3>Sessão marcada</h3><p>Dia e horário definidos, com as orientações para chegar preparado.</p></div></li>
+      </ol>
+      <div class="rev" style="--d:.5s;margin-top:2.75rem"><a class="btn btn-p" href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20Tinta%20Viva%20Tattoo." data-lead><svg aria-hidden="true"><use href="#i-wa"/></svg>Pedir meu orçamento</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 FAQ -->
+<section class="sec faq-s" id="duvidas" aria-labelledby="t6">
+  <span class="blob" aria-hidden="true"></span>
+  <div class="wrap faq-g">
+    <div class="faq-l">
+      <p class="eyebrow rev"><span class="rule"></span>06 · Dúvidas</p>
+      <h2 class="h2 rev" id="t6">Perguntas <em>de quem vai tatuar</em></h2>
+      <p class="rev" style="--d:.1s">Ficou alguma dúvida? Chama no WhatsApp, a resposta vem sem julgamento.</p>
+      <a class="btn btn-o rev" style="--d:.2s" href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Tinta%20Viva%20Tattoo%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." data-lead>Tirar uma dúvida</a>
+    </div>
+    <div class="faq">
+      <div class="qa rev" style="--d:0.00s">
+        <h3><button type="button" aria-expanded="true" aria-controls="qa1" id="qb1"><span>Quanto custa uma tatuagem?</span><i class="pm" aria-hidden="true">+</i></button></h3>
+        <div class="qa-a" id="qa1" role="region" aria-labelledby="qb1"><div><p>Depende do tamanho, do nível de detalhe e da região do corpo. Mande sua ideia pelo WhatsApp e receba o orçamento antes de marcar qualquer coisa.</p></div></div>
+      </div>
+      <div class="qa rev" style="--d:0.06s">
+        <h3><button type="button" aria-expanded="false" aria-controls="qa2" id="qb2"><span>Dói muito?</span><i class="pm" aria-hidden="true">+</i></button></h3>
+        <div class="qa-a" id="qa2" role="region" aria-labelledby="qb2"><div><p>Cada pessoa sente de um jeito e algumas regiões são mais sensíveis que outras. Dormir bem, se alimentar antes e chegar hidratado ajudam bastante durante a sessão.</p></div></div>
+      </div>
+      <div class="qa rev" style="--d:0.12s">
+        <h3><button type="button" aria-expanded="false" aria-controls="qa3" id="qb3"><span>Posso levar uma referência?</span><i class="pm" aria-hidden="true">+</i></button></h3>
+        <div class="qa-a" id="qa3" role="region" aria-labelledby="qb3"><div><p>Pode e deve. Fotos, desenhos e prints ajudam a entender o que você quer. A partir deles o desenho é adaptado para o seu corpo.</p></div></div>
+      </div>
+      <div class="qa rev" style="--d:0.18s">
+        <h3><button type="button" aria-expanded="false" aria-controls="qa4" id="qb4"><span>Dá para cobrir uma tatuagem antiga?</span><i class="pm" aria-hidden="true">+</i></button></h3>
+        <div class="qa-a" id="qa4" role="region" aria-labelledby="qb4"><div><p>Muitas vezes, sim. Depende do tamanho, da cor e de quanto a tatuagem antiga está marcada. Mande uma foto pelo WhatsApp para avaliação.</p></div></div>
+      </div>
+      <div class="qa rev" style="--d:0.24s">
+        <h3><button type="button" aria-expanded="false" aria-controls="qa5" id="qb5"><span>Como cuidar depois?</span><i class="pm" aria-hidden="true">+</i></button></h3>
+        <div class="qa-a" id="qa5" role="region" aria-labelledby="qb5"><div><p>Você recebe as orientações no fim da sessão. Em geral: manter a região limpa, hidratar, evitar sol, piscina e mar enquanto cicatriza e não coçar.</p></div></div>
+      </div>
+      <div class="qa rev" style="--d:0.30s">
+        <h3><button type="button" aria-expanded="false" aria-controls="qa6" id="qb6"><span>Quais formas de pagamento vocês aceitam?</span><i class="pm" aria-hidden="true">+</i></button></h3>
+        <div class="qa-a" id="qa6" role="region" aria-labelledby="qb6"><div><p>As formas de pagamento e o sinal para reservar a data são combinados pelo WhatsApp.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 ONDE -->
+<section class="sec paper" id="onde" aria-labelledby="t7">
+  <div class="wrap onde-g">
+    <div>
+      <p class="eyebrow rev"><span class="rule"></span>07 · Onde estamos</p>
+      <h2 class="h2 rev" id="t7">O estúdio fica <em>em Vila Madalena</em></h2>
+      <ul class="info">
+        <li class="rev" style="--d:.1s"><span class="ic"><svg aria-hidden="true"><use href="#i-pin"/></svg></span><div><small>Endereço</small><a href="https://www.google.com/maps/search/?api=1&amp;query=Tinta%20Viva%20Tattoo%20Vila%20Madalena%2C%20S%C3%A3o%20Paulo%20-%20SP" target="_blank" rel="noopener">Vila Madalena, São Paulo - SP</a></div></li>
+        <li class="rev" style="--d:.18s"><span class="ic"><svg aria-hidden="true"><use href="#i-clk"/></svg></span><div><small>Horário</small><span style="display:block">Ter a Sáb 11h às 20h</span></div></li>
+        <li class="rev" style="--d:.26s"><span class="ic"><svg aria-hidden="true"><use href="#i-tel"/></svg></span><div><small>WhatsApp</small><a href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Tinta%20Viva%20Tattoo%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." data-lead>(11) 91347-9449</a></div></li>
+      </ul>
+      <div class="rev" style="--d:.4s;margin-top:2.5rem"><a class="lnk" href="https://www.google.com/maps/search/?api=1&amp;query=Tinta%20Viva%20Tattoo%20Vila%20Madalena%2C%20S%C3%A3o%20Paulo%20-%20SP" target="_blank" rel="noopener">Como chegar<svg aria-hidden="true"><use href="#i-ar"/></svg></a></div>
+    </div>
+    <div class="map rev" style="--d:.15s">
+      <figure class="flash"><span class="tape a" aria-hidden="true"></span><span class="tape b" aria-hidden="true"></span><div class="ph"><iframe src="https://maps.google.com/maps?q=Vila%20Madalena%2C%20S%C3%A3o%20Paulo%20-%20SP&amp;z=15&amp;output=embed" title="Mapa com a localização da Tinta Viva Tattoo" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div><figcaption class="cap"><span>Mapa</span><span><b>Vila Madalena</b></span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="final" id="contato" aria-labelledby="t8">
+  <div class="final-box rev">
+    <span class="blob a" aria-hidden="true"></span>
+    <span class="ghost" aria-hidden="true">arte</span>
+    <p class="eyebrow center"><span class="rule"></span>Pra sempre<span class="rule"></span></p>
+    <h2 class="h2" id="t8">Sua ideia merece <em>ser bem feita.</em></h2>
+    <p class="lead">É pra vida toda, então comece pela conversa certa. Mande sua ideia e receba o orçamento pelo WhatsApp.</p>
+    <a class="btn btn-l" href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20Tinta%20Viva%20Tattoo." data-lead><svg aria-hidden="true"><use href="#i-wa"/></svg>Pedir orçamento no WhatsApp</a>
+    <span class="alt">ou <a href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20Tinta%20Viva%20Tattoo." target="_blank" rel="noopener">abra o WhatsApp direto</a></span>
+    <div class="final-meta">
+      <span><svg aria-hidden="true"><use href="#i-pin"/></svg>Vila Madalena, São Paulo - SP</span>
+      <span><svg aria-hidden="true"><use href="#i-clk"/></svg>Ter a Sáb 11h às 20h</span>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-g">
+      <div>
+        <a href="#inicio" class="logo"><span class="mono" aria-hidden="true">TV</span><span class="logo-t"><span class="logo-n">Tinta Viva Tattoo</span></span></a>
+        <p class="tl">Arte na pele em Vila Madalena · São Paulo</p>
+        <p class="fr">Tatuagem com desenho pensado pra você, conversa honesta e biossegurança levada a sério.</p>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul><li><a href="#estudio">Estúdio</a></li><li><a href="#servicos">Serviços</a></li><li><a href="#estilos">Estilos</a></li><li><a href="#seguranca">Biossegurança</a></li><li><a href="#orcamento">Orçamento</a></li><li><a href="#duvidas">Dúvidas</a></li></ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Tinta%20Viva%20Tattoo%20Vila%20Madalena%2C%20S%C3%A3o%20Paulo%20-%20SP" target="_blank" rel="noopener">Vila Madalena, São Paulo - SP</a></li>
+          <li><a href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Tinta%20Viva%20Tattoo%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." data-lead>WhatsApp (11) 91347-9449</a></li>
+<li>Ter a Sáb 11h às 20h</li>        </ul>
+      </div>
+    </div>
+    <div class="foot-b"><span>© 2026 Tinta Viva Tattoo</span></div>
+  </div>
+</footer>
+
+<a class="fab" id="fab" href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20Tinta%20Viva%20Tattoo." data-lead aria-label="Pedir orçamento pelo WhatsApp"><svg aria-hidden="true"><use href="#i-wa"/></svg></a>
+
+<dialog class="lead-d" id="lead" aria-labelledby="lead-t">
+  <div class="lead-bg" data-close></div>
+  <div class="box">
+    <span class="grab" aria-hidden="true"></span>
+    <button class="x" type="button" data-close aria-label="Fechar">×</button>
+    <p class="k">Orçamento · Tinta Viva Tattoo</p>
+    <h2 id="lead-t">Conta <em>sua ideia</em></h2>
+    <p>Três respostas rápidas e o WhatsApp abre com a mensagem pronta. Depois é só mandar a referência.</p>
+    <form id="leadf" novalidate>
+      <label class="fld"><span>Seu nome</span><input name="n" autocomplete="given-name" required maxlength="60" aria-describedby="nerr"></label>
+      <p class="err" id="nerr">Digite seu nome para continuar.</p>
+      <label class="fld"><span>Serviço de interesse</span>
+        <select name="s">
+<option>Tatuagem autoral</option><option>Fine line</option><option>Blackwork</option><option>Cobertura</option><option>Piercing</option><option>Retoque</option>          <option value="">Ainda não sei</option>
+        </select>
+      </label>
+      <div class="duo-f">
+        <label class="fld"><span>Local do corpo</span>
+          <select name="l"><option value="">Não sei</option><option>braço</option><option>antebraço</option><option>mão</option><option>perna</option><option>costas</option><option>costela</option><option>peito</option><option>pescoço</option><option>outro</option></select>
+        </label>
+        <label class="fld"><span>Tamanho</span>
+          <select name="t"><option value="">Não sei</option><option value="pequena (até 5 cm)">Até 5 cm</option><option value="média (5 a 15 cm)">5 a 15 cm</option><option value="grande (mais de 15 cm)">+15 cm</option></select>
+        </label>
+      </div>
+      <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="btn btn-p" type="submit"><svg aria-hidden="true"><use href="#i-wa"/></svg>Continuar no WhatsApp</button>
+    </form>
+    <span class="alt">Prefere ir direto? <a href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20Tinta%20Viva%20Tattoo." target="_blank" rel="noopener">Abrir o WhatsApp</a></span>
+  </div>
+</dialog>
+
+<div class="grain" aria-hidden="true"></div>
+
+<script>
+(()=>{
+const D=document,R=D.documentElement,$=(s,c=D)=>c.querySelector(s),$$=(s,c=D)=>[...c.querySelectorAll(s)];
+const NEG="Tinta Viva Tattoo",TEL="5511913479449";
+const rm=matchMedia('(prefers-reduced-motion: reduce)');
+
+const top=$('#top'),hdr=$('#hdr');
+const pv=$('#previa');
+const fitPv=()=>{if(!pv)return;pv.style.fontSize='';let fs=parseFloat(getComputedStyle(pv).fontSize),lh=fs*1.35,pd=parseFloat(getComputedStyle(pv).paddingTop)*2;
+  while(pv.offsetHeight>lh*2+pd+2&&fs>9){fs-=.5;lh=fs*1.35;pv.style.fontSize=fs+'px'}};
+fitPv();addEventListener('resize',fitPv);D.fonts&&D.fonts.ready.then(fitPv);
+const setH=()=>R.style.setProperty('--hh',top.offsetHeight+'px');setH();
+new ResizeObserver(setH).observe(top);
+
+/* B.1 */
+$$('.hero [data-i]').forEach((el,i)=>el.style.transitionDelay=(.2+.14*i)+'s');
+requestAnimationFrame(()=>requestAnimationFrame(()=>R.classList.add('is-loaded')));
+
+/* B.2 */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -60px 0px'});
+$$('.rev').forEach(el=>io.observe(el));
+
+/* B.3 + B.20 */
+const fab=$('#fab');
+const onS=()=>{const y=scrollY;hdr.classList.toggle('scrolled',y>24);fab.classList.toggle('show',y>420)};
+onS();addEventListener('scroll',onS,{passive:true});
+
+/* B.19 */
+const m=$('#mnav'),bg=$('#burger');let lastF=null;
+const menu=o=>{if(o){m.hidden=false;lastF=D.activeElement;requestAnimationFrame(()=>m.classList.add('open'));D.body.style.overflow='hidden';bg.setAttribute('aria-expanded','true');setTimeout(()=>$('#mclose').focus(),60)}
+  else{m.classList.remove('open');D.body.style.overflow='';bg.setAttribute('aria-expanded','false');setTimeout(()=>{if(!m.classList.contains('open'))m.hidden=true},350);lastF&&lastF.focus&&lastF.focus()}};
+bg.onclick=()=>menu(true);$('#mclose').onclick=()=>menu(false);
+$$('li a',m).forEach((a,i)=>{a.style.setProperty('--i',i);a.addEventListener('click',()=>menu(false))});
+m.addEventListener('keydown',e=>{if(e.key==='Escape')menu(false)});
+
+/* B.13 galeria */
+const rail=$('#rail');$$('[data-rail]').forEach(b=>b.onclick=()=>rail.scrollBy({left:300*b.dataset.rail,behavior:rm.matches?'auto':'smooth'}));
+
+/* B.8 */
+(()=>{const sec=$('#servicos'),vp=$('#hsvp'),tr=$('#hstrack');if(!sec)return;
+ const native=CSS.supports('animation-timeline','view()')&&CSS.supports('animation-range','contain');
+ const lg=matchMedia('(min-width:1024px)');let max=0,dist=1,raf=0;
+ const measure=()=>{if(rm.matches){max=0}else{const pad=lg.matches?0:parseFloat(getComputedStyle(vp).paddingLeft)*2;max=Math.max(0,tr.scrollWidth-vp.clientWidth+pad)}
+   if(!max){sec.style.minHeight='';sec.style.removeProperty('--max');tr.style.transform='';vp.classList.remove('is-scrolling');vp.style.overflowX=rm.matches?'auto':'';return}
+   dist=max+innerHeight*(lg.matches?.7:.5);sec.style.minHeight=innerHeight+dist+'px';sec.style.setProperty('--max',max+'px');update()};
+ const update=()=>{raf=0;if(!max)return;const x=Math.min(Math.max(-sec.getBoundingClientRect().top,0),dist)/dist*max;
+   if(!native)tr.style.transform=`translateX(${-x}px)`;vp.classList.toggle('is-scrolling',x>8)};
+ addEventListener('scroll',()=>raf||(raf=requestAnimationFrame(update)),{passive:true});
+ addEventListener('resize',measure);lg.addEventListener('change',measure);rm.addEventListener('change',measure);new ResizeObserver(measure).observe(tr);
+ measure();setTimeout(measure,300);D.fonts&&D.fonts.ready.then(measure)})();
+
+/* B.16 */
+const qs=$$('.qa button');
+qs.forEach(b=>b.onclick=()=>{const o=b.getAttribute('aria-expanded')==='true';qs.forEach(x=>x.setAttribute('aria-expanded','false'));b.setAttribute('aria-expanded',String(!o))});
+
+/* B.21 */
+const dlg=$('#lead'),f=$('#leadf'),inp=f.n,sel=f.s,err=$('#nerr');let opener=null;
+const foc=()=>$$('a[href],button:not([disabled]),input:not(.hp),select',dlg).filter(el=>el.offsetParent!==null);
+function abrir(serv,from){opener=from;
+  if(serv){const o=[...sel.options].find(o=>o.text===serv);if(o)sel.value=o.value}
+  dlg.showModal();D.body.style.overflow='hidden';requestAnimationFrame(()=>dlg.classList.add('on'));setTimeout(()=>inp.focus(),60)}
+function fechar(){dlg.classList.remove('on');D.body.style.overflow='';setTimeout(()=>{dlg.close();opener&&opener.focus&&opener.focus()},rm.matches?0:240)}
+if(typeof dlg.showModal==='function'){
+  D.addEventListener('click',e=>{const a=e.target.closest('[data-lead]');if(!a)return;e.preventDefault();if(m.classList.contains('open'))menu(false);abrir(a.dataset.serv,a)});
+  $$('[data-close]',dlg).forEach(x=>x.onclick=fechar);
+  dlg.addEventListener('cancel',e=>{e.preventDefault();fechar()});
+  dlg.addEventListener('keydown',e=>{if(e.key!=='Tab')return;const l=foc();if(!l.length)return;const a=l[0],z=l[l.length-1];
+    if(e.shiftKey&&D.activeElement===a){e.preventDefault();z.focus()}else if(!e.shiftKey&&D.activeElement===z){e.preventDefault();a.focus()}});
+  inp.addEventListener('input',()=>{inp.removeAttribute('aria-invalid');err.classList.remove('on')});
+  f.addEventListener('submit',e=>{e.preventDefault();if(f.website.value)return;
+    const n=inp.value.trim();if(n.length<2){inp.setAttribute('aria-invalid','true');err.classList.add('on');inp.focus();return}
+    const s=sel.value,l=f.l.value,t=f.t.value;
+    let msg=`Olá! Meu nome é ${n}. Vi o site da ${NEG} e quero um orçamento`+(s?` de *${s}*`:'')+'.';
+    if(l)msg+=`\nLocal do corpo: ${l}.`;
+    if(t)msg+=`\nTamanho aproximado: ${t}.`;
+    msg+='\nVou mandar minha referência aqui.';
+    const url='https://wa.me/'+TEL+'?text='+encodeURIComponent(msg);
+    const w=window.open(url,'_blank');if(w){try{w.opener=null}catch(_){}}else location.href=url;fechar()});
+}
+})();
+</script>
+</body>
+</html>

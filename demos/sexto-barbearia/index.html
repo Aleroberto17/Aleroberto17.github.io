@@ -10,7 +10,7 @@
 <meta property="og:image" content="https://aleroberto17.github.io/assets/img/barbearia/hero-1.jpg">
 <meta property="og:locale" content="pt_BR">
 <meta name="theme-color" content="#151311">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23151311' stroke='%23b8873b' stroke-width='3'/%3E%3Ctext x='32' y='41' text-anchor='middle' font-family='Arial' font-weight='900' font-size='24' fill='%23efe7da'%3ES%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="/assets/clientes/sexto-barbearia/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Libre+Caslon+Text:ital,wght@0,400;1,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -19,15 +19,15 @@
 /* Identidade: barbearia clássica. Carvão (marca), marfim (fundo claro), latão (metálico só em fios e detalhes). */
 :root{
   --carvao:#151311; --carvao-2:#1f1b18; --carvao-3:#2a2420;
-  --marfim:#efe7da; --marfim-2:#e6dccb; --creme:#f7f2ea;
-  --latao:#b8873b; --latao-claro:#d9ad62; --vinho:#7a2e22;
+  --marfim:#efe7da; --marfim-2:#d8d8d8; --creme:#f7f2ea;
+  --latao:#7a7a7a; --latao-claro:#9e9e9e; --vinho:#4e4e4e;
   --f-display:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;
   --f-serif:"Libre Caslon Text",Georgia,"Times New Roman",serif;
   --f-body:Manrope,"Segoe UI",system-ui,-apple-system,sans-serif;
   --ease:cubic-bezier(.22,1,.36,1);
   --r-foto:2rem; --r-card:1.5rem;
   --sombra-foto:0 30px 60px -18px rgb(21 19 17/.55);
-  --sombra-cta:0 18px 30px -10px rgb(184 135 59/.45);
+  --sombra-cta:0 18px 30px -10px rgb(122 122 122/.45);
   --linha-escura:rgb(239 231 218/.12); --linha-clara:rgb(21 19 17/.12);
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -60,8 +60,8 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .clara .h2 em,.clara-2 .h2 em{color:var(--vinho)}
 .lead{font-size:1.08rem;font-weight:300;line-height:1.75;color:rgb(239 231 218/.72);max-width:36rem;margin-top:1.5rem}
 .clara .lead,.clara-2 .lead{color:rgb(21 19 17/.68)}
-.fantasma{position:absolute;pointer-events:none;user-select:none;font:italic 400 1px/1 var(--f-serif);letter-spacing:-.03em;color:transparent;-webkit-text-stroke:1px rgb(217 173 98/.16);white-space:nowrap;z-index:0}
-.clara .fantasma,.clara-2 .fantasma{-webkit-text-stroke:1px rgb(122 46 34/.13)}
+.fantasma{position:absolute;pointer-events:none;user-select:none;font:italic 400 1px/1 var(--f-serif);letter-spacing:-.03em;color:transparent;-webkit-text-stroke:1px rgb(158 158 158/.16);white-space:nowrap;z-index:0}
+.clara .fantasma,.clara-2 .fantasma{-webkit-text-stroke:1px rgb(78 78 78/.13)}
 
 /* botões */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:.7rem;border-radius:999px;padding:1.05rem 2rem;font:600 .78rem/1 var(--f-body);letter-spacing:.16em;text-transform:uppercase;transition:translate .3s var(--ease),background-color .3s,box-shadow .3s,color .3s,border-color .3s;white-space:nowrap}
@@ -71,7 +71,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .clara .btn-contorno,.clara-2 .btn-contorno{border-color:rgb(21 19 17/.25);color:var(--carvao)}
 .btn-carvao{background:var(--carvao);color:var(--marfim);box-shadow:0 18px 30px -12px rgb(21 19 17/.45)}
 @media(hover:hover){
-  .btn-latao:hover{translate:0 -4px;background:var(--latao-claro);box-shadow:0 26px 44px -14px rgb(184 135 59/.55)}
+  .btn-latao:hover{translate:0 -4px;background:var(--latao-claro);box-shadow:0 26px 44px -14px rgb(122 122 122/.55)}
   .btn-latao:hover svg,.btn-carvao:hover svg{transform:scale(1.12)}
   .btn-contorno:hover{border-color:var(--latao-claro);color:var(--latao-claro)}
   .btn-carvao:hover{translate:0 -4px;background:var(--vinho)}
@@ -114,7 +114,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .hero{position:relative;overflow:hidden;padding-block:8.5rem 5rem;background:radial-gradient(120% 80% at 85% 10%,#2c241d 0%,var(--carvao) 55%)}
 .hero .w{position:relative;z-index:2;display:grid;gap:3.5rem;align-items:center}
 @media(min-width:1024px){.hero{padding-block:10rem 7rem}.hero .w{grid-template-columns:1.1fr .9fr;gap:4rem}}
-.selo-txt{display:inline-flex;align-items:center;gap:.6rem;border:1px solid rgb(217 173 98/.35);background:rgb(239 231 218/.04);border-radius:999px;padding:.55rem 1.1rem;font:600 .64rem/1.3 var(--f-body);letter-spacing:.22em;text-transform:uppercase;max-width:100%}
+.selo-txt{display:inline-flex;align-items:center;gap:.6rem;border:1px solid rgb(158 158 158/.35);background:rgb(239 231 218/.04);border-radius:999px;padding:.55rem 1.1rem;font:600 .64rem/1.3 var(--f-body);letter-spacing:.22em;text-transform:uppercase;max-width:100%}
 .selo-txt span{background:linear-gradient(110deg,var(--latao-claro) 0 40%,#fff4dc 50%,var(--latao-claro) 60% 100%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:brilho 5s linear infinite;overflow-wrap:anywhere}
 @keyframes brilho{from{background-position:150%}to{background-position:-50%}}
 .h1{font:900 clamp(2.9rem,9.6vw,6.4rem)/.9 var(--f-display);text-transform:uppercase;letter-spacing:.005em;margin-top:1.6rem;text-wrap:balance}
@@ -124,11 +124,11 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .acoes{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2.2rem}
 .provas{display:flex;flex-wrap:wrap;gap:.6rem 1.6rem;margin-top:2.4rem;padding-top:1.6rem;border-top:1px solid var(--linha-escura)}
 .prova{display:flex;align-items:center;gap:.6rem;font-size:.86rem;color:rgb(239 231 218/.75)}
-.prova i{width:2.2rem;height:2.2rem;border-radius:50%;display:grid;place-items:center;background:rgb(184 135 59/.14);color:var(--latao-claro);flex:none}
+.prova i{width:2.2rem;height:2.2rem;border-radius:50%;display:grid;place-items:center;background:rgb(122 122 122/.14);color:var(--latao-claro);flex:none}
 .prova i svg{width:1rem;height:1rem}
 .hero .fantasma{font-size:clamp(7rem,22vw,22rem);left:-1vw;bottom:-.18em;z-index:3}
 .foto{position:relative;margin-inline:auto;width:100%;max-width:30rem}
-.foto::before{content:"";position:absolute;inset:-.8rem;rotate:-2deg;border:1px solid rgb(217 173 98/.5);border-radius:calc(var(--r-foto) + .5rem);z-index:0}
+.foto::before{content:"";position:absolute;inset:-.8rem;rotate:-2deg;border:1px solid rgb(158 158 158/.5);border-radius:calc(var(--r-foto) + .5rem);z-index:0}
 .foto.dir::before{rotate:2deg}
 .foto img{position:relative;z-index:1;width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r-foto);box-shadow:var(--sombra-foto)}
 @media(max-width:1023px){.hero .foto img{aspect-ratio:5/4.6}.hero .foto{max-width:34rem}}
@@ -174,7 +174,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 @keyframes gira{to{transform:rotate(360deg)}}
 .lista-check{list-style:none;display:grid;gap:1.4rem;margin-top:2.4rem}
 .lista-check li{display:grid;grid-template-columns:2.6rem 1fr;gap:1rem;align-items:start}
-.lista-check i{width:2.6rem;height:2.6rem;border-radius:50%;display:grid;place-items:center;background:rgb(122 46 34/.08);color:var(--vinho)}
+.lista-check i{width:2.6rem;height:2.6rem;border-radius:50%;display:grid;place-items:center;background:rgb(78 78 78/.08);color:var(--vinho)}
 .lista-check i svg{width:1.15rem;height:1.15rem}
 .lista-check h3{font:700 1.05rem/1.3 var(--f-body)}
 .lista-check p{font-size:.94rem;color:rgb(21 19 17/.65);margin-top:.15rem}
@@ -196,8 +196,8 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .hs-trilho{display:flex;gap:1.1rem;width:max-content;will-change:transform;padding-right:1.25rem}
 .card{position:relative;flex:none;width:17.5rem;height:clamp(19rem,50vh,24rem);display:flex;flex-direction:column;padding:1.7rem;border-radius:var(--r-card);background:linear-gradient(160deg,rgb(239 231 218/.07),rgb(239 231 218/.02));border:1px solid var(--linha-escura);transition:translate .5s var(--ease),border-color .5s,box-shadow .5s,background-color .5s;text-align:left}
 @media(min-width:640px){.card{width:20rem}}
-.card .num{position:absolute;top:1.3rem;right:1.5rem;font:italic 400 2.2rem/1 var(--f-serif);color:rgb(217 173 98/.18);transition:color .5s}
-.card .ic{width:3.3rem;height:3.3rem;border-radius:1rem;display:grid;place-items:center;background:rgb(184 135 59/.14);color:var(--latao-claro);transition:background-color .5s,color .5s}
+.card .num{position:absolute;top:1.3rem;right:1.5rem;font:italic 400 2.2rem/1 var(--f-serif);color:rgb(158 158 158/.18);transition:color .5s}
+.card .ic{width:3.3rem;height:3.3rem;border-radius:1rem;display:grid;place-items:center;background:rgb(122 122 122/.14);color:var(--latao-claro);transition:background-color .5s,color .5s}
 .card .ic svg{width:1.5rem;height:1.5rem}
 .card h3{font:800 1.7rem/1 var(--f-display);text-transform:uppercase;margin-top:1.6rem;overflow-wrap:anywhere}
 .card p{flex:1;font-size:.93rem;color:rgb(239 231 218/.62);margin-top:.7rem}
@@ -205,8 +205,8 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .card .preco.sob{font:italic 400 1.05rem/1 var(--f-serif)}
 .card .ir{display:inline-flex;align-items:center;gap:.5rem;margin-top:1.1rem;font-size:.7rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--latao-claro)}
 .card .ir svg{width:1rem;transition:transform .4s var(--ease)}
-@media(hover:hover){.card:hover{translate:0 -8px;border-color:rgb(217 173 98/.4);box-shadow:0 30px 60px -20px rgb(0 0 0/.6)}
-  .card:hover .num{color:rgb(217 173 98/.45)}.card:hover .ic{background:var(--latao);color:var(--carvao)}.card:hover .ir svg{transform:translateX(4px)}}
+@media(hover:hover){.card:hover{translate:0 -8px;border-color:rgb(158 158 158/.4);box-shadow:0 30px 60px -20px rgb(0 0 0/.6)}
+  .card:hover .num{color:rgb(158 158 158/.45)}.card:hover .ic{background:var(--latao);color:var(--carvao)}.card:hover .ir svg{transform:translateX(4px)}}
 .hs .fantasma{font-size:clamp(8rem,24vw,24rem);right:-4vw;bottom:-.2em}
 
 /* 03 galeria */
@@ -225,9 +225,9 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .como .w{display:grid;gap:5rem;align-items:center}
 @media(min-width:1024px){.como .w{grid-template-columns:1.05fr .95fr;gap:6rem}}
 .passos{position:relative;list-style:none;display:grid;gap:2.4rem;margin-top:3rem}
-.passos::before{content:"";position:absolute;left:1.5rem;top:1.5rem;bottom:1.5rem;width:1px;background:linear-gradient(rgb(217 173 98/.65),rgb(217 173 98/.2),transparent)}
+.passos::before{content:"";position:absolute;left:1.5rem;top:1.5rem;bottom:1.5rem;width:1px;background:linear-gradient(rgb(158 158 158/.65),rgb(158 158 158/.2),transparent)}
 .passos li{position:relative;display:flex;gap:1.6rem}
-.passos b{position:relative;z-index:1;flex:none;width:3rem;height:3rem;border-radius:50%;display:grid;place-items:center;border:1px solid rgb(217 173 98/.55);background:var(--carvao-2);font:italic 400 1.05rem/1 var(--f-serif);color:var(--latao-claro)}
+.passos b{position:relative;z-index:1;flex:none;width:3rem;height:3rem;border-radius:50%;display:grid;place-items:center;border:1px solid rgb(158 158 158/.55);background:var(--carvao-2);font:italic 400 1.05rem/1 var(--f-serif);color:var(--latao-claro)}
 .passos h3{font:800 1.5rem/1.1 var(--f-display);text-transform:uppercase;margin-top:.25rem}
 .passos p{font-size:.95rem;color:rgb(239 231 218/.65);margin-top:.3rem}
 .como{background:var(--carvao-2)}
@@ -255,7 +255,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .final .lead{margin-inline:auto}
 .final .acoes{justify-content:center}
 .final .etq{justify-content:center}
-.final .fantasma{font-size:clamp(8rem,26vw,26rem);left:50%;translate:-50% 0;bottom:-.25em;-webkit-text-stroke:1px rgb(217 173 98/.14)}
+.final .fantasma{font-size:clamp(8rem,26vw,26rem);left:50%;translate:-50% 0;bottom:-.25em;-webkit-text-stroke:1px rgb(158 158 158/.14)}
 
 /* contato */
 .contato .w{display:grid;gap:3.5rem}
@@ -298,7 +298,7 @@ dialog::backdrop{background:rgb(21 19 17/.6);backdrop-filter:blur(8px);-webkit-b
 @media(min-width:640px){.caixa{border-radius:1.75rem;padding:2.5rem 2.2rem}}
 dialog[open] .caixa{animation:sobe .3s var(--ease)}
 @keyframes sobe{from{opacity:0;transform:translateY(24px) scale(.98)}}
-.caixa .blob{width:11rem;height:11rem;top:-3rem;right:-3rem;background:rgb(184 135 59/.35);filter:blur(40px)}
+.caixa .blob{width:11rem;height:11rem;top:-3rem;right:-3rem;background:rgb(122 122 122/.35);filter:blur(40px)}
 .caixa h3{position:relative;font:800 2.1rem/1 var(--f-display);text-transform:uppercase}
 .caixa h3 em{font:italic 400 .8em var(--f-serif);text-transform:none;color:var(--vinho)}
 .caixa>p{position:relative;font-size:.93rem;color:rgb(21 19 17/.65);margin-top:.6rem}
@@ -316,19 +316,23 @@ dialog[open] .caixa{animation:sobe .3s var(--ease)}
   .compo .grande{clip-path:none}.compo .grande img{scale:1}
 }
 </style>
+
+<style>
+.tem-logo{padding:0!important;overflow:hidden!important;border-radius:50%!important;background:#fff!important;
+  border:0!important;box-shadow:none!important;display:inline-flex!important;flex:none}
+.tem-logo img,img.logo-cli{width:100%;height:100%;object-fit:cover;display:block;border-radius:50%}
+img.logo-cli{flex:none}
+.marca img.logo-cli{width:3.2rem;height:3.2rem;box-shadow:0 0 0 2px rgb(255 255 255/.12)}
+.compo .logo-giro{position:absolute;left:.44rem;top:.44rem;width:4.1rem;height:4.1rem;z-index:3;border-radius:50%;
+  box-shadow:0 10px 24px -8px rgb(0 0 0/.5)}
+</style>
 </head>
 <body>
 <div class="grain" aria-hidden="true"></div>
 
 <div class="previa">Prévia de site criada para a Sexto Barbearia. Fotos ilustrativas: no site final entram as fotos de vocês. <a href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Vi%20a%20pr%C3%A9via%20do%20site%20da%20Sexto%20Barbearia%20e%20quero%20colocar%20no%20ar." target="_blank" rel="noopener">Quero colocar no ar</a></div>
 <header class="topo" id="topo"><div class="w">
-  <a class="marca" href="#inicio" aria-label="Sexto Barbearia, início"><svg viewBox="0 0 120 120" aria-hidden="true">
-  <defs><path id="c-topo" d="M60,60 m-45,0 a45,45 0 1,1 90,0 a45,45 0 1,1 -90,0"/></defs>
-  <circle cx="60" cy="60" r="58" fill="#151311" stroke="#b8873b" stroke-width="2"/>
-  <circle cx="60" cy="60" r="33" fill="none" stroke="#b8873b" stroke-width="1" opacity=".7"/>
-  <text font-family="Manrope,Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="3" fill="#d9ad62"><textPath href="#c-topo">BARBEARIA · FREGUESIA DO Ó · SÃO PAULO ·</textPath></text>
-  <text x="60" y="71" text-anchor="middle" font-family="'Big Shoulders Display','Arial Narrow',Impact,sans-serif" font-weight="900" font-size="31" fill="#efe7da">S</text>
-</svg><b>Sexto Barbearia</b></a>
+  <a class="marca" href="#inicio" aria-label="Sexto Barbearia, início"><img class="logo-cli" src="/assets/clientes/sexto-barbearia/logo.png" alt=""><b>Sexto Barbearia</b></a>
   <nav class="nav" aria-label="Seções"><a href="#casa">A casa</a><a href="#servicos">Serviços</a><a href="#galeria">Galeria</a><a href="#duvidas">Dúvidas</a><a href="#contato">Contato</a></nav>
   <div class="topo-acoes">
     <button class="btn btn-latao" data-cta><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg><span>Agendar</span></button>
@@ -345,8 +349,8 @@ dialog[open] .caixa{animation:sobe .3s var(--ease)}
 <main id="inicio">
 
 <section class="hero">
-  <div class="blob" style="width:34rem;height:34rem;right:-10rem;top:-8rem;background:rgb(184 135 59/.18)"></div>
-  <div class="blob" style="width:26rem;height:26rem;left:-12rem;bottom:-6rem;background:rgb(122 46 34/.22)"></div>
+  <div class="blob" style="width:34rem;height:34rem;right:-10rem;top:-8rem;background:rgb(122 122 122/.18)"></div>
+  <div class="blob" style="width:26rem;height:26rem;left:-12rem;bottom:-6rem;background:rgb(78 78 78/.22)"></div>
   <span class="fantasma" aria-hidden="true">navalha</span>
   <div class="w">
     <div>
@@ -374,18 +378,18 @@ dialog[open] .caixa{animation:sobe .3s var(--ease)}
 <div><span>Degradê</span><i>✦</i><span>Navalha</span><i>✦</i><span>Barba desenhada</span><i>✦</i><span>Toalha quente</span><i>✦</i><span>Pigmentação</span><i>✦</i><span>Sobrancelha</span><i>✦</i><span>Pezinho</span><i>✦</i></div><div><span>Degradê</span><i>✦</i><span>Navalha</span><i>✦</i><span>Barba desenhada</span><i>✦</i><span>Toalha quente</span><i>✦</i><span>Pigmentação</span><i>✦</i><span>Sobrancelha</span><i>✦</i><span>Pezinho</span><i>✦</i></div></div></div>
 
 <section class="sec clara casa" id="casa">
-  <div class="blob" style="width:30rem;height:30rem;right:-12rem;top:10%;background:rgb(184 135 59/.18)"></div>
+  <div class="blob" style="width:30rem;height:30rem;right:-12rem;top:10%;background:rgb(122 122 122/.18)"></div>
   <div class="w">
     <div class="compo rv" id="compo">
       <div class="grande"><img src="/assets/img/barbearia/hero-2.jpg" alt="Interior da barbearia com cadeiras e espelhos" loading="lazy"></div>
       <div class="pequena"><img src="/assets/img/barbearia/acao-3.jpg" alt="Barbeiro finalizando um corte na máquina" loading="lazy"></div>
       <span class="giro"><svg viewBox="0 0 120 120" aria-hidden="true">
   <defs><path id="c-giro" d="M60,60 m-45,0 a45,45 0 1,1 90,0 a45,45 0 1,1 -90,0"/></defs>
-  <circle cx="60" cy="60" r="58" fill="#151311" stroke="#b8873b" stroke-width="2"/>
-  <circle cx="60" cy="60" r="33" fill="none" stroke="#b8873b" stroke-width="1" opacity=".7"/>
-  <text font-family="Manrope,Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="3" fill="#d9ad62"><textPath href="#c-giro">BARBEARIA · FREGUESIA DO Ó · SÃO PAULO ·</textPath></text>
-  <text x="60" y="71" text-anchor="middle" font-family="'Big Shoulders Display','Arial Narrow',Impact,sans-serif" font-weight="900" font-size="31" fill="#efe7da">S</text>
-</svg></span>
+  <circle cx="60" cy="60" r="58" fill="#151311" stroke="#7a7a7a" stroke-width="2"/>
+  <circle cx="60" cy="60" r="33" fill="none" stroke="#7a7a7a" stroke-width="1" opacity=".7"/>
+  <text font-family="Manrope,Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="3" fill="#9e9e9e"><textPath href="#c-giro">BARBEARIA · FREGUESIA DO Ó · SÃO PAULO ·</textPath></text>
+  
+</svg></span><img class="logo-giro" src="/assets/clientes/sexto-barbearia/logo.png" alt="">
     </div>
     <div>
       <p class="etq rv">01 · A casa</p>
@@ -457,7 +461,7 @@ dialog[open] .caixa{animation:sobe .3s var(--ease)}
 </section>
 
 <section class="sec como">
-  <div class="blob" style="width:28rem;height:28rem;left:-10rem;top:20%;background:rgb(184 135 59/.12)"></div>
+  <div class="blob" style="width:28rem;height:28rem;left:-10rem;top:20%;background:rgb(122 122 122/.12)"></div>
   <div class="w" style="position:relative;z-index:1">
     <div>
       <p class="etq rv">04 · Como funciona</p>
@@ -528,13 +532,7 @@ dialog[open] .caixa{animation:sobe .3s var(--ease)}
 </main>
 
 <footer class="rodape"><div class="w">
-  <div><a class="marca" href="#inicio"><svg viewBox="0 0 120 120" aria-hidden="true">
-  <defs><path id="c-rodape" d="M60,60 m-45,0 a45,45 0 1,1 90,0 a45,45 0 1,1 -90,0"/></defs>
-  <circle cx="60" cy="60" r="58" fill="#151311" stroke="#b8873b" stroke-width="2"/>
-  <circle cx="60" cy="60" r="33" fill="none" stroke="#b8873b" stroke-width="1" opacity=".7"/>
-  <text font-family="Manrope,Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="3" fill="#d9ad62"><textPath href="#c-rodape">BARBEARIA · FREGUESIA DO Ó · SÃO PAULO ·</textPath></text>
-  <text x="60" y="71" text-anchor="middle" font-family="'Big Shoulders Display','Arial Narrow',Impact,sans-serif" font-weight="900" font-size="31" fill="#efe7da">S</text>
-</svg><b>Sexto Barbearia</b></a><p style="margin-top:1.2rem;max-width:26rem">Barbearia em Freguesia do Ó, São Paulo. Corte, barba e navalha com hora marcada.</p></div>
+  <div><a class="marca" href="#inicio"><img class="logo-cli" src="/assets/clientes/sexto-barbearia/logo.png" alt=""><b>Sexto Barbearia</b></a><p style="margin-top:1.2rem;max-width:26rem">Barbearia em Freguesia do Ó, São Paulo. Corte, barba e navalha com hora marcada.</p></div>
   <div><h4>Navegação</h4><ul><li><a href="#casa">A casa</a></li><li><a href="#servicos">Serviços</a></li><li><a href="#galeria">Galeria</a></li><li><a href="#duvidas">Dúvidas</a></li></ul></div>
   <div><h4>Contato</h4><ul><li>Freguesia do Ó, São Paulo - SP</li><li><a href="https://wa.me/5511977405108?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Sexto%20Barbearia%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">WhatsApp (11) 97740-5108</a></li><li><a href="https://instagram.com/sextobarbearia" target="_blank" rel="noopener">@sextobarbearia</a></li></ul></div>
   <div class="base"><span>© 2026 Sexto Barbearia</span><span>Barbearia em Freguesia do Ó · São Paulo</span></div>

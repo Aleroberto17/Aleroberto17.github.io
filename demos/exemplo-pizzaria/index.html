@@ -1,0 +1,874 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Forno da Vila | Pizzaria em Vila Mariana, São Paulo</title>
+<meta name="description" content="Forno da Vila: pizzas salgadas e doces em Vila Mariana, São Paulo. Escolha o sabor e faça o seu pedido pelo WhatsApp (11) 91347-9449.">
+<meta property="og:title" content="Forno da Vila | Pizzaria em Vila Mariana">
+<meta property="og:description" content="Escolha o sabor e peça a sua pizza pelo WhatsApp.">
+<meta property="og:image" content="https://aleroberto17.github.io/assets/img/pizzaria/produto-1.jpg">
+<meta name="theme-color" content="#f4ead6">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="/assets/img/pizzaria/produto-1.jpg" fetchpriority="high">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Work+Sans:wght@300;400;500;600&family=Yellowtail&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+@font-face{font-family:"Fraunces Fallback";src:local("Georgia"),local("Liberation Serif"),local("Times New Roman"),local("DejaVu Serif");size-adjust:98%;ascent-override:95%}
+@font-face{font-family:"Fraunces Fallback";font-style:italic;src:local("Georgia Italic"),local("Georgia-Italic"),local("Liberation Serif Italic"),local("DejaVu Serif Italic");size-adjust:98%;ascent-override:95%}
+@font-face{font-family:"Work Sans Fallback";src:local("Arial"),local("Helvetica"),local("Liberation Sans"),local("DejaVu Sans");size-adjust:104%}
+:root{
+  --massa:#f4ead6; --massa-2:#fbf6ec; --farinha:#eadcc0;
+  --tomate:#a62f1e; --tomate-2:#c0402a; --tomate-deep:#6c1c11;
+  --manj:#2c4a33; --manj-deep:#18291d; --manj-3:#22392a;
+  --forno:#2a1a12; --madeira:#5b3b25;
+  --cobre:#b8733f; --cobre-2:#dba574;
+  --verde:#25d366;
+  --tx-soft:rgb(42 26 18/.7); --line:rgb(42 26 18/.12); --line-2:rgb(166 47 30/.22);
+  --on-dark:rgb(244 234 214/.74); --line-dark:rgb(244 234 214/.14);
+  --f-display:"Fraunces","Fraunces Fallback",Georgia,serif;
+  --f-script:"Yellowtail","Brush Script MT",cursive;
+  --f-body:"Work Sans","Work Sans Fallback",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --ease:cubic-bezier(.22,1,.36,1);
+  --pv:0px; --hdr:5rem;
+  --arch:50% 50% 1.75rem 1.75rem/38% 38% 1.75rem 1.75rem;
+  --shadow:0 25px 50px -14px rgb(108 28 17/.28);
+  --check:repeating-conic-gradient(var(--tomate) 0 25%,var(--massa-2) 0 50%) 0 0/16px 16px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--hdr) + var(--pv) + 1rem);-webkit-text-size-adjust:100%}
+body{background:var(--massa);color:var(--forno);font:400 1rem/1.65 var(--f-body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+@supports (overflow:clip){body{overflow-x:clip}}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+button,input,select{font:inherit;color:inherit}
+button{background:none;border:0;cursor:pointer}
+::selection{background:var(--tomate);color:var(--massa-2)}
+:focus-visible{outline:2px solid var(--cobre);outline-offset:3px;border-radius:6px}
+.wrap{max-width:80rem;margin-inline:auto;padding-inline:1.25rem}
+@media(min-width:768px){.wrap{padding-inline:2.5rem}}
+.sec{position:relative;overflow:hidden;padding-block:6rem}
+@media(min-width:768px){.sec{padding-block:9rem}}
+.dark{background:var(--manj-deep);color:var(--massa)}
+
+/* tipografia */
+.eyebrow{display:flex;align-items:center;gap:1rem;margin-bottom:1.1rem;font:500 .7rem/1.3 var(--f-body);letter-spacing:.3em;text-transform:uppercase;color:var(--tomate)}
+.eyebrow .rule{flex:none;width:2.5rem;height:1px;background:var(--cobre)}
+.dark .eyebrow{color:var(--cobre-2)}
+.dark .eyebrow .rule{background:var(--cobre-2)}
+.eyebrow.center{justify-content:center}
+.h2{font:350 clamp(2.15rem,4.6vw,3.4rem)/1.06 var(--f-display);font-variation-settings:"opsz" 144,"SOFT" 50;letter-spacing:-.022em;text-wrap:balance;overflow-wrap:normal;hyphens:manual}
+.h2 em{font-style:italic;font-weight:450;color:var(--tomate);font-variation-settings:"opsz" 144,"SOFT" 100,"WONK" 1}
+.dark .h2 em{color:var(--cobre-2)}
+.lead{font-size:1.075rem;font-weight:300;line-height:1.7;color:var(--tx-soft);max-width:36rem}
+.h2+.lead{margin-top:1.3rem}
+.dark .lead{color:var(--on-dark)}
+.lead strong{color:var(--forno);font-weight:600}
+.script{font-family:var(--f-script);font-weight:400;letter-spacing:0;text-transform:none}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.7rem;border-radius:999px;padding:1rem 2rem;font:600 .8rem/1.1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;background:var(--tomate);color:var(--massa-2);box-shadow:0 20px 25px -8px rgb(166 47 30/.35),0 8px 10px -6px rgb(166 47 30/.3);transition:transform .3s var(--ease),box-shadow .3s var(--ease),background-color .3s var(--ease),color .3s var(--ease),border-color .3s var(--ease);text-align:center}
+.btn svg{width:1.1rem;height:1.1rem;flex:none;transition:transform .3s var(--ease)}
+.btn-light{background:var(--massa-2);color:var(--tomate);box-shadow:0 20px 25px -8px rgb(0 0 0/.3)}
+.btn-line{background:transparent;color:var(--tomate);border:1px solid var(--line-2);box-shadow:none}
+.dark .btn-line{color:var(--massa);border-color:rgb(244 234 214/.3)}
+.btn-sm{padding:.75rem 1.4rem;font-size:.74rem;box-shadow:0 10px 15px -5px rgb(166 47 30/.3)}
+@media(hover:hover){
+  .btn:hover{transform:translateY(-3px);background:var(--tomate-2);box-shadow:0 25px 50px -12px rgb(166 47 30/.45)}
+  .btn:hover svg{transform:scale(1.1)}
+  .btn-light:hover{background:#fff;color:var(--tomate-deep)}
+  .btn-line:hover{background:var(--tomate);color:var(--massa-2);border-color:var(--tomate)}
+  .dark .btn-line:hover{background:rgb(244 234 214/.1);color:var(--cobre-2);border-color:var(--cobre-2)}
+}
+.link-arrow{display:inline-flex;align-items:center;gap:.5rem;font:600 .72rem/1 var(--f-body);letter-spacing:.18em;text-transform:uppercase;color:var(--tomate)}
+.link-arrow svg{width:1rem;height:1rem;transition:transform .3s var(--ease)}
+
+/* reveal */
+.js .rev{opacity:0;transform:translateY(var(--y,32px));transition:opacity .9s var(--ease) var(--d,0s),transform .9s var(--ease) var(--d,0s)}
+.js .rev.vis{opacity:1;transform:none}
+
+/* atmosfera */
+.blob{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none;z-index:0}
+@media(max-width:1023.98px){.blob{filter:blur(48px)}}
+.ghost{position:absolute;pointer-events:none;user-select:none;font:italic 500 1em/1 var(--f-display);font-variation-settings:"opsz" 144,"SOFT" 100,"WONK" 1;letter-spacing:-.03em;color:transparent;-webkit-text-stroke:1px rgb(166 47 30/.17);white-space:nowrap;z-index:1}
+.ghost.on-dark{-webkit-text-stroke:1px rgb(244 234 214/.13)}
+.gingham{background-image:repeating-linear-gradient(0deg,rgb(166 47 30/.032) 0 22px,transparent 22px 44px),repeating-linear-gradient(90deg,rgb(166 47 30/.032) 0 22px,transparent 22px 44px)}
+.grain{position:fixed;inset:0;z-index:80;pointer-events:none;opacity:.05;transform:translateZ(0);backface-visibility:hidden;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* header */
+.hdr{position:fixed;inset:0 0 auto;z-index:50;transform:translateY(-110%);opacity:0;transition:transform .8s var(--ease),opacity .8s var(--ease)}
+.is-loaded .hdr{transform:none;opacity:1}
+.previa{display:block;background:var(--forno);color:var(--massa);font:500 .78rem/1.35 var(--f-body);text-align:center;padding:.55rem 1rem}
+.previa{text-wrap:balance}
+@media(max-width:479.98px){.previa{font-size:.64rem;line-height:1.3;padding:.45rem .75rem;letter-spacing:-.005em}}
+@media(max-width:359.98px){.previa{font-size:.58rem;padding-inline:.5rem}}
+.previa a{font-weight:600;color:var(--cobre-2);text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+.hdr-bar{transition:background-color .5s var(--ease),box-shadow .5s var(--ease)}
+.hdr.scrolled .hdr-bar{background:rgb(244 234 214/.96);box-shadow:0 1px 0 0 rgb(166 47 30/.1)}
+@media(min-width:768px){.hdr.scrolled .hdr-bar{background:rgb(244 234 214/.86);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}}
+.hdr-in{height:var(--hdr);display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.logo{display:flex;align-items:center;gap:.75rem;min-width:0;transition:transform .3s var(--ease)}
+@media(hover:hover){.logo:hover{transform:scale(1.03)}}
+.logo-mark{flex:none;position:relative;display:grid;place-items:center;width:2.9rem;height:2.9rem;border-radius:50%;background:var(--tomate);color:var(--massa-2);font:italic 500 1.05rem/1 var(--f-display);font-variation-settings:"opsz" 144,"WONK" 1;box-shadow:inset 0 0 0 3px var(--tomate),inset 0 0 0 4px rgb(244 234 214/.55)}
+.logo-name{display:block;font:500 1.3rem/1.02 var(--f-display);font-variation-settings:"opsz" 144,"SOFT" 50;letter-spacing:-.015em;text-wrap:balance;overflow-wrap:normal;max-width:14rem}
+.logo-name.l2{font-size:1.1rem;max-width:13rem}
+.logo-name.l3{font-size:.98rem;max-width:12rem}
+.logo-name.l4{font-size:.92rem;max-width:11.5rem;line-height:1.08}
+.logo-sub{display:block;margin-top:.2rem;font:500 .55rem/1 var(--f-body);letter-spacing:.3em;text-transform:uppercase;color:var(--cobre)}
+.nav{display:none;gap:2rem}
+.nav a{position:relative;font:400 .78rem/1 var(--f-body);letter-spacing:.18em;text-transform:uppercase;color:rgb(42 26 18/.8);transition:color .3s var(--ease)}
+.nav a::after{content:"";position:absolute;left:0;bottom:-7px;height:1px;width:0;background:var(--cobre);transition:width .3s var(--ease)}
+@media(hover:hover){.nav a:hover{color:var(--tomate)}.nav a:hover::after{width:100%}}
+.hdr-r{display:flex;align-items:center;gap:.75rem;flex:none}
+.hdr-cta{display:none}
+.menu-btn{width:2.75rem;height:2.75rem;border-radius:50%;border:1px solid var(--line-2);display:grid;place-items:center;color:var(--tomate)}
+.menu-btn svg{width:1.25rem;height:1.25rem}
+@media(min-width:640px){.hdr-cta{display:inline-flex}}
+@media(min-width:1024px){.nav{display:flex}.menu-btn{display:none}}
+
+/* menu mobile */
+.mnav{position:fixed;inset:0;z-index:60;display:flex;flex-direction:column;padding:1.25rem 1.25rem 2rem;background:linear-gradient(140deg,var(--manj-deep),var(--manj) 55%,var(--tomate-deep));color:var(--massa);opacity:0;visibility:hidden;transition:opacity .35s var(--ease),visibility .35s}
+.mnav.open{opacity:1;visibility:visible}
+.mnav-top{display:flex;justify-content:space-between;align-items:center;min-height:3.5rem;gap:1rem}
+.mnav .menu-btn{color:var(--massa);border-color:rgb(244 234 214/.3)}
+.mnav .logo-sub{color:var(--cobre-2)}
+.mnav nav{display:flex;flex-direction:column;gap:.5rem;margin-top:2.5rem}
+.mnav nav a{font:300 2.3rem/1.15 var(--f-display);font-variation-settings:"opsz" 144;opacity:0;translate:-28px 0;transition:opacity .5s var(--ease),translate .5s var(--ease),color .3s;transition-delay:calc(.1s + .07s*var(--i,0))}
+.mnav nav a span{font:italic 400 1rem var(--f-display);color:var(--cobre-2);margin-right:.8rem}
+.mnav.open nav a{opacity:1;translate:0}
+.mnav .btn{margin-top:auto;align-self:flex-start;opacity:0;translate:0 20px;transition:opacity .5s var(--ease) .55s,translate .5s var(--ease) .55s}
+.mnav.open .btn{opacity:1;translate:0}
+.mnav small{margin-top:1.5rem;font:500 .62rem/1.5 var(--f-body);letter-spacing:.3em;text-transform:uppercase;color:rgb(244 234 214/.5)}
+
+/* hero */
+.hero{position:relative;overflow:hidden;min-height:100vh;min-height:100svh;display:flex;align-items:center;padding:calc(var(--hdr) + var(--pv) + 2rem) 0 5rem}
+.hero .blob.a{width:34rem;height:34rem;left:-14rem;top:-10rem;background:rgb(219 165 116/.4)}
+.hero .blob.b{width:30rem;height:30rem;right:-12rem;bottom:-10rem;background:rgb(166 47 30/.16)}
+.hero .ghost{font-size:30vw;left:-2vw;bottom:-6vw;z-index:2}
+.hero-grid{position:relative;z-index:3;display:grid;gap:3.75rem;width:100%}
+.selo{display:inline-flex;align-items:center;gap:.6rem;max-width:100%;padding:.5rem 1.1rem;border-radius:999px;border:1px solid var(--line-2);background:rgb(251 246 236/.65);font:500 .6rem/1.4 var(--f-body);letter-spacing:.16em;text-transform:uppercase;text-wrap:balance}
+.selo svg{flex:none;width:.85rem;height:.85rem;color:var(--cobre)}
+.shine{background:linear-gradient(110deg,var(--tomate) 0 40%,var(--cobre) 46%,#e0965a 50%,var(--cobre) 54%,var(--tomate) 60% 100%);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;animation:shine 5s linear infinite}
+@keyframes shine{from{background-position:150% 0}to{background-position:-50% 0}}
+.h1{margin-top:1.5rem;font:340 clamp(2.6rem,11vw,5.4rem)/1.02 var(--f-display);font-variation-settings:"opsz" 120,"SOFT" 60;letter-spacing:-.022em;text-wrap:balance;overflow-wrap:normal;hyphens:manual}
+.h1 em{font-style:italic;font-weight:430;color:var(--tomate);font-variation-settings:"opsz" 144,"SOFT" 100,"WONK" 1}
+.hero .lead{margin-top:1.6rem;font-size:1.05rem}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:.9rem 1rem;margin-top:2.1rem}
+.facts{display:flex;flex-wrap:wrap;gap:.6rem 1.6rem;margin-top:2.25rem;padding-top:1.4rem;border-top:1px solid var(--line);list-style:none}
+.facts li{display:flex;align-items:center;gap:.55rem;font:500 .78rem/1.3 var(--f-body);color:var(--tx-soft)}
+.facts svg{flex:none;width:1rem;height:1rem;color:var(--cobre)}
+.hero-art{position:relative;z-index:1;width:100%;max-width:21rem;margin-inline:auto}
+.js .hero-art.rev{transform:translateY(60px) scale(.96);transition-duration:1.2s}
+.js .hero-art.rev.vis{transform:none}
+.arch{position:relative}
+.arch::before{content:"";position:absolute;inset:-.8rem;border:1px solid rgb(184 115 63/.6);border-radius:var(--arch);rotate:-2deg}
+.arch::after{content:"";position:absolute;inset:-1.6rem;border:1px solid rgb(184 115 63/.25);border-radius:var(--arch);rotate:1.5deg;pointer-events:none}
+.arch img{position:relative;width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:var(--arch);box-shadow:var(--shadow)}
+.stamp{position:absolute;top:-1.5rem;right:-1.25rem;z-index:2;width:7.6rem;height:7.6rem;filter:drop-shadow(0 14px 18px rgb(108 28 17/.3))}
+.stamp .spin{position:absolute;inset:0;animation:spin 22s linear infinite}
+.stamp .core{position:absolute;inset:1.7rem;display:grid;place-items:center;border-radius:50%;background:var(--massa-2);color:var(--tomate);text-align:center;font:400 1.2rem/.95 var(--f-script)}
+@keyframes spin{to{rotate:360deg}}
+.hcard{position:absolute;left:-1rem;bottom:-1.75rem;z-index:2;max-width:14rem;padding:1.1rem 1.3rem;border-radius:1rem;background:var(--manj-deep);color:var(--massa);box-shadow:0 20px 25px -5px rgb(24 41 29/.35)}
+.hcard i{display:block;font-style:normal;color:var(--cobre-2);line-height:1;margin-bottom:.4rem}
+.hcard p{font:italic 400 1.08rem/1.3 var(--f-display);font-variation-settings:"opsz" 144,"SOFT" 100}
+.cue{display:none}
+@media(min-width:768px){
+  .cue{display:flex;flex-direction:column;align-items:center;gap:.5rem;position:absolute;left:50%;bottom:1.6rem;translate:-50% 0;z-index:3;font:500 .6rem/1 var(--f-body);letter-spacing:.34em;text-transform:uppercase;color:rgb(42 26 18/.5);opacity:0;transition:opacity 1s 1.6s}
+  .is-loaded .cue{opacity:1}
+  .cue svg{width:1rem;animation:cue 1.8s ease-in-out infinite}
+}
+@keyframes cue{50%{transform:translateY(6px)}}
+@media(min-width:640px){.selo{font-size:.66rem;letter-spacing:.26em;padding:.55rem 1.3rem}.hero-art{max-width:24rem}}
+@media(min-width:1024px){
+  .hero-grid{grid-template-columns:repeat(12,minmax(0,1fr));align-items:center;gap:2rem}
+  .hero-txt{grid-column:1/span 7}
+  .hero-art{grid-column:8/span 5;max-width:26rem;margin-right:1rem}
+  .h1{font-size:clamp(3.6rem,5.8vw,5.6rem)}
+  .hero .lead{font-size:1.125rem}
+  .hero .ghost{font-size:24vw;bottom:-4.5vw}
+  .hcard{left:-3rem}
+}
+
+/* faixa toalha */
+.band{position:relative;background:var(--tomate);color:var(--massa-2);overflow:hidden}
+.band::before,.band::after{content:"";display:block;height:16px;background:var(--check);opacity:.95}
+.band-in{overflow:hidden;padding-block:1.15rem}
+.marquee{display:flex;width:max-content;animation:mq 38s linear infinite}
+.mq-set{display:flex;align-items:center;gap:2.4rem;padding-right:2.4rem}
+.mq-set span{font:italic 300 1.6rem/1 var(--f-display);font-variation-settings:"opsz" 144,"SOFT" 100;white-space:nowrap}
+.mq-set i{font-style:normal;color:var(--cobre-2);font-size:1rem}
+@keyframes mq{to{transform:translateX(-50%)}}
+@media(min-width:768px){.mq-set span{font-size:2rem}}
+
+/* 01 sabores */
+.hs{position:relative;overflow-x:clip;background:var(--massa)}
+.hs-sticky{position:sticky;top:0;height:100vh;overflow:hidden;background-color:var(--massa)}
+.hs-sticky::before{content:"";position:absolute;inset:0;background:linear-gradient(var(--massa),rgb(244 234 214/.35) 40%,rgb(244 234 214/.35) 60%,var(--massa))}
+.hs .blob{width:26rem;height:26rem;left:-12rem;top:14%;background:rgb(219 165 116/.4)}
+.hs-grid{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:center;gap:1.4rem;padding-top:calc(var(--hdr) + var(--pv))}
+.hs-intro .lead{font-size:.95rem;margin-top:.9rem}
+.hint{display:inline-flex;align-items:center;gap:.6rem;margin-top:1.1rem;font:500 .66rem/1 var(--f-body);letter-spacing:.22em;text-transform:uppercase}
+.hint svg{width:1.1rem;color:var(--cobre)}
+.nudge{animation:nudge 1.6s ease-in-out infinite}
+@keyframes nudge{50%{transform:translateX(6px)}}
+.note{display:none;margin-top:1.4rem;font:italic 300 .85rem/1.5 var(--f-display);color:var(--tx-soft)}
+.hs-viewport{overflow:hidden;margin-right:-1.25rem;padding:.5rem 0 1.5rem}
+.hs-track{display:flex;align-items:stretch;gap:1.25rem;width:max-content;padding:0 1.5rem 0 0;will-change:transform}
+@keyframes hs-slide{to{transform:translateX(calc(var(--max,0px)*-1))}}
+@supports (animation-timeline:view()){
+  .hs{view-timeline:--hs block}
+  .hs-track{animation:hs-slide linear both;animation-timeline:--hs;animation-range:contain}
+}
+.mcard{position:relative;flex:none;width:17.5rem;display:flex;flex-direction:column;background:var(--massa-2);border-radius:1.75rem;padding:.8rem .8rem 1.1rem;border:1px solid rgb(166 47 30/.1);box-shadow:0 1px 3px rgb(108 28 17/.08),0 18px 30px -20px rgb(108 28 17/.25);transition:transform .5s var(--ease),box-shadow .5s var(--ease),border-color .5s var(--ease)}
+.mcard::after{content:"";position:absolute;inset:.4rem;border:1px solid rgb(184 115 63/.28);border-radius:1.45rem;pointer-events:none}
+.mcard .ph{position:relative;aspect-ratio:16/11;border-radius:50% 50% .9rem .9rem/62% 62% .9rem .9rem;overflow:hidden;background:var(--farinha)}
+.mcard .ph img{width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease)}
+.mcard .art{display:grid;place-items:center}
+.mcard .art.k-drink{background:var(--manj);color:var(--cobre-2)}
+.mcard .art.k-sweet{background:var(--tomate);color:var(--massa-2)}
+.mcard .art.k-other{background:var(--madeira);color:var(--cobre-2)}
+.mcard .art::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgb(255 255 255/.06) 0 12px,transparent 12px 24px),repeating-linear-gradient(90deg,rgb(255 255 255/.06) 0 12px,transparent 12px 24px)}
+.mcard .art svg{position:relative;width:4.2rem;height:4.2rem;margin-top:1.4rem;transition:transform .7s var(--ease)}
+.mcard .art em{position:absolute;left:0;right:0;bottom:.7rem;text-align:center;font:400 1.35rem/1 var(--f-script);font-style:normal;opacity:.9}
+.mcard .bd{position:relative;z-index:1;display:flex;flex-direction:column;flex:1;padding:1.1rem .6rem 0}
+.mcard .num{font:italic 400 1rem/1 var(--f-display);color:var(--cobre);letter-spacing:.02em}
+.mcard .ttl{display:flex;align-items:baseline;gap:.6rem;margin-top:.45rem}
+.mcard h3{font:450 1.38rem/1.12 var(--f-display);font-variation-settings:"opsz" 72,"SOFT" 50;letter-spacing:-.01em;text-wrap:balance;overflow-wrap:normal;hyphens:manual}
+.mcard .dots{flex:1;min-width:1rem;border-bottom:2px dotted rgb(184 115 63/.55);translate:0 -.3rem}
+.mcard .preco{flex:none;font:500 1.05rem/1 var(--f-display);color:var(--tomate)}
+.mcard p{flex:1;margin-top:.55rem;font-size:.88rem;font-weight:300;line-height:1.55;color:var(--tx-soft)}
+.mcard .link-arrow{margin-top:1rem;padding-top:.9rem;border-top:1px solid var(--line)}
+@media(hover:hover){
+  .mcard:hover{transform:translateY(-8px);border-color:rgb(166 47 30/.25);box-shadow:0 25px 50px -12px rgb(108 28 17/.25)}
+  .mcard:hover .ph img{transform:scale(1.06)}
+  .mcard:hover .art svg{transform:rotate(-10deg) scale(1.06)}
+  .mcard:hover .link-arrow svg{transform:translateX(4px)}
+}
+@media(max-height:760px) and (max-width:1023.98px){.hs-intro .lead{display:none}.mcard .ph{aspect-ratio:16/10}}
+@media(max-height:640px) and (max-width:1023.98px){.hs-intro .h2{font-size:1.9rem}.mcard .ph{aspect-ratio:2/1}}
+@media(min-width:640px){.mcard{width:20rem}}
+@media(min-width:1024px){
+  .hs-grid{display:grid;grid-template-columns:minmax(18rem,24rem) minmax(0,1fr);align-items:center;gap:3.5rem}
+  .hs-intro .lead{font-size:1.075rem;margin-top:1.25rem}
+  .hint{margin-top:1.75rem}
+  .note{display:block}
+  .hs-viewport{margin-right:-2.5rem;padding:1rem 0 2rem;transition:-webkit-mask-image .4s,mask-image .4s;-webkit-mask-image:linear-gradient(90deg,#000 0 88%,transparent);mask-image:linear-gradient(90deg,#000 0 88%,transparent)}
+  .hs-viewport.is-scrolling{-webkit-mask-image:linear-gradient(90deg,transparent,#000 6% 88%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6% 88%,transparent)}
+  .mcard{width:21rem}
+  .mcard .ph{aspect-ratio:1/0.82}
+  .mcard h3{font-size:1.5rem}
+}
+
+/* composição */
+.duo{display:grid;gap:4.75rem;align-items:center;position:relative;z-index:2}
+@media(min-width:1024px){.duo{grid-template-columns:1fr 1fr;gap:6rem}}
+.frame{position:relative;max-width:25rem;margin-inline:auto;width:100%}
+.frame .arch img{aspect-ratio:4/5}
+.frame .qcard{position:absolute;right:-.75rem;bottom:-1.75rem;z-index:2;max-width:15rem;padding:1.2rem 1.4rem;border-radius:1rem;background:var(--tomate);color:var(--massa-2);box-shadow:0 20px 25px -5px rgb(0 0 0/.35)}
+.frame .qcard i{display:block;font-style:normal;color:var(--cobre-2);line-height:1;margin-bottom:.45rem}
+.frame .qcard p{font:italic 400 1.15rem/1.32 var(--f-display);font-variation-settings:"opsz" 144,"SOFT" 100}
+.frame .ncard{position:absolute;left:50%;bottom:-2.2rem;translate:-50% 0;z-index:2;width:88%;display:flex;gap:.9rem;align-items:center;padding:1rem 1.2rem;border-radius:1.1rem;background:rgb(251 246 236/.95);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border:1px solid rgb(166 47 30/.1);box-shadow:0 20px 30px -12px rgb(108 28 17/.3)}
+.frame .ncard .ic{flex:none;display:grid;place-items:center;width:2.6rem;height:2.6rem;border-radius:50%;background:var(--verde);color:#fff}
+.frame .ncard .ic svg{width:1.3rem;height:1.3rem}
+.frame .ncard p{font:italic 400 1rem/1.35 var(--f-display);font-variation-settings:"opsz" 72}
+@media(min-width:768px){.frame .qcard{right:-2.5rem}}
+.feats{list-style:none;display:grid;gap:1.6rem;margin-top:2.2rem}
+.feats li{display:flex;gap:1.1rem}
+.feats .ic{flex:none;display:grid;place-items:center;width:2.6rem;height:2.6rem;border-radius:50%;border:1px solid rgb(219 165 116/.5);color:var(--cobre-2)}
+.feats .ic svg{width:1.15rem;height:1.15rem}
+.feats h3{font:500 1.3rem/1.2 var(--f-display);font-variation-settings:"opsz" 72}
+.feats p{margin-top:.25rem;font-size:.93rem;font-weight:300;line-height:1.6;color:var(--on-dark)}
+.cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.5rem;margin-top:2.5rem}
+
+.s-forno .blob.a{width:28rem;height:28rem;right:-12rem;top:-8rem;background:rgb(166 47 30/.35)}
+.s-forno .blob.b{width:24rem;height:24rem;left:-12rem;bottom:-8rem;background:rgb(219 165 116/.16)}
+.s-forno .ghost{font-size:24vw;right:-3vw;bottom:-5vw}
+@media(min-width:768px){.s-forno .ghost{font-size:16vw;bottom:-3vw}}
+.s-forno .arch img{object-position:30% 50%}
+
+.steps{list-style:none;position:relative;display:grid;gap:2.3rem;margin-top:2.4rem}
+.steps::before{content:"";position:absolute;left:1.5rem;top:1.3rem;bottom:1.3rem;width:1px;background:linear-gradient(rgb(184 115 63/.7),rgb(166 47 30/.25),transparent)}
+.step{position:relative;display:flex;gap:1.6rem}
+.step b{position:relative;z-index:1;flex:none;display:grid;place-items:center;width:3rem;height:3rem;border-radius:50%;border:1px solid rgb(184 115 63/.55);background:var(--massa);font:italic 500 1.1rem/1 var(--f-display);color:var(--tomate)}
+.step h3{font:500 1.3rem/1.2 var(--f-display);font-variation-settings:"opsz" 72;padding-top:.2rem}
+.step p{margin-top:.25rem;font-size:.95rem;font-weight:300;line-height:1.6;color:var(--tx-soft);max-width:28rem}
+.s-pedir .blob{width:24rem;height:24rem;left:-10rem;bottom:-6rem;background:rgb(219 165 116/.35)}
+.s-pedir .arch img{object-position:50% 30%}
+.s-pedir .arch::before{rotate:2deg;border-color:rgb(166 47 30/.35)}
+@media(min-width:1024px){.s-pedir .duo>.txt{order:-1}}
+
+/* galeria */
+.s-gal{background:var(--tomate);color:var(--massa-2)}
+.s-gal .eyebrow{color:var(--cobre-2)}.s-gal .eyebrow .rule{background:var(--cobre-2)}
+.s-gal .h2 em{color:var(--massa-2)}
+.s-gal::before,.s-gal::after{content:"";position:absolute;left:0;right:0;height:16px;background:var(--check);z-index:3}
+.s-gal::before{top:0}.s-gal::after{bottom:0}
+.s-gal .blob.a{width:26rem;height:26rem;left:-10rem;top:-6rem;background:rgb(219 165 116/.3)}
+.s-gal .blob.b{width:24rem;height:24rem;right:-10rem;bottom:-8rem;background:rgb(24 41 29/.45)}
+.gal-hd{position:relative;z-index:2;text-align:center;max-width:42rem;margin-inline:auto}
+.gal{position:relative;z-index:2;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin-top:3.5rem}
+.gal figure{position:relative}
+.gal .tile{position:relative;overflow:hidden;aspect-ratio:3/4;border-radius:1.5rem;box-shadow:0 20px 30px -12px rgb(0 0 0/.4)}
+.gal>:nth-child(odd) .tile{border-radius:var(--arch)}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease)}
+.gal figcaption{margin-top:.75rem;text-align:center;font:400 1.2rem/1 var(--f-script);color:var(--cobre-2)}
+.gal>:nth-child(even){margin-top:2.5rem}
+@media(hover:hover){.gal figure:hover img{transform:scale(1.07)}}
+@media(min-width:768px){.gal{grid-template-columns:repeat(4,minmax(0,1fr));gap:1.6rem}.gal>:nth-child(1){margin-top:2.5rem}.gal>:nth-child(2){margin-top:0}.gal>:nth-child(3){margin-top:3.5rem}.gal>:nth-child(4){margin-top:1.25rem}}
+.gal-ft{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:1.1rem;margin-top:3.75rem;text-align:center}
+.gal-ft small{font:italic 300 .85rem var(--f-display);color:rgb(251 246 236/.7)}
+
+/* faq */
+.s-faq{background-color:var(--massa)}
+.faq-grid{display:grid;gap:3rem;position:relative;z-index:2}
+@media(min-width:1024px){.faq-grid{grid-template-columns:1fr 1.6fr;gap:4rem}.faq-side{position:sticky;top:calc(var(--hdr) + var(--pv) + 3rem);align-self:start}}
+.faq-side p{margin-top:1.25rem;color:var(--tx-soft);font-weight:300;max-width:24rem}
+.faq-side .btn{margin-top:1.75rem}
+.faq-item{border-bottom:1px solid var(--line-2)}
+.faq-item:first-child{border-top:1px solid var(--line-2)}
+.faq-item h3{font:inherit}
+.faq-q{display:flex;width:100%;justify-content:space-between;align-items:center;gap:1.25rem;padding-block:1.45rem;text-align:left;font:450 1.25rem/1.3 var(--f-display);font-variation-settings:"opsz" 72}
+.pm{flex:none;display:grid;place-items:center;width:2.5rem;height:2.5rem;border-radius:50%;border:1px solid var(--line-2);color:var(--tomate);transition:rotate .35s var(--ease),background-color .3s var(--ease),color .3s var(--ease),border-color .3s var(--ease)}
+.pm svg{width:1rem;height:1rem}
+.faq-q[aria-expanded=true] .pm{rotate:45deg;background:var(--tomate);border-color:var(--tomate);color:var(--massa-2)}
+@media(hover:hover){.faq-q:hover .pm{border-color:var(--tomate)}}
+.faq-a{display:grid;grid-template-rows:0fr;opacity:0;transition:grid-template-rows .45s var(--ease),opacity .45s var(--ease)}
+.faq-a>div{overflow:hidden}
+.faq-a p{padding:0 3.5rem 1.6rem 0;font-weight:300;line-height:1.7;color:var(--tx-soft)}
+.faq-item.open .faq-a{grid-template-rows:1fr;opacity:1}
+@media(min-width:768px){.faq-q{font-size:1.45rem}}
+
+/* onde fica */
+.s-local .blob{width:26rem;height:26rem;right:-12rem;bottom:-10rem;background:rgb(166 47 30/.3)}
+.info{list-style:none;display:grid;gap:1.3rem;margin-top:2.25rem}
+.info li{display:flex;gap:1rem;align-items:flex-start}
+.info .ic{flex:none;display:grid;place-items:center;width:2.6rem;height:2.6rem;border-radius:50%;border:1px solid rgb(219 165 116/.45);color:var(--cobre-2)}
+.info .ic svg{width:1.1rem;height:1.1rem}
+.info small{display:block;font:500 .62rem/1 var(--f-body);letter-spacing:.26em;text-transform:uppercase;color:var(--cobre-2);margin:.15rem 0 .45rem}
+.info span,.info a{font-size:1rem;font-weight:300;line-height:1.5;color:var(--massa)}
+.info a{text-decoration:underline;text-decoration-color:rgb(219 165 116/.5);text-underline-offset:4px}
+.map{position:relative;width:100%;max-width:34rem;margin-inline:auto}
+.map::before{content:"";position:absolute;inset:-.8rem;border:1px solid rgb(219 165 116/.5);border-radius:var(--arch);rotate:-1.5deg}
+.map iframe{position:relative;display:block;width:100%;aspect-ratio:1/1.05;border:0;border-radius:var(--arch);background:var(--manj-3);filter:sepia(.15) saturate(.9)}
+
+/* cta final */
+.s-final{padding:1.5rem 0 6rem}
+@media(min-width:768px){.s-final{padding:2rem 0 8rem}}
+.final{position:relative;overflow:hidden;text-align:center;border-radius:2.5rem;padding:5.5rem 1.5rem 3.5rem;background:linear-gradient(135deg,var(--tomate-deep),var(--tomate) 55%,var(--tomate-2));color:var(--massa-2);box-shadow:0 25px 50px -12px rgb(108 28 17/.4)}
+.final::before{content:"";position:absolute;left:0;right:0;top:0;height:14px;background:var(--check);opacity:.9;z-index:3}
+.final .blob.a{width:24rem;height:24rem;left:-10rem;top:-10rem;background:rgb(219 165 116/.3)}
+.final .blob.b{width:26rem;height:26rem;right:-12rem;bottom:-12rem;background:rgb(24 41 29/.45)}
+.final .ghost{font-size:30vw;left:50%;top:-5vw;translate:-50% 0;-webkit-text-stroke:1px rgb(251 246 236/.18)}
+.final>*{position:relative;z-index:2}
+.final .blob,.final .ghost{position:absolute}
+.final .burst{display:block;margin:0 auto 1rem;font:400 1.6rem/1 var(--f-script);color:var(--cobre-2)}
+.final .h2{max-width:46rem;margin-inline:auto;font-size:clamp(2.2rem,6vw,4.2rem)}
+.final .h2 em{color:var(--massa-2)}
+.final p.sub{max-width:34rem;margin:1.3rem auto 0;color:rgb(251 246 236/.85);font-weight:300;font-size:1.05rem}
+.final .btn{margin-top:2.3rem;padding:1.2rem 1.8rem;font-size:.82rem;max-width:100%}
+.final .micro{display:block;margin-top:1.1rem;font:500 .64rem/1.4 var(--f-body);letter-spacing:.22em;text-transform:uppercase;color:rgb(251 246 236/.7)}
+.final .row{display:flex;flex-wrap:wrap;justify-content:center;gap:.8rem 2rem;margin-top:2.6rem;padding-top:1.9rem;border-top:1px solid rgb(251 246 236/.2);font-size:.9rem;font-weight:300;color:rgb(251 246 236/.88)}
+.final .row span{display:inline-flex;align-items:center;gap:.5rem;text-align:left}
+.final .row svg{flex:none;width:1rem;height:1rem;color:var(--cobre-2)}
+@media(min-width:640px){.final .btn{padding:1.25rem 2.6rem;font-size:.85rem}}
+@media(min-width:768px){.final{border-radius:3.5rem;padding:7rem 4rem 4rem}.final .ghost{font-size:17vw;top:-3.5vw}}
+
+/* footer */
+.ft{background:var(--forno);color:rgb(244 234 214/.7);padding:4rem 0 0}
+@media(min-width:768px){.ft{padding-top:5rem}}
+.ft-grid{display:grid;gap:3rem}
+@media(min-width:768px){.ft-grid{grid-template-columns:1.4fr 1fr 1fr}}
+.ft .logo{color:var(--massa)}
+.ft .logo-sub{color:var(--cobre-2)}
+.ft-txt{margin-top:1.2rem;font-size:.9rem;font-weight:300;max-width:22rem;line-height:1.6}
+.ft h4{font:500 .66rem/1 var(--f-body);letter-spacing:.28em;text-transform:uppercase;color:var(--cobre-2);margin-bottom:1.25rem}
+.ft ul{list-style:none;display:grid;gap:.75rem;font-size:.9rem;font-weight:300}
+@media(hover:hover){.ft ul a:hover{color:var(--cobre-2)}}
+.socials{display:flex;gap:.65rem;margin-top:1.5rem}
+.socials a{display:grid;place-items:center;width:2.75rem;height:2.75rem;border-radius:50%;border:1px solid var(--line-dark);color:var(--massa);transition:all .3s var(--ease)}
+.socials svg{width:1.1rem;height:1.1rem}
+@media(hover:hover){.socials a:hover{border-color:var(--cobre-2);color:var(--cobre-2)}}
+.ft-bot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.6rem 2rem;margin-top:3.5rem;padding:1.5rem 0 calc(1.5rem + env(safe-area-inset-bottom));border-top:1px solid var(--line-dark);font-size:.74rem;color:rgb(244 234 214/.45)}
+
+/* fab */
+.fab{position:fixed;right:1.25rem;bottom:1.25rem;z-index:50;display:grid;place-items:center;width:3.75rem;height:3.75rem;border-radius:50%;background:var(--verde);color:#fff;box-shadow:0 25px 50px -12px rgb(0 0 0/.35);opacity:0;scale:.6;translate:0 24px;pointer-events:none;transition:opacity .4s var(--ease),scale .4s var(--ease),translate .4s var(--ease)}
+.fab.show{opacity:1;scale:1;translate:0;pointer-events:auto}
+.fab svg{width:1.75rem;height:1.75rem;position:relative}
+.fab::before{content:"";position:absolute;inset:0;border-radius:50%;background:var(--verde);animation:ring 2.4s cubic-bezier(.2,.6,.36,1) infinite;z-index:-1}
+@keyframes ring{0%{opacity:.45;transform:scale(1)}80%,100%{opacity:0;transform:scale(1.65)}}
+@media(hover:hover){.fab:hover{scale:1.1}}
+@media(min-width:768px){.fab{right:2rem;bottom:2rem}}
+
+/* modal */
+.lead-dlg{border:0;padding:0;background:transparent;color:var(--forno);width:100%;max-width:100%;max-height:100dvh;margin:auto auto 0;overflow:visible}
+.lead-dlg::backdrop{background:rgb(42 26 18/.5);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.lead-dlg[open]{animation:sheet .45s var(--ease)}
+.lead-dlg[open]::backdrop{animation:fade .2s var(--ease)}
+.lead-dlg.closing{animation:sheet-out .22s var(--ease) forwards}
+@keyframes sheet{from{transform:translateY(100%)}}
+@keyframes sheet-out{to{transform:translateY(100%)}}
+@keyframes fade{from{opacity:0}}
+.lead-box{position:relative;overflow:hidden;background:var(--massa-2);border-radius:1.75rem 1.75rem 0 0;padding:2.1rem 1.4rem calc(1.6rem + env(safe-area-inset-bottom));max-height:100dvh;overflow-y:auto;box-shadow:0 -10px 40px rgb(42 26 18/.25)}
+.lead-box::before{content:"";position:absolute;left:0;right:0;top:0;height:10px;background:var(--check);background-size:10px 10px;opacity:.85}
+.lead-box .blob{width:11rem;height:11rem;right:-4rem;top:-4rem;filter:blur(40px);background:rgb(219 165 116/.5)}
+.lead-box>*{position:relative;z-index:1}
+.lead-box .grab{display:block;width:3rem;height:.3rem;border-radius:9px;background:var(--line);margin:-.6rem auto 1.2rem}
+.x{position:absolute;top:1.3rem;right:1rem;z-index:2;display:grid;place-items:center;width:2.6rem;height:2.6rem;border-radius:50%;border:1px solid var(--line-2);color:var(--tomate);background:var(--massa-2)}
+.x svg{width:1rem;height:1rem}
+.lead-box .eyebrow{margin-bottom:.7rem}
+.lead-box h2{font:350 1.95rem/1.08 var(--f-display);font-variation-settings:"opsz" 144;letter-spacing:-.02em;padding-right:2.5rem}
+.lead-box h2 em{font-style:italic;font-weight:450;color:var(--tomate);font-variation-settings:"opsz" 144,"SOFT" 100,"WONK" 1}
+.lead-box>p{margin-top:.75rem;font-size:.92rem;font-weight:300;color:var(--tx-soft)}
+.fld{display:block;margin-top:1.15rem}
+.fld span{display:block;margin-bottom:.45rem;font:500 .64rem/1 var(--f-body);letter-spacing:.22em;text-transform:uppercase}
+.fld input,.fld select{width:100%;min-height:3.25rem;padding:.85rem 1rem;border-radius:.9rem;border:1px solid rgb(166 47 30/.25);background:#fffdf9;font-size:1rem;transition:border-color .3s var(--ease),box-shadow .3s var(--ease);-webkit-appearance:none;appearance:none}
+.fld select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23a62f1e' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 1rem center;background-size:1.1rem;padding-right:2.8rem;text-overflow:ellipsis}
+.fld input:focus,.fld select:focus{outline:0;border-color:var(--tomate);box-shadow:0 0 0 3px rgb(184 115 63/.3)}
+.fld input[aria-invalid=true]{border-color:var(--tomate);box-shadow:0 0 0 3px rgb(166 47 30/.15)}
+.f-err{display:block;margin-top:.45rem;font-size:.8rem;font-weight:500;color:var(--tomate)}
+.f-err[hidden]{display:none}
+.lead-box .btn{width:100%;margin-top:1.5rem}
+.lead-box .btn[disabled]{opacity:.75;pointer-events:none}
+.direct{display:block;margin-top:1.1rem;text-align:center;font-size:.84rem;font-weight:300;color:var(--tx-soft)}
+.direct a{color:var(--tomate);font-weight:500;text-decoration:underline;text-underline-offset:3px}
+@media(min-width:640px){
+  .lead-dlg{max-width:29rem;margin:auto}
+  .lead-dlg[open]{animation:pop .3s var(--ease)}
+  .lead-dlg.closing{animation:pop-out .2s var(--ease) forwards}
+  .lead-box{border-radius:2rem;padding:2.6rem 2.2rem 2rem;box-shadow:0 25px 50px -12px rgb(108 28 17/.35)}
+  .lead-box .grab{display:none}
+}
+@keyframes pop{from{opacity:0;transform:translateY(24px) scale(.98)}}
+@keyframes pop-out{to{opacity:0;transform:translateY(16px) scale(.98)}}
+html.lock{overflow:hidden}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .rev,.js .hero-art.rev{opacity:1;transform:none;transition:none}
+  .marquee,.shine,.nudge,.stamp .spin,.fab::before,.cue svg{animation:none}
+  .hdr{transition:none}
+  .hs-track{animation:none!important}
+  .hs-viewport{overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin;-webkit-mask-image:none!important;mask-image:none!important}
+  .mcard{scroll-snap-align:start}
+  .hint .nudge{animation:none}
+  .lead-dlg[open],.lead-dlg.closing,.lead-dlg[open]::backdrop{animation:none}
+}
+</style>
+</head>
+<body>
+
+<header class="hdr" id="topo">
+  <div class="hdr-bar">
+    <div class="wrap hdr-in">
+      <a class="logo" href="#inicio" aria-label="Forno da Vila, voltar ao início">
+        <span class="logo-mark" aria-hidden="true">FV</span>
+        <span><span class="logo-name ">Forno da Vila</span><span class="logo-sub">Pizzaria</span></span>
+      </a>
+      <nav class="nav" aria-label="Seções">
+        <a href="#sabores">Sabores</a><a href="#o-forno">O forno</a><a href="#como-pedir">Como pedir</a><a href="#duvidas">Dúvidas</a><a href="#onde-fica">Onde fica</a>
+      </nav>
+      <div class="hdr-r">
+        <a class="btn btn-sm hdr-cta" href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Quero%20fazer%20um%20pedido%20na%20Forno%20da%20Vila." data-cta><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.01c-.24.68-1.41 1.3-1.94 1.38-.5.07-1.13.1-1.82-.12-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.17-4.94-4.36-.14-.2-1.18-1.57-1.18-3s.75-2.12 1.01-2.41c.27-.29.58-.36.78-.36h.56c.18 0 .42-.07.66.5.24.58.82 2 .89 2.15.07.14.12.31.02.5-.1.2-.14.31-.29.48l-.43.51c-.14.14-.29.3-.13.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.41.29.14.46.12.63-.07.17-.2.72-.84.92-1.13.19-.29.38-.24.65-.14.26.1 1.68.79 1.97.94.29.14.48.21.55.33.07.12.07.7-.17 1.38Z"/></svg>Pedir pizza</a>
+        <button class="menu-btn" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mnav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h10"/></svg></button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="mnav" id="mnav" role="dialog" aria-modal="true" aria-label="Menu" aria-hidden="true">
+  <div class="mnav-top">
+    <span class="logo"><span class="logo-mark" aria-hidden="true">FV</span><span><span class="logo-name ">Forno da Vila</span><span class="logo-sub">Pizzaria</span></span></span>
+    <button class="menu-btn mnav-close" type="button" aria-label="Fechar menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  </div>
+  <nav aria-label="Menu principal">
+    <a href="#sabores"><span>01</span>Sabores</a>
+    <a href="#o-forno"><span>02</span>O forno</a>
+    <a href="#como-pedir"><span>03</span>Como pedir</a>
+    <a href="#duvidas"><span>05</span>Dúvidas</a>
+    <a href="#onde-fica"><span>06</span>Onde fica</a>
+  </nav>
+  <a class="btn btn-light" href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Quero%20fazer%20um%20pedido%20na%20Forno%20da%20Vila." data-cta><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.01c-.24.68-1.41 1.3-1.94 1.38-.5.07-1.13.1-1.82-.12-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.17-4.94-4.36-.14-.2-1.18-1.57-1.18-3s.75-2.12 1.01-2.41c.27-.29.58-.36.78-.36h.56c.18 0 .42-.07.66.5.24.58.82 2 .89 2.15.07.14.12.31.02.5-.1.2-.14.31-.29.48l-.43.51c-.14.14-.29.3-.13.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.41.29.14.46.12.63-.07.17-.2.72-.84.92-1.13.19-.29.38-.24.65-.14.26.1 1.68.79 1.97.94.29.14.48.21.55.33.07.12.07.7-.17 1.38Z"/></svg>Pedir minha pizza</a>
+  <small>Pizzaria em Vila Mariana</small>
+</div>
+
+<main>
+<section class="hero gingham" id="inicio">
+  <span class="blob a" aria-hidden="true"></span><span class="blob b" aria-hidden="true"></span>
+  <span class="ghost" aria-hidden="true">forno</span>
+  <div class="wrap hero-grid">
+    <div class="hero-txt">
+      <p class="selo rev" style="--y:36px;--d:.2s"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2c.5 4.8 2.7 7.4 8 8-5.3.6-7.5 3.2-8 8-.5-4.8-2.7-7.4-8-8 5.3-.6 7.5-3.2 8-8Z"/></svg><span class="shine">Forno da Vila · Pizzaria em Vila Mariana</span></p>
+      <h1 class="h1 rev" style="--y:36px;--d:.34s">Pizza boa é aquela que chega <em>puxando o queijo.</em></h1>
+      <p class="lead rev" style="--y:36px;--d:.48s">Massa bem assada, molho de tomate e queijo derretendo até a última fatia. Escolha os sabores da <strong>Forno da Vila</strong> e faça o seu pedido direto pelo WhatsApp.</p>
+      <div class="hero-ctas rev" style="--y:36px;--d:.62s">
+        <a class="btn" href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Quero%20fazer%20um%20pedido%20na%20Forno%20da%20Vila." data-cta><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.01c-.24.68-1.41 1.3-1.94 1.38-.5.07-1.13.1-1.82-.12-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.17-4.94-4.36-.14-.2-1.18-1.57-1.18-3s.75-2.12 1.01-2.41c.27-.29.58-.36.78-.36h.56c.18 0 .42-.07.66.5.24.58.82 2 .89 2.15.07.14.12.31.02.5-.1.2-.14.31-.29.48l-.43.51c-.14.14-.29.3-.13.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.41.29.14.46.12.63-.07.17-.2.72-.84.92-1.13.19-.29.38-.24.65-.14.26.1 1.68.79 1.97.94.29.14.48.21.55.33.07.12.07.7-.17 1.38Z"/></svg>Pedir minha pizza</a>
+        <a class="btn btn-line" href="#sabores">Ver os sabores</a>
+      </div>
+      <ul class="facts rev" style="--y:36px;--d:.76s">
+        <li><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.01c-.24.68-1.41 1.3-1.94 1.38-.5.07-1.13.1-1.82-.12-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.17-4.94-4.36-.14-.2-1.18-1.57-1.18-3s.75-2.12 1.01-2.41c.27-.29.58-.36.78-.36h.56c.18 0 .42-.07.66.5.24.58.82 2 .89 2.15.07.14.12.31.02.5-.1.2-.14.31-.29.48l-.43.51c-.14.14-.29.3-.13.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.41.29.14.46.12.63-.07.17-.2.72-.84.92-1.13.19-.29.38-.24.65-.14.26.1 1.68.79 1.97.94.29.14.48.21.55.33.07.12.07.7-.17 1.38Z"/></svg>Pedido direto no WhatsApp</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Ter a Dom 18h às 23h</li>        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Vila Mariana, São Paulo</li>
+      </ul>
+    </div>
+    <div class="hero-art rev" style="--d:.35s">
+      <div class="arch">
+        <img src="/assets/img/pizzaria/produto-1.jpg" alt="Fatia de pizza sendo servida com o queijo puxando" width="1600" height="2136" fetchpriority="high">
+      </div>
+      <div class="stamp" aria-hidden="true">
+        <svg class="spin" viewBox="0 0 120 120"><circle cx="60" cy="60" r="58" fill="#a62f1e"/><circle cx="60" cy="60" r="54" fill="none" stroke="#dba574" stroke-width=".8"/><defs><path id="circ" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs><text font-family="Work Sans, Arial, sans-serif" font-weight="500" font-size="10.5" fill="#fbf6ec" letter-spacing="1"><textPath href="#circ" textLength="274" lengthAdjust="spacing">FORNO DA VILA ✦ VILA MARIANA ✦ </textPath></text></svg>
+        <span class="core">saída do forno</span>
+      </div>
+      <div class="hcard"><i aria-hidden="true">✦</i><p>Borda dourada, queijo borbulhando.</p></div>
+    </div>
+  </div>
+  <a class="cue" href="#sabores" aria-label="Rolar para os sabores">Role<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
+</section>
+
+<div class="band" aria-hidden="true"><div class="band-in"><div class="marquee">
+<div class="mq-set"><span>Massa</span><i>✦</i><span>Molho de tomate</span><i>✦</i><span>Manjericão</span><i>✦</i><span>Mussarela</span><i>✦</i><span>Forno quente</span><i>✦</i><span>Borda dourada</span><i>✦</i><span>Massa</span><i>✦</i><span>Molho de tomate</span><i>✦</i><span>Manjericão</span><i>✦</i><span>Mussarela</span><i>✦</i><span>Forno quente</span><i>✦</i><span>Borda dourada</span><i>✦</i></div><div class="mq-set"><span>Massa</span><i>✦</i><span>Molho de tomate</span><i>✦</i><span>Manjericão</span><i>✦</i><span>Mussarela</span><i>✦</i><span>Forno quente</span><i>✦</i><span>Borda dourada</span><i>✦</i><span>Massa</span><i>✦</i><span>Molho de tomate</span><i>✦</i><span>Manjericão</span><i>✦</i><span>Mussarela</span><i>✦</i><span>Forno quente</span><i>✦</i><span>Borda dourada</span><i>✦</i></div></div></div></div>
+
+<section class="hs" id="sabores" aria-labelledby="t-sabores">
+  <div class="hs-sticky gingham">
+    <span class="blob" aria-hidden="true"></span>
+    <div class="wrap hs-grid">
+      <div class="hs-intro">
+        <p class="eyebrow rev"><span class="rule"></span>01 · Cardápio de sabores</p>
+        <h2 class="h2 rev" id="t-sabores" style="--d:.08s">Escolha o sabor, <em>o forno faz o resto.</em></h2>
+        <p class="lead rev" style="--d:.16s">O cardápio da Forno da Vila está aqui. Toque em “Pedir este” e a mensagem já vai pronta para o WhatsApp.</p>
+        <p class="hint rev" style="--d:.24s">Role para passar o cardápio<svg class="nudge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></p>
+        <p class="note">Sabores, tamanhos e valores são confirmados no WhatsApp.</p>
+      </div>
+      <div class="hs-viewport">
+        <div class="hs-track">
+          <article class="mcard">
+            <div class="ph"><img src="/assets/img/pizzaria/hero-3.jpg" alt="Pizzas tradicionais" width="1600" height="1067" loading="lazy" decoding="async"></div>
+            <div class="bd">
+              <span class="num">nº 01</span>
+              <div class="ttl"><h3>Pizzas tradicionais</h3><span class="dots" aria-hidden="true"></span><span class="preco">R$59</span></div>
+              <p>Mussarela, calabresa, margherita e as clássicas.</p>
+              <a class="link-arrow" href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Quero%20fazer%20um%20pedido%20na%20Forno%20da%20Vila." data-cta data-item="Pizzas tradicionais">Pedir este <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </article>
+          <article class="mcard">
+            <div class="ph"><img src="/assets/img/pizzaria/hero-1.jpg" alt="Pizzas especiais" width="1600" height="1067" loading="lazy" decoding="async"></div>
+            <div class="bd">
+              <span class="num">nº 02</span>
+              <div class="ttl"><h3>Pizzas especiais</h3><span class="dots" aria-hidden="true"></span><span class="preco">R$72</span></div>
+              <p>Receitas da casa com ingredientes selecionados.</p>
+              <a class="link-arrow" href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Quero%20fazer%20um%20pedido%20na%20Forno%20da%20Vila." data-cta data-item="Pizzas especiais">Pedir este <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </article>
+          <article class="mcard">
+            <div class="ph art k-sweet" aria-hidden="true">
+<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 12c11-6 25-6 36 0L24 44Z"/><path d="M24 34c-6-4-8-7-8-9.5a3.6 3.6 0 0 1 8-1.8 3.6 3.6 0 0 1 8 1.8c0 2.5-2 5.5-8 9.5Z"/></svg>              <em>pra adoçar</em>
+            </div>
+            <div class="bd">
+              <span class="num">nº 03</span>
+              <div class="ttl"><h3>Pizzas doces</h3><span class="dots" aria-hidden="true"></span><span class="preco">R$55</span></div>
+              <p>Chocolate, banana com canela e mais.</p>
+              <a class="link-arrow" href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Quero%20fazer%20um%20pedido%20na%20Forno%20da%20Vila." data-cta data-item="Pizzas doces">Pedir este <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </article>
+          <article class="mcard">
+            <div class="ph"><img src="/assets/img/pizzaria/produto-2.jpg" alt="Bordas recheadas" width="1600" height="1067" loading="lazy" decoding="async"></div>
+            <div class="bd">
+              <span class="num">nº 04</span>
+              <div class="ttl"><h3>Bordas recheadas</h3><span class="dots" aria-hidden="true"></span><span class="preco">R$12</span></div>
+              <p>Catupiry, cheddar ou chocolate.</p>
+              <a class="link-arrow" href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Quero%20fazer%20um%20pedido%20na%20Forno%20da%20Vila." data-cta data-item="Bordas recheadas">Pedir este <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </article>
+          <article class="mcard">
+            <div class="ph"><img src="/assets/img/pizzaria/hero-2.jpg" alt="Esfihas e calzones" width="1600" height="1067" loading="lazy" decoding="async"></div>
+            <div class="bd">
+              <span class="num">nº 05</span>
+              <div class="ttl"><h3>Esfihas e calzones</h3><span class="dots" aria-hidden="true"></span><span class="preco">R$9</span></div>
+              <p>Para variar o pedido.</p>
+              <a class="link-arrow" href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Quero%20fazer%20um%20pedido%20na%20Forno%20da%20Vila." data-cta data-item="Esfihas e calzones">Pedir este <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </article>
+          <article class="mcard">
+            <div class="ph art k-drink" aria-hidden="true">
+<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 4h8v8c0 3 6 6 6 12v18a2 2 0 0 1-2 2H16a2 2 0 0 1-2-2V24c0-6 6-9 6-12Z"/><path d="M14 26h20M14 36h20"/></svg>              <em>pra acompanhar</em>
+            </div>
+            <div class="bd">
+              <span class="num">nº 06</span>
+              <div class="ttl"><h3>Bebidas</h3><span class="dots" aria-hidden="true"></span><span class="preco">R$8</span></div>
+              <p>Refrigerantes, sucos e vinhos.</p>
+              <a class="link-arrow" href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Quero%20fazer%20um%20pedido%20na%20Forno%20da%20Vila." data-cta data-item="Bebidas">Pedir este <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec dark s-forno" id="o-forno" aria-labelledby="t-forno">
+  <span class="blob a" aria-hidden="true"></span><span class="blob b" aria-hidden="true"></span>
+  <span class="ghost on-dark" aria-hidden="true">massa</span>
+  <div class="wrap duo">
+    <div class="frame rev">
+      <div class="arch"><img src="/assets/img/pizzaria/ambiente-1.jpg" alt="Pizza assando dentro do forno com chamas ao fundo" width="1600" height="1067" loading="lazy" decoding="async"></div>
+      <div class="qcard"><i aria-hidden="true">✦</i><p>“Do forno direto para a caixa, ainda borbulhando.”</p></div>
+    </div>
+    <div class="txt">
+      <p class="eyebrow rev"><span class="rule"></span>02 · O forno</p>
+      <h2 class="h2 rev" id="t-forno" style="--d:.1s">Pizza se faz com calma <em>e forno quente.</em></h2>
+      <p class="lead rev" style="--d:.18s">Massa bem aberta, molho de tomate, queijo que puxa e o tempo certo de forno. Pizza boa é simples assim, e fica ainda melhor quando chega quentinha na sua mesa.</p>
+      <ul class="feats">
+        <li class="rev" style="--d:.24s"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19c0-8 5-14 14-14 0 9-6 14-14 14Z"/><path d="M5 19 13 11"/></svg></span><div><h3>Do seu jeito</h3><p>Sem cebola, sem azeitona, com mais orégano: escreva no pedido e a casa confirma o que dá para ajustar.</p></div></li>
+        <li class="rev" style="--d:.34s"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.01c-.24.68-1.41 1.3-1.94 1.38-.5.07-1.13.1-1.82-.12-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.17-4.94-4.36-.14-.2-1.18-1.57-1.18-3s.75-2.12 1.01-2.41c.27-.29.58-.36.78-.36h.56c.18 0 .42-.07.66.5.24.58.82 2 .89 2.15.07.14.12.31.02.5-.1.2-.14.31-.29.48l-.43.51c-.14.14-.29.3-.13.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.41.29.14.46.12.63-.07.17-.2.72-.84.92-1.13.19-.29.38-.24.65-.14.26.1 1.68.79 1.97.94.29.14.48.21.55.33.07.12.07.7-.17 1.38Z"/></svg></span><div><h3>Direto com a pizzaria</h3><p>Você conversa com quem prepara a sua pizza, sem intermediário no meio do caminho.</p></div></li>
+        <li class="rev" style="--d:.44s"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span><div><h3>Pra mesa toda</h3><p>Escolha os sabores para dividir com a família e combine tudo numa mensagem só, em Vila Mariana.</p></div></li>
+      </ul>
+      <div class="cta-row rev" style="--d:.52s"><a class="btn btn-light" href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Quero%20fazer%20um%20pedido%20na%20Forno%20da%20Vila." data-cta><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.01c-.24.68-1.41 1.3-1.94 1.38-.5.07-1.13.1-1.82-.12-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.17-4.94-4.36-.14-.2-1.18-1.57-1.18-3s.75-2.12 1.01-2.41c.27-.29.58-.36.78-.36h.56c.18 0 .42-.07.66.5.24.58.82 2 .89 2.15.07.14.12.31.02.5-.1.2-.14.31-.29.48l-.43.51c-.14.14-.29.3-.13.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.41.29.14.46.12.63-.07.17-.2.72-.84.92-1.13.19-.29.38-.24.65-.14.26.1 1.68.79 1.97.94.29.14.48.21.55.33.07.12.07.7-.17 1.38Z"/></svg>Quero a minha</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec s-pedir" id="como-pedir" aria-labelledby="t-pedir">
+  <span class="blob" aria-hidden="true"></span>
+  <div class="wrap duo">
+    <div class="frame rev">
+      <div class="arch"><img src="/assets/img/pizzaria/ambiente-2.jpg" alt="Pizzaiolo abrindo a massa da pizza no ar" width="1600" height="2400" loading="lazy" decoding="async"></div>
+      <div class="ncard"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.01c-.24.68-1.41 1.3-1.94 1.38-.5.07-1.13.1-1.82-.12-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.17-4.94-4.36-.14-.2-1.18-1.57-1.18-3s.75-2.12 1.01-2.41c.27-.29.58-.36.78-.36h.56c.18 0 .42-.07.66.5.24.58.82 2 .89 2.15.07.14.12.31.02.5-.1.2-.14.31-.29.48l-.43.51c-.14.14-.29.3-.13.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.41.29.14.46.12.63-.07.17-.2.72-.84.92-1.13.19-.29.38-.24.65-.14.26.1 1.68.79 1.97.94.29.14.48.21.55.33.07.12.07.7-.17 1.38Z"/></svg></span><p>Seu nome e o sabor já chegam escritos na mensagem. É só enviar.</p></div>
+    </div>
+    <div class="txt">
+      <p class="eyebrow rev"><span class="rule"></span>03 · Como pedir</p>
+      <h2 class="h2 rev" id="t-pedir" style="--d:.1s">Da mensagem <em>à sua mesa.</em></h2>
+      <ol class="steps">
+        <li class="step rev" style="--d:.15s"><b>01</b><div><h3>Escolha os sabores</h3><p>Passe pelo cardápio e separe o que a turma vai querer hoje.</p></div></li>
+        <li class="step rev" style="--d:.25s"><b>02</b><div><h3>Chame no WhatsApp</h3><p>Toque em qualquer botão de pedido, diga seu nome e o sabor escolhido.</p></div></li>
+        <li class="step rev" style="--d:.35s"><b>03</b><div><h3>Combine os detalhes</h3><p>A casa confirma com você tamanho, ajustes, pagamento e como você vai receber.</p></div></li>
+        <li class="step rev" style="--d:.45s"><b>04</b><div><h3>Hora de servir</h3><p>Abra a caixa, puxe a primeira fatia e bom apetite.</p></div></li>
+      </ol>
+      <div class="cta-row rev" style="--d:.5s"><a class="btn" href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Quero%20fazer%20um%20pedido%20na%20Forno%20da%20Vila." data-cta><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.01c-.24.68-1.41 1.3-1.94 1.38-.5.07-1.13.1-1.82-.12-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.17-4.94-4.36-.14-.2-1.18-1.57-1.18-3s.75-2.12 1.01-2.41c.27-.29.58-.36.78-.36h.56c.18 0 .42-.07.66.5.24.58.82 2 .89 2.15.07.14.12.31.02.5-.1.2-.14.31-.29.48l-.43.51c-.14.14-.29.3-.13.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.41.29.14.46.12.63-.07.17-.2.72-.84.92-1.13.19-.29.38-.24.65-.14.26.1 1.68.79 1.97.94.29.14.48.21.55.33.07.12.07.7-.17 1.38Z"/></svg>Começar meu pedido</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec s-gal" id="galeria" aria-labelledby="t-gal">
+  <span class="blob a" aria-hidden="true"></span><span class="blob b" aria-hidden="true"></span>
+  <div class="wrap">
+    <div class="gal-hd">
+      <p class="eyebrow center rev"><span class="rule"></span>04 · Direto do forno<span class="rule"></span></p>
+      <h2 class="h2 rev" id="t-gal" style="--d:.1s">Dá vontade de pedir <em>só de olhar.</em></h2>
+    </div>
+    <div class="gal">
+      <figure class="rev" style="--d:0s"><div class="tile"><img src="/assets/img/pizzaria/hero-1.jpg" alt="Pizza com folhas verdes sobre mesa de madeira" width="1600" height="1067" loading="lazy" decoding="async"></div><figcaption>na mesa</figcaption></figure>
+      <figure class="rev" style="--d:.08s"><div class="tile"><img src="/assets/img/pizzaria/produto-2.jpg" alt="Fatia de pizza com queijo derretido sendo retirada" width="1600" height="900" loading="lazy" decoding="async"></div><figcaption>puxando o queijo</figcaption></figure>
+      <figure class="rev" style="--d:.16s"><div class="tile"><img src="/assets/img/pizzaria/hero-2.jpg" alt="Pizza de pepperoni fatiada sobre tábua" width="1600" height="1200" loading="lazy" decoding="async"></div><figcaption>fatiada</figcaption></figure>
+      <figure class="rev" style="--d:.24s"><div class="tile"><img src="/assets/img/pizzaria/produto-3.jpg" alt="Pizza com pimentões e cortador ao lado" width="1600" height="1057" loading="lazy" decoding="async"></div><figcaption>pra dividir</figcaption></figure>
+    </div>
+    <div class="gal-ft rev" style="--d:.25s">
+<a class="btn btn-light" href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Quero%20fazer%20um%20pedido%20na%20Forno%20da%20Vila." data-cta><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.01c-.24.68-1.41 1.3-1.94 1.38-.5.07-1.13.1-1.82-.12-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.17-4.94-4.36-.14-.2-1.18-1.57-1.18-3s.75-2.12 1.01-2.41c.27-.29.58-.36.78-.36h.56c.18 0 .42-.07.66.5.24.58.82 2 .89 2.15.07.14.12.31.02.5-.1.2-.14.31-.29.48l-.43.51c-.14.14-.29.3-.13.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.41.29.14.46.12.63-.07.17-.2.72-.84.92-1.13.19-.29.38-.24.65-.14.26.1 1.68.79 1.97.94.29.14.48.21.55.33.07.12.07.7-.17 1.38Z"/></svg>Bateu vontade? Pede a sua</a>    </div>
+  </div>
+</section>
+
+<section class="sec s-faq" id="duvidas" aria-labelledby="t-faq">
+  <div class="wrap faq-grid">
+    <div class="faq-side">
+      <p class="eyebrow rev"><span class="rule"></span>05 · Dúvidas</p>
+      <h2 class="h2 rev" id="t-faq" style="--d:.1s">Perguntas <em>frequentes</em></h2>
+      <p class="rev" style="--d:.18s">Não encontrou a sua dúvida? A Forno da Vila responde pelo WhatsApp.</p>
+      <a class="btn btn-line rev" style="--d:.26s" href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Forno%20da%20Vila%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." data-cta><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.01c-.24.68-1.41 1.3-1.94 1.38-.5.07-1.13.1-1.82-.12-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.17-4.94-4.36-.14-.2-1.18-1.57-1.18-3s.75-2.12 1.01-2.41c.27-.29.58-.36.78-.36h.56c.18 0 .42-.07.66.5.24.58.82 2 .89 2.15.07.14.12.31.02.5-.1.2-.14.31-.29.48l-.43.51c-.14.14-.29.3-.13.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.41.29.14.46.12.63-.07.17-.2.72-.84.92-1.13.19-.29.38-.24.65-.14.26.1 1.68.79 1.97.94.29.14.48.21.55.33.07.12.07.7-.17 1.38Z"/></svg>Falar com a pizzaria</a>
+    </div>
+    <div class="faq rev" style="--d:.15s">
+      <div class="faq-item">
+        <h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="fa1" id="fq1"><span>Como faço o meu pedido?</span><i class="pm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></i></button></h3>
+        <div class="faq-a" id="fa1" role="region" aria-labelledby="fq1"><div><p>Toque em qualquer botão de pedido do site, diga seu nome e o sabor que vai querer. A mensagem já chega escrita no WhatsApp da Forno da Vila, é só enviar.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="fa2" id="fq2"><span>Vocês entregam no meu endereço?</span><i class="pm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></i></button></h3>
+        <div class="faq-a" id="fa2" role="region" aria-labelledby="fq2"><div><p>Mande o seu endereço pelo WhatsApp: a casa confirma se atende a sua região e explica como funciona a entrega ou a retirada.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="fa3" id="fq3"><span>Dá para pedir dois sabores na mesma pizza?</span><i class="pm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></i></button></h3>
+        <div class="faq-a" id="fa3" role="region" aria-labelledby="fq3"><div><p>Pergunte no WhatsApp: a pizzaria explica os tamanhos disponíveis e como combinar os sabores.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="fa4" id="fq4"><span>Quais são as formas de pagamento?</span><i class="pm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></i></button></h3>
+        <div class="faq-a" id="fa4" role="region" aria-labelledby="fq4"><div><p>As formas de pagamento aceitas são confirmadas pelo WhatsApp, na hora de fechar o pedido.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="fa5" id="fq5"><span>Qual é o horário de funcionamento?</span><i class="pm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></i></button></h3>
+        <div class="faq-a" id="fa5" role="region" aria-labelledby="fq5"><div><p>Ter a Dom 18h às 23h. Em feriados, vale confirmar pelo WhatsApp.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <h3><button class="faq-q" type="button" aria-expanded="false" aria-controls="fa6" id="fq6"><span>Onde fica a Forno da Vila?</span><i class="pm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></i></button></h3>
+        <div class="faq-a" id="fa6" role="region" aria-labelledby="fq6"><div><p>Vila Mariana, São Paulo - SP. Veja o mapa logo abaixo ou peça a localização pelo WhatsApp.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec dark s-local" id="onde-fica" aria-labelledby="t-local">
+  <span class="blob" aria-hidden="true"></span>
+  <div class="wrap duo">
+    <div class="txt">
+      <p class="eyebrow rev"><span class="rule"></span>06 · Onde fica</p>
+      <h2 class="h2 rev" id="t-local" style="--d:.1s">O forno fica aceso <em>em Vila Mariana.</em></h2>
+      <ul class="info">
+        <li class="rev" style="--d:.18s"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span><div><small>Endereço</small><span>Atendimento em Vila Mariana, São Paulo. Peça a localização pelo WhatsApp.</span></div></li>
+        <li class="rev" style="--d:.26s"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><small>Horário</small><span style="display:block">Ter a Dom 18h às 23h</span></div></li>
+        <li class="rev" style="--d:.34s"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span><div><small>WhatsApp</small><a href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Quero%20fazer%20um%20pedido%20na%20Forno%20da%20Vila." data-cta>(11) 91347-9449</a></div></li>
+      </ul>
+      <div class="cta-row rev" style="--d:.45s">
+        <a class="btn btn-light" href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Quero%20fazer%20um%20pedido%20na%20Forno%20da%20Vila." data-cta><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.01c-.24.68-1.41 1.3-1.94 1.38-.5.07-1.13.1-1.82-.12-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.17-4.94-4.36-.14-.2-1.18-1.57-1.18-3s.75-2.12 1.01-2.41c.27-.29.58-.36.78-.36h.56c.18 0 .42-.07.66.5.24.58.82 2 .89 2.15.07.14.12.31.02.5-.1.2-.14.31-.29.48l-.43.51c-.14.14-.29.3-.13.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.41.29.14.46.12.63-.07.17-.2.72-.84.92-1.13.19-.29.38-.24.65-.14.26.1 1.68.79 1.97.94.29.14.48.21.55.33.07.12.07.7-.17 1.38Z"/></svg>Pedir pizza</a>
+        <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=Forno%20da%20Vila%20Vila%20Mariana%2C%20S%C3%A3o%20Paulo%20-%20SP" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Como chegar</a>
+      </div>
+    </div>
+    <div class="map rev" style="--d:.2s">
+      <iframe src="https://maps.google.com/maps?q=Vila%20Mariana%2C%20S%C3%A3o%20Paulo%20-%20SP&amp;z=15&amp;output=embed" title="Mapa: Forno da Vila em Vila Mariana" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="s-final" id="pedido" aria-labelledby="t-final">
+  <div class="wrap">
+    <div class="final rev">
+      <span class="blob a" aria-hidden="true"></span><span class="blob b" aria-hidden="true"></span>
+      <span class="ghost" aria-hidden="true">forno</span>
+      <span class="burst" aria-hidden="true">hoje tem pizza</span>
+      <h2 class="h2" id="t-final">Bateu a vontade? Peça a sua <em>puxando o queijo.</em></h2>
+      <p class="sub">Escolha os sabores, mande a mensagem e deixe o forno da Forno da Vila cuidar do resto.</p>
+      <a class="btn btn-light" href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Quero%20fazer%20um%20pedido%20na%20Forno%20da%20Vila." data-cta><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.01c-.24.68-1.41 1.3-1.94 1.38-.5.07-1.13.1-1.82-.12-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.17-4.94-4.36-.14-.2-1.18-1.57-1.18-3s.75-2.12 1.01-2.41c.27-.29.58-.36.78-.36h.56c.18 0 .42-.07.66.5.24.58.82 2 .89 2.15.07.14.12.31.02.5-.1.2-.14.31-.29.48l-.43.51c-.14.14-.29.3-.13.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.41.29.14.46.12.63-.07.17-.2.72-.84.92-1.13.19-.29.38-.24.65-.14.26.1 1.68.79 1.97.94.29.14.48.21.55.33.07.12.07.7-.17 1.38Z"/></svg>Pedir minha pizza</a>
+      <span class="micro">Seu pedido vai direto para o WhatsApp da pizzaria</span>
+      <div class="row">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Vila Mariana, São Paulo - SP</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Ter a Dom 18h às 23h</span>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft-grid">
+      <div>
+        <a class="logo" href="#inicio"><span class="logo-mark" aria-hidden="true">FV</span><span><span class="logo-name ">Forno da Vila</span><span class="logo-sub">Pizzaria · Vila Mariana</span></span></a>
+        <p class="ft-txt">Escolha o sabor, peça pelo WhatsApp e receba a pizza ainda puxando o queijo.</p>
+        <div class="socials">
+          <a href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Quero%20fazer%20um%20pedido%20na%20Forno%20da%20Vila." data-cta aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.01c-.24.68-1.41 1.3-1.94 1.38-.5.07-1.13.1-1.82-.12-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.17-4.94-4.36-.14-.2-1.18-1.57-1.18-3s.75-2.12 1.01-2.41c.27-.29.58-.36.78-.36h.56c.18 0 .42-.07.66.5.24.58.82 2 .89 2.15.07.14.12.31.02.5-.1.2-.14.31-.29.48l-.43.51c-.14.14-.29.3-.13.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.41.29.14.46.12.63-.07.17-.2.72-.84.92-1.13.19-.29.38-.24.65-.14.26.1 1.68.79 1.97.94.29.14.48.21.55.33.07.12.07.7-.17 1.38Z"/></svg></a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Forno%20da%20Vila%20Vila%20Mariana%2C%20S%C3%A3o%20Paulo%20-%20SP" target="_blank" rel="noopener" aria-label="Ver no mapa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul><li><a href="#sabores">Sabores</a></li><li><a href="#o-forno">O forno</a></li><li><a href="#como-pedir">Como pedir</a></li><li><a href="#duvidas">Dúvidas</a></li><li><a href="#onde-fica">Onde fica</a></li></ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li>Vila Mariana, São Paulo - SP</li>
+<li>Ter a Dom 18h às 23h</li>          <li><a href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Quero%20fazer%20um%20pedido%20na%20Forno%20da%20Vila." data-cta>WhatsApp (11) 91347-9449</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft-bot"><span>© 2026 Forno da Vila. Todos os direitos reservados.</span></div>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Quero%20fazer%20um%20pedido%20na%20Forno%20da%20Vila." data-cta aria-label="Pedir pizza pelo WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.01c-.24.68-1.41 1.3-1.94 1.38-.5.07-1.13.1-1.82-.12-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.17-4.94-4.36-.14-.2-1.18-1.57-1.18-3s.75-2.12 1.01-2.41c.27-.29.58-.36.78-.36h.56c.18 0 .42-.07.66.5.24.58.82 2 .89 2.15.07.14.12.31.02.5-.1.2-.14.31-.29.48l-.43.51c-.14.14-.29.3-.13.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.41.29.14.46.12.63-.07.17-.2.72-.84.92-1.13.19-.29.38-.24.65-.14.26.1 1.68.79 1.97.94.29.14.48.21.55.33.07.12.07.7-.17 1.38Z"/></svg></a>
+
+<dialog class="lead-dlg" id="lead" aria-labelledby="lead-t" data-tel="5511913479449" data-nome="Forno da Vila">
+  <div class="lead-box">
+    <span class="blob" aria-hidden="true"></span>
+    <span class="grab" aria-hidden="true"></span>
+    <button class="x" type="button" data-close aria-label="Fechar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    <p class="eyebrow"><span class="rule"></span>Seu pedido</p>
+    <h2 id="lead-t">Falta pouco pra sua <em>pizza</em></h2>
+    <p>Conte seu nome e o que vai querer. A mensagem já abre pronta no WhatsApp da Forno da Vila.</p>
+    <form novalidate>
+      <label class="fld"><span>Seu nome</span><input name="nome" type="text" autocomplete="given-name" placeholder="Como podemos te chamar?" required maxlength="60" aria-describedby="lead-err"></label>
+      <span class="f-err" id="lead-err" hidden>Digite seu nome para continuar.</span>
+      <label class="fld"><span>O que vai querer?</span>
+        <select name="pedido">
+<option value="Pizzas tradicionais">Pizzas tradicionais · R$59</option><option value="Pizzas especiais">Pizzas especiais · R$72</option><option value="Pizzas doces">Pizzas doces · R$55</option><option value="Bordas recheadas">Bordas recheadas · R$12</option><option value="Esfihas e calzones">Esfihas e calzones · R$9</option><option value="Bebidas">Bebidas · R$8</option>          <option value="">Ainda não sei, quero ver os sabores</option>
+        </select>
+      </label>
+      <button class="btn" type="submit"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.01c-.24.68-1.41 1.3-1.94 1.38-.5.07-1.13.1-1.82-.12-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.17-4.94-4.36-.14-.2-1.18-1.57-1.18-3s.75-2.12 1.01-2.41c.27-.29.58-.36.78-.36h.56c.18 0 .42-.07.66.5.24.58.82 2 .89 2.15.07.14.12.31.02.5-.1.2-.14.31-.29.48l-.43.51c-.14.14-.29.3-.13.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.41.29.14.46.12.63-.07.17-.2.72-.84.92-1.13.19-.29.38-.24.65-.14.26.1 1.68.79 1.97.94.29.14.48.21.55.33.07.12.07.7-.17 1.38Z"/></svg><span>Continuar no WhatsApp</span></button>
+    </form>
+    <p class="direct">Prefere ir direto? <a href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Quero%20fazer%20um%20pedido%20na%20Forno%20da%20Vila." rel="noopener">Abrir o WhatsApp</a></p>
+  </div>
+</dialog>
+
+<div class="grain" aria-hidden="true"></div>
+
+<script>
+(()=>{
+const d=document,de=d.documentElement;
+const pv=d.querySelector('.previa');
+const setPv=()=>de.style.setProperty('--pv',(pv?pv.offsetHeight:0)+'px');setPv();addEventListener('resize',setPv);
+requestAnimationFrame(()=>requestAnimationFrame(()=>de.classList.add('is-loaded')));
+
+/* header */
+const hdr=d.querySelector('.hdr');const onS=()=>hdr.classList.toggle('scrolled',scrollY>24);onS();addEventListener('scroll',onS,{passive:true});
+
+/* reveal */
+const els=d.querySelectorAll('.rev');
+if('IntersectionObserver' in window){
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');io.unobserve(e.target)}}),{rootMargin:'0px 0px -60px 0px',threshold:0});
+  els.forEach(el=>io.observe(el));
+}else els.forEach(el=>el.classList.add('vis'));
+
+/* carrossel guiado pelo scroll */
+(()=>{const sec=d.querySelector('.hs');if(!sec)return;const vp=sec.querySelector('.hs-viewport'),tr=sec.querySelector('.hs-track');
+ const native=CSS.supports('animation-timeline','view()')&&CSS.supports('animation-range','contain');
+ const lg=matchMedia('(min-width:1024px)');let max=0,dist=1,raf=0;
+ var reduz=matchMedia('(prefers-reduced-motion: reduce)').matches;
+ const measure=()=>{if(reduz){max=0;sec.style.minHeight='';sec.style.removeProperty('--max');tr.style.transform='';vp.style.overflowX='auto';return}
+   max=Math.max(0,tr.scrollWidth-vp.clientWidth);
+   if(!max){sec.style.minHeight='';sec.style.removeProperty('--max');tr.style.transform='';vp.classList.remove('is-scrolling');return}
+   dist=max+innerHeight*(lg.matches?.7:.5);sec.style.minHeight=(innerHeight+dist)+'px';sec.style.setProperty('--max',max+'px');update()};
+ const update=()=>{raf=0;if(!max)return;const x=Math.min(Math.max(-sec.getBoundingClientRect().top,0),dist)/dist*max;
+   if(!native)tr.style.transform=`translateX(${-x}px)`;vp.classList.toggle('is-scrolling',x>8)};
+ addEventListener('scroll',()=>raf||(raf=requestAnimationFrame(update)),{passive:true});
+ addEventListener('resize',measure);lg.addEventListener&&lg.addEventListener('change',measure);
+ if('ResizeObserver' in window)new ResizeObserver(measure).observe(tr);
+ measure();setTimeout(measure,300);d.fonts&&d.fonts.ready.then(measure);})();
+
+/* faq */
+const qs=[...d.querySelectorAll('.faq-q')];
+qs.forEach(b=>b.addEventListener('click',()=>{const o=b.getAttribute('aria-expanded')==='true';qs.forEach(x=>x.setAttribute('aria-expanded','false'));b.setAttribute('aria-expanded',String(!o));qs.forEach(x=>x.closest('.faq-item').classList.toggle('open',x.getAttribute('aria-expanded')==='true'))}));
+if(qs[0]){qs[0].setAttribute('aria-expanded','true');qs[0].closest('.faq-item').classList.add('open')}
+
+/* fab */
+const fab=d.querySelector('.fab');const f=()=>fab.classList.toggle('show',scrollY>420);f();addEventListener('scroll',f,{passive:true});
+
+/* menu mobile */
+const m=d.getElementById('mnav'),mb=d.querySelector('.hdr .menu-btn');
+const menu=o=>{m.classList.toggle('open',o);m.setAttribute('aria-hidden',String(!o));mb.setAttribute('aria-expanded',String(o));de.classList.toggle('lock',o);if(o)setTimeout(()=>m.querySelector('.mnav-close').focus(),50);else if(m.contains(d.activeElement))mb.focus()};
+mb.addEventListener('click',()=>menu(true));m.querySelector('.mnav-close').addEventListener('click',()=>menu(false));
+m.querySelectorAll('nav a').forEach((a,i)=>{a.style.setProperty('--i',i);a.addEventListener('click',()=>menu(false))});
+m.addEventListener('keydown',e=>{if(e.key==='Escape')menu(false)});
+
+/* modal de pedido antes do WhatsApp */
+const dlg=d.getElementById('lead');
+if(dlg&&typeof dlg.showModal==='function'){
+  const form=dlg.querySelector('form'),nm=form.elements.nome,sel=form.elements.pedido,err=d.getElementById('lead-err'),sb=form.querySelector('[type=submit] span');
+  let last=null;
+  const open=item=>{last=d.activeElement;const o=item?[...sel.options].find(o=>o.value===item):null;sel.value=o?item:''
+    nm.removeAttribute('aria-invalid');err.hidden=true;dlg.showModal();de.classList.add('lock');setTimeout(()=>nm.focus(),60)};
+  const close=()=>{if(!dlg.open)return;dlg.classList.add('closing');setTimeout(()=>{dlg.classList.remove('closing');dlg.close()},200)};
+  dlg.addEventListener('close',()=>{de.classList.remove('lock');sb.textContent='Continuar no WhatsApp';form.querySelector('[type=submit]').disabled=false;last&&last.focus&&last.focus()});
+  dlg.addEventListener('cancel',e=>{e.preventDefault();close()});
+  dlg.addEventListener('click',e=>{if(e.target===dlg)close()});
+  dlg.querySelectorAll('[data-close]').forEach(b=>b.addEventListener('click',close));
+  dlg.addEventListener('keydown',e=>{if(e.key!=='Tab')return;const fs=[...dlg.querySelectorAll('a[href],button:not([disabled]),input,select')].filter(x=>x.offsetParent!==null);if(!fs.length)return;
+    const a=fs[0],z=fs[fs.length-1];if(e.shiftKey&&d.activeElement===a){e.preventDefault();z.focus()}else if(!e.shiftKey&&d.activeElement===z){e.preventDefault();a.focus()}});
+  d.querySelectorAll('[data-cta]').forEach(b=>b.addEventListener('click',e=>{e.preventDefault();if(m.classList.contains('open'))menu(false);open(b.dataset.item)}));
+  nm.addEventListener('input',()=>{if(nm.value.trim().length>1){nm.removeAttribute('aria-invalid');err.hidden=true}});
+  form.addEventListener('submit',e=>{e.preventDefault();const n=nm.value.trim().replace(/\s+/g,' ');
+    if(n.length<2){nm.setAttribute('aria-invalid','true');err.hidden=false;nm.focus();return}
+    const negocio=dlg.dataset.nome,item=sel.value;
+    const msg=item?`Olá! Meu nome é ${n}. Vi o site e quero fazer um pedido na ${negocio}: ${item}.`:`Olá! Meu nome é ${n}. Vi o site da ${negocio} e quero saber os sabores de hoje para fazer um pedido.`;
+    form.querySelector('[type=submit]').disabled=true;sb.textContent='Abrindo WhatsApp…';
+    location.href=`https://wa.me/${dlg.dataset.tel}?text=${encodeURIComponent(msg)}`;
+    setTimeout(close,1200)});
+}
+})();
+</script>
+</body>
+</html>
