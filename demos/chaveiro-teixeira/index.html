@@ -1,0 +1,825 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex"><title>Chaveiro Teixeira | Chaveiro em Tucuruvi, São Paulo</title>
+<meta name="description" content="Chaveiro Teixeira: cópia de chaves, abertura de portas e troca de fechaduras em Tucuruvi, São Paulo. Chame no WhatsApp (11) 99634-7754.">
+<meta property="og:title" content="Chaveiro Teixeira | Chaveiro em Tucuruvi">
+<meta property="og:description" content="Ficou para fora? Chame no WhatsApp.">
+<meta property="og:image" content="https://aleroberto17.github.io/assets/img/chaveiro/hero-3.jpg">
+<meta name="theme-color" content="#0b1628">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,300..800;1,62..125,300..800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="/assets/img/chaveiro/hero-3.jpg" fetchpriority="high">
+<script>document.documentElement.classList.add("js")</script>
+<style>
+@font-face{font-family:"Archivo Fb";src:local("Arial");size-adjust:104%;ascent-override:90%;descent-override:22%}
+@font-face{font-family:"Plex Fb";src:local("Arial");size-adjust:100%;ascent-override:102%;descent-override:27%}
+:root{
+  --papel:#f3f1ec; --papel-2:#e8e4da; --branco:#fbfaf7;
+  --marinho:#14294b; --marinho-2:#1f3d6b; --noite:#0b1628; --noite-2:#0f1e36;
+  --latao:#c29b4f; --latao-2:#e3c98b; --latao-3:#8a6a2b;
+  --tinta:#0f1d34; --tinta-2:rgb(15 29 52/.72);
+  --f-display:"Archivo","Archivo Fb","Arial Narrow",Arial,sans-serif;
+  --f-body:"IBM Plex Sans","Plex Fb","Segoe UI",system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+  --ease:cubic-bezier(.22,1,.36,1);
+  --sh-cta:0 20px 25px -5px rgb(20 41 75/.3),0 8px 10px -6px rgb(20 41 75/.3);
+  --sh-foto:0 30px 60px -20px rgb(20 41 75/.4);
+  --grade:linear-gradient(rgb(227 201 139/.055) 1px,transparent 1px) 0 0/48px 48px,linear-gradient(90deg,rgb(227 201 139/.055) 1px,transparent 1px) 0 0/48px 48px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:6rem;-webkit-text-size-adjust:100%}
+body{background:var(--papel);color:var(--tinta);font:300 1rem/1.65 var(--f-body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,svg{display:block;max-width:100%}
+img{height:auto}
+a{color:inherit;text-decoration:none}
+button,input,select{font:inherit;color:inherit}
+::selection{background:var(--latao-2);color:var(--noite)}
+:focus-visible{outline:2px solid var(--latao);outline-offset:3px;border-radius:4px}
+.w{max-width:80rem;margin-inline:auto;padding-inline:1.25rem}
+@media(min-width:768px){.w{padding-inline:2.5rem}}
+
+/* tipografia */
+h1,h2,h3{font-family:var(--f-display);font-stretch:112%;font-weight:500;letter-spacing:-.025em;text-wrap:balance;overflow-wrap:normal;hyphens:manual}
+h1 em,h2 em,h3 em{font-style:italic;font-weight:650;color:var(--marinho-2)}
+.h2{font-size:clamp(2.05rem,4.4vw,3.3rem);line-height:1.04}
+.lead{font-size:1.08rem;line-height:1.7;color:var(--tinta-2);max-width:36rem}
+@media(min-width:768px){.lead{font-size:1.14rem}}
+.eyebrow{display:flex;align-items:center;gap:.9rem;margin-bottom:1.15rem;font:500 .7rem/1.2 var(--f-mono);letter-spacing:.24em;text-transform:uppercase;color:var(--marinho-2)}
+.eyebrow svg{flex:none;width:2.9rem;height:.75rem;color:var(--latao)}
+.escuro .eyebrow{color:var(--latao-2)}
+.mono{font-family:var(--f-mono)}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.7rem;border-radius:.8rem;padding:1.05rem 1.9rem;font:600 .8rem/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;background:var(--marinho);color:var(--branco);box-shadow:var(--sh-cta);border:1px solid transparent;transition:translate .3s var(--ease),background-color .3s,box-shadow .3s,color .3s,border-color .3s;cursor:pointer;text-align:center}
+.btn svg{width:1.15rem;height:1.15rem;flex:none;transition:transform .3s var(--ease)}
+.btn-latao{background:linear-gradient(180deg,var(--latao-2),var(--latao));color:var(--noite);box-shadow:0 18px 30px -12px rgb(194 155 79/.55),inset 0 1px 0 rgb(255 255 255/.45)}
+.btn-linha{background:transparent;color:var(--marinho);box-shadow:none;border-color:rgb(20 41 75/.28)}
+.escuro .btn-linha,.hero .btn-linha,.bloco-final .btn-linha{color:var(--papel);border-color:rgb(243 241 236/.28)}
+.seta{display:inline-flex;align-items:center;gap:.55rem;font:500 .72rem/1 var(--f-mono);letter-spacing:.16em;text-transform:uppercase;color:var(--marinho-2)}
+.seta svg{width:1rem;transition:transform .3s var(--ease)}
+@media(hover:hover){
+  .btn:hover{translate:0 -4px;background:var(--marinho-2);box-shadow:0 25px 50px -12px rgb(20 41 75/.45)}
+  .btn:hover svg{transform:scale(1.1)}
+  .btn-latao:hover{background:linear-gradient(180deg,#efd9a3,var(--latao-2));box-shadow:0 25px 45px -12px rgb(194 155 79/.6)}
+  .btn-linha:hover{background:rgb(20 41 75/.06);border-color:var(--marinho-2)}
+  .escuro .btn-linha:hover,.hero .btn-linha:hover,.bloco-final .btn-linha:hover{background:rgb(243 241 236/.08);border-color:var(--latao-2);color:var(--latao-2)}
+  .seta:hover svg{transform:translateX(4px)}
+}
+
+/* prévia */
+.previa{position:relative;z-index:70;background:var(--latao-2);color:var(--noite);font-size:.84rem;line-height:1.4;text-align:center;padding:.6rem 1rem;text-wrap:balance}
+@media(max-width:639.98px){.previa{font-size:.68rem;line-height:1.38;padding:.45rem .75rem;letter-spacing:-.005em}}
+.previa a{font-weight:600;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+
+/* header */
+.topo{position:absolute;left:0;right:0;top:var(--pv,0px);z-index:50;height:5rem;color:var(--papel);translate:0 -80px;opacity:0;transition:translate .8s var(--ease),opacity .8s var(--ease),background-color .5s,box-shadow .5s}
+.is-loaded .topo{translate:0;opacity:1}
+.topo.fixo{position:fixed;top:0}
+.topo.rolado{background:rgb(11 22 40/.95);box-shadow:0 1px 0 0 rgb(227 201 139/.14)}
+@media(min-width:768px){.topo.rolado{background:rgb(11 22 40/.84);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}}
+.topo .w{height:100%;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.marca{display:flex;align-items:center;gap:.75rem;min-width:0;transition:scale .3s var(--ease)}
+@media(hover:hover){.marca:hover{scale:1.03}}
+.marca>span{min-width:0;flex:1}
+.selo{flex:none;width:2.9rem;height:2.9rem}
+.marca b{font:600 1.08rem/1.1 var(--f-display);font-stretch:108%;letter-spacing:-.01em;overflow-wrap:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-wrap:balance}
+.marca small{display:block;margin-top:.3rem;font:500 .56rem/1 var(--f-mono);letter-spacing:.2em;text-transform:uppercase;color:var(--latao-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.marca.n-m b{font-size:.98rem}.marca.n-l b{font-size:.88rem}
+@media(max-width:639.98px){.marca.n-m b{font-size:.92rem}.marca.n-l b{font-size:.84rem}.marca small{font-size:.5rem;letter-spacing:.14em}}
+.nav{display:none;gap:2rem}
+.nav a{position:relative;font:500 .76rem/1 var(--f-body);letter-spacing:.16em;text-transform:uppercase;color:rgb(243 241 236/.78);transition:color .15s}
+.nav a::after{content:"";position:absolute;left:0;bottom:-7px;height:1px;width:0;background:var(--latao);transition:width .3s var(--ease)}
+@media(hover:hover){.nav a:hover{color:var(--latao-2)}.nav a:hover::after{width:100%}}
+.topo-acoes{display:flex;align-items:center;gap:.6rem;flex:none}
+.topo .btn{padding:.8rem 1.25rem;font-size:.72rem}
+.topo .btn span{display:none}
+.ic-btn{width:2.75rem;height:2.75rem;border-radius:.75rem;display:grid;place-items:center;border:1px solid rgb(243 241 236/.22);background:transparent;cursor:pointer;color:inherit;transition:background-color .3s,border-color .3s}
+.ic-btn svg{width:1.2rem}
+@media(hover:hover){.ic-btn:hover{background:rgb(243 241 236/.08);border-color:var(--latao-2)}}
+@media(max-width:639.98px){.topo .btn{width:2.75rem;height:2.75rem;padding:0}}
+@media(min-width:640px){.topo .btn span{display:inline}}
+@media(min-width:1100px){.nav{display:flex}.menu-btn{display:none}}
+
+/* menu mobile */
+.mnav{position:fixed;inset:0;z-index:60;display:flex;flex-direction:column;padding:1.5rem 1.5rem 2rem;background:linear-gradient(135deg,var(--noite),var(--noite-2) 45%,var(--marinho));color:var(--papel);opacity:0;visibility:hidden;transition:opacity .35s var(--ease),visibility .35s}
+.mnav.open{opacity:1;visibility:visible}
+.mnav .x{align-self:flex-end}
+.mnav nav{display:grid;gap:.9rem;margin-top:2.5rem}
+.mnav nav a{font:400 2.1rem/1.15 var(--f-display);font-stretch:110%;letter-spacing:-.02em;opacity:0;translate:-28px 0;transition:opacity .5s var(--ease),translate .5s var(--ease),color .2s;transition-delay:calc(.1s + .07s*var(--i,0))}
+.mnav.open nav a{opacity:1;translate:0}
+.mnav .btn{margin-top:auto;opacity:0;translate:0 20px;transition:opacity .5s var(--ease) .55s,translate .5s var(--ease) .55s}
+.mnav.open .btn{opacity:1;translate:0}
+.mnav p{margin-top:1.25rem;font:500 .62rem/1.4 var(--f-mono);letter-spacing:.24em;text-transform:uppercase;color:rgb(243 241 236/.5);text-align:center}
+
+/* atmosfera */
+.blob{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none;z-index:0}
+@media(max-width:1023.98px){.blob{filter:blur(48px)}}
+.grain{position:fixed;inset:0;z-index:80;pointer-events:none;opacity:.05;transform:translateZ(0);backface-visibility:hidden;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.fantasma{position:absolute;pointer-events:none;user-select:none;font:italic 700 1em/1 var(--f-display);font-stretch:118%;letter-spacing:-.04em;color:transparent;-webkit-text-stroke:1px rgb(20 41 75/.16);white-space:nowrap;z-index:1}
+.fantasma.claro{-webkit-text-stroke:1px rgb(227 201 139/.17)}
+.chave-bg{position:absolute;pointer-events:none;z-index:1;color:var(--latao-2)}
+
+/* revelar */
+.js .rev{opacity:0;transform:translateY(var(--y,32px));transition:opacity .9s var(--ease) var(--d,0s),transform .9s var(--ease) var(--d,0s)}
+.js .rev.vis{opacity:1;transform:none}
+.js .hero .rev{--y:36px;transition-duration:1s}
+.js .hero .foto-hero.rev{transform:translateY(60px) scale(.96);transition-duration:1.2s}
+.js .hero .foto-hero.rev.vis{transform:none}
+
+/* HERO */
+.hero{position:relative;overflow:hidden;isolation:isolate;padding:7.5rem 0 5rem;background:var(--grade),radial-gradient(120% 90% at 85% 10%,var(--marinho) 0,var(--noite-2) 45%,var(--noite) 100%);color:var(--papel)}
+@media(min-width:1024px){.hero{min-height:100svh;display:flex;align-items:center;padding:8rem 0 6.5rem}}
+.hero .w{position:relative;z-index:2;display:grid;gap:3.5rem;width:100%}
+@media(min-width:1024px){.hero .w{grid-template-columns:minmax(0,7fr) minmax(0,5fr);align-items:center;gap:3.5rem}}
+.etiqueta{display:inline-flex;align-items:center;gap:.65rem;max-width:100%;padding:.55rem 1.05rem;border-radius:.7rem;border:1px solid rgb(227 201 139/.28);background:rgb(243 241 236/.04);font:500 .62rem/1.5 var(--f-mono);letter-spacing:.16em;text-transform:uppercase;text-wrap:balance}
+.etiqueta svg{flex:none;width:1.05rem;height:1.05rem;color:var(--latao-2)}
+@media(min-width:640px){.etiqueta{font-size:.68rem;letter-spacing:.2em}}
+.shine{background:linear-gradient(110deg,var(--latao-2) 0 42%,var(--latao) 46%,#fff7e2 50%,var(--latao) 54%,var(--latao-2) 58% 100%);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;animation:shine 5s linear infinite}
+@keyframes shine{from{background-position:150% 0}to{background-position:-50% 0}}
+.hero h1{margin:1.5rem 0 1.4rem;font-size:clamp(2.5rem,5.3vw,4.7rem);line-height:.98;font-weight:600;letter-spacing:-.035em}
+.hero h1 em{display:block;color:var(--latao-2);font-weight:600}
+.hero .lead{color:rgb(243 241 236/.75)}
+.hero .lead strong{font-weight:500;color:var(--papel)}
+.acoes{display:flex;flex-wrap:wrap;gap:.85rem;margin-top:2rem}
+@media(max-width:479.98px){.hero .acoes{flex-direction:column;align-items:stretch}}
+.atalhos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:2.75rem;border-top:1px solid rgb(227 201 139/.18);max-width:36rem}
+@media(min-width:640px){.atalhos{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.atalhos a{display:block;padding:1rem .9rem 0 0;transition:color .3s}
+.atalhos a+a{padding-left:.9rem;border-left:1px solid rgb(227 201 139/.14)}
+@media(max-width:639.98px){.atalhos a:nth-child(3){padding-left:0;border-left:0}.atalhos a:nth-child(n+3){padding-top:1rem;border-top:1px solid rgb(227 201 139/.14);margin-top:1rem}}
+.atalhos small{display:block;font:500 .62rem/1 var(--f-mono);letter-spacing:.2em;color:var(--latao)}
+.atalhos b{display:block;margin-top:.35rem;font:500 1.05rem/1.2 var(--f-display);font-stretch:110%}
+@media(hover:hover){.atalhos a:hover{color:var(--latao-2)}}
+.foto-hero{position:relative;width:min(100%,30rem);justify-self:center}
+@media(min-width:1024px){.foto-hero{justify-self:end}}
+.foto-hero::before{content:"";position:absolute;inset:-.8rem;rotate:-1.5deg;border:1px solid rgb(227 201 139/.45);border-radius:1.9rem}
+.foto-hero img{position:relative;width:100%;aspect-ratio:5/4;object-fit:cover;object-position:52% 50%;border-radius:1.5rem;box-shadow:0 30px 60px -18px rgb(0 0 0/.55)}
+@media(min-width:1024px){.foto-hero img{aspect-ratio:4/5}}
+.cartao{position:absolute;z-index:3;display:flex;align-items:center;gap:.85rem;padding:1rem 1.15rem;border-radius:1rem;background:var(--papel);color:var(--tinta);box-shadow:0 24px 40px -14px rgb(0 0 0/.45);max-width:18rem}
+.cartao .ic{flex:none;width:2.5rem;height:2.5rem;border-radius:.7rem;display:grid;place-items:center;background:var(--marinho);color:#25d366}
+.cartao .ic svg{width:1.25rem}
+.cartao small{display:block;font:500 .58rem/1.3 var(--f-mono);letter-spacing:.18em;text-transform:uppercase;color:var(--latao-3)}
+.cartao b{display:block;font:600 1.05rem/1.2 var(--f-display);font-stretch:108%;white-space:nowrap}
+.foto-hero .cartao{left:-.75rem;bottom:-1.5rem}
+@media(min-width:1024px){.foto-hero .cartao{left:-2.5rem;bottom:2.5rem}}
+.foto-hero .medida{position:absolute;right:-.25rem;top:-2.2rem;z-index:3;font:500 .6rem/1 var(--f-mono);letter-spacing:.2em;color:rgb(227 201 139/.7);display:flex;align-items:center;gap:.5rem}
+.foto-hero .medida::before{content:"";width:3rem;height:1px;background:currentColor}
+.hero .chave-bg{width:min(60rem,150vw);right:-22rem;bottom:-1rem;opacity:.13}
+@media(max-width:1023.98px){.hero .chave-bg{right:-40vw;bottom:auto;top:26rem;opacity:.08}}
+.hero .fantasma{font-size:20vw;left:-1vw;bottom:-.24em}
+@media(min-width:1024px){.hero .fantasma{font-size:15vw}}
+.dica{display:none}
+@media(min-width:1024px){.dica{display:flex;flex-direction:column;align-items:center;gap:.4rem;position:absolute;left:50%;bottom:1.6rem;translate:-50% 0;z-index:3;font:500 .6rem/1 var(--f-mono);letter-spacing:.3em;text-transform:uppercase;color:rgb(243 241 236/.45);opacity:0;transition:opacity 1s 1.6s}
+  .is-loaded .dica{opacity:1}.dica svg{width:1rem;animation:cue 1.8s ease-in-out infinite}}
+@keyframes cue{50%{transform:translateY(6px)}}
+
+/* faixa */
+.faixa{position:relative;z-index:2;overflow:hidden;background:linear-gradient(180deg,var(--latao-2),var(--latao));border-block:1px solid rgb(11 22 40/.25);padding-block:1.05rem}
+.marquee{display:flex;width:max-content;animation:mq 42s linear infinite}
+.mq{display:flex;align-items:center;gap:2.25rem;padding-right:2.25rem}
+.mq span{font:600 1.25rem/1 var(--f-display);font-stretch:115%;letter-spacing:-.01em;color:var(--noite);white-space:nowrap}
+.mq svg{width:2.4rem;height:.7rem;color:var(--noite);opacity:.55;flex:none}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* seções */
+.secao{position:relative;overflow:hidden;padding-block:6rem}
+@media(min-width:768px){.secao{padding-block:9rem}}
+.secao>.w{position:relative;z-index:2}
+.escuro{background:var(--noite);color:var(--papel)}
+.escuro h2 em{color:var(--latao-2)}
+.escuro .lead{color:rgb(243 241 236/.72)}
+.duas{display:grid;gap:4.5rem;align-items:center}
+@media(min-width:1024px){.duas{grid-template-columns:1fr 1fr;gap:5rem}.duas.inv>:first-child{order:2}}
+.txt .h2+.lead{margin-top:1.4rem}
+.txt>.btn,.txt>.acoes{margin-top:2.5rem}
+
+/* 01 onde: casa, comércio, carro */
+.cab{display:grid;gap:1.4rem;align-items:end;margin-bottom:3.5rem}
+@media(min-width:1024px){.cab{grid-template-columns:1.1fr 1fr;gap:4rem;margin-bottom:4.5rem}}
+.frentes{display:grid;gap:1.5rem}
+@media(min-width:900px){.frentes{grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem;align-items:start}.frentes>:nth-child(2){margin-top:3rem}.frentes>:nth-child(3){margin-top:1.25rem}}
+.frente{position:relative;display:flex;flex-direction:column;border-radius:1.5rem;background:var(--branco);border:1px solid rgb(20 41 75/.1);box-shadow:0 1px 3px rgb(20 41 75/.08);overflow:hidden;transition:translate .5s var(--ease),box-shadow .5s,border-color .5s}
+.frente figure{position:relative;overflow:hidden;aspect-ratio:16/9}
+@media(min-width:900px){.frente figure{aspect-ratio:16/10}}
+.frente img{width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease)}
+.frente figure::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgb(11 22 40/.55),transparent 55%)}
+.frente .letra{position:absolute;left:1.25rem;bottom:1rem;z-index:2;font:500 .66rem/1 var(--f-mono);letter-spacing:.22em;text-transform:uppercase;color:var(--latao-2)}
+.frente .corpo{padding:1.6rem 1.6rem 1.75rem;display:flex;flex-direction:column;flex:1}
+.frente h3{font-size:1.65rem;line-height:1.1}
+.frente ul{list-style:none;display:grid;gap:.7rem;margin:1.15rem 0 1.6rem}
+.frente li{display:flex;gap:.7rem;font-size:.95rem;line-height:1.5;color:var(--tinta-2)}
+.frente li svg{flex:none;width:1rem;margin-top:.25rem;color:var(--latao-3)}
+.frente .seta{margin-top:auto}
+@media(hover:hover){.frente:hover{translate:0 -6px;border-color:rgb(20 41 75/.24);box-shadow:0 25px 50px -12px rgb(20 41 75/.22)}.frente:hover img{transform:scale(1.05)}.frente:hover .seta svg{transform:translateX(4px)}}
+
+/* 02 serviços: carrossel */
+.hs{position:relative;overflow-x:clip;background:var(--noite)}
+.hs-sticky{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;color:var(--papel);background:var(--grade),linear-gradient(to bottom,var(--noite),var(--marinho) 55%,var(--noite))}
+.hs-grid{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:center;gap:1.6rem;padding-top:5rem;padding-bottom:1rem}
+@media(min-width:1024px){.hs-grid{display:grid;grid-template-columns:minmax(18rem,24rem) minmax(0,1fr);align-items:center;gap:3.5rem;padding-top:0}}
+.hs-intro .eyebrow{color:var(--latao-2)}
+.hs-intro .h2{font-size:clamp(2rem,4vw,3.1rem)}
+.hs-intro .h2 em{color:var(--latao-2)}
+.hs-intro .lead{font-size:.95rem;margin-top:.9rem;color:rgb(243 241 236/.72)}
+@media(min-width:1024px){.hs-intro .lead{font-size:1.08rem;margin-top:1.25rem}}
+.hs-hint{display:inline-flex;align-items:center;gap:.6rem;margin-top:1.25rem;font:500 .64rem/1 var(--f-mono);letter-spacing:.22em;text-transform:uppercase;color:var(--latao-2)}
+.hs-hint svg{width:1rem;animation:nudge 1.6s ease-in-out infinite}
+@keyframes nudge{50%{transform:translateX(6px)}}
+.hs-nota{display:none}
+@media(min-width:1024px){.hs-nota{display:block;margin-top:1.5rem;font-size:.82rem;color:rgb(243 241 236/.5)}}
+.hs-viewport{overflow:hidden;margin-inline:-1.25rem;padding:1rem 1.25rem 2rem}
+@media(min-width:1024px){.hs-viewport{margin-inline:0;padding-inline:0;transition:mask-image .4s;-webkit-mask-image:linear-gradient(90deg,#000 0 90%,transparent);mask-image:linear-gradient(90deg,#000 0 90%,transparent)}
+  .hs-viewport.is-scrolling{-webkit-mask-image:linear-gradient(90deg,transparent,#000 7% 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7% 90%,transparent)}}
+.hs-track{display:flex;gap:1.25rem;width:max-content;will-change:transform}
+@keyframes hs-slide{to{transform:translateX(calc(var(--max,0px)*-1))}}
+@supports (animation-timeline:view()){.hs{view-timeline:--hs block}.hs-track{animation:hs-slide linear both;animation-timeline:--hs;animation-range:contain}}
+.card{position:relative;flex:none;width:17.5rem;height:clamp(19rem,46vh,23.5rem);display:flex;flex-direction:column;padding:1.6rem;border-radius:1.4rem;background:linear-gradient(160deg,rgb(243 241 236/.08),rgb(243 241 236/.025));border:1px solid rgb(227 201 139/.18);box-shadow:inset 0 1px 0 rgb(255 255 255/.06);transition:translate .5s var(--ease),border-color .5s,box-shadow .5s,background-color .5s}
+@media(min-width:640px){.card{width:20rem;padding:2rem}}
+.card .num{position:absolute;right:1.6rem;top:1.5rem;font:500 .78rem/1 var(--f-mono);letter-spacing:.14em;color:rgb(227 201 139/.55);transition:color .5s}
+.card .tile{width:3.3rem;height:3.3rem;border-radius:.9rem;display:grid;place-items:center;background:rgb(227 201 139/.12);color:var(--latao-2);border:1px solid rgb(227 201 139/.2);transition:background-color .5s,color .5s}
+.card .tile svg{width:1.6rem}
+.card .tag{margin-top:1.4rem;font:500 .6rem/1 var(--f-mono);letter-spacing:.2em;text-transform:uppercase;color:var(--latao)}
+.card h3{margin-top:.55rem;font-size:1.45rem;line-height:1.12;font-weight:550}
+.card .desc{flex:1;margin-top:.6rem;font-size:.92rem;line-height:1.6;color:rgb(243 241 236/.68)}
+.card .pe{display:flex;align-items:flex-end;justify-content:space-between;gap:1rem;padding-top:1.1rem;border-top:1px solid rgb(227 201 139/.16)}
+.card .preco{font:600 1.3rem/1 var(--f-display);color:var(--latao-2)}
+.card .preco.consulte{font:400 .82rem/1.2 var(--f-mono);letter-spacing:.04em;color:rgb(243 241 236/.55)}
+.card .seta{color:var(--latao-2)}
+@media(hover:hover){.card:hover{translate:0 -8px;border-color:rgb(227 201 139/.45);box-shadow:0 25px 50px -12px rgb(0 0 0/.5)}.card:hover .num{color:var(--latao-2)}.card:hover .tile{background:var(--latao-2);color:var(--noite)}.card:hover .seta svg{transform:translateX(4px)}}
+
+/* 03 como funciona */
+.moldura{position:relative;width:min(100%,25rem);margin-inline:auto}
+.moldura::before{content:"";position:absolute;inset:-.8rem;rotate:2deg;border:1px solid rgb(194 155 79/.55);border-radius:1.9rem}
+.moldura>img{position:relative;width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:1.5rem;box-shadow:var(--sh-foto)}
+.moldura .cartao{left:50%;translate:-50% 0;bottom:-2rem;width:86%;max-width:20rem;background:rgb(251 250 247/.96);backdrop-filter:blur(8px)}
+.moldura .cartao p{font:italic 500 1rem/1.35 var(--f-display);font-stretch:105%}
+.moldura .cartao .ic{background:var(--latao-2);color:var(--noite)}
+.steps{position:relative;display:grid;gap:2.4rem;margin-top:3rem;list-style:none}
+.steps::before{content:"";position:absolute;left:1.5rem;top:1.5rem;bottom:1.5rem;width:1px;background:linear-gradient(rgb(194 155 79/.75),rgb(20 41 75/.25),transparent)}
+.step{position:relative;display:flex;gap:1.5rem}
+.step b{position:relative;z-index:1;flex:none;width:3rem;height:3rem;border-radius:.8rem;display:grid;place-items:center;border:1px solid rgb(194 155 79/.6);background:var(--papel);color:var(--marinho);font:500 .9rem/1 var(--f-mono)}
+.step small{display:block;font:500 .6rem/1 var(--f-mono);letter-spacing:.22em;text-transform:uppercase;color:var(--latao-3);margin:.25rem 0 .5rem}
+.step h3{font-size:1.35rem;line-height:1.15}
+.step p{margin-top:.4rem;font-size:.97rem;color:var(--tinta-2);max-width:30rem}
+
+/* 04 carimbos */
+.carimbos{background:var(--grade),linear-gradient(160deg,var(--noite),var(--noite-2) 60%,var(--marinho))}
+.usos{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:2rem}
+.usos span{padding:.55rem .95rem;border-radius:.6rem;border:1px solid rgb(227 201 139/.25);font:500 .66rem/1 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:rgb(243 241 236/.85)}
+.passos-c{display:grid;gap:1rem;margin-top:2.25rem;counter-reset:c}
+@media(min-width:560px){.passos-c{grid-template-columns:repeat(3,1fr)}}
+.passos-c div{padding:1.15rem 1.15rem 1.25rem;border-radius:1rem;background:rgb(243 241 236/.04);border:1px solid rgb(227 201 139/.14)}
+.passos-c small{font:500 .62rem/1 var(--f-mono);letter-spacing:.2em;color:var(--latao)}
+.passos-c p{margin-top:.5rem;font-size:.92rem;line-height:1.5;color:rgb(243 241 236/.78)}
+.prancha{position:relative;width:min(100%,28rem);margin-inline:auto}
+.prancha::before{content:"";position:absolute;inset:-.8rem;rotate:-2deg;border:1px solid rgb(227 201 139/.4);border-radius:1.9rem}
+.prancha .papel{position:relative;aspect-ratio:1;border-radius:1.5rem;background:radial-gradient(120% 90% at 30% 20%,var(--branco),var(--papel-2));box-shadow:0 30px 60px -18px rgb(0 0 0/.55);overflow:hidden}
+.prancha .papel::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 31px,rgb(20 41 75/.06) 31px 32px);pointer-events:none}
+.prancha svg.carimbo{position:absolute;inset:8%;width:84%;height:84%}
+.prancha .selinho{position:absolute;right:-1rem;top:-1.25rem;z-index:3;padding:.85rem 1.1rem;border-radius:.9rem;background:var(--latao-2);color:var(--noite);font:500 .62rem/1.35 var(--f-mono);letter-spacing:.18em;text-transform:uppercase;box-shadow:0 20px 30px -12px rgb(0 0 0/.45)}
+.prancha .selinho b{display:block;font:italic 650 1.05rem/1.1 var(--f-display);letter-spacing:-.01em;text-transform:none}
+
+/* 05 faq */
+.faq{display:grid;gap:3rem}
+@media(min-width:1024px){.faq{grid-template-columns:1fr 1.6fr;gap:3.5rem}.faq-cab{position:sticky;top:8rem;align-self:start}}
+.faq-cab p{margin-top:1.25rem;color:var(--tinta-2);max-width:24rem}
+.faq-cab .btn{margin-top:2rem}
+@media(hover:hover){.faq-cab .btn-linha:hover{background:var(--marinho);color:var(--branco);border-color:var(--marinho)}}
+.faq-item{border-bottom:1px solid rgb(20 41 75/.13)}
+.faq-item:first-child{border-top:1px solid rgb(20 41 75/.13)}
+.faq-item button{display:flex;width:100%;justify-content:space-between;align-items:center;gap:1.5rem;padding-block:1.5rem;background:none;border:0;cursor:pointer;text-align:left;font:500 1.15rem/1.3 var(--f-display);font-stretch:108%;letter-spacing:-.01em;color:var(--tinta)}
+@media(min-width:768px){.faq-item button{font-size:1.32rem}}
+.pm{flex:none;width:2.5rem;height:2.5rem;border-radius:.7rem;display:grid;place-items:center;border:1px solid rgb(20 41 75/.25);color:var(--marinho);transition:rotate .35s var(--ease),background-color .3s,color .3s,border-color .3s}
+.pm svg{width:1rem}
+[aria-expanded=true] .pm{rotate:45deg;background:var(--marinho);border-color:var(--marinho);color:var(--latao-2)}
+.faq-a{display:grid;grid-template-rows:0fr;opacity:0;transition:grid-template-rows .45s var(--ease),opacity .45s var(--ease)}
+.faq-a>div{overflow:hidden}
+.faq-a p{padding-bottom:1.75rem;max-width:42rem;line-height:1.7;color:var(--tinta-2)}
+[aria-expanded=true]+.faq-a{grid-template-rows:1fr;opacity:1}
+
+/* 06 contato */
+.contato{background:var(--papel-2)}
+.contato .duas{align-items:stretch}
+.dados{display:grid;margin-top:2.25rem}
+.dado{display:flex;gap:1rem;padding-block:1.25rem;border-top:1px solid rgb(20 41 75/.13)}
+.dado .ic{flex:none;width:2.6rem;height:2.6rem;border-radius:.7rem;display:grid;place-items:center;background:var(--marinho);color:var(--latao-2)}
+.dado .ic svg{width:1.1rem}
+.dado small{display:block;font:500 .6rem/1 var(--f-mono);letter-spacing:.22em;text-transform:uppercase;color:var(--latao-3);margin:.25rem 0 .45rem}
+.dado p,.dado li{overflow-wrap:anywhere}
+.dado ul{list-style:none}
+.dado .tel{font:600 1.55rem/1.1 var(--f-display);font-stretch:110%;color:var(--marinho)}
+.mapa{position:relative;min-height:22rem;border-radius:1.5rem;overflow:hidden;background:var(--grade),linear-gradient(135deg,var(--marinho),var(--noite));box-shadow:var(--sh-foto)}
+.mapa::after{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:inset 0 0 0 1px rgb(194 155 79/.4);pointer-events:none}
+.mapa iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(.6) contrast(1.05)}
+.mapa .pino{position:absolute;inset:0;display:grid;place-items:center;color:rgb(227 201 139/.4)}
+.mapa .pino svg{width:3rem}
+
+@media(max-width:1023.98px){.contato .mapa{order:2}}
+@media(max-width:479.98px){.contato .acoes{flex-direction:column;align-items:stretch}}
+
+/* CTA final */
+.final{padding:6rem 1.25rem;background:var(--papel)}
+@media(min-width:768px){.final{padding:8rem 2.5rem}}
+.bloco-final{position:relative;overflow:hidden;isolation:isolate;max-width:75rem;margin-inline:auto;padding:5rem 1.5rem;border-radius:2rem;text-align:center;color:var(--papel);background:var(--grade),linear-gradient(135deg,var(--noite),var(--marinho) 60%,var(--marinho-2));box-shadow:0 30px 60px -18px rgb(20 41 75/.5)}
+@media(min-width:768px){.bloco-final{padding:7rem 4rem;border-radius:2.5rem}}
+.bloco-final>*{position:relative;z-index:2}
+.bloco-final .blob,.bloco-final .fantasma,.bloco-final .chave-bg{position:absolute;z-index:0}
+.bloco-final .fantasma{font-size:15vw;left:50%;top:-.32em;translate:-50% 0}
+@media(min-width:768px){.bloco-final .fantasma{font-size:10vw}}
+.bloco-final .chave-bg{width:42rem;left:-12rem;bottom:-3rem;opacity:.1;rotate:-8deg}
+.bloco-final .topo-ic{width:3.4rem;margin:0 auto 1.5rem;color:var(--latao-2)}
+.bloco-final h2{font-size:clamp(2rem,4.5vw,3.6rem);line-height:1.04;max-width:18ch;margin-inline:auto}
+.bloco-final h2 em{color:var(--latao-2);display:block}
+.bloco-final>p{max-width:34rem;margin:1.4rem auto 0;color:rgb(243 241 236/.75);font-size:1.05rem}
+.bloco-final .acoes{justify-content:center;margin-top:2.4rem}
+.bloco-final .btn-latao{padding:1.2rem 2.5rem;font-size:.84rem}
+.bloco-final .btn-latao svg{color:#128c4a}
+@media(max-width:479.98px){.bloco-final .acoes{flex-direction:column;align-items:stretch}.bloco-final .btn-latao{padding:1.15rem 1.25rem}}
+.bloco-final .micro{margin-top:1.1rem;font:500 .64rem/1.4 var(--f-mono);letter-spacing:.2em;text-transform:uppercase;color:rgb(243 241 236/.55)}
+.bloco-final .linha{display:flex;flex-wrap:wrap;justify-content:center;gap:.9rem 2rem;margin-top:2.6rem;padding-top:2rem;border-top:1px solid rgb(227 201 139/.16);font-size:.92rem;color:rgb(243 241 236/.8)}
+.bloco-final .linha span{display:inline-flex;align-items:center;gap:.5rem;text-align:left}
+.bloco-final .linha svg{width:1rem;flex:none;color:var(--latao-2)}
+
+/* rodapé */
+.rodape{background:var(--noite);color:rgb(243 241 236/.68);padding:4rem 0 6.5rem}
+@media(min-width:768px){.rodape{padding:5rem 0 3rem}}
+.rodape .cols{display:grid;gap:3rem}
+@media(min-width:768px){.rodape .cols{grid-template-columns:1.4fr 1fr 1fr}}
+.rodape .marca{color:var(--papel)}
+.rodape .frase{margin-top:1.25rem;max-width:22rem;font-size:.95rem}
+.rodape h4{font:500 .64rem/1 var(--f-mono);letter-spacing:.26em;text-transform:uppercase;color:var(--latao-2);margin-bottom:1.25rem}
+.rodape ul{list-style:none;display:grid;gap:.65rem;font-size:.92rem}
+.rodape li{overflow-wrap:anywhere}
+@media(hover:hover){.rodape a:hover{color:var(--latao-2)}}
+.rodape .redes{display:flex;gap:.7rem;margin-top:1.5rem}
+.rodape .redes a{width:2.75rem;height:2.75rem;border-radius:.75rem;display:grid;place-items:center;border:1px solid rgb(243 241 236/.2)}
+.rodape .redes svg{width:1.15rem}
+.rodape .base{margin-top:3.5rem;padding-top:1.5rem;border-top:1px solid rgb(243 241 236/.1);font-size:.75rem;color:rgb(243 241 236/.42);display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;justify-content:space-between}
+
+/* FAB */
+.fab{position:fixed;right:1.25rem;bottom:1.25rem;z-index:50;width:3.75rem;height:3.75rem;border-radius:50%;display:grid;place-items:center;background:#25d366;color:#fff;border:0;cursor:pointer;box-shadow:0 25px 50px -12px rgb(0 0 0/.4);opacity:0;scale:.6;translate:0 24px;pointer-events:none;transition:opacity .4s var(--ease),scale .4s var(--ease),translate .4s var(--ease)}
+.fab.show{opacity:1;scale:1;translate:0;pointer-events:auto}
+.fab::before{content:"";position:absolute;inset:0;border-radius:50%;background:inherit;z-index:-1;animation:anel 2.4s cubic-bezier(.2,.6,.36,1) infinite}
+.fab svg{width:1.9rem;height:1.9rem}
+@keyframes anel{0%{opacity:.45;transform:scale(1)}80%,100%{opacity:0;transform:scale(1.65)}}
+@media(min-width:768px){.fab{right:2rem;bottom:2rem}}
+@media(hover:hover){.fab.show:hover{scale:1.1}}
+
+/* modal */
+.lead-dlg{border:0;padding:0;background:transparent;max-width:none;max-height:none;width:100%;height:100%;margin:0;color:var(--tinta)}
+.lead-dlg::backdrop{background:rgb(11 22 40/.6);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.lead-dlg[open]{display:flex;align-items:flex-end;justify-content:center}
+@media(min-width:640px){.lead-dlg[open]{align-items:center;padding:1.5rem}}
+.lead-box{position:relative;overflow:hidden;width:100%;max-width:28rem;max-height:92vh;overflow-y:auto;padding:2rem 1.5rem calc(1.75rem + env(safe-area-inset-bottom));border-radius:1.6rem 1.6rem 0 0;background:var(--branco);border:1px solid rgb(20 41 75/.14);box-shadow:0 25px 50px -12px rgb(11 22 40/.4);animation:entra .28s var(--ease)}
+@media(min-width:640px){.lead-box{border-radius:1.6rem;padding:2.5rem 2.25rem}}
+@keyframes entra{from{opacity:0;transform:translateY(24px) scale(.98)}}
+.lead-box::before{content:"";position:absolute;right:-4rem;top:-4rem;width:11rem;height:11rem;border-radius:50%;background:var(--latao-2);filter:blur(40px);opacity:.45;pointer-events:none}
+.lead-box>*{position:relative}
+.lead-box .alca{width:2.75rem;height:.3rem;border-radius:9px;background:rgb(20 41 75/.18);margin:-1rem auto 1.25rem}
+@media(min-width:640px){.lead-box .alca{display:none}}
+.lead-box .fechar{position:absolute;right:1rem;top:1rem;width:2.5rem;height:2.5rem;color:var(--marinho);border-color:rgb(20 41 75/.2)}
+.lead-box h2{font-size:1.8rem;line-height:1.08;padding-right:2.5rem}
+.lead-box>p{margin-top:.6rem;font-size:.95rem;color:var(--tinta-2)}
+.campo{display:block;margin-top:1.1rem}
+.campo span{display:block;font:500 .62rem/1 var(--f-mono);letter-spacing:.18em;text-transform:uppercase;color:var(--marinho-2);margin-bottom:.5rem}
+.campo span i{font-style:normal;letter-spacing:.04em;text-transform:none;color:rgb(15 29 52/.5)}
+.campo input,.campo select{width:100%;padding:.95rem 1.1rem;border-radius:.8rem;border:1px solid rgb(20 41 75/.22);background:var(--papel);font-weight:400;font-size:1rem;outline:none;transition:border-color .2s,box-shadow .2s;appearance:none;-webkit-appearance:none}
+.campo select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2314294b' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 1rem center;background-size:1.1rem;padding-right:2.75rem}
+.campo input:focus,.campo select:focus{border-color:var(--marinho-2);box-shadow:0 0 0 3px rgb(227 201 139/.45)}
+.campo input[aria-invalid=true]{border-color:#b4442d;box-shadow:0 0 0 3px rgb(180 68 45/.15)}
+.erro{display:none;margin-top:.4rem;font-size:.82rem;font-weight:500;color:#b4442d}
+.erro.on{display:block}
+.lead-box .btn{width:100%;margin-top:1.5rem}
+.lead-box .btn svg{color:#25d366}
+.direto{display:block;margin-top:1rem;text-align:center;font-size:.88rem;font-weight:500;color:var(--marinho-2);text-decoration:underline;text-underline-offset:3px}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .hs-track{animation:none!important;transform:none!important}
+  .hs-viewport{-webkit-mask-image:none!important;mask-image:none!important;scrollbar-width:thin}
+  .hs-hint{display:none!important}
+  .marquee,.shine,.hs-hint svg,.fab::before,.dica svg{animation:none!important}
+  .js .rev,.js .hero .rev,.js .hero .foto-hero.rev{opacity:1;transform:none;transition:none}
+  .topo{translate:0;opacity:1}
+}
+</style>
+</head>
+<body>
+
+<div class="previa" id="previa">Prévia de site criada para a Chaveiro Teixeira. Fotos ilustrativas: no site final entram as fotos de vocês. <a href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Vi%20a%20pr%C3%A9via%20do%20site%20da%20Chaveiro%20Teixeira%20e%20quero%20colocar%20no%20ar." target="_blank" rel="noopener">Quero colocar no ar</a></div>
+<header class="topo" id="topo"><div class="w">
+  <a class="marca n-s" href="#inicio" aria-label="Chaveiro Teixeira, voltar ao início"><svg class="selo" viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="lga" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e3c98b"/><stop offset=".5" stop-color="#c29b4f"/><stop offset="1" stop-color="#8a6a2b"/></linearGradient></defs><rect x="1" y="1" width="46" height="46" rx="12" fill="#14294b"/><rect x="1" y="1" width="46" height="46" rx="12" fill="none" stroke="url(#lga)" stroke-width="1.2"/><circle cx="24" cy="19" r="8.5" fill="none" stroke="url(#lga)" stroke-width="2"/><path d="M21.2 25.5h5.6l-.9 3 .9 2.5-.9 2 .9 2.6H24v2.4h-2.8z" fill="url(#lga)"/><text x="24" y="22.4" text-anchor="middle" font-family="Archivo,Arial,sans-serif" font-weight="700" font-size="8.5" fill="#e3c98b">CT</text></svg><span><b>Chaveiro Teixeira</b><small>Chaveiro · Tucuruvi</small></span></a>
+  <nav class="nav" aria-label="Seções"><a href="#onde">Casa e carro</a><a href="#servicos">Serviços</a><a href="#como">Como funciona</a><a href="#contato">Contato</a></nav>
+  <div class="topo-acoes">
+    <a class="btn btn-latao" href="https://wa.me/5511996347754?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20Chaveiro%20Teixeira." target="_blank" rel="noopener" data-cta aria-label="Chamar no WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg><span>Chamar no WhatsApp</span></a>
+    <button class="ic-btn menu-btn" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mnav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h11"/></svg></button>
+  </div>
+</div></header>
+
+<div class="mnav" id="mnav" aria-hidden="true">
+  <button class="ic-btn x" type="button" aria-label="Fechar menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <nav aria-label="Menu"><a href="#onde">Casa, comércio e carro</a><a href="#servicos">Serviços</a><a href="#como">Como funciona</a><a href="#duvidas">Dúvidas</a><a href="#contato">Contato</a></nav>
+  <a class="btn btn-latao" href="https://wa.me/5511996347754?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20Chaveiro%20Teixeira." target="_blank" rel="noopener" data-cta><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg> Chamar no WhatsApp</a>
+  <p>Chaveiro Teixeira · Tucuruvi</p>
+</div>
+
+<main id="inicio">
+<section class="hero">
+  <div class="blob" style="width:30rem;height:30rem;right:-8rem;top:-10rem;background:rgb(31 61 107/.7)"></div>
+  <div class="blob" style="width:24rem;height:24rem;left:-10rem;bottom:-8rem;background:rgb(194 155 79/.14)"></div>
+  <svg class="chave-bg" viewBox="0 0 1000 240" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true">
+  <circle cx="120" cy="120" r="100"/><circle cx="120" cy="120" r="86" stroke-dasharray="2 6"/><circle cx="120" cy="120" r="30"/>
+  <path d="M220 92h40l12-10h40l12 10h600l36 28-36 28H760l-18 34-20-34h-42l-16 44-20-44h-56l-18 30-18-30h-60l-20 50-20-50h-60l-16 26-16-26H324l-12 10h-40l-12-10h-40"/>
+  <path d="M330 112h560M330 128h520" stroke-dasharray="1 0" opacity=".6"/>
+  <path d="M220 92v56M260 92v56" opacity=".5"/>
+  <path d="M520 30v30M520 210v-30M900 30v30" stroke-dasharray="3 5" opacity=".6"/>
+  <text x="530" y="44" font-family="IBM Plex Mono,monospace" font-size="13" fill="currentColor" stroke="none" letter-spacing="3">PERFIL · CORTE · SEGREDO</text>
+</svg>
+  <div class="w">
+    <div class="hero-txt">
+      <p class="etiqueta rev" style="--d:.2s"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="12" r="4"/><circle cx="7.5" cy="12" r="1.2"/><path d="M11.5 12h10l-1.5 2h-1.5l-1 1.6-1-1.6h-1.5l-1 1.6-1-1.6h-1.5"/></svg>
+<span class="shine">Chaveiro Teixeira · Chaveiro em Tucuruvi</span></p>
+      <h1 class="rev" style="--d:.34s">Ficou para fora? <em>Chame no WhatsApp.</em></h1>
+      <p class="lead rev" style="--d:.48s">Chave perdida, porta que não abre, fechadura falhando. Conte o que aconteceu e a <strong>Chaveiro Teixeira</strong>, em Tucuruvi, te responde por lá com a solução e o orçamento.</p>
+      <div class="acoes rev" style="--d:.62s">
+        <a class="btn btn-latao" href="https://wa.me/5511996347754?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20Chaveiro%20Teixeira." target="_blank" rel="noopener" data-cta><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg> Chamar no WhatsApp</a>
+        <a class="btn btn-linha" href="#servicos">Ver serviços</a>
+      </div>
+      <nav class="atalhos rev" style="--d:.76s" aria-label="Atalhos">
+        <a href="#onde"><small>A</small><b>Casa</b></a>
+        <a href="#onde"><small>B</small><b>Comércio</b></a>
+        <a href="#onde"><small>C</small><b>Carro</b></a>
+<a href="#servicos"><small>D</small><b>Fechaduras</b></a>      </nav>
+    </div>
+    <div class="foto-hero rev">
+      <span class="medida" aria-hidden="true">PRECISÃO</span>
+      <img src="/assets/img/chaveiro/hero-3.jpg" alt="Porta de segurança com fechadura e trancas reforçadas" width="1600" height="1067" fetchpriority="high">
+      <a class="cartao" href="https://wa.me/5511996347754?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20Chaveiro%20Teixeira." target="_blank" rel="noopener" data-cta><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg></span><span><small>Atendimento pelo WhatsApp</small><b>(11) 99634-7754</b></span></a>
+    </div>
+  </div>
+  <span class="fantasma claro" aria-hidden="true">segurança</span>
+  <div class="dica" aria-hidden="true">Role<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg></div>
+</section>
+
+<div class="faixa" aria-hidden="true"><div class="marquee">
+<div class="mq">
+<span>Cópia de chaves</span><svg viewBox="0 0 58 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5.5"/><circle cx="7" cy="7" r="1.8"/><path d="M12.5 5h43.5l1.5 2-1.5 2H45l-1.5 2.6L42 9h-3l-1.5 3L36 9h-4l-1.5 2.4L29 9H12.5"/></svg><span>Abertura de portas</span><svg viewBox="0 0 58 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5.5"/><circle cx="7" cy="7" r="1.8"/><path d="M12.5 5h43.5l1.5 2-1.5 2H45l-1.5 2.6L42 9h-3l-1.5 3L36 9h-4l-1.5 2.4L29 9H12.5"/></svg><span>Troca de fechaduras</span><svg viewBox="0 0 58 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5.5"/><circle cx="7" cy="7" r="1.8"/><path d="M12.5 5h43.5l1.5 2-1.5 2H45l-1.5 2.6L42 9h-3l-1.5 3L36 9h-4l-1.5 2.4L29 9H12.5"/></svg><span>Chave automotiva</span><svg viewBox="0 0 58 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5.5"/><circle cx="7" cy="7" r="1.8"/><path d="M12.5 5h43.5l1.5 2-1.5 2H45l-1.5 2.6L42 9h-3l-1.5 3L36 9h-4l-1.5 2.4L29 9H12.5"/></svg><span>Instalação de trancas</span><svg viewBox="0 0 58 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5.5"/><circle cx="7" cy="7" r="1.8"/><path d="M12.5 5h43.5l1.5 2-1.5 2H45l-1.5 2.6L42 9h-3l-1.5 3L36 9h-4l-1.5 2.4L29 9H12.5"/></svg><span>Troca de segredo</span><svg viewBox="0 0 58 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5.5"/><circle cx="7" cy="7" r="1.8"/><path d="M12.5 5h43.5l1.5 2-1.5 2H45l-1.5 2.6L42 9h-3l-1.5 3L36 9h-4l-1.5 2.4L29 9H12.5"/></svg><span>Segurança</span><svg viewBox="0 0 58 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5.5"/><circle cx="7" cy="7" r="1.8"/><path d="M12.5 5h43.5l1.5 2-1.5 2H45l-1.5 2.6L42 9h-3l-1.5 3L36 9h-4l-1.5 2.4L29 9H12.5"/></svg><span>Precisão</span><svg viewBox="0 0 58 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5.5"/><circle cx="7" cy="7" r="1.8"/><path d="M12.5 5h43.5l1.5 2-1.5 2H45l-1.5 2.6L42 9h-3l-1.5 3L36 9h-4l-1.5 2.4L29 9H12.5"/></svg><span>Cópia de chaves</span><svg viewBox="0 0 58 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5.5"/><circle cx="7" cy="7" r="1.8"/><path d="M12.5 5h43.5l1.5 2-1.5 2H45l-1.5 2.6L42 9h-3l-1.5 3L36 9h-4l-1.5 2.4L29 9H12.5"/></svg><span>Abertura de portas</span><svg viewBox="0 0 58 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5.5"/><circle cx="7" cy="7" r="1.8"/><path d="M12.5 5h43.5l1.5 2-1.5 2H45l-1.5 2.6L42 9h-3l-1.5 3L36 9h-4l-1.5 2.4L29 9H12.5"/></svg><span>Troca de fechaduras</span><svg viewBox="0 0 58 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5.5"/><circle cx="7" cy="7" r="1.8"/><path d="M12.5 5h43.5l1.5 2-1.5 2H45l-1.5 2.6L42 9h-3l-1.5 3L36 9h-4l-1.5 2.4L29 9H12.5"/></svg><span>Chave automotiva</span><svg viewBox="0 0 58 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5.5"/><circle cx="7" cy="7" r="1.8"/><path d="M12.5 5h43.5l1.5 2-1.5 2H45l-1.5 2.6L42 9h-3l-1.5 3L36 9h-4l-1.5 2.4L29 9H12.5"/></svg><span>Instalação de trancas</span><svg viewBox="0 0 58 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5.5"/><circle cx="7" cy="7" r="1.8"/><path d="M12.5 5h43.5l1.5 2-1.5 2H45l-1.5 2.6L42 9h-3l-1.5 3L36 9h-4l-1.5 2.4L29 9H12.5"/></svg><span>Troca de segredo</span><svg viewBox="0 0 58 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5.5"/><circle cx="7" cy="7" r="1.8"/><path d="M12.5 5h43.5l1.5 2-1.5 2H45l-1.5 2.6L42 9h-3l-1.5 3L36 9h-4l-1.5 2.4L29 9H12.5"/></svg><span>Segurança</span><svg viewBox="0 0 58 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5.5"/><circle cx="7" cy="7" r="1.8"/><path d="M12.5 5h43.5l1.5 2-1.5 2H45l-1.5 2.6L42 9h-3l-1.5 3L36 9h-4l-1.5 2.4L29 9H12.5"/></svg><span>Precisão</span><svg viewBox="0 0 58 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5.5"/><circle cx="7" cy="7" r="1.8"/><path d="M12.5 5h43.5l1.5 2-1.5 2H45l-1.5 2.6L42 9h-3l-1.5 3L36 9h-4l-1.5 2.4L29 9H12.5"/></svg>  </div><div class="mq">
+<span>Cópia de chaves</span><svg viewBox="0 0 58 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5.5"/><circle cx="7" cy="7" r="1.8"/><path d="M12.5 5h43.5l1.5 2-1.5 2H45l-1.5 2.6L42 9h-3l-1.5 3L36 9h-4l-1.5 2.4L29 9H12.5"/></svg><span>Abertura de portas</span><svg viewBox="0 0 58 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5.5"/><circle cx="7" cy="7" r="1.8"/><path d="M12.5 5h43.5l1.5 2-1.5 2H45l-1.5 2.6L42 9h-3l-1.5 3L36 9h-4l-1.5 2.4L29 9H12.5"/></svg><span>Troca de fechaduras</span><svg viewBox="0 0 58 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5.5"/><circle cx="7" cy="7" r="1.8"/><path d="M12.5 5h43.5l1.5 2-1.5 2H45l-1.5 2.6L42 9h-3l-1.5 3L36 9h-4l-1.5 2.4L29 9H12.5"/></svg><span>Chave automotiva</span><svg viewBox="0 0 58 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5.5"/><circle cx="7" cy="7" r="1.8"/><path d="M12.5 5h43.5l1.5 2-1.5 2H45l-1.5 2.6L42 9h-3l-1.5 3L36 9h-4l-1.5 2.4L29 9H12.5"/></svg><span>Instalação de trancas</span><svg viewBox="0 0 58 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5.5"/><circle cx="7" cy="7" r="1.8"/><path d="M12.5 5h43.5l1.5 2-1.5 2H45l-1.5 2.6L42 9h-3l-1.5 3L36 9h-4l-1.5 2.4L29 9H12.5"/></svg><span>Troca de segredo</span><svg viewBox="0 0 58 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5.5"/><circle cx="7" cy="7" r="1.8"/><path d="M12.5 5h43.5l1.5 2-1.5 2H45l-1.5 2.6L42 9h-3l-1.5 3L36 9h-4l-1.5 2.4L29 9H12.5"/></svg><span>Segurança</span><svg viewBox="0 0 58 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5.5"/><circle cx="7" cy="7" r="1.8"/><path d="M12.5 5h43.5l1.5 2-1.5 2H45l-1.5 2.6L42 9h-3l-1.5 3L36 9h-4l-1.5 2.4L29 9H12.5"/></svg><span>Precisão</span><svg viewBox="0 0 58 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5.5"/><circle cx="7" cy="7" r="1.8"/><path d="M12.5 5h43.5l1.5 2-1.5 2H45l-1.5 2.6L42 9h-3l-1.5 3L36 9h-4l-1.5 2.4L29 9H12.5"/></svg><span>Cópia de chaves</span><svg viewBox="0 0 58 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5.5"/><circle cx="7" cy="7" r="1.8"/><path d="M12.5 5h43.5l1.5 2-1.5 2H45l-1.5 2.6L42 9h-3l-1.5 3L36 9h-4l-1.5 2.4L29 9H12.5"/></svg><span>Abertura de portas</span><svg viewBox="0 0 58 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5.5"/><circle cx="7" cy="7" r="1.8"/><path d="M12.5 5h43.5l1.5 2-1.5 2H45l-1.5 2.6L42 9h-3l-1.5 3L36 9h-4l-1.5 2.4L29 9H12.5"/></svg><span>Troca de fechaduras</span><svg viewBox="0 0 58 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5.5"/><circle cx="7" cy="7" r="1.8"/><path d="M12.5 5h43.5l1.5 2-1.5 2H45l-1.5 2.6L42 9h-3l-1.5 3L36 9h-4l-1.5 2.4L29 9H12.5"/></svg><span>Chave automotiva</span><svg viewBox="0 0 58 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5.5"/><circle cx="7" cy="7" r="1.8"/><path d="M12.5 5h43.5l1.5 2-1.5 2H45l-1.5 2.6L42 9h-3l-1.5 3L36 9h-4l-1.5 2.4L29 9H12.5"/></svg><span>Instalação de trancas</span><svg viewBox="0 0 58 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5.5"/><circle cx="7" cy="7" r="1.8"/><path d="M12.5 5h43.5l1.5 2-1.5 2H45l-1.5 2.6L42 9h-3l-1.5 3L36 9h-4l-1.5 2.4L29 9H12.5"/></svg><span>Troca de segredo</span><svg viewBox="0 0 58 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5.5"/><circle cx="7" cy="7" r="1.8"/><path d="M12.5 5h43.5l1.5 2-1.5 2H45l-1.5 2.6L42 9h-3l-1.5 3L36 9h-4l-1.5 2.4L29 9H12.5"/></svg><span>Segurança</span><svg viewBox="0 0 58 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5.5"/><circle cx="7" cy="7" r="1.8"/><path d="M12.5 5h43.5l1.5 2-1.5 2H45l-1.5 2.6L42 9h-3l-1.5 3L36 9h-4l-1.5 2.4L29 9H12.5"/></svg><span>Precisão</span><svg viewBox="0 0 58 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5.5"/><circle cx="7" cy="7" r="1.8"/><path d="M12.5 5h43.5l1.5 2-1.5 2H45l-1.5 2.6L42 9h-3l-1.5 3L36 9h-4l-1.5 2.4L29 9H12.5"/></svg>  </div></div></div>
+
+<section class="secao" id="onde">
+  <div class="blob" style="width:26rem;height:26rem;right:-10rem;top:8%;background:rgb(227 201 139/.35)"></div>
+  <div class="w">
+    <div class="cab">
+      <div>
+        <p class="eyebrow rev"><svg viewBox="0 0 58 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5.5"/><circle cx="7" cy="7" r="1.8"/><path d="M12.5 5h43.5l1.5 2-1.5 2H45l-1.5 2.6L42 9h-3l-1.5 3L36 9h-4l-1.5 2.4L29 9H12.5"/></svg>01 · Para cada porta</p>
+        <h2 class="h2 rev" style="--d:.06s">Casa, comércio <em>ou carro.</em></h2>
+      </div>
+      <p class="lead rev" style="--d:.1s">Cada fechadura pede um cuidado diferente. Diga o que você precisa e a gente indica o caminho mais seguro, sem empurrar troca que não precisa.</p>
+    </div>
+    <div class="frentes">
+      <article class="frente rev" style="--d:.12s">
+        <figure><img src="/assets/img/chaveiro/hero-1.jpg" alt="Mão girando a chave na fechadura de uma porta" width="1600" height="1067" loading="lazy" style="object-position:40% 40%"><span class="letra">A · Casa</span></figure>
+        <div class="corpo">
+          <h3>Para a sua casa</h3>
+          <ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Cópia de chaves de porta, portão e cadeado</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Abertura quando a chave fica do lado de dentro</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Troca de fechadura ou só do segredo</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Reforço com tranca extra</li></ul>
+          <a class="seta" href="https://wa.me/5511996347754?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20Chaveiro%20Teixeira." target="_blank" rel="noopener" data-cta>Pedir orçamento<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+      <article class="frente rev" style="--d:.22s">
+        <figure><img src="/assets/img/chaveiro/acao-2.jpg" alt="Profissional instalando fechadura no batente da porta" width="1600" height="1068" loading="lazy" style="object-position:55% 40%"><span class="letra">B · Comércio</span></figure>
+        <div class="corpo">
+          <h3>Para o seu comércio</h3>
+          <ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Fechaduras para loja, escritório e depósito</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Cópias para quem trabalha com você</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Troca de segredo quando alguém sai da equipe</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Mais segurança nas portas de acesso</li></ul>
+          <a class="seta" href="https://wa.me/5511996347754?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20Chaveiro%20Teixeira." target="_blank" rel="noopener" data-cta>Pedir orçamento<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+      <article class="frente rev" style="--d:.32s">
+        <figure><img src="/assets/img/chaveiro/acao-3.jpg" alt="Chave sendo usada na porta de um carro branco" width="1600" height="1067" loading="lazy" style="object-position:60% 50%"><span class="letra">C · Carro</span></figure>
+        <div class="corpo">
+          <h3>Para o seu carro</h3>
+          <ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Cópia da chave do carro</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Chave reserva para não ser pego de surpresa</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Mande o modelo e o ano pelo WhatsApp para confirmar se atendemos o seu</li></ul>
+          <a class="seta" href="https://wa.me/5511996347754?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20Chaveiro%20Teixeira." target="_blank" rel="noopener" data-cta>Consultar meu modelo<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="hs" id="servicos" aria-label="Serviços">
+  <div class="hs-sticky">
+    <div class="blob" style="width:26rem;height:26rem;left:-12rem;top:14%;background:rgb(194 155 79/.16)"></div>
+    <div class="w hs-grid">
+      <div class="hs-intro">
+        <p class="eyebrow"><svg viewBox="0 0 58 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5.5"/><circle cx="7" cy="7" r="1.8"/><path d="M12.5 5h43.5l1.5 2-1.5 2H45l-1.5 2.6L42 9h-3l-1.5 3L36 9h-4l-1.5 2.4L29 9H12.5"/></svg>02 · Serviços</p>
+        <h2 class="h2">Trabalho de precisão, <em>do jeito certo.</em></h2>
+        <p class="lead">Os serviços da Chaveiro Teixeira. Escolha um e peça o orçamento pelo WhatsApp.</p>
+        <p class="hs-hint" aria-hidden="true">Role para ver os serviços<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></p>
+        <p class="hs-nota">O valor depende do tipo de chave, da fechadura e do serviço.</p>
+      </div>
+      <div class="hs-viewport">
+        <div class="hs-track">
+          <article class="card">
+            <span class="num" aria-hidden="true">01/06</span>
+            <span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7.5" cy="12" r="4"/><circle cx="7.5" cy="12" r="1.2"/><path d="M11.5 12h10l-1.5 2h-1.5l-1 1.6-1-1.6h-1.5l-1 1.6-1-1.6h-1.5"/></svg>
+</span>
+            <p class="tag">Casa · Comércio · Carro</p>
+            <h3>Cópia de chaves</h3>
+            <p class="desc">Na hora, com precisão.</p>
+            <div class="pe">
+<span class="preco consulte">Sob orçamento</span>              <a class="seta" href="https://wa.me/5511996347754?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20Chaveiro%20Teixeira." target="_blank" rel="noopener" data-cta data-servico="Cópia de chaves" aria-label="Pedir orçamento de Cópia de chaves">Orçar<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </article>
+          <article class="card">
+            <span class="num" aria-hidden="true">02/06</span>
+            <span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4.5A1.5 1.5 0 0 1 6.5 3h8L19 4.5V21"/><path d="M3 21h18M14.5 3v18"/><circle cx="12" cy="12.5" r=".9" fill="currentColor"/></svg>
+</span>
+            <p class="tag">Casa · Comércio</p>
+            <h3>Abertura de portas</h3>
+            <p class="desc">Atendimento rápido quando você fica para fora.</p>
+            <div class="pe">
+<span class="preco consulte">Sob orçamento</span>              <a class="seta" href="https://wa.me/5511996347754?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20Chaveiro%20Teixeira." target="_blank" rel="noopener" data-cta data-servico="Abertura de portas" aria-label="Pedir orçamento de Abertura de portas">Orçar<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </article>
+          <article class="card">
+            <span class="num" aria-hidden="true">03/06</span>
+            <span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4.5" y="10" width="15" height="11" rx="2.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15" r="1.6"/><path d="M12 16.6V18.5"/></svg>
+</span>
+            <p class="tag">Casa · Comércio</p>
+            <h3>Troca de fechaduras</h3>
+            <p class="desc">Mais segurança para sua casa ou comércio.</p>
+            <div class="pe">
+<span class="preco consulte">Sob orçamento</span>              <a class="seta" href="https://wa.me/5511996347754?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20Chaveiro%20Teixeira." target="_blank" rel="noopener" data-cta data-servico="Troca de fechaduras" aria-label="Pedir orçamento de Troca de fechaduras">Orçar<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </article>
+          <article class="card">
+            <span class="num" aria-hidden="true">04/06</span>
+            <span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 15.5V12l2-5h12l2 5v3.5a1 1 0 0 1-1 1h-1.5M6.5 16.5H5a1 1 0 0 1-1-1"/><circle cx="8" cy="16.5" r="1.8"/><circle cx="16" cy="16.5" r="1.8"/><path d="M9.8 16.5h4.4M4.5 12h15"/></svg>
+</span>
+            <p class="tag">Carro</p>
+            <h3>Chave automotiva</h3>
+            <p class="desc">Cópias e chaves codificadas.</p>
+            <div class="pe">
+<span class="preco consulte">Sob orçamento</span>              <a class="seta" href="https://wa.me/5511996347754?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20Chaveiro%20Teixeira." target="_blank" rel="noopener" data-cta data-servico="Chave automotiva" aria-label="Pedir orçamento de Chave automotiva">Orçar<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </article>
+          <article class="card">
+            <span class="num" aria-hidden="true">05/06</span>
+            <span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 5 6v5c0 4.6 3 8.2 7 10 4-1.8 7-5.4 7-10V6z"/><path d="M9 12h6M12 9v6"/></svg>
+</span>
+            <p class="tag">Casa · Comércio</p>
+            <h3>Instalação de trancas</h3>
+            <p class="desc">Reforço para portas e portões.</p>
+            <div class="pe">
+<span class="preco consulte">Sob orçamento</span>              <a class="seta" href="https://wa.me/5511996347754?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20Chaveiro%20Teixeira." target="_blank" rel="noopener" data-cta data-servico="Instalação de trancas" aria-label="Pedir orçamento de Instalação de trancas">Orçar<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </article>
+          <article class="card">
+            <span class="num" aria-hidden="true">06/06</span>
+            <span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4.5" y="10" width="15" height="11" rx="2.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15" r="1.6"/><path d="M12 16.6V18.5"/></svg>
+</span>
+            <p class="tag">Casa · Comércio</p>
+            <h3>Troca de segredo</h3>
+            <p class="desc">Fechadura com segredo novo quando a chave some ou você muda de casa.</p>
+            <div class="pe">
+<span class="preco consulte">Sob orçamento</span>              <a class="seta" href="https://wa.me/5511996347754?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20Chaveiro%20Teixeira." target="_blank" rel="noopener" data-cta data-servico="Troca de segredo" aria-label="Pedir orçamento de Troca de segredo">Orçar<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="secao" id="como">
+  <div class="blob" style="width:24rem;height:24rem;left:-10rem;bottom:0;background:rgb(31 61 107/.14)"></div>
+  <div class="w duas">
+    <div class="moldura rev">
+      <img src="/assets/img/chaveiro/hero-2.jpg" alt="Maçaneta e fechadura de porta com chaves penduradas" width="1600" height="2400" loading="lazy" style="object-position:50% 40%">
+      <div class="cartao"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4.5" y="10" width="15" height="11" rx="2.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15" r="1.6"/><path d="M12 16.6V18.5"/></svg>
+</span><p>Fechadura boa é a que você nem lembra que existe.</p></div>
+    </div>
+    <div class="txt">
+      <p class="eyebrow rev"><svg viewBox="0 0 58 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5.5"/><circle cx="7" cy="7" r="1.8"/><path d="M12.5 5h43.5l1.5 2-1.5 2H45l-1.5 2.6L42 9h-3l-1.5 3L36 9h-4l-1.5 2.4L29 9H12.5"/></svg>03 · Como funciona</p>
+      <h2 class="h2 rev" style="--d:.06s">Do primeiro oi <em>à chave girando.</em></h2>
+      <ol class="steps">
+        <li class="step rev" style="--d:.1s"><b>01</b><div><small>Mensagem</small><h3>Conte o que aconteceu</h3><p>Chave perdida, porta travada, fechadura com defeito. Se puder, mande uma foto: ajuda a entender o caso.</p></div></li>
+        <li class="step rev" style="--d:.2s"><b>02</b><div><small>Orçamento</small><h3>Você sabe o que vai ser feito</h3><p>A gente explica a solução e passa o orçamento para você decidir com calma.</p></div></li>
+        <li class="step rev" style="--d:.3s"><b>03</b><div><small>Serviço</small><h3>Ferramenta certa, mão firme</h3><p>Trabalho feito com cuidado para não danificar a porta, o batente ou o carro.</p></div></li>
+        <li class="step rev" style="--d:.4s"><b>04</b><div><small>Teste</small><h3>Tudo testado com você</h3><p>Antes de encerrar, a chave e a fechadura são testadas na sua frente.</p></div></li>
+      </ol>
+      <a class="btn rev" style="--d:.5s" href="https://wa.me/5511996347754?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20Chaveiro%20Teixeira." target="_blank" rel="noopener" data-cta><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg> Começar pelo WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+
+<section class="secao" id="duvidas">
+  <div class="w faq">
+    <div class="faq-cab">
+      <p class="eyebrow rev"><svg viewBox="0 0 58 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5.5"/><circle cx="7" cy="7" r="1.8"/><path d="M12.5 5h43.5l1.5 2-1.5 2H45l-1.5 2.6L42 9h-3l-1.5 3L36 9h-4l-1.5 2.4L29 9H12.5"/></svg>04 · Dúvidas</p>
+      <h2 class="h2 rev" style="--d:.06s">Perguntas <em>frequentes</em></h2>
+      <p class="rev" style="--d:.1s">Não achou a sua dúvida? Mande uma mensagem e a gente responde pelo WhatsApp.</p>
+      <a class="btn btn-linha rev" style="--d:.16s" href="https://wa.me/5511996347754?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Chaveiro%20Teixeira%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener" data-cta data-servico="?"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg> Tirar uma dúvida</a>
+    </div>
+    <div class="faq-lista rev" style="--d:.1s">
+      <div class="faq-item">
+        <button type="button" aria-expanded="false" id="fq1" aria-controls="fa1"><span>Fiquei para fora de casa. O que eu faço?</span><i class="pm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></i></button>
+        <div class="faq-a" id="fa1" role="region" aria-labelledby="fq1"><div><p>Chame no WhatsApp, diga onde você está e o que aconteceu. A gente te explica como pode ajudar e quanto custa o atendimento.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button type="button" aria-expanded="false" id="fq2" aria-controls="fa2"><span>Quanto custa uma cópia de chave?</span><i class="pm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></i></button>
+        <div class="faq-a" id="fa2" role="region" aria-labelledby="fq2"><div><p>Depende do tipo de chave. Mande uma foto dela pelo WhatsApp e receba o valor.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button type="button" aria-expanded="false" id="fq3" aria-controls="fa3"><span>Preciso trocar a fechadura inteira ou só o segredo?</span><i class="pm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></i></button>
+        <div class="faq-a" id="fa3" role="region" aria-labelledby="fq3"><div><p>Se a fechadura funciona bem e você só quer que as chaves antigas parem de abrir, trocar o segredo costuma resolver. Se ela está gasta ou falhando, a troca completa é mais segura. Na dúvida, mande uma foto pelo WhatsApp.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button type="button" aria-expanded="false" id="fq4" aria-controls="fa4"><span>Vocês fazem chave de carro?</span><i class="pm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></i></button>
+        <div class="faq-a" id="fa4" role="region" aria-labelledby="fq4"><div><p>Mande o modelo e o ano do carro pelo WhatsApp para confirmar se atendemos o seu e qual é o valor.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button type="button" aria-expanded="false" id="fq5" aria-controls="fa5"><span>Quais formas de pagamento vocês aceitam?</span><i class="pm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></i></button>
+        <div class="faq-a" id="fa5" role="region" aria-labelledby="fq5"><div><p>Pergunte pelo WhatsApp quais formas de pagamento estão disponíveis.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="secao contato" id="contato">
+  <div class="w duas inv">
+    <div class="mapa rev" style="--d:.1s">
+      <div class="pino" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4.5" y="10" width="15" height="11" rx="2.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15" r="1.6"/><path d="M12 16.6V18.5"/></svg>
+</div>
+      <iframe src="https://maps.google.com/maps?q=Av.%20Guapira%2C%20231%20-%20Tucuruvi%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002265-000&amp;z=15&amp;output=embed" title="Mapa com a localização da Chaveiro Teixeira" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="txt">
+      <p class="eyebrow rev"><svg viewBox="0 0 58 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5.5"/><circle cx="7" cy="7" r="1.8"/><path d="M12.5 5h43.5l1.5 2-1.5 2H45l-1.5 2.6L42 9h-3l-1.5 3L36 9h-4l-1.5 2.4L29 9H12.5"/></svg>05 · Onde estamos</p>
+      <h2 class="h2 rev" style="--d:.06s">Encontre a gente <em>em Tucuruvi.</em></h2>
+      <div class="dados">
+        <div class="dado rev" style="--d:.1s"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span><div><small>Endereço</small><p>Av. Guapira, 231 - Tucuruvi, São Paulo - SP, 02265-000</p></div></div>
+        <div class="dado rev" style="--d:.18s"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span><div><small>Horário</small><p>Consulte o horário de atendimento pelo WhatsApp.</p></div></div>
+        <div class="dado rev" style="--d:.26s"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg></span><div><small>WhatsApp</small><a class="tel" href="https://wa.me/5511996347754?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Chaveiro%20Teixeira%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">(11) 99634-7754</a></div></div>
+      </div>
+      <div class="acoes rev" style="--d:.34s"><a class="btn" href="https://wa.me/5511996347754?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20Chaveiro%20Teixeira." target="_blank" rel="noopener" data-cta><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg> Pedir orçamento</a><a class="btn btn-linha" href="https://www.google.com/maps/search/?api=1&amp;query=Chaveiro%20Teixeira%20Av.%20Guapira%2C%20231%20-%20Tucuruvi%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002265-000" target="_blank" rel="noopener">Como chegar</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="bloco-final rev">
+    <div class="blob" style="width:24rem;height:24rem;left:-8rem;top:-8rem;background:rgb(31 61 107/.6)"></div>
+    <div class="blob" style="width:26rem;height:26rem;right:-10rem;bottom:-10rem;background:rgb(194 155 79/.2)"></div>
+    <svg class="chave-bg" viewBox="0 0 1000 240" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true">
+  <circle cx="120" cy="120" r="100"/><circle cx="120" cy="120" r="86" stroke-dasharray="2 6"/><circle cx="120" cy="120" r="30"/>
+  <path d="M220 92h40l12-10h40l12 10h600l36 28-36 28H760l-18 34-20-34h-42l-16 44-20-44h-56l-18 30-18-30h-60l-20 50-20-50h-60l-16 26-16-26H324l-12 10h-40l-12-10h-40"/>
+  <path d="M330 112h560M330 128h520" stroke-dasharray="1 0" opacity=".6"/>
+  <path d="M220 92v56M260 92v56" opacity=".5"/>
+  <path d="M520 30v30M520 210v-30M900 30v30" stroke-dasharray="3 5" opacity=".6"/>
+  <text x="530" y="44" font-family="IBM Plex Mono,monospace" font-size="13" fill="currentColor" stroke="none" letter-spacing="3">PERFIL · CORTE · SEGREDO</text>
+</svg>
+    <span class="fantasma claro" aria-hidden="true">segurança</span>
+    <div class="topo-ic"><svg viewBox="0 0 58 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5.5"/><circle cx="7" cy="7" r="1.8"/><path d="M12.5 5h43.5l1.5 2-1.5 2H45l-1.5 2.6L42 9h-3l-1.5 3L36 9h-4l-1.5 2.4L29 9H12.5"/></svg></div>
+    <h2>Da próxima vez que ficar para fora, <em>já sabe quem chamar.</em></h2>
+    <p>Salve o contato da Chaveiro Teixeira e chame no WhatsApp quando precisar de chave, fechadura.</p>
+    <div class="acoes">
+      <a class="btn btn-latao" href="https://wa.me/5511996347754?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20Chaveiro%20Teixeira." target="_blank" rel="noopener" data-cta><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg> Chamar no WhatsApp</a>
+      <a class="btn btn-linha" id="vcard" href="https://wa.me/5511996347754?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Chaveiro%20Teixeira%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." download="Chaveiro Teixeira.vcf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="14" rx="2.5"/><circle cx="9" cy="11" r="2"/><path d="M6 16c.6-1.5 1.7-2.2 3-2.2s2.4.7 3 2.2M14.5 10h3M14.5 13.5h3"/></svg>Salvar contato</a>
+    </div>
+    <p class="micro">WhatsApp (11) 99634-7754</p>
+    <div class="linha">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Av. Guapira, 231 - Tucuruvi, São Paulo - SP, 02265-000</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>Horário pelo WhatsApp</span>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="rodape">
+  <div class="w">
+    <div class="cols">
+      <div>
+        <a class="marca n-s" href="#inicio"><svg class="selo" viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="lgb" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e3c98b"/><stop offset=".5" stop-color="#c29b4f"/><stop offset="1" stop-color="#8a6a2b"/></linearGradient></defs><rect x="1" y="1" width="46" height="46" rx="12" fill="#14294b"/><rect x="1" y="1" width="46" height="46" rx="12" fill="none" stroke="url(#lgb)" stroke-width="1.2"/><circle cx="24" cy="19" r="8.5" fill="none" stroke="url(#lgb)" stroke-width="2"/><path d="M21.2 25.5h5.6l-.9 3 .9 2.5-.9 2 .9 2.6H24v2.4h-2.8z" fill="url(#lgb)"/><text x="24" y="22.4" text-anchor="middle" font-family="Archivo,Arial,sans-serif" font-weight="700" font-size="8.5" fill="#e3c98b">CT</text></svg><span><b>Chaveiro Teixeira</b><small>Chaveiro · Tucuruvi</small></span></a>
+        <p class="frase">Chaves, fechaduras com precisão e cuidado, em Tucuruvi, São Paulo.</p>
+        <div class="redes">
+          <a href="https://wa.me/5511996347754?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Chaveiro%20Teixeira%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg></a>
+        </div>
+      </div>
+      <div><h4>Navegue</h4><ul><li><a href="#onde">Casa, comércio e carro</a></li><li><a href="#servicos">Serviços</a></li><li><a href="#como">Como funciona</a></li><li><a href="#duvidas">Dúvidas</a></li></ul></div>
+      <div><h4>Contato</h4><ul><li>Av. Guapira, 231 - Tucuruvi, São Paulo - SP, 02265-000</li><li><a href="https://wa.me/5511996347754?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Chaveiro%20Teixeira%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">WhatsApp (11) 99634-7754</a></li></ul></div>
+    </div>
+    <div class="base"><span>© 2026 Chaveiro Teixeira</span><span>Chaveiro em Tucuruvi, São Paulo</span></div>
+  </div>
+</footer>
+
+<button class="fab" type="button" data-cta aria-label="Chamar no WhatsApp" data-href="https://wa.me/5511996347754?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20Chaveiro%20Teixeira."><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg></button>
+
+<dialog class="lead-dlg" id="lead" aria-labelledby="lead-t" aria-describedby="lead-d">
+  <form class="lead-box" novalidate>
+    <div class="alca" aria-hidden="true"></div>
+    <button class="ic-btn fechar" type="button" aria-label="Fechar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    <p class="eyebrow"><svg viewBox="0 0 58 14" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="7" r="5.5"/><circle cx="7" cy="7" r="1.8"/><path d="M12.5 5h43.5l1.5 2-1.5 2H45l-1.5 2.6L42 9h-3l-1.5 3L36 9h-4l-1.5 2.4L29 9H12.5"/></svg>Orçamento</p>
+    <h2 id="lead-t">Conte o que <em>você precisa</em></h2>
+    <p id="lead-d">Preencha rapidinho e continue a conversa no WhatsApp da Chaveiro Teixeira.</p>
+    <label class="campo"><span>Seu nome</span><input name="nome" autocomplete="given-name" required aria-describedby="erro-nome"></label>
+    <p class="erro" id="erro-nome">Diga como podemos te chamar.</p>
+    <label class="campo"><span>Serviço</span>
+      <select name="servico">
+<option value="Cópia de chaves">Cópia de chaves</option><option value="Abertura de portas">Abertura de portas</option><option value="Troca de fechaduras">Troca de fechaduras</option><option value="Chave automotiva">Chave automotiva</option><option value="Instalação de trancas">Instalação de trancas</option><option value="Troca de segredo">Troca de segredo</option>        <option value="">Outro / quero tirar uma dúvida</option>
+      </select>
+    </label>
+    <label class="campo"><span>Onde você está <i>(opcional)</i></span><input name="onde" autocomplete="address-level3" placeholder="Bairro ou rua"></label>
+    <button class="btn btn-latao" type="submit"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg> Continuar no WhatsApp</button>
+    <a class="direto" href="https://wa.me/5511996347754?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20Chaveiro%20Teixeira." target="_blank" rel="noopener">Prefiro chamar direto no WhatsApp</a>
+  </form>
+</dialog>
+
+<div class="grain" aria-hidden="true"></div>
+
+<script>
+(function(){
+  var d=document,de=d.documentElement,W=window;
+  var NEGOCIO="Chaveiro Teixeira",TEL="5511996347754",TELF="(11) 99634-7754",LOCAL="Av. Guapira, 231 - Tucuruvi, S\u00e3o Paulo - SP, 02265-000";
+
+  /* header (B.3) */
+  var topo=d.getElementById("topo"),pv=d.getElementById("previa");
+  function onS(){var h=pv?pv.offsetHeight:0;de.style.setProperty("--pv",h+"px");topo.classList.toggle("fixo",scrollY>=h);topo.classList.toggle("rolado",scrollY>h+24)}
+  onS();addEventListener("scroll",onS,{passive:true});addEventListener("resize",onS);
+  requestAnimationFrame(function(){de.classList.add("is-loaded")});
+
+  /* reveal (B.1/B.2) */
+  var els=d.querySelectorAll(".rev");
+  if("IntersectionObserver" in W){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("vis");io.unobserve(e.target)}})},{rootMargin:"0px 0px -60px 0px"});els.forEach(function(e){io.observe(e)})}
+  else els.forEach(function(e){e.classList.add("vis")});
+
+  /* menu mobile (B.19) */
+  var mn=d.getElementById("mnav"),mb=d.querySelector(".menu-btn");
+  function menu(o){mn.classList.toggle("open",o);mn.setAttribute("aria-hidden",String(!o));mb.setAttribute("aria-expanded",String(o));d.body.style.overflow=o?"hidden":"";if(o)mn.querySelector(".x").focus();else mb.focus()}
+  mb.onclick=function(){menu(true)};mn.querySelector(".x").onclick=function(){menu(false)};
+  mn.querySelectorAll("nav a").forEach(function(a,i){a.style.setProperty("--i",i);a.addEventListener("click",function(){menu(false)})});
+  d.addEventListener("keydown",function(e){if(e.key==="Escape"&&mn.classList.contains("open"))menu(false)});
+
+  /* carrossel guiado pelo scroll (B.8) */
+  (function(){var sec=d.querySelector(".hs");if(!sec)return;var vp=sec.querySelector(".hs-viewport"),tr=sec.querySelector(".hs-track");
+    var native=W.CSS&&CSS.supports("animation-timeline","view()")&&CSS.supports("animation-range","contain");
+    var lg=matchMedia("(min-width:1024px)"),max=0,dist=1,raf=0,reduz=matchMedia("(prefers-reduced-motion: reduce)").matches;
+    function measure(){if(reduz){max=0;sec.style.minHeight="";tr.style.transform="";vp.style.overflowX="auto";vp.classList.remove("is-scrolling");return}max=Math.max(0,tr.scrollWidth-vp.clientWidth);
+      if(!max){sec.style.minHeight="";sec.style.removeProperty("--max");tr.style.transform="";vp.classList.remove("is-scrolling");return}
+      dist=max+innerHeight*(lg.matches?.7:.5);sec.style.minHeight=(innerHeight+dist)+"px";sec.style.setProperty("--max",max+"px");update()}
+    function update(){raf=0;if(!max)return;var x=Math.min(Math.max(-sec.getBoundingClientRect().top,0),dist)/dist*max;
+      if(!native)tr.style.transform="translateX("+(-x)+"px)";vp.classList.toggle("is-scrolling",x>8)}
+    addEventListener("scroll",function(){raf||(raf=requestAnimationFrame(update))},{passive:true});
+    addEventListener("resize",measure);lg.addEventListener&&lg.addEventListener("change",measure);
+    if(W.ResizeObserver)new ResizeObserver(measure).observe(tr);measure();setTimeout(measure,300);
+    if(d.fonts&&d.fonts.ready)d.fonts.ready.then(measure);
+  })();
+
+  /* FAQ (B.16) */
+  var qs=[].slice.call(d.querySelectorAll(".faq-item button"));
+  qs.forEach(function(b){b.onclick=function(){var o=b.getAttribute("aria-expanded")==="true";qs.forEach(function(x){x.setAttribute("aria-expanded","false")});b.setAttribute("aria-expanded",String(!o))}});
+  if(qs[0])qs[0].setAttribute("aria-expanded","true");
+
+  /* FAB (B.20) */
+  var fab=d.querySelector(".fab");function f(){fab.classList.toggle("show",scrollY>420)}f();addEventListener("scroll",f,{passive:true});
+
+  /* salvar contato (vCard) */
+  var vc=d.getElementById("vcard");
+  if(vc){var esc=function(t){return String(t).replace(/([,;\\])/g,"\\$1")};
+    var card=["BEGIN:VCARD","VERSION:3.0","FN:"+esc(NEGOCIO),"ORG:"+esc(NEGOCIO),"TEL;TYPE=CELL:+"+TEL,"ADR;TYPE=WORK:;;"+esc(LOCAL)+";;;;","URL:"+location.href.split("#")[0],"END:VCARD"].join("\r\n");
+    vc.href="data:text/vcard;charset=utf-8,"+encodeURIComponent(card)}
+
+  /* modal de captura (B.21) */
+  var dlg=d.getElementById("lead"),form=dlg.querySelector("form"),inNome=form.elements.nome,sel=form.elements.servico,err=d.getElementById("erro-nome"),volta=null;
+  var temDlg=typeof dlg.showModal==="function";
+  function escolhe(serv){var alvo=serv==="?"?"":serv.toLowerCase(),i,o;
+    for(i=0;i<sel.options.length;i++){o=sel.options[i].value.toLowerCase();if(o===alvo||(alvo&&alvo!==""&&o.indexOf(alvo)===0)){sel.selectedIndex=i;return}}}
+  function abrir(serv,origem){volta=origem||null;if(serv)escolhe(serv);
+    inNome.removeAttribute("aria-invalid");err.classList.remove("on");dlg.showModal();d.body.style.overflow="hidden";setTimeout(function(){inNome.focus()},60)}
+  function fechar(){if(dlg.open)dlg.close()}
+  dlg.addEventListener("close",function(){d.body.style.overflow="";if(volta&&volta.focus)volta.focus()});
+  dlg.addEventListener("click",function(e){if(e.target===dlg)fechar()});
+  dlg.querySelector(".fechar").onclick=fechar;
+  dlg.addEventListener("keydown",function(e){if(e.key!=="Tab")return;var fs=[].slice.call(dlg.querySelectorAll("button,input,select,a[href]")).filter(function(x){return x.offsetParent!==null});
+    var a=fs[0],z=fs[fs.length-1];if(e.shiftKey&&d.activeElement===a){e.preventDefault();z.focus()}else if(!e.shiftKey&&d.activeElement===z){e.preventDefault();a.focus()}});
+  d.querySelectorAll("[data-cta]").forEach(function(b){b.addEventListener("click",function(e){
+    if(!temDlg){if(b.dataset.href)location.href=b.dataset.href;return}
+    e.preventDefault();if(mn.classList.contains("open")){mn.classList.remove("open");mn.setAttribute("aria-hidden","true");mb.setAttribute("aria-expanded","false")}
+    abrir(b.dataset.servico||"",b)})});
+  form.addEventListener("submit",function(e){e.preventDefault();var nome=inNome.value.trim();
+    if(nome.length<2){inNome.setAttribute("aria-invalid","true");err.classList.add("on");inNome.focus();return}
+    var onde=form.elements.onde.value.trim(),serv=sel.value,msg="Olá! Meu nome é "+nome+". ";
+    if(serv){var s=serv.charAt(0).toLowerCase()+serv.slice(1);msg+="Quero um orçamento de "+s+" com a "+NEGOCIO+"."}
+    else msg+="Quero tirar uma dúvida com a "+NEGOCIO+".";
+    if(onde)msg+=" Estou em: "+onde+".";
+    msg+=" Vi o site de vocês.";
+    var bt=form.querySelector("[type=submit]");bt.disabled=true;bt.lastChild.nodeValue=" Abrindo WhatsApp…";
+    location.href="https://wa.me/"+TEL+"?text="+encodeURIComponent(msg);
+    setTimeout(function(){bt.disabled=false;bt.lastChild.nodeValue=" Continuar no WhatsApp";fechar()},2500)});
+})();
+</script>
+</body>
+</html>

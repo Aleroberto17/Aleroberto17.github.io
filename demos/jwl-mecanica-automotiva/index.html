@@ -1,0 +1,913 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex"><title>JWL Mecânica Automotiva | Oficina mecânica em Vila Prudente, São Paulo</title>
+<meta name="description" content="JWL Mecânica Automotiva: diagnóstico, bateria, alternador, injeção e elétrica automotiva em Vila Prudente, São Paulo. Peça seu orçamento pelo WhatsApp (11) 93903-1840.">
+<meta property="og:title" content="JWL Mecânica Automotiva | Oficina mecânica em Vila Prudente">
+<meta property="og:description" content="Luz acesa no painel? Tem explicação. Peça seu orçamento pelo WhatsApp.">
+<meta property="og:image" content="https://aleroberto17.github.io/assets/img/autoeletrica/hero-1.jpg">
+<meta name="theme-color" content="#1d1a18">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="/assets/img/autoeletrica/hero-1.jpg" fetchpriority="high">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600;1,700&family=Barlow:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+/* fallbacks: condensada estreita quando existir; senão Arial reduzida para caber na mesma largura */
+@font-face{font-family:"BC Narrow Fb";src:local("Arial Narrow"),local("Liberation Sans Narrow"),local("Roboto Condensed");size-adjust:96%}
+@font-face{font-family:"BC Fb";src:local("Arial"),local("Helvetica"),local("Liberation Sans");size-adjust:80%;ascent-override:110%}
+@font-face{font-family:"Barlow Fb";src:local("Arial"),local("Helvetica"),local("Liberation Sans");size-adjust:96%}
+:root{
+  --concreto:#ebe6df; --concreto-2:#e0d9cf; --papel:#f7f4ef;
+  --grafite:#1d1a18; --grafite-2:#2b2724; --breu:#131110;
+  --laranja:#ff6b1a; --laranja-tinta:#d4520a; --laranja-claro:#ffa36b;
+  --aco-1:#d9dcdc; --aco-2:#9aa1a3;
+  --txt:var(--grafite); --txt-2:rgb(29 26 24/.7);
+  --f-display:"Barlow Condensed","BC Narrow Fb","BC Fb","Arial Narrow",sans-serif;
+  --f-body:"Barlow","Barlow Fb",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+  --ease:cubic-bezier(.22,1,.36,1);
+  --r-card:1rem; --r-photo:1.25rem; --pv:0px;
+  --sh-cta:0 20px 25px -5px rgb(212 82 10/.3),0 8px 10px -6px rgb(212 82 10/.3);
+  --sh-photo:0 25px 50px -12px rgb(29 26 24/.35);
+  --grade:linear-gradient(rgb(29 26 24/.055) 1px,transparent 1px) 0 0/2rem 2rem,linear-gradient(90deg,rgb(29 26 24/.055) 1px,transparent 1px) 0 0/2rem 2rem;
+  --grade-esc:linear-gradient(rgb(235 230 223/.045) 1px,transparent 1px) 0 0/2rem 2rem,linear-gradient(90deg,rgb(235 230 223/.045) 1px,transparent 1px) 0 0/2rem 2rem;
+  --zebra:repeating-linear-gradient(-45deg,var(--laranja) 0 10px,var(--grafite) 10px 20px);
+}
+*,*::before,*::after{box-sizing:border-box}
+*{margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:6rem;-webkit-text-size-adjust:100%}
+body{background:var(--concreto);color:var(--txt);font:400 1rem/1.65 var(--f-body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,svg,iframe{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button,input,select{font:inherit;color:inherit}
+button{background:none;border:0;cursor:pointer}
+::selection{background:var(--laranja);color:var(--breu)}
+:focus-visible{outline:2px solid var(--laranja);outline-offset:3px;border-radius:4px}
+.wrap{max-width:80rem;margin-inline:auto;padding-inline:1.25rem}
+@media (min-width:768px){.wrap{padding-inline:2.5rem}}
+.sec{position:relative;overflow:hidden;padding-block:6rem}
+.sec>.wrap{position:relative;z-index:1}
+@media (min-width:768px){.sec{padding-block:9rem}}
+.mono{font-family:var(--f-mono)}
+
+/* tipografia */
+.disp{font-family:var(--f-display);font-weight:500;text-transform:uppercase;letter-spacing:.005em;line-height:.98;text-wrap:balance;overflow-wrap:normal;word-break:normal;hyphens:none}
+.disp em{font-style:italic;font-weight:700;color:var(--laranja-tinta);padding-right:.04em}
+.dark .disp em{color:var(--laranja)}
+.h2{font-size:clamp(2.4rem,8.4vw,4.4rem)}
+.h2+.lead{margin-top:1.25rem}
+.lead{font-size:1.0625rem;font-weight:300;line-height:1.7;color:var(--txt-2);max-width:36rem}
+@media (min-width:768px){.lead{font-size:1.125rem}}
+.dark{background:var(--grafite);color:var(--concreto)}
+.dark .lead{color:rgb(235 230 223/.72)}
+.eyebrow{display:flex;align-items:center;gap:1rem;margin-bottom:1.25rem;font:500 .68rem/1.3 var(--f-mono);letter-spacing:.22em;text-transform:uppercase;color:var(--laranja-tinta)}
+.eyebrow::before{content:"";flex:none;width:2.5rem;height:1px;background:var(--laranja)}
+.dark .eyebrow{color:var(--laranja-claro)}
+.eyebrow.c{justify-content:center}.eyebrow.c::after{content:"";flex:none;width:2.5rem;height:1px;background:var(--laranja)}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.75rem;border-radius:.5rem;padding:1.05rem 2rem;font:600 .82rem/1.1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;background:var(--laranja);color:var(--breu);box-shadow:var(--sh-cta);transition:translate .3s var(--ease),background-color .3s,box-shadow .3s,color .3s,border-color .3s;text-align:center}
+.btn svg{width:1.125rem;height:1.125rem;flex:none;transition:transform .3s var(--ease)}
+.btn-grafite{background:var(--grafite);color:var(--concreto);box-shadow:0 20px 25px -5px rgb(29 26 24/.3)}
+.btn-linha{background:transparent;color:inherit;box-shadow:none;border:1px solid rgb(29 26 24/.28)}
+.dark .btn-linha{border-color:rgb(235 230 223/.28)}
+.btn-claro{background:var(--papel);color:var(--grafite);box-shadow:0 20px 25px -5px rgb(0 0 0/.35)}
+@media (hover:hover){
+  .btn:hover{translate:0 -4px;background:var(--laranja-claro);box-shadow:0 25px 50px -12px rgb(212 82 10/.45)}
+  .btn:hover svg{transform:scale(1.1)}
+  .btn-grafite:hover{background:var(--grafite-2);box-shadow:0 25px 50px -12px rgb(29 26 24/.45)}
+  .btn-linha:hover{background:rgb(255 107 26/.1);border-color:var(--laranja)}
+  .btn-claro:hover{background:#fff}
+}
+.link-seta{display:inline-flex;align-items:center;gap:.6rem;font:500 .7rem/1 var(--f-mono);letter-spacing:.16em;text-transform:uppercase;color:var(--laranja-tinta)}
+.link-seta svg{width:1rem;height:1rem;transition:transform .3s var(--ease)}
+
+/* prévia + header */
+.topo{position:fixed;inset:0 0 auto;z-index:50;transition:transform .8s var(--ease),opacity .8s var(--ease)}
+.js .topo{transform:translateY(-110%);opacity:0}.js.loaded .topo{transform:none;opacity:1}
+.previa{text-wrap:balance;background:var(--laranja);color:var(--breu);font-size:.68rem;line-height:1.35;text-align:center;padding:.45rem .75rem;border-bottom:3px solid transparent;border-image:var(--zebra) 1}
+.previa a{font-weight:700;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+@media (min-width:640px){.previa{font-size:.78rem;padding:.5rem 1rem}}
+.hdr{height:5rem;transition:background-color .5s,box-shadow .5s;color:var(--concreto)}
+.hdr .wrap{height:100%;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.scrolled .hdr{background:rgb(29 26 24/.95);box-shadow:0 1px 0 0 rgb(255 107 26/.22)}
+@media (min-width:768px){.scrolled .hdr{background:rgb(29 26 24/.84);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}}
+.logo{display:flex;align-items:center;gap:.75rem;min-width:0;transition:transform .3s var(--ease)}
+@media (hover:hover){.logo:hover{transform:scale(1.03)}}
+.logo-mono{flex:none;position:relative;width:2.7rem;height:2.7rem;display:grid;place-items:center;font:700 1.05rem/1 var(--f-display);letter-spacing:.02em;color:var(--breu);background:var(--laranja);clip-path:polygon(25% 3%,75% 3%,100% 50%,75% 97%,25% 97%,0 50%)}
+.logo-txt{min-width:0;display:flex;flex-direction:column;line-height:1}
+.logo-nome{font:600 1.3rem/1 var(--f-display);text-transform:uppercase;letter-spacing:.02em;overflow-wrap:normal;word-break:normal}
+.logo-nome.l2{font-size:1.1rem}.logo-nome.l3{font-size:.98rem;line-height:1.05}
+.logo-sub{margin-top:.3rem;font:400 .56rem/1 var(--f-mono);letter-spacing:.22em;text-transform:uppercase;color:var(--laranja-claro)}
+.nav{display:none;gap:2rem}
+.nav a{position:relative;white-space:nowrap;font:500 .72rem/1 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:rgb(235 230 223/.8);transition:color .2s}
+.nav a::after{content:"";position:absolute;left:0;bottom:-8px;height:1px;width:0;background:var(--laranja);transition:width .3s var(--ease)}
+@media (hover:hover){.nav a:hover{color:#fff}.nav a:hover::after{width:100%}}
+.hdr-cta{display:none;padding:.75rem 1.3rem;font-size:.72rem;letter-spacing:.12em}
+.burger{flex:none;width:2.75rem;height:2.75rem;border-radius:.5rem;border:1px solid rgb(235 230 223/.25);display:grid;place-items:center}
+.burger svg{width:1.2rem}
+@media (min-width:640px){.hdr-cta{display:inline-flex}}
+@media (min-width:1180px){.nav{display:flex}.burger{display:none}}
+@media (min-width:1024px){.logo{max-width:20rem}}
+
+/* menu mobile */
+.mnav{position:fixed;inset:0;z-index:60;display:flex;flex-direction:column;padding:1.25rem;background:var(--grade-esc),linear-gradient(150deg,var(--breu),var(--grafite) 60%,var(--grafite-2));color:var(--concreto);opacity:0;visibility:hidden;transition:opacity .35s var(--ease),visibility .35s}
+.mnav.open{opacity:1;visibility:visible}
+.mnav-top{display:flex;justify-content:space-between;align-items:center;height:3.5rem}
+.mnav nav{flex:1;display:flex;flex-direction:column;justify-content:center;gap:1rem}
+.mnav nav a{font:500 2.6rem/1 var(--f-display);text-transform:uppercase;opacity:0;translate:-28px 0;transition:opacity .5s var(--ease),translate .5s var(--ease);transition-delay:calc(.1s + .07s*var(--i))}
+.mnav nav a span{font:500 .7rem var(--f-mono);letter-spacing:.2em;color:var(--laranja);margin-right:1rem;vertical-align:middle}
+.mnav.open nav a{opacity:1;translate:0}
+.mnav .btn{opacity:0;translate:0 20px;transition:opacity .5s var(--ease) .55s,translate .5s var(--ease) .55s}
+.mnav.open .btn{opacity:1;translate:0}
+.mnav small{display:block;margin-top:1.5rem;font:400 .62rem var(--f-mono);letter-spacing:.24em;text-transform:uppercase;color:rgb(235 230 223/.5);text-align:center}
+
+/* atmosfera */
+.blob{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none}
+@media (max-width:1023.98px){.blob{filter:blur(48px)}}
+.grain{position:fixed;inset:0;z-index:80;pointer-events:none;opacity:.05;transform:translateZ(0);backface-visibility:hidden;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.ghost{position:absolute;pointer-events:none;user-select:none;font-family:var(--f-display);font-weight:700;font-style:italic;text-transform:uppercase;line-height:.85;letter-spacing:-.01em;color:transparent;-webkit-text-stroke:1px rgb(29 26 24/.13);white-space:nowrap}
+.dark .ghost,.ghost.on-dark{-webkit-text-stroke:1px rgb(255 163 107/.16)}
+.zebra{height:10px;background:var(--zebra)}
+
+/* reveal + entrada */
+.js .rev{opacity:0;transform:translateY(var(--y,32px));transition:opacity .9s var(--ease) var(--d,0s),transform .9s var(--ease) var(--d,0s)}
+.js .rev.in{opacity:1;transform:none}
+.js .stg [data-i]{opacity:0;transform:translateY(36px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.loaded .stg [data-i]{opacity:1;transform:none}
+
+/* HERO */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;overflow:hidden;background:var(--grade-esc),radial-gradient(120% 80% at 80% 20%,var(--grafite-2),var(--grafite) 55%,var(--breu));color:var(--concreto);padding:calc(7.5rem + var(--pv)) 0 5rem}
+.hero .blob.a{width:34rem;height:34rem;background:rgb(255 107 26/.16);left:-14rem;top:-10rem}
+.hero .blob.b{width:30rem;height:30rem;background:rgb(255 163 107/.1);right:-10rem;bottom:-12rem}
+.fio{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}
+.fio path{fill:none;stroke:var(--laranja);stroke-width:1.4;stroke-linecap:round;opacity:.55}
+.fio .f2{stroke:rgb(235 230 223/.22);stroke-width:1}
+.js .fio path{stroke-dasharray:2400;stroke-dashoffset:2400;transition:stroke-dashoffset 2.6s var(--ease) .6s}
+.js.loaded .fio path{stroke-dashoffset:0}
+.hero .wrap{position:relative;z-index:3;width:100%;display:grid;gap:3.5rem;align-items:center}
+@media (min-width:1024px){.hero .wrap{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:4rem}}
+.etiqueta{display:inline-flex;align-items:center;gap:.65rem;max-width:100%;padding:.5rem .95rem;border:1px solid rgb(255 107 26/.35);border-radius:.4rem;background:rgb(19 17 16/.5);font:500 .6rem/1.4 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--concreto)}
+.etiqueta i{flex:none;width:.5rem;height:.5rem;border-radius:50%;background:var(--laranja);box-shadow:0 0 0 3px rgb(255 107 26/.25);animation:led 2.4s ease-in-out infinite}
+@keyframes led{50%{box-shadow:0 0 0 6px rgb(255 107 26/.05)}}
+.etiqueta b{font-weight:500;color:var(--laranja-claro)}
+@media (min-width:640px){.etiqueta{font-size:.68rem;letter-spacing:.18em}}
+.hero h1{margin-top:1.5rem;font-size:clamp(3rem,13.2vw,6.6rem);line-height:.92;font-weight:600}
+.hero h1 em{display:block}
+.hero .lead{margin-top:1.5rem;color:rgb(235 230 223/.76)}
+.hero .lead strong{font-weight:600;color:#fff}
+.hero-ctas{margin-top:2rem;display:flex;flex-direction:column;gap:.75rem}
+.hero-ctas .btn{width:100%}
+@media (min-width:520px){.hero-ctas{flex-direction:row;flex-wrap:wrap}.hero-ctas .btn{width:auto}}
+.hud{margin-top:2.5rem;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.6rem;max-width:36rem;list-style:none}
+@media (min-width:640px){.hud{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.hud li{display:flex;align-items:center;gap:.6rem;padding:.65rem .75rem;border:1px solid rgb(235 230 223/.12);border-radius:.5rem;background:rgb(19 17 16/.35);font:500 .62rem/1.2 var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:rgb(235 230 223/.8)}
+.hud svg{flex:none;width:1.25rem;height:1.25rem;color:var(--laranja)}
+.hero .ghost{font-size:24vw;left:-1vw;bottom:-.08em;z-index:1}
+/* foto com moldura de scanner */
+.scan{position:relative;max-width:34rem;width:100%;margin-inline:auto}
+.js .scan{opacity:0;transform:translateY(60px) scale(.96);transition:opacity 1.2s var(--ease) .35s,transform 1.2s var(--ease) .35s}
+.js.loaded .scan{opacity:1;transform:none}
+.scan-in{position:relative;border-radius:var(--r-photo);overflow:hidden;box-shadow:0 30px 60px -15px rgb(0 0 0/.6)}
+.scan-in img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:40% 45%}
+@media (min-width:1024px){.scan-in img{aspect-ratio:4/5}.scan{max-width:27rem;margin-right:1.5rem}}
+.scan-in::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgb(19 17 16/.05),rgb(19 17 16/.45));z-index:1}
+.scan-in::after{content:"";position:absolute;left:0;right:0;top:0;height:2px;z-index:2;background:linear-gradient(90deg,transparent,var(--laranja) 20% 80%,transparent);box-shadow:0 0 18px 3px rgb(255 107 26/.55);animation:varre 4.2s var(--ease) 1.6s infinite}
+@keyframes varre{0%{top:0;opacity:0}8%{opacity:1}50%{top:calc(100% - 2px);opacity:1}58%,100%{top:calc(100% - 2px);opacity:0}}
+.canto{position:absolute;width:1.75rem;height:1.75rem;border:2px solid var(--laranja);z-index:2}
+.canto.a{left:-.7rem;top:-.7rem;border-right:0;border-bottom:0}.canto.b{right:-.7rem;top:-.7rem;border-left:0;border-bottom:0}
+.canto.c{left:-.7rem;bottom:-.7rem;border-right:0;border-top:0}.canto.d{right:-.7rem;bottom:-.7rem;border-left:0;border-top:0}
+.scan-leg{position:absolute;left:1rem;bottom:1rem;right:1rem;z-index:3;display:flex;justify-content:space-between;align-items:flex-end;gap:1rem;font:500 .6rem/1.4 var(--f-mono);letter-spacing:.16em;text-transform:uppercase;color:rgb(235 230 223/.85)}
+.scan-leg span:first-child::before{content:"";display:inline-block;width:.45rem;height:.45rem;margin-right:.5rem;border-radius:50%;background:var(--laranja);vertical-align:middle}
+/* selo em forma de mostrador */
+.selo{position:absolute;z-index:4;right:-.5rem;top:-2.75rem;width:6.5rem;height:6.5rem}
+@media (min-width:1024px){.selo{right:-2rem;top:auto;bottom:-3rem;width:8.5rem;height:8.5rem}}
+.selo svg{width:100%;height:100%}
+.selo .giro{transform-origin:50% 50%;animation:gira 30s linear infinite}
+.selo text{fill:var(--concreto);font:500 var(--fs) var(--f-mono);letter-spacing:.1em;text-transform:uppercase}
+.selo .ponteiro{transform-origin:50px 50px;animation:ponteiro 5s var(--ease) infinite}
+@keyframes gira{to{transform:rotate(360deg)}}
+@keyframes ponteiro{0%,100%{transform:rotate(-50deg)}45%{transform:rotate(38deg)}60%{transform:rotate(26deg)}}
+.cue{display:none}
+@media (min-width:1024px){
+  .hero{padding:calc(7rem + var(--pv)) 0 6rem}
+  .hero h1{font-size:clamp(4rem,6.6vw,6.6rem)}
+  .hero .ghost{font-size:17vw}
+  .cue{display:flex;position:absolute;z-index:3;left:50%;bottom:1.75rem;translate:-50% 0;flex-direction:column;align-items:center;gap:.5rem;font:500 .58rem var(--f-mono);letter-spacing:.3em;text-transform:uppercase;color:rgb(255 163 107/.75);transition:opacity 1s 1.6s}
+  .js .cue{opacity:0}.js.loaded .cue{opacity:1}
+  .cue svg{width:1rem;animation:cue 1.8s ease-in-out infinite}
+}
+@keyframes cue{50%{transform:translateY(6px)}}
+
+/* marquee */
+.band{position:relative;z-index:2;overflow:hidden;background:var(--laranja);padding-block:1.05rem}
+.band::before,.band::after{content:"";position:absolute;left:0;right:0;height:6px;background:var(--zebra)}
+.band::before{top:0}.band::after{bottom:0}
+.mq{display:flex;width:max-content;animation:mq 34s linear infinite;padding-block:.35rem}
+.mq-set{display:flex;align-items:center;gap:2rem;padding-right:2rem}
+.mq-set span{font:italic 700 1.7rem/1 var(--f-display);text-transform:uppercase;letter-spacing:.02em;color:var(--breu);white-space:nowrap}
+.mq-set i{font-style:normal;color:var(--breu);font-size:.9rem;opacity:.7}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* 01 oficina */
+.grid2{display:grid;gap:4.5rem;align-items:center}
+@media (min-width:1024px){.grid2{grid-template-columns:1fr 1fr;gap:5rem}}
+.foto{position:relative;max-width:26rem;width:100%;margin-inline:auto}
+.foto::before{content:"";position:absolute;inset:-.75rem;rotate:-2deg;border:1px solid rgb(255 107 26/.6);border-radius:calc(var(--r-photo) + .5rem)}
+.foto.p2::before{rotate:2deg;border-color:rgb(29 26 24/.22)}
+.dark .foto.p2::before{border-color:rgb(255 163 107/.3)}
+.foto img{position:relative;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r-photo);box-shadow:var(--sh-photo)}
+.foto.q img{aspect-ratio:1/1}
+.foto .card-tag{position:absolute;right:-.75rem;bottom:-1.75rem;max-width:15.5rem;padding:1.2rem 1.4rem;border-radius:.75rem;background:var(--grafite);color:var(--concreto);border-left:3px solid var(--laranja);font:italic 600 1.2rem/1.15 var(--f-display);text-transform:uppercase;box-shadow:0 20px 25px -5px rgb(29 26 24/.35)}
+.foto .card-tag small{display:block;margin-bottom:.5rem;font:500 .58rem/1 var(--f-mono);font-style:normal;letter-spacing:.2em;color:var(--laranja-claro)}
+@media (min-width:768px){.foto .card-tag{right:-2.5rem}}
+.foto .card-vidro{position:absolute;left:50%;bottom:-2rem;translate:-50% 0;width:86%;padding:1rem 1.25rem;border-radius:.75rem;background:rgb(19 17 16/.75);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgb(255 163 107/.25);font:italic 600 1.15rem/1.2 var(--f-display);text-transform:uppercase;color:var(--concreto);text-align:center}
+.bul{margin-top:2.25rem;display:grid;gap:1.5rem;list-style:none}
+.bul li{display:flex;gap:1rem}
+.bul i{flex:none;width:2.1rem;height:2.1rem;border-radius:.45rem;display:grid;place-items:center;background:rgb(255 107 26/.14);color:var(--laranja-tinta)}
+.bul i svg{width:1rem}
+.bul h3{font:600 1.3rem/1.15 var(--f-display);text-transform:uppercase;letter-spacing:.01em}
+.bul p{margin-top:.25rem;font-size:.95rem;font-weight:300;line-height:1.6;color:var(--txt-2)}
+.acoes{margin-top:2.5rem;display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.75rem}
+
+/* 02 serviços: carrossel guiado pelo scroll */
+.hs{position:relative;overflow-x:clip}
+.hs-sticky{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;background:var(--grade),linear-gradient(180deg,var(--concreto),var(--concreto-2) 55%,var(--concreto))}
+.hs-grid{position:relative;z-index:1;height:100%;display:flex;flex-direction:column;justify-content:center;gap:1.4rem;padding-top:calc(4.5rem + var(--pv))}
+.hs-intro .h2{font-size:clamp(2.2rem,8vw,4rem)}
+.hs-intro .lead{font-size:.92rem;margin-top:.75rem}
+.hs-intro .eyebrow{margin-bottom:.75rem}
+.dica{margin-top:1rem;display:flex;align-items:center;gap:.75rem;font:500 .62rem var(--f-mono);letter-spacing:.2em;text-transform:uppercase;color:var(--txt-2)}
+.dica svg{width:1rem;color:var(--laranja-tinta);animation:nudge 1.6s ease-in-out infinite}
+@keyframes nudge{50%{transform:translateX(6px)}}
+.hs-nota{display:none}
+.hs-vp{overflow:hidden;margin-inline:-1.25rem;padding:1rem 1.25rem 1.5rem}
+.hs-track{display:flex;gap:1.25rem;width:max-content;will-change:transform}
+@keyframes hs-slide{to{transform:translateX(calc(var(--max,0px)*-1))}}
+@supports (animation-timeline:view()){.hs{view-timeline:--hs block}.hs-track{animation:hs-slide linear both;animation-timeline:--hs;animation-range:contain}}
+.svc{position:relative;flex:none;width:17.5rem;height:clamp(17rem,42vh,21rem);display:flex;flex-direction:column;padding:1.5rem;border-radius:var(--r-card);background:rgb(247 244 239/.95);border:1px solid rgb(29 26 24/.12);box-shadow:0 1px 3px rgb(29 26 24/.08);overflow:hidden;transition:translate .5s var(--ease),border-color .5s,box-shadow .5s}
+.svc::after{content:"";position:absolute;right:0;top:0;width:2.25rem;height:2.25rem;background:linear-gradient(225deg,var(--concreto) 50%,rgb(29 26 24/.12) 50%,rgb(29 26 24/.12) calc(50% + 1px),transparent calc(50% + 1px))}
+.svc-top{display:flex;justify-content:space-between;align-items:flex-start}
+.svc-cod{font:500 .62rem/1 var(--f-mono);letter-spacing:.16em;color:var(--txt-2);margin-top:.35rem}
+.svc-ic{width:3.1rem;height:3.1rem;border-radius:.6rem;display:grid;place-items:center;background:linear-gradient(145deg,#fff,var(--aco-1) 45%,var(--aco-2));color:var(--grafite);box-shadow:inset 0 1px 0 #fff,0 1px 2px rgb(29 26 24/.2);transition:background .5s,color .5s}
+.svc-ic svg{width:1.55rem;height:1.55rem}
+.svc h3{margin-top:1.5rem;font:600 1.55rem/1.02 var(--f-display);text-transform:uppercase;letter-spacing:.005em;overflow-wrap:normal}
+.svc .svc-d{margin-top:.6rem;flex:1;font-size:.9rem;font-weight:300;line-height:1.6;color:var(--txt-2)}
+.svc-pe{margin-top:1rem;padding-top:1rem;border-top:1px dashed rgb(29 26 24/.2);display:flex;align-items:center;justify-content:space-between;gap:.75rem}
+.preco{font:600 1.35rem/1 var(--f-display);color:var(--grafite)}
+.preco small{display:block;font:500 .55rem/1 var(--f-mono);letter-spacing:.16em;text-transform:uppercase;color:var(--txt-2);margin-bottom:.3rem}
+.preco.cons{font:500 .6rem/1.35 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--txt-2)}
+@media (hover:hover){
+  .svc:hover{translate:0 -8px;border-color:rgb(255 107 26/.55);box-shadow:0 25px 50px -12px rgb(29 26 24/.25)}
+  .svc:hover .svc-ic{background:var(--grafite);color:var(--laranja)}
+  .svc:hover .link-seta svg{transform:translateX(4px)}
+}
+@media (min-width:640px){.svc{width:20rem;padding:1.85rem}}
+@media (min-width:1024px){
+  .hs-grid{display:grid;grid-template-columns:minmax(18rem,24rem) minmax(0,1fr);align-items:center;gap:3.5rem;padding-top:calc(3rem + var(--pv))}
+  .hs-intro .lead{font-size:1.06rem}
+  .hs-nota{display:block;margin-top:1.75rem;font-size:.8rem;font-style:italic;font-weight:300;color:var(--txt-2)}
+  .hs-vp{margin:0;padding:1.5rem 0 2rem;-webkit-mask-image:linear-gradient(90deg,#000 0 88%,transparent);mask-image:linear-gradient(90deg,#000 0 88%,transparent);transition:-webkit-mask-image .4s,mask-image .4s}
+  .hs-vp.is-scrolling{-webkit-mask-image:linear-gradient(90deg,transparent,#000 7% 88%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7% 88%,transparent)}
+  .svc{height:21.5rem}
+}
+
+/* 03 diagnóstico (escuro) */
+.diag{background:var(--grade-esc),var(--grafite)}
+.diag .blob.a{width:28rem;height:28rem;background:rgb(255 107 26/.14);right:-10rem;top:-6rem}
+.diag .ghost{font-size:30vw;right:-3vw;bottom:-.1em;font-family:var(--f-mono);font-style:normal;font-weight:500;-webkit-text-stroke:1px rgb(255 163 107/.12)}
+@media (min-width:1024px){.diag .ghost{font-size:18vw}}
+.passos{position:relative;margin-top:2.75rem;display:grid;gap:2.5rem;list-style:none}
+.passos::before{content:"";position:absolute;left:1.5rem;top:1.5rem;bottom:1.5rem;width:2px;margin-left:-1px;background:linear-gradient(var(--laranja),rgb(255 107 26/.35) 60%,transparent)}
+.passo{position:relative;display:flex;gap:1.5rem}
+.passo b{position:relative;z-index:1;flex:none;width:3rem;height:3rem;border-radius:50%;display:grid;place-items:center;border:1px solid rgb(255 107 26/.6);background:var(--grafite);font:500 .8rem/1 var(--f-mono);color:var(--laranja-claro);box-shadow:0 0 0 4px var(--grafite)}
+.passo b::after{content:"";position:absolute;right:-.3rem;top:50%;width:.6rem;height:.6rem;margin-top:-.3rem;border-radius:50%;background:var(--laranja);box-shadow:0 0 10px rgb(255 107 26/.7)}
+.passo h3{font:600 1.5rem/1.1 var(--f-display);text-transform:uppercase;padding-top:.55rem}
+.passo p{margin-top:.35rem;font-size:.95rem;font-weight:300;line-height:1.6;color:rgb(235 230 223/.7)}
+@media (min-width:1024px){.diag .grid2>.foto{order:2}}
+
+/* 04 sinais */
+.sinais{background:var(--grade),var(--concreto)}
+.cab-c{text-align:center;max-width:44rem;margin-inline:auto}
+.cab-c .lead{margin:1.25rem auto 0}
+.sin-grid{margin-top:3.5rem;display:grid;gap:1rem;grid-template-columns:minmax(0,1fr)}
+@media (min-width:640px){.sin-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1024px){.sin-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem}}
+.sin{position:relative;display:flex;gap:1.1rem;padding:1.5rem;border-radius:var(--r-card);background:var(--papel);border:1px solid rgb(29 26 24/.1);transition:border-color .4s,translate .4s var(--ease),box-shadow .4s}
+.sin::before{content:"";position:absolute;left:0;top:1.5rem;bottom:1.5rem;width:3px;border-radius:0 3px 3px 0;background:var(--laranja);opacity:.0;transition:opacity .4s}
+.sin-ic{flex:none;width:2.75rem;height:2.75rem;border-radius:.6rem;display:grid;place-items:center;border:1px solid rgb(255 107 26/.4);color:var(--laranja-tinta)}
+.sin-ic svg{width:1.4rem;height:1.4rem}
+.sin small{font:500 .58rem/1 var(--f-mono);letter-spacing:.18em;text-transform:uppercase;color:var(--txt-2)}
+.sin h3{margin-top:.35rem;font:600 1.3rem/1.1 var(--f-display);text-transform:uppercase}
+.sin p{margin-top:.5rem;font-size:.88rem;font-weight:300;line-height:1.55;color:var(--txt-2)}
+.sin p b{font:500 .62rem var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--laranja-tinta);margin-right:.35rem}
+@media (hover:hover){.sin:hover{border-color:rgb(255 107 26/.4);translate:0 -4px;box-shadow:0 20px 30px -15px rgb(29 26 24/.25)}.sin:hover::before{opacity:1}}
+.sin-pe{margin-top:2.5rem;display:flex;flex-direction:column;align-items:center;gap:1.25rem;text-align:center}
+.sin-pe p{font:400 .7rem/1.6 var(--f-mono);letter-spacing:.06em;color:var(--txt-2);max-width:34rem}
+
+/* 05 bancada */
+.banc .blob{width:26rem;height:26rem;background:rgb(255 107 26/.12);left:-12rem;bottom:-8rem}
+.mosaico{margin-top:3.5rem;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+@media (min-width:768px){.mosaico{grid-template-columns:repeat(4,minmax(0,1fr));gap:1.5rem}}
+.mosaico figure{position:relative;aspect-ratio:3/4;overflow:hidden;border-radius:var(--r-card);box-shadow:0 10px 15px -3px rgb(0 0 0/.3)}
+@media (min-width:768px){.mosaico figure:nth-child(1){margin-top:2.5rem}.mosaico figure:nth-child(3){margin-top:3.5rem}.mosaico figure:nth-child(4){margin-top:1.25rem}}
+@media (max-width:767.98px){.mosaico{padding-bottom:2.5rem}.mosaico figure:nth-child(even){translate:0 2.5rem}}
+.mosaico img{width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease)}
+.mosaico figcaption{position:absolute;inset:auto 0 0;padding:3rem 1rem 1rem;background:linear-gradient(to top,rgb(19 17 16/.92),rgb(19 17 16/.35),transparent);color:var(--concreto);font:500 .6rem/1.3 var(--f-mono);letter-spacing:.18em;text-transform:uppercase}
+.mosaico figcaption::before{content:attr(data-n);color:var(--laranja);margin-right:.6rem}
+@media (hover:hover){.mosaico figure:hover img{transform:scale(1.06)}}
+
+/* 06 faq */
+.faq{background:var(--concreto-2)}
+.faq-grid{display:grid;gap:3rem}
+@media (min-width:1024px){.faq-grid{grid-template-columns:1fr 1.6fr;gap:3.5rem}.faq-cab{position:sticky;top:8rem;align-self:start}}
+.faq-cab .btn{margin-top:2rem}
+.fq{border-bottom:1px solid rgb(29 26 24/.14)}
+.fq:first-child{border-top:1px solid rgb(29 26 24/.14)}
+.fq button{display:flex;width:100%;justify-content:space-between;align-items:center;gap:1.5rem;padding-block:1.4rem;text-align:left;font:600 1.3rem/1.15 var(--f-display);text-transform:uppercase;letter-spacing:.005em}
+@media (min-width:768px){.fq button{font-size:1.5rem}}
+.pm{flex:none;width:2.5rem;height:2.5rem;border-radius:.5rem;display:grid;place-items:center;border:1px solid rgb(29 26 24/.25);color:var(--grafite);transition:background-color .3s,color .3s,border-color .3s}
+.pm svg{width:1rem;transition:rotate .35s var(--ease)}
+[aria-expanded=true] .pm svg{rotate:45deg}
+[aria-expanded=true] .pm{background:var(--laranja);border-color:var(--laranja);color:var(--breu)}
+.fq-a{display:grid;grid-template-rows:0fr;opacity:0;transition:grid-template-rows .45s var(--ease),opacity .45s var(--ease)}
+.fq-a>div{overflow:hidden}
+.fq-a p{padding-bottom:1.75rem;max-width:42rem;font-weight:300;line-height:1.7;color:var(--txt-2)}
+[aria-expanded=true]+.fq-a{grid-template-rows:1fr;opacity:1}
+@media (hover:hover){.fq button:hover .pm{border-color:var(--laranja)}}
+
+/* CTA final */
+.fim{padding:1rem 1.25rem 6rem;background:var(--concreto-2)}
+.fim-box{position:relative;overflow:hidden;max-width:80rem;margin-inline:auto;border-radius:1.5rem;padding:5rem 1.5rem;text-align:center;color:var(--concreto);background:var(--grade-esc),linear-gradient(135deg,var(--breu),var(--grafite) 55%,var(--grafite-2));box-shadow:0 25px 50px -12px rgb(29 26 24/.45)}
+@media (min-width:768px){.fim-box{border-radius:2rem;padding:7rem 4rem}}
+.fim-box>.zebra{position:absolute;left:0;right:0;top:0;height:8px}
+.fim-box .blob.a{width:24rem;height:24rem;background:rgb(255 107 26/.22);left:-8rem;top:-8rem}
+.fim-box .blob.b{width:26rem;height:26rem;background:rgb(255 163 107/.1);right:-10rem;bottom:-12rem}
+.fim-box .ghost{font-size:20vw;left:50%;translate:-50% 0;top:-.2em}
+@media (min-width:768px){.fim-box .ghost{font-size:13vw}}
+.fim-box>*:not(.blob):not(.ghost):not(.zebra){position:relative}
+.fim-box .raio{display:block;width:2.25rem;height:2.25rem;margin:0 auto;color:var(--laranja)}
+.fim-box .raio svg{width:100%;height:100%}
+.fim-box h2{margin-top:1.5rem;font-size:clamp(2.5rem,8.5vw,5.2rem);line-height:.95;font-weight:600}
+.fim-box h2 em{color:var(--laranja)}
+.fim-box .lead{margin:1.5rem auto 0;color:rgb(235 230 223/.75)}
+.fim-box .btn{margin-top:2.5rem;padding:1.2rem 1.6rem;font-size:.8rem;letter-spacing:.12em;white-space:nowrap}
+@media (min-width:640px){.fim-box .btn{padding:1.25rem 2.75rem;font-size:.86rem;letter-spacing:.14em}}
+.fim-box .btn .zap{color:#25d366;transition:transform .3s var(--ease)}
+@media (hover:hover){.fim-box .btn:hover .zap{transform:scale(1.15)}}
+.fim-box .micro{margin-top:1rem;font:400 .68rem/1.6 var(--f-mono);letter-spacing:.06em;color:rgb(235 230 223/.6)}
+.fim-box .micro a{text-decoration:underline;text-underline-offset:3px}
+.fim-info{margin:3rem auto 0;padding-top:2rem;border-top:1px dashed rgb(235 230 223/.2);display:flex;flex-direction:column;align-items:center;gap:1rem;font-size:.9rem;color:rgb(235 230 223/.8);max-width:46rem}
+.fim-info div{display:flex;align-items:flex-start;gap:.6rem;text-align:left}
+.fim-info svg{flex:none;width:1.05rem;margin-top:.2rem;color:var(--laranja)}
+@media (min-width:640px){.fim-info{flex-direction:row;justify-content:center;flex-wrap:wrap;gap:1rem 2.5rem}}
+
+/* local */
+.local{padding:0 0 6rem;background:var(--concreto-2)}
+@media (min-width:768px){.local{padding-bottom:9rem}}
+.local-grid{display:grid;gap:2rem;align-items:stretch}
+@media (min-width:1024px){.local-grid{grid-template-columns:minmax(0,.9fr) minmax(0,1.4fr);gap:3rem}}
+.local-card{padding:2rem;border-radius:var(--r-card);background:var(--papel);border:1px solid rgb(29 26 24/.1);box-shadow:0 10px 15px -3px rgb(29 26 24/.08)}
+.local-card .h2{font-size:clamp(2.2rem,6vw,3rem)}
+.local-card dl{margin-top:1.75rem;display:grid;gap:1.25rem}
+.local-card dt{font:500 .6rem/1 var(--f-mono);letter-spacing:.2em;text-transform:uppercase;color:var(--laranja-tinta)}
+.local-card dd{margin-top:.4rem;font-size:.98rem;line-height:1.55}
+.local-card dd ul{list-style:none}
+.local-card .acoes{margin-top:2rem}
+.mapa{position:relative;min-height:20rem;border-radius:var(--r-card);overflow:hidden;box-shadow:var(--sh-photo);background:var(--grade),var(--concreto);display:grid;place-items:center}
+.mapa>.pino{width:3.5rem;height:3.5rem;border-radius:50%;display:grid;place-items:center;background:var(--grafite);color:var(--laranja);box-shadow:0 0 0 10px rgb(255 107 26/.15)}
+.mapa>.pino svg{width:1.5rem}
+.mapa iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:saturate(.6) sepia(.12)}
+
+/* rodapé */
+.rodape{background:var(--breu);color:rgb(235 230 223/.7);padding:4rem 0 2rem}
+@media (min-width:768px){.rodape{padding-top:5rem}}
+.rod-grid{display:grid;gap:3rem}
+@media (min-width:768px){.rod-grid{grid-template-columns:1.4fr 1fr 1fr}}
+.rodape .logo{color:var(--concreto)}
+.rod-tag{margin-top:1.25rem;font:400 .6rem/1.5 var(--f-mono);letter-spacing:.22em;text-transform:uppercase;color:rgb(255 163 107/.75)}
+.rod-frase{margin-top:1rem;max-width:22rem;font-size:.9rem;font-weight:300;line-height:1.6}
+.rod-ic{margin-top:1.5rem;display:flex;gap:.75rem}
+.rod-ic a{width:2.75rem;height:2.75rem;border-radius:.5rem;border:1px solid rgb(235 230 223/.2);display:grid;place-items:center;transition:border-color .3s,color .3s}
+.rod-ic svg{width:1.1rem}
+@media (hover:hover){.rod-ic a:hover{border-color:var(--laranja);color:var(--laranja)}.rodape ul a:hover{color:var(--laranja-claro)}}
+.rodape h4{font:500 .64rem/1 var(--f-mono);letter-spacing:.22em;text-transform:uppercase;color:var(--laranja-claro)}
+.rodape ul{list-style:none;margin-top:1.25rem;display:grid;gap:.7rem;font-size:.9rem;font-weight:300}
+.rodape ul a{transition:color .2s}
+.rod-base{margin-top:3.5rem;padding-top:1.5rem;border-top:1px solid rgb(235 230 223/.1);display:flex;flex-wrap:wrap;justify-content:space-between;gap:.75rem;font:400 .66rem/1.5 var(--f-mono);color:rgb(235 230 223/.45)}
+
+/* FAB */
+.fab{position:fixed;right:1.25rem;bottom:1.25rem;z-index:50;width:3.75rem;height:3.75rem;border-radius:50%;display:grid;place-items:center;background:#25d366;color:#fff;box-shadow:0 25px 50px -12px rgb(0 0 0/.4);opacity:0;scale:.6;translate:0 24px;pointer-events:none;transition:opacity .4s var(--ease),scale .4s var(--ease),translate .4s var(--ease)}
+.fab.show{opacity:1;scale:1;translate:0;pointer-events:auto}
+.fab::before{content:"";position:absolute;inset:0;border-radius:50%;background:inherit;z-index:-1;animation:anel 2.4s cubic-bezier(.2,.6,.36,1) infinite}
+.fab svg{width:1.7rem;height:1.7rem}
+@keyframes anel{0%{opacity:.45;transform:scale(1)}80%,100%{opacity:0;transform:scale(1.65)}}
+@media (min-width:768px){.fab{right:2rem;bottom:2rem}}
+@media (hover:hover){.fab:hover{scale:1.1}}
+
+/* modal */
+.lead-dlg{position:fixed;border:0;padding:0;background:transparent;color:var(--txt);max-width:none;max-height:none;width:100%;height:100%;inset:0;margin:0;display:none}
+.lead-dlg[open]{display:flex;align-items:flex-end;justify-content:center}
+.lead-dlg::backdrop{background:rgb(19 17 16/.6);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);opacity:0;transition:opacity .2s}
+.lead-dlg.on::backdrop{opacity:1}
+.dlg-bg{position:absolute;inset:0}
+.dlg-box{position:relative;overflow:hidden auto;width:100%;max-width:28rem;max-height:92vh;padding:2.25rem 1.5rem calc(1.75rem + env(safe-area-inset-bottom));border-radius:1.5rem 1.5rem 0 0;background:var(--papel);border:1px solid rgb(29 26 24/.15);box-shadow:0 25px 50px -12px rgb(29 26 24/.35);transform:translateY(40px);opacity:0;transition:transform .24s var(--ease),opacity .24s var(--ease)}
+.dlg-box::before{content:"";position:absolute;left:0;right:0;top:0;height:6px;background:var(--zebra)}
+.lead-dlg.on .dlg-box{transform:none;opacity:1}
+@media (min-width:640px){.lead-dlg[open]{align-items:center}.dlg-box{border-radius:1.5rem;padding:2.75rem 2.25rem 2.25rem;transform:translateY(24px) scale(.98)}}
+.dlg-box .blob{width:11rem;height:11rem;background:rgb(255 107 26/.25);filter:blur(40px);right:-3rem;top:-3rem}
+.dlg-box>*:not(.blob):not(.dlg-x){position:relative}
+.dlg-x{position:absolute;right:1rem;top:1.25rem;width:2.5rem;height:2.5rem;border-radius:.5rem;display:grid;place-items:center;border:1px solid rgb(29 26 24/.15);z-index:2}
+.dlg-x svg{width:1rem}
+.dlg-box h2{font-size:2.3rem;padding-right:2.75rem}
+.dlg-box .sub{margin-top:.6rem;font-size:.92rem;font-weight:300;color:var(--txt-2)}
+.campo{margin-top:1.1rem;display:grid;gap:.4rem}
+.campo label{font:500 .6rem/1 var(--f-mono);letter-spacing:.18em;text-transform:uppercase;color:var(--grafite)}
+.campo input,.campo select{width:100%;padding:.9rem 1rem;border-radius:.6rem;border:1px solid rgb(29 26 24/.2);background:#fff;font-size:1rem;transition:border-color .2s,box-shadow .2s;-webkit-appearance:none;appearance:none}
+.campo select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231d1a18' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 1rem center;background-size:1rem;padding-right:2.75rem}
+.campo input:focus,.campo select:focus{outline:none;border-color:var(--laranja);box-shadow:0 0 0 3px rgb(255 107 26/.22)}
+.campo [aria-invalid=true]{border-color:#b42318}
+.campo .err{display:none;font-size:.78rem;color:#b42318}
+.campo [aria-invalid=true]+.err{display:block}
+.duo{display:grid;gap:0 .75rem}
+@media (min-width:480px){.duo{grid-template-columns:1fr 1fr}}
+.opc{letter-spacing:.06em;text-transform:none;color:var(--txt-2)}
+.dlg-box .btn{margin-top:1.5rem;width:100%}
+.dlg-alt{margin-top:1rem;text-align:center;font-size:.8rem;color:var(--txt-2)}
+.dlg-alt a{color:var(--grafite);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .rev,.js .stg [data-i],.js .topo,.js .scan,.js .cue{opacity:1!important;transform:none!important;transition:none!important}
+  .js .fio path{stroke-dashoffset:0!important;transition:none!important}
+  .mq,.scan-in::after,.etiqueta i,.selo .giro,.selo .ponteiro,.dica svg,.cue svg,.fab::before{animation:none!important}
+  .scan-in::after{display:none}
+  .hs-track{animation:none!important;transform:none!important}
+  .hs-vp{overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin}
+  .svc{scroll-snap-align:start}
+  .dica svg{display:none}
+}
+</style>
+</head>
+<body>
+<div class="topo" id="topo">
+<div class="previa" id="previa">Prévia de site criada para a JWL Mecânica Automotiva. Fotos ilustrativas: no site final entram as fotos de vocês. <a href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Vi%20a%20pr%C3%A9via%20do%20site%20da%20JWL%20Mec%C3%A2nica%20Automotiva%20e%20quero%20colocar%20no%20ar." target="_blank" rel="noopener">Quero colocar no ar</a></div>  <header class="hdr">
+    <div class="wrap">
+      <a class="logo" href="#inicio" aria-label="JWL Mecânica Automotiva, início">
+        <span class="logo-mono" aria-hidden="true">JM</span>
+        <span class="logo-txt"><span class="logo-nome l2">JWL Mecânica Automotiva</span><span class="logo-sub">Oficina mecânica</span></span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="#oficina">A oficina</a><a href="#servicos">Serviços</a><a href="#diagnostico">Diagnóstico</a><a href="#sinais">Sinais</a><a href="#duvidas">Dúvidas</a><a href="#local">Onde fica</a>
+      </nav>
+      <a class="btn hdr-cta" href="https://wa.me/5511939031840?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20JWL%20Mec%C3%A2nica%20Automotiva." data-cta><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>Orçamento</a>
+      <button class="burger" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mnav" data-menu><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h10"/></svg></button>
+    </div>
+  </header>
+</div>
+
+<div class="mnav" id="mnav" aria-hidden="true">
+  <div class="mnav-top">
+    <span class="logo"><span class="logo-mono" aria-hidden="true">JM</span></span>
+    <button class="burger" type="button" aria-label="Fechar menu" data-menu-close><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  </div>
+  <nav aria-label="Menu">
+    <a href="#oficina" style="--i:0"><span>01</span>A oficina</a>
+    <a href="#servicos" style="--i:1"><span>02</span>Serviços</a>
+    <a href="#diagnostico" style="--i:2"><span>03</span>Diagnóstico</a>
+    <a href="#sinais" style="--i:3"><span>04</span>Sinais</a>
+    <a href="#duvidas" style="--i:4"><span>06</span>Dúvidas</a>
+    <a href="#local" style="--i:5"><span>07</span>Onde fica</a>
+  </nav>
+  <a class="btn" href="https://wa.me/5511939031840?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20JWL%20Mec%C3%A2nica%20Automotiva." data-cta><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>Pedir orçamento</a>
+  <small>JWL Mecânica Automotiva · Vila Prudente</small>
+</div>
+
+<main>
+<section class="hero dark" id="inicio">
+  <div class="blob a" aria-hidden="true"></div><div class="blob b" aria-hidden="true"></div>
+  <svg class="fio" viewBox="0 0 1440 900" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M-20 760 C 260 760, 380 610, 640 640 S 1000 820, 1180 700 S 1380 520, 1470 560"/>
+    <path class="f2" d="M-20 805 C 300 800, 420 700, 700 720 S 1060 870, 1240 770 S 1400 640, 1470 650"/>
+  </svg>
+  <span class="ghost" aria-hidden="true">precisão</span>
+  <div class="wrap">
+    <div class="hero-txt stg">
+      <p class="etiqueta" data-i><i aria-hidden="true"></i><span><b>JWL Mecânica Automotiva</b> · Oficina mecânica em Vila Prudente</span></p>
+      <h1 class="disp" data-i>Luz acesa no painel? <em>Tem explicação.</em></h1>
+      <p class="lead" data-i>Diagnóstico, bateria, alternador, injeção e elétrica em geral em Vila Prudente. Na <strong>JWL Mecânica Automotiva</strong>, a ideia é simples: entender o problema antes de trocar qualquer peça, para você saber o que está pagando.</p>
+      <div class="hero-ctas" data-i>
+        <a class="btn" href="https://wa.me/5511939031840?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20JWL%20Mec%C3%A2nica%20Automotiva." data-cta><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>Pedir orçamento</a>
+        <a class="btn btn-linha" href="#diagnostico">Como é o diagnóstico</a>
+      </div>
+      <ul class="hud" data-i aria-label="Especialidades">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="7" width="19" height="12.5" rx="1.5"/><path d="M6 7V5h3v2M15 7V5h3v2M5.5 12.5h3M15.5 12.5h3M17 11v3"/></svg>Bateria</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="2.2"/><path d="M12 3.5v4M12 16.5v4M3.5 12h4M16.5 12h4M6 6l2.8 2.8M15.2 15.2 18 18M18 6l-2.8 2.8M8.8 15.2 6 18"/></svg>Alternador</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2.5" width="12" height="17" rx="2"/><path d="M7 6.5h6v5H7zM7 15h2M11 15h2M16 9h2.5a1.5 1.5 0 0 1 1.5 1.5V21"/><path d="M8.5 9.5l1.2-1.5 1.1 1.2 1.2-1.7"/></svg>Scanner</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2.5h4v3h-4zM9 5.5h6v8l-1.5 2.5h-3L9 13.5v-8zM12 16v2.5"/><path d="M12 19.5l-2 2M12 19.5l2 2M12 19.5v2.3"/></svg>Injeção</li>
+      </ul>
+    </div>
+    <div class="scan">
+      <div class="scan-in">
+        <img src="/assets/img/autoeletrica/hero-1.jpg" alt="Mãos de mecânico trabalhando no motor de um carro" width="1600" height="1067" fetchpriority="high" decoding="async">
+        <div class="scan-leg" aria-hidden="true"><span>Leitura em andamento</span></div>
+      </div>
+      <span class="canto a" aria-hidden="true"></span><span class="canto b" aria-hidden="true"></span><span class="canto c" aria-hidden="true"></span><span class="canto d" aria-hidden="true"></span>
+      <div class="selo" aria-hidden="true">
+        <svg viewBox="0 0 100 100">
+          <defs><path id="circ" d="M50 50m-41 0a41 41 0 1 1 82 0a41 41 0 1 1-82 0"/></defs>
+          <circle cx="50" cy="50" r="49" fill="#131110" stroke="rgb(255 107 26 / .5)" stroke-width=".8"/>
+          <g class="giro"><text style="--fs:6.60px"><textPath href="#circ" textLength="254" lengthAdjust="spacing">JWL MECÂNICA AUTOMOTIVA · VILA PRUDENTE · </textPath></text></g>
+          <g stroke="rgb(235 230 223 / .55)" stroke-width=".7">
+<line x1="50" y1="21" x2="50" y2="26" transform="rotate(-120 50 50)"/><line x1="50" y1="23" x2="50" y2="26" transform="rotate(-105 50 50)"/><line x1="50" y1="23" x2="50" y2="26" transform="rotate(-90 50 50)"/><line x1="50" y1="23" x2="50" y2="26" transform="rotate(-75 50 50)"/><line x1="50" y1="21" x2="50" y2="26" transform="rotate(-60 50 50)"/><line x1="50" y1="23" x2="50" y2="26" transform="rotate(-45 50 50)"/><line x1="50" y1="23" x2="50" y2="26" transform="rotate(-30 50 50)"/><line x1="50" y1="23" x2="50" y2="26" transform="rotate(-15 50 50)"/><line x1="50" y1="21" x2="50" y2="26" transform="rotate(0 50 50)"/><line x1="50" y1="23" x2="50" y2="26" transform="rotate(15 50 50)"/><line x1="50" y1="23" x2="50" y2="26" transform="rotate(30 50 50)"/><line x1="50" y1="23" x2="50" y2="26" transform="rotate(45 50 50)"/><line x1="50" y1="21" x2="50" y2="26" transform="rotate(60 50 50)"/><line x1="50" y1="23" x2="50" y2="26" transform="rotate(75 50 50)" stroke="#ff6b1a"/><line x1="50" y1="23" x2="50" y2="26" transform="rotate(90 50 50)" stroke="#ff6b1a"/><line x1="50" y1="23" x2="50" y2="26" transform="rotate(105 50 50)" stroke="#ff6b1a"/><line x1="50" y1="21" x2="50" y2="26" transform="rotate(120 50 50)" stroke="#ff6b1a"/>          </g>
+          <text x="50" y="62" text-anchor="middle" style="--fs:13px;font-family:var(--f-display);font-weight:700;letter-spacing:.02em;fill:#ebe6df">JM</text>
+          <g class="ponteiro"><path d="M50 50 L50 28" stroke="#ff6b1a" stroke-width="1.6" stroke-linecap="round"/></g>
+          <circle cx="50" cy="50" r="3" fill="#ff6b1a"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="cue" aria-hidden="true">Role<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg></div>
+</section>
+
+<div class="band" aria-label="Motor, freio, suspensão, elétrica e injeção">
+  <div class="mq">
+    <div class="mq-set">
+<span>Motor</span><i>✦</i><span>Freio</span><i>✦</i><span>Suspensão</span><i>✦</i><span>Elétrica</span><i>✦</i><span>Injeção</span><i>✦</i><span>Motor</span><i>✦</i><span>Freio</span><i>✦</i><span>Suspensão</span><i>✦</i><span>Elétrica</span><i>✦</i><span>Injeção</span><i>✦</i>    </div>
+    <div class="mq-set" aria-hidden="true">
+<span>Motor</span><i>✦</i><span>Freio</span><i>✦</i><span>Suspensão</span><i>✦</i><span>Elétrica</span><i>✦</i><span>Injeção</span><i>✦</i><span>Motor</span><i>✦</i><span>Freio</span><i>✦</i><span>Suspensão</span><i>✦</i><span>Elétrica</span><i>✦</i><span>Injeção</span><i>✦</i>    </div>
+  </div>
+</div>
+
+<section class="sec" id="oficina">
+  <div class="blob" style="width:26rem;height:26rem;background:rgb(255 107 26/.12);right:-12rem;top:10%" aria-hidden="true"></div>
+  <div class="wrap grid2">
+    <div class="foto rev">
+      <img src="/assets/img/autoeletrica/hero-2.jpg" alt="Mecânico consultando o tablet de diagnóstico ao lado do carro" width="1600" height="1067" loading="lazy" decoding="async" style="object-position:70% 30%">
+      <div class="card-tag"><small>— Regra da casa</small>Primeiro a gente mede. Depois a gente mexe.</div>
+    </div>
+    <div>
+      <p class="eyebrow rev">01 · A oficina</p>
+      <h2 class="disp h2 rev" style="--d:.05s">Primeiro o diagnóstico, <em>depois a peça.</em></h2>
+      <p class="lead rev" style="--d:.1s">Trocar peça no chute sai caro e nem sempre resolve. Carro bem atendido é aquele que sai com o defeito encontrado, explicado e consertado.</p>
+      <ul class="bul">
+        <li class="rev" style="--d:.12s"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2.5" width="12" height="17" rx="2"/><path d="M7 6.5h6v5H7zM7 15h2M11 15h2M16 9h2.5a1.5 1.5 0 0 1 1.5 1.5V21"/><path d="M8.5 9.5l1.2-1.5 1.1 1.2 1.2-1.7"/></svg></i><div><h3>Diagnóstico com equipamento</h3><p>Scanner e testes elétricos para chegar na causa, não só no sintoma.</p></div></li>
+        <li class="rev" style="--d:.22s"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></i><div><h3>Orçamento antes do serviço</h3><p>Você recebe a explicação e o valor pelo WhatsApp e decide com calma.</p></div></li>
+        <li class="rev" style="--d:.32s"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.2 5.2L3.5 17.5 6.5 20.5l6-6a4 4 0 0 0 5.2-5.2l-2.4 2.4-2.6-.5-.5-2.6 2.5-2.3z"/></svg></i><div><h3>Explicação sem enrolação</h3><p>O que foi encontrado, o que precisa agora e o que pode esperar.</p></div></li>
+      </ul>
+      <div class="acoes rev" style="--d:.4s"><a class="btn btn-grafite" href="https://wa.me/5511939031840?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20JWL%20Mec%C3%A2nica%20Automotiva." data-cta>Quero um orçamento <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    </div>
+  </div>
+</section>
+
+<section class="hs" id="servicos" aria-label="Serviços">
+  <div class="hs-sticky">
+    <div class="wrap hs-grid">
+      <div class="hs-intro">
+        <p class="eyebrow">02 · Serviços</p>
+        <h2 class="disp h2">Da bateria <em>ao motor.</em></h2>
+        <p class="lead">Escolha o serviço e peça o orçamento: ele já vai escrito na mensagem do WhatsApp.</p>
+        <p class="dica" aria-hidden="true">Role para ver os serviços <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></p>
+        <p class="hs-nota">Valores confirmados depois da avaliação do carro, sempre antes do serviço.</p>
+      </div>
+      <div class="hs-vp">
+        <div class="hs-track">
+          <article class="svc">
+            <div class="svc-top"><span class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2.5" width="12" height="17" rx="2"/><path d="M7 6.5h6v5H7zM7 15h2M11 15h2M16 9h2.5a1.5 1.5 0 0 1 1.5 1.5V21"/><path d="M8.5 9.5l1.2-1.5 1.1 1.2 1.2-1.7"/></svg></span><span class="svc-cod" aria-hidden="true">SRV—01</span></div>
+            <h3>Diagnóstico</h3>
+            <p class="svc-d">Scanner e teste para achar o problema.</p>
+            <div class="svc-pe">
+<span class="preco cons">Orçamento<br>no WhatsApp</span>              <a class="link-seta" href="https://wa.me/5511939031840?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20JWL%20Mec%C3%A2nica%20Automotiva." data-cta data-servico="Diagnóstico">Orçar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </article>
+          <article class="svc">
+            <div class="svc-top"><span class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="7" width="19" height="12.5" rx="1.5"/><path d="M6 7V5h3v2M15 7V5h3v2M5.5 12.5h3M15.5 12.5h3M17 11v3"/></svg></span><span class="svc-cod" aria-hidden="true">SRV—02</span></div>
+            <h3>Bateria</h3>
+            <p class="svc-d">Teste, carga e troca.</p>
+            <div class="svc-pe">
+<span class="preco cons">Orçamento<br>no WhatsApp</span>              <a class="link-seta" href="https://wa.me/5511939031840?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20JWL%20Mec%C3%A2nica%20Automotiva." data-cta data-servico="Bateria">Orçar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </article>
+          <article class="svc">
+            <div class="svc-top"><span class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="2.2"/><path d="M12 3.5v4M12 16.5v4M3.5 12h4M16.5 12h4M6 6l2.8 2.8M15.2 15.2 18 18M18 6l-2.8 2.8M8.8 15.2 6 18"/></svg></span><span class="svc-cod" aria-hidden="true">SRV—03</span></div>
+            <h3>Alternador e motor de partida</h3>
+            <p class="svc-d">Reparo e substituição.</p>
+            <div class="svc-pe">
+<span class="preco cons">Orçamento<br>no WhatsApp</span>              <a class="link-seta" href="https://wa.me/5511939031840?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20JWL%20Mec%C3%A2nica%20Automotiva." data-cta data-servico="Alternador e motor de partida">Orçar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </article>
+          <article class="svc">
+            <div class="svc-top"><span class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2.5h4v3h-4zM9 5.5h6v8l-1.5 2.5h-3L9 13.5v-8zM12 16v2.5"/><path d="M12 19.5l-2 2M12 19.5l2 2M12 19.5v2.3"/></svg></span><span class="svc-cod" aria-hidden="true">SRV—04</span></div>
+            <h3>Injeção eletrônica</h3>
+            <p class="svc-d">Limpeza e regulagem.</p>
+            <div class="svc-pe">
+<span class="preco cons">Orçamento<br>no WhatsApp</span>              <a class="link-seta" href="https://wa.me/5511939031840?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20JWL%20Mec%C3%A2nica%20Automotiva." data-cta data-servico="Injeção eletrônica">Orçar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </article>
+          <article class="svc">
+            <div class="svc-top"><span class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.2 5.2L3.5 17.5 6.5 20.5l6-6a4 4 0 0 0 5.2-5.2l-2.4 2.4-2.6-.5-.5-2.6 2.5-2.3z"/></svg></span><span class="svc-cod" aria-hidden="true">SRV—05</span></div>
+            <h3>Revisão</h3>
+            <p class="svc-d">Freios, suspensão e troca de óleo.</p>
+            <div class="svc-pe">
+<span class="preco cons">Orçamento<br>no WhatsApp</span>              <a class="link-seta" href="https://wa.me/5511939031840?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20JWL%20Mec%C3%A2nica%20Automotiva." data-cta data-servico="Revisão">Orçar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </article>
+          <article class="svc">
+            <div class="svc-top"><span class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M13.5 2.5 5 13.5h6l-1 8 8.5-11h-6l1-8z"/></svg></span><span class="svc-cod" aria-hidden="true">SRV—06</span></div>
+            <h3>Elétrica em geral</h3>
+            <p class="svc-d">Faróis, vidros e travas.</p>
+            <div class="svc-pe">
+<span class="preco cons">Orçamento<br>no WhatsApp</span>              <a class="link-seta" href="https://wa.me/5511939031840?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20JWL%20Mec%C3%A2nica%20Automotiva." data-cta data-servico="Elétrica em geral">Orçar <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec dark diag" id="diagnostico">
+  <div class="blob a" aria-hidden="true"></div>
+  <span class="ghost" aria-hidden="true">12V</span>
+  <div class="wrap grid2">
+    <div class="foto q p2 rev">
+      <img src="/assets/img/autoeletrica/alt-4.jpg" alt="Scanner automotivo conectado ao carro durante a leitura" width="1600" height="1067" loading="lazy" decoding="async" style="object-position:55% 50%">
+      <div class="card-vidro">Luz no painel é o carro pedindo atenção.</div>
+    </div>
+    <div>
+      <p class="eyebrow rev">03 · Diagnóstico</p>
+      <h2 class="disp h2 rev" style="--d:.05s">Como funciona <em>o diagnóstico.</em></h2>
+      <ol class="passos">
+        <li class="passo rev" style="--d:.1s"><b>01</b><div><h3>Você conta o sintoma</h3><p>Barulho, luz no painel, falha na partida: descreva pelo WhatsApp o que está acontecendo.</p></div></li>
+        <li class="passo rev" style="--d:.2s"><b>02</b><div><h3>Leitura e testes</h3><p>Scanner na tomada de diagnóstico e testes na bateria, no alternador e na parte elétrica.</p></div></li>
+        <li class="passo rev" style="--d:.3s"><b>03</b><div><h3>Orçamento explicado</h3><p>Você fica sabendo o que foi encontrado e quanto custa antes de qualquer serviço.</p></div></li>
+        <li class="passo rev" style="--d:.4s"><b>04</b><div><h3>Conserto e conferência</h3><p>Depois do reparo, o carro é testado de novo para confirmar que está tudo certo.</p></div></li>
+      </ol>
+      <div class="acoes rev" style="--d:.5s"><a class="btn" href="https://wa.me/5511939031840?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20JWL%20Mec%C3%A2nica%20Automotiva." data-cta><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>Agendar diagnóstico</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sinais" id="sinais">
+  <div class="wrap">
+    <div class="cab-c">
+      <p class="eyebrow c rev">04 · Sinais</p>
+      <h2 class="disp h2 rev" style="--d:.05s">Seu carro avisa <em>antes de parar.</em></h2>
+      <p class="lead rev" style="--d:.1s">Reconhecer o sinal cedo costuma deixar o conserto mais simples. Estes são os mais comuns.</p>
+    </div>
+    <div class="sin-grid">
+      <div class="sin rev" style="--d:0.00s">
+        <span class="sin-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="7" width="19" height="12.5" rx="1.5"/><path d="M6 7V5h3v2M15 7V5h3v2M5.5 12.5h3M15.5 12.5h3M17 11v3"/></svg></span>
+        <div><small>Sinal 01</small><h3>Demora para pegar</h3><p><b>Pode ser</b>Bateria, motor de partida ou cabos.</p></div>
+      </div>
+      <div class="sin rev" style="--d:0.06s">
+        <span class="sin-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="2.2"/><path d="M12 3.5v4M12 16.5v4M3.5 12h4M16.5 12h4M6 6l2.8 2.8M15.2 15.2 18 18M18 6l-2.8 2.8M8.8 15.2 6 18"/></svg></span>
+        <div><small>Sinal 02</small><h3>Luz da bateria acesa</h3><p><b>Pode ser</b>Alternador, correia ou sistema de carga.</p></div>
+      </div>
+      <div class="sin rev" style="--d:0.12s">
+        <span class="sin-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 16a8.5 8.5 0 1 1 17 0"/><path d="M12 16l4-5M6 16h.01M18 16h.01M12 8.5v1M7.3 10.3l.7.7M16.7 10.3l-.7.7"/><circle cx="12" cy="16" r="1.2"/></svg></span>
+        <div><small>Sinal 03</small><h3>Luz da injeção acesa</h3><p><b>Pode ser</b>Sensores, bicos ou ignição.</p></div>
+      </div>
+      <div class="sin rev" style="--d:0.18s">
+        <span class="sin-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5.5C6.5 5.5 4 8.5 4 12s2.5 6.5 7 6.5c1 0 1.5-.8 1.5-2v-9c0-1.2-.5-2-1.5-2z"/><path d="M15.5 8h5M15.5 12h5M15.5 16h5"/></svg></span>
+        <div><small>Sinal 04</small><h3>Faróis fracos ou piscando</h3><p><b>Pode ser</b>Alternador, aterramento ou lâmpadas.</p></div>
+      </div>
+      <div class="sin rev" style="--d:0.24s">
+        <span class="sin-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18V9.5L9 5h11v13H4z"/><path d="M4 12h16M15 8v2M13.5 9.5 15 8l1.5 1.5"/></svg></span>
+        <div><small>Sinal 05</small><h3>Vidro ou trava sem resposta</h3><p><b>Pode ser</b>Motor do vidro, módulo ou fiação.</p></div>
+      </div>
+      <div class="sin rev" style="--d:0.30s">
+        <span class="sin-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3"/><path d="M5.2 6.8A8.5 8.5 0 0 1 10 3.7"/><path d="M17 4.5l2.2-1.3M19.5 7.5l1.6-.4"/><circle cx="12" cy="7" r=".6" fill="currentColor"/><circle cx="16.3" cy="13.5" r=".6" fill="currentColor"/><circle cx="7.7" cy="13.5" r=".6" fill="currentColor"/></svg></span>
+        <div><small>Sinal 06</small><h3>Barulho ao frear</h3><p><b>Pode ser</b>Pastilhas, discos ou fluido.</p></div>
+      </div>
+    </div>
+    <div class="sin-pe rev">
+      <a class="btn btn-grafite" href="https://wa.me/5511939031840?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20JWL%20Mec%C3%A2nica%20Automotiva." data-cta>Reconheci um sinal <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <p>* A lista é um ponto de partida. Só o diagnóstico confirma a causa.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec dark banc" id="bancada">
+  <div class="blob" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="cab-c">
+      <p class="eyebrow c rev">05 · Bancada</p>
+      <h2 class="disp h2 rev" style="--d:.05s">Ferramenta certa, <em>mão firme.</em></h2>
+      <p class="lead rev" style="--d:.1s">Elétrica automotiva é serviço de detalhe: um mau contato muda tudo. Por isso cada conexão merece atenção.</p>
+    </div>
+    <div class="mosaico">
+      <figure class="rev" style="--d:0s"><img src="/assets/img/autoeletrica/ambiente-1.jpg" alt="Parede de ferramentas organizada na oficina" width="1600" height="2400" loading="lazy" decoding="async"><figcaption data-n="01">Bancada</figcaption></figure>
+      <figure class="rev" style="--d:.08s"><img src="/assets/img/autoeletrica/alt-3.jpg" alt="Garras de carga presas aos polos da bateria" width="1600" height="1067" loading="lazy" decoding="async" style="object-position:45% 50%"><figcaption data-n="02">Carga</figcaption></figure>
+      <figure class="rev" style="--d:.16s"><img src="/assets/img/autoeletrica/hero-3.jpg" alt="Mecânico inclinado sobre o motor com o capô aberto" width="1600" height="2844" loading="lazy" decoding="async" style="object-position:50% 35%"><figcaption data-n="03">Motor</figcaption></figure>
+      <figure class="rev" style="--d:.24s"><img src="/assets/img/autoeletrica/alt-2.jpg" alt="Mecânico com tablet de diagnóstico ao lado do capô aberto" width="1600" height="1067" loading="lazy" decoding="async" style="object-position:38% 40%"><figcaption data-n="04">Leitura</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec faq" id="duvidas">
+  <div class="wrap faq-grid">
+    <div class="faq-cab">
+      <p class="eyebrow rev">06 · Dúvidas</p>
+      <h2 class="disp h2 rev" style="--d:.05s">Perguntas <em>frequentes</em></h2>
+      <p class="lead rev" style="--d:.1s">Não achou a sua dúvida? Chame a equipe da JWL Mecânica Automotiva no WhatsApp.</p>
+      <a class="btn btn-linha rev" style="--d:.15s" href="https://wa.me/5511939031840?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20JWL%20Mec%C3%A2nica%20Automotiva%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." data-cta data-msg="info">Falar com a equipe</a>
+    </div>
+    <div class="faq-lista rev" style="--d:.1s">
+      <div class="fq">
+        <button type="button" aria-expanded="true" aria-controls="fq1" id="fqb1"><span>Quanto custa o diagnóstico?</span><i class="pm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></i></button>
+        <div class="fq-a" id="fq1" role="region" aria-labelledby="fqb1"><div><p>O valor depende do tipo de problema e do carro. Mande o modelo e o sintoma pelo WhatsApp e a equipe te passa o valor.</p></div></div>
+      </div>
+      <div class="fq">
+        <button type="button" aria-expanded="false" aria-controls="fq2" id="fqb2"><span>Meu carro não liga. O que eu faço?</span><i class="pm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></i></button>
+        <div class="fq-a" id="fq2" role="region" aria-labelledby="fqb2"><div><p>Observe duas coisas: as luzes do painel acendem? Faz algum estalo ao girar a chave? Mande essas informações pelo WhatsApp. Isso já ajuda a entender se o problema está na bateria, na partida ou em outro ponto.</p></div></div>
+      </div>
+      <div class="fq">
+        <button type="button" aria-expanded="false" aria-controls="fq3" id="fqb3"><span>Vocês atendem o meu carro?</span><i class="pm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></i></button>
+        <div class="fq-a" id="fq3" role="region" aria-labelledby="fqb3"><div><p>Mande o modelo e o ano pelo WhatsApp e a equipe confirma o atendimento.</p></div></div>
+      </div>
+      <div class="fq">
+        <button type="button" aria-expanded="false" aria-controls="fq4" id="fqb4"><span>Quanto tempo o carro fica na oficina?</span><i class="pm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></i></button>
+        <div class="fq-a" id="fq4" role="region" aria-labelledby="fqb4"><div><p>Depende do que o diagnóstico encontrar e das peças necessárias. Junto com o orçamento, a equipe te passa a previsão.</p></div></div>
+      </div>
+      <div class="fq">
+        <button type="button" aria-expanded="false" aria-controls="fq5" id="fqb5"><span>Quais formas de pagamento vocês aceitam?</span><i class="pm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></i></button>
+        <div class="fq-a" id="fq5" role="region" aria-labelledby="fqb5"><div><p>As formas de pagamento são confirmadas direto com a equipe pelo WhatsApp.</p></div></div>
+      </div>
+      <div class="fq">
+        <button type="button" aria-expanded="false" aria-controls="fq6" id="fqb6"><span>Onde fica a JWL Mecânica Automotiva?</span><i class="pm" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></i></button>
+        <div class="fq-a" id="fq6" role="region" aria-labelledby="fqb6"><div><p>Av. Professor Luiz Ignácio Anhaia Mello, 1692 - Vila Prudente, São Paulo - SP, 03154-000. Confirme o horário de atendimento pelo WhatsApp.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="fim" id="contato">
+  <div class="fim-box rev">
+    <div class="zebra" aria-hidden="true"></div>
+    <div class="blob a" aria-hidden="true"></div><div class="blob b" aria-hidden="true"></div>
+    <span class="ghost on-dark" aria-hidden="true">potência</span>
+    <span class="raio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M13.5 2.5 5 13.5h6l-1 8 8.5-11h-6l1-8z"/></svg></span>
+    <h2 class="disp">Luz acesa no painel? <em>Traz que a gente explica.</em></h2>
+    <p class="lead">Conte o que o carro está fazendo e combine o diagnóstico com a JWL Mecânica Automotiva. Você sabe o valor antes de qualquer serviço.</p>
+    <a class="btn btn-claro" href="https://wa.me/5511939031840?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20JWL%20Mec%C3%A2nica%20Automotiva." data-cta><span class="zap"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg></span>Pedir orçamento</a>
+    <p class="micro">Você fala direto com a equipe · <a href="https://wa.me/5511939031840?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20JWL%20Mec%C3%A2nica%20Automotiva." target="_blank" rel="noopener">abrir o WhatsApp direto</a></p>
+    <div class="fim-info">
+      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Av. Professor Luiz Ignácio Anhaia Mello, 1692 - Vila Prudente, São Paulo - SP, 03154-000</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="local" id="local" aria-labelledby="local-t">
+  <div class="wrap local-grid">
+    <div class="local-card rev">
+      <p class="eyebrow">07 · Onde fica</p>
+      <h2 class="disp h2" id="local-t">A oficina <em>em Vila Prudente.</em></h2>
+      <dl>
+        <div><dt>Endereço</dt><dd>Av. Professor Luiz Ignácio Anhaia Mello, 1692 - Vila Prudente, São Paulo - SP, 03154-000</dd></div>
+        <div><dt>Horário</dt><dd>Confirme o horário de atendimento pelo WhatsApp.</dd></div>
+        <div><dt>WhatsApp</dt><dd>(11) 93903-1840</dd></div>
+<div><dt>Instagram</dt><dd><a href="https://instagram.com/jftmecanica" target="_blank" rel="noopener">@jftmecanica</a></dd></div>      </dl>
+      <div class="acoes">
+        <a class="btn btn-grafite" href="https://www.google.com/maps/search/?api=1&amp;query=JWL%20Mec%C3%A2nica%20Automotiva%20Av.%20Professor%20Luiz%20Ign%C3%A1cio%20Anhaia%20Mello%2C%201692%20-%20Vila%20Prudente%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003154-000" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Como chegar</a>
+        <a class="link-seta" href="https://wa.me/5511939031840?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20JWL%20Mec%C3%A2nica%20Automotiva." data-cta>Orçamento <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+    <div class="mapa rev" style="--d:.1s">
+      <span class="pino" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+      <iframe src="https://maps.google.com/maps?q=Av.%20Professor%20Luiz%20Ign%C3%A1cio%20Anhaia%20Mello%2C%201692%20-%20Vila%20Prudente%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003154-000&amp;z=15&amp;output=embed" title="Mapa: JWL Mecânica Automotiva, Av. Professor Luiz Ignácio Anhaia Mello, 1692 - Vila Prudente, São Paulo - SP, 03154-000" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="rodape">
+  <div class="zebra" aria-hidden="true" style="margin-top:-4rem;margin-bottom:4rem;height:6px"></div>
+  <div class="wrap">
+    <div class="rod-grid">
+      <div>
+        <a class="logo" href="#inicio"><span class="logo-mono" aria-hidden="true">JM</span><span class="logo-txt"><span class="logo-nome l2">JWL Mecânica Automotiva</span></span></a>
+        <p class="rod-tag">Oficina mecânica · Vila Prudente</p>
+        <p class="rod-frase">Diagnóstico antes da peça e explicação antes do orçamento, para o seu carro voltar a rodar tranquilo.</p>
+        <div class="rod-ic">
+<a href="https://instagram.com/jftmecanica" target="_blank" rel="noopener" aria-label="Instagram da JWL Mecânica Automotiva"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>          <a href="https://wa.me/5511939031840?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20JWL%20Mec%C3%A2nica%20Automotiva%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener" aria-label="WhatsApp da JWL Mecânica Automotiva"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul><li><a href="#oficina">A oficina</a></li><li><a href="#servicos">Serviços</a></li><li><a href="#diagnostico">Diagnóstico</a></li><li><a href="#sinais">Sinais</a></li><li><a href="#duvidas">Dúvidas</a></li><li><a href="#local">Onde fica</a></li></ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li>Av. Professor Luiz Ignácio Anhaia Mello, 1692 - Vila Prudente, São Paulo - SP, 03154-000</li>
+          <li><a href="https://wa.me/5511939031840?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20JWL%20Mec%C3%A2nica%20Automotiva%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">WhatsApp (11) 93903-1840</a></li>
+<li><a href="https://instagram.com/jftmecanica" target="_blank" rel="noopener">@jftmecanica</a></li>        </ul>
+      </div>
+    </div>
+    <div class="rod-base"><span>© 2026 JWL Mecânica Automotiva. Todos os direitos reservados.</span><span>Imagens ilustrativas.</span></div>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/5511939031840?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20JWL%20Mec%C3%A2nica%20Automotiva." data-cta aria-label="Pedir orçamento pelo WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg></a>
+
+<dialog class="lead-dlg" id="lead" aria-labelledby="lead-t" aria-describedby="lead-d">
+  <div class="dlg-bg" data-close></div>
+  <div class="dlg-box">
+    <div class="blob" aria-hidden="true"></div>
+    <button class="dlg-x" type="button" aria-label="Fechar" data-close><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    <h2 class="disp" id="lead-t">Falta pouco pro seu <em>orçamento.</em></h2>
+    <p class="sub" id="lead-d">Preencha rapidinho e a conversa já abre no WhatsApp com tudo escrito.</p>
+    <form id="lead-f" novalidate>
+      <div class="campo">
+        <label for="f-nome">Seu nome</label>
+        <input id="f-nome" name="nome" autocomplete="given-name" required minlength="2" placeholder="Como podemos te chamar?">
+        <span class="err">Diga como podemos te chamar.</span>
+      </div>
+      <div class="campo">
+        <label for="f-serv">Serviço de interesse</label>
+        <select id="f-serv" name="servico">
+<option>Diagnóstico</option><option>Bateria</option><option>Alternador e motor de partida</option><option>Injeção eletrônica</option><option>Revisão</option><option>Elétrica em geral</option>          <option value="">Não sei, quero um diagnóstico</option>
+        </select>
+      </div>
+      <div class="duo">
+        <div class="campo">
+          <label for="f-carro">Carro <span class="opc">(opcional)</span></label>
+          <input id="f-carro" name="carro" autocomplete="off" placeholder="Ex.: Gol 2015">
+        </div>
+        <div class="campo">
+          <label for="f-sint">Sintoma <span class="opc">(opcional)</span></label>
+          <input id="f-sint" name="sintoma" autocomplete="off" placeholder="Ex.: não pega de manhã">
+        </div>
+      </div>
+      <button class="btn" type="submit"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 2.4.9 2.9.8 3.4.7.5-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg><span>Continuar no WhatsApp</span></button>
+    </form>
+    <p class="dlg-alt">Prefere sem formulário? <a href="https://wa.me/5511939031840?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento%20com%20a%20JWL%20Mec%C3%A2nica%20Automotiva." target="_blank" rel="noopener">Abrir o WhatsApp direto</a></p>
+  </div>
+</dialog>
+
+<div class="grain" aria-hidden="true"></div>
+
+<script>
+(()=>{
+const D=document,H=D.documentElement,TEL="5511939031840",NEG="JWL Mec\u00e2nica Automotiva";
+const pv=D.getElementById('previa');
+const setPv=()=>H.style.setProperty('--pv',(pv?pv.offsetHeight:0)+'px');setPv();addEventListener('resize',setPv);
+/* entrada do hero em cascata */
+D.querySelectorAll('.stg [data-i]').forEach((el,i)=>el.style.transitionDelay=(.2+.14*i)+'s');
+requestAnimationFrame(()=>requestAnimationFrame(()=>H.classList.add('loaded')));
+/* header que muda ao rolar + FAB */
+const fab=D.querySelector('.fab');
+const onS=()=>{const y=scrollY;H.classList.toggle('scrolled',y>24);fab.classList.toggle('show',y>420)};
+onS();addEventListener('scroll',onS,{passive:true});
+/* reveal */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -60px 0px',threshold:0});
+D.querySelectorAll('.rev').forEach(el=>io.observe(el));
+/* menu mobile */
+const m=D.getElementById('mnav'),mb=D.querySelector('[data-menu]');
+const menu=o=>{m.classList.toggle('open',o);m.setAttribute('aria-hidden',String(!o));mb.setAttribute('aria-expanded',String(o));D.body.style.overflow=o?'hidden':'';if(o)m.querySelector('nav a').focus();else mb.focus()};
+mb.onclick=()=>menu(true);m.querySelector('[data-menu-close]').onclick=()=>menu(false);
+m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu(false)));
+addEventListener('keydown',e=>{if(e.key==='Escape'&&m.classList.contains('open'))menu(false)});
+/* carrossel horizontal guiado pelo scroll */
+(()=>{const sec=D.querySelector('.hs'),vp=sec.querySelector('.hs-vp'),tr=sec.querySelector('.hs-track');
+ const native=CSS.supports('animation-timeline','view()')&&CSS.supports('animation-range','contain');
+ const lg=matchMedia('(min-width:1024px)');let max=0,dist=1,raf=0;
+ var reduz=matchMedia('(prefers-reduced-motion: reduce)').matches;
+ const measure=()=>{if(reduz){max=0;sec.style.minHeight='';tr.style.transform='';vp.style.overflowX='auto';return}max=Math.max(0,tr.scrollWidth-vp.clientWidth+(lg.matches?0:40));
+   if(!max){sec.style.minHeight='';sec.style.removeProperty('--max');tr.style.transform='';vp.classList.remove('is-scrolling');return}
+   dist=max+innerHeight*(lg.matches?.7:.5);sec.style.minHeight=innerHeight+dist+'px';sec.style.setProperty('--max',max+'px');update()};
+ const update=()=>{raf=0;if(!max)return;const x=Math.min(Math.max(-sec.getBoundingClientRect().top,0),dist)/dist*max;
+   if(!native)tr.style.transform=`translateX(${-x}px)`;vp.classList.toggle('is-scrolling',x>8)};
+ addEventListener('scroll',()=>raf||(raf=requestAnimationFrame(update)),{passive:true});
+ addEventListener('resize',measure);lg.addEventListener('change',measure);new ResizeObserver(measure).observe(tr);
+ measure();setTimeout(measure,300);D.fonts&&D.fonts.ready.then(measure)})();
+/* FAQ */
+const qs=[...D.querySelectorAll('.fq button')];
+qs.forEach(b=>b.onclick=()=>{const o=b.getAttribute('aria-expanded')==='true';qs.forEach(x=>x.setAttribute('aria-expanded','false'));b.setAttribute('aria-expanded',String(!o))});
+/* modal antes do WhatsApp */
+const dlg=D.getElementById('lead'),f=D.getElementById('lead-f'),sel=f.servico,nm=f.nome;let ultimo=null,ctx='orcamento';
+const wa=t=>'https://wa.me/'+TEL+'?text='+encodeURIComponent(t);
+const abrir=(serv,origem,tipo)=>{ultimo=origem;ctx=tipo||'orcamento';
+  if(serv){[...sel.options].forEach(o=>{if(o.text===serv)sel.value=o.value})}
+  if(typeof dlg.showModal!=='function'){location.href=origem.href;return}
+  dlg.showModal();D.body.style.overflow='hidden';requestAnimationFrame(()=>dlg.classList.add('on'));setTimeout(()=>nm.focus(),60)};
+const fechar=()=>{dlg.classList.remove('on');setTimeout(()=>{dlg.close();D.body.style.overflow='';ultimo&&ultimo.focus()},240)};
+D.querySelectorAll('[data-cta]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();abrir(a.dataset.servico,a,a.dataset.msg)}));
+dlg.querySelectorAll('[data-close]').forEach(b=>b.onclick=fechar);
+dlg.addEventListener('cancel',e=>{e.preventDefault();fechar()});
+dlg.addEventListener('keydown',e=>{if(e.key!=='Tab')return;const fs=[...dlg.querySelectorAll('button,input,select,a[href]')].filter(x=>!x.disabled&&x.offsetParent);
+  const a=fs[0],z=fs[fs.length-1];if(e.shiftKey&&D.activeElement===a){e.preventDefault();z.focus()}else if(!e.shiftKey&&D.activeElement===z){e.preventDefault();a.focus()}});
+nm.addEventListener('input',()=>nm.removeAttribute('aria-invalid'));
+f.addEventListener('submit',e=>{e.preventDefault();const n=nm.value.trim();if(n.length<2){nm.setAttribute('aria-invalid','true');nm.focus();return}
+  const s=sel.value,c=f.carro.value.trim(),si=f.sintoma.value.trim();
+  let t=(ctx==='info'?'Olá! Vi o site da '+NEG+' e queria tirar uma dúvida.':'Olá! Quero um orçamento com a '+NEG+'.')+'\nMeu nome é '+n+'.';
+  t+=s?'\nServiço: '+s+'.':'\nNão sei o que é, quero um diagnóstico.';
+  if(c)t+='\nCarro: '+c+'.';
+  if(si)t+='\nO que está acontecendo: '+si+'.';
+  const btn=f.querySelector('[type=submit]'),b=btn.querySelector('span');b.textContent='Abrindo o WhatsApp…';btn.disabled=true;
+  location.href=wa(t);setTimeout(()=>{b.textContent='Continuar no WhatsApp';btn.disabled=false},2500)});
+})();
+</script>
+</body>
+</html>
