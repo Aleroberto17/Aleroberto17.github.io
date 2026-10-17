@@ -146,8 +146,8 @@ vitrine/dentista-3 3845550
 vitrine/arq-1 28991200
 vitrine/arq-2 19836798
 vitrine/arq-3 6492397
-saude/hero-1 7578797
-saude/hero-2 7446989
+saude/hero-1 7176293
+saude/hero-2 4098274
 saude/acao-1 8844553
 saude/acao-2 36729385
 saude/acao-3 5793918
