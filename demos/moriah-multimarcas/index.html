@@ -7,17 +7,17 @@
 <meta name="description" content="Moriah Multimarcas: loja de carros seminovos em Jardim Maringá. Seminovos revisados, com procedência e documentação em dia. Veja o estoque, escolha o seu e fale com a gente pelo WhatsA">
 <meta property="og:title" content="Moriah Multimarcas | Loja de veículos em Jardim Maringá">
 <meta property="og:description" content="Seminovos revisados, com procedência e documentação em dia. Veja o estoque, escolha o seu e fale com a gente pelo WhatsApp em um clique.">
-<meta property="og:image" content="https://aleroberto17.github.io/assets/img/automoveis/hero-1.jpg">
+<meta property="og:image" content="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/01.jpg">
 <meta name="theme-color" content="#0d1321">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23111'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Arial' font-weight='700' font-size='26' fill='%23fff'%3EMM%3C/text%3E%3C/svg%3E">
-<link rel="preload" as="image" href="/assets/img/automoveis/hero-1.jpg" fetchpriority="high">
+<link rel="icon" href="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/logo.png">
+<link rel="preload" as="image" href="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/01.jpg" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script>document.documentElement.classList.add('js')</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Moriah Multimarcas","telephone":"+5511952050484","address":{"@type":"PostalAddress","streetAddress":"Av. Bar\u00e3o de Mau\u00e1, 2425 - Jardim Maring\u00e1, Mau\u00e1 - SP, 09340-440","addressLocality":"São Paulo","addressRegion":"SP","addressCountry":"BR"},"areaServed":["Jardim Maring\u00e1", "Zona Leste", "Zona Sul", "Zona Oeste", "Zona Norte", "Centro", "ABC e Grande SP"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":126}}</script>
 <style>
 :root{
-  --ac:#c8102e;--ac2:#e04b5f;--dk:#0d1321;--dk2:#1c2433;
+  --ac:#6c6c6c;--ac2:#969696;--dk:#0d1321;--dk2:#282828;
   --bg:#f6f7f9;--card:#ffffff;--tx:#1f2328;--mu:#5f6670;--ln:#e4e2dd;--branco:#ffffff;
 }
 *{box-sizing:border-box;margin:0;padding:0}
@@ -409,6 +409,38 @@ footer{background:var(--dk);color:#aab0b8;padding:clamp(3rem,6vw,4.5rem) 0 1.5re
   body{padding-bottom:76px}
 }
 .aviso{font-size:.8rem;color:var(--mu);text-align:center;margin-top:1.5rem}
+/* topo-b: topo no celular, opção B (10/11/2026, Alessandro): foto primeiro, em cartão, com a nota do
+   Google em cima e um destaque embaixo; nome da loja inteiro no cabeçalho; botões lado a lado. */
+@media (max-width:760px){
+  .marca b{max-width:none;white-space:normal;font-size:1.06rem;line-height:1.15}
+  .marca small{max-width:none;white-space:normal;text-transform:none;letter-spacing:0;font-size:.8rem;line-height:1.25}
+  .hero{padding-top:1rem}
+  .hero .grade-hero{display:flex;flex-direction:column;gap:1.3rem}
+  .hero .foto-hero{order:-1;max-width:none}
+  .hero .badge,.hero .selo-google,.hero .chips{display:none!important}
+  .foto-hero .principal{aspect-ratio:4/3.1;border-radius:24px}
+  .foto-hero .mini{display:none}
+  .foto-hero .flut{animation:none;padding:.5rem .8rem .5rem .5rem;border-radius:999px;font-size:.74rem;gap:.5rem}
+  .foto-hero .flut b{font-size:.86rem}
+  .foto-hero .flut .ic{width:28px;height:28px;padding:6px;border-radius:50%}
+  .foto-hero .flut.f2{left:12px;top:12px;right:auto;bottom:auto}
+  .foto-hero .flut.f1{left:12px;right:auto;bottom:12px;top:auto;border-radius:16px;background:rgb(255 255 255/.92);backdrop-filter:blur(10px)}
+  .hero h1{font-size:2.35rem}
+  .hero p.lead{margin:.7rem 0 1.2rem;font-size:1rem}
+  .hero .ctas{display:grid;grid-template-columns:1fr 1fr;gap:.6rem}
+  .hero .ctas .btn{padding:.9rem .6rem;font-size:.9rem;line-height:1.2;white-space:normal;text-align:center}
+  .hero .ctas .btn .ic{display:none}
+}
+</style>
+
+<style>
+.tem-logo{padding:0!important;overflow:hidden!important;border-radius:50%!important;background:#fff!important;
+  border:0!important;box-shadow:none!important;display:inline-flex!important;flex:none}
+.tem-logo img,img.logo-cli{width:100%;height:100%;object-fit:cover;display:block;border-radius:50%}
+img.logo-cli{flex:none}
+.marca img.logo-cli{width:3.2rem;height:3.2rem;box-shadow:0 0 0 2px rgb(255 255 255/.12)}
+.compo .logo-giro{position:absolute;left:.44rem;top:.44rem;width:4.1rem;height:4.1rem;z-index:3;border-radius:50%;
+  box-shadow:0 10px 24px -8px rgb(0 0 0/.5)}
 </style>
 </head>
 <body>
@@ -442,7 +474,7 @@ footer{background:var(--dk);color:#aab0b8;padding:clamp(3rem,6vw,4.5rem) 0 1.5re
 <header id="topo">
   <div class="wrap topo">
     <a href="#/" class="marca" aria-label="Moriah Multimarcas, início">
-      <span class="mark" aria-hidden="true">MM</span>
+      <span class="mark tem-logo" aria-hidden="true"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/logo.png" alt=""></span>
       <span><b>Moriah Multimarcas</b><small>Loja de veículos · Jardim Maringá</small></span>
     </a>
     <nav class="menu" aria-label="Principal">
@@ -459,7 +491,7 @@ footer{background:var(--dk);color:#aab0b8;padding:clamp(3rem,6vw,4.5rem) 0 1.5re
   </div>
 </header>
 <div class="gaveta" aria-hidden="true">
-  <div class="g-topo"><span class="marca"><span class="mark" aria-hidden="true">MM</span><span><b>Moriah Multimarcas</b></span></span><button type="button" class="g-fecha" aria-label="Fechar menu"><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg></button></div>
+  <div class="g-topo"><span class="marca"><span class="mark tem-logo" aria-hidden="true"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/logo.png" alt=""></span><span><b>Moriah Multimarcas</b></span></span><button type="button" class="g-fecha" aria-label="Fechar menu"><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg></button></div>
   <nav>
     <a href="#/" data-r="inicio">Início <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></a>
     <a href="#/servicos" data-r="servicos">Serviços <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></a>
@@ -488,8 +520,8 @@ footer{background:var(--dk);color:#aab0b8;padding:clamp(3rem,6vw,4.5rem) 0 1.5re
         <div class="chips"><span><svg class="ic" aria-hidden="true"><use href="#i-ok"/></svg>Procedência garantida</span><span><svg class="ic" aria-hidden="true"><use href="#i-ok"/></svg>Aceitamos seu usado na troca</span><span><svg class="ic" aria-hidden="true"><use href="#i-ok"/></svg>Financiamento facilitado</span></div>
       </div>
       <div class="foto-hero">
-        <div class="principal"><img src="/assets/img/automoveis/hero-1.jpg" alt="Moriah Multimarcas" width="1200" height="1410" fetchpriority="high"></div>
-        <div class="mini"><img src="/assets/img/automoveis/hero-2.jpg" alt="" width="600" height="600" loading="lazy"></div>
+        <div class="principal"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/01.jpg" alt="Moriah Multimarcas" width="1200" height="1410" fetchpriority="high"></div>
+        <div class="mini"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/02.jpg" alt="" width="600" height="600" loading="lazy"></div>
         <div class="flut f1"><svg class="ic" aria-hidden="true"><use href="#i-escudo"/></svg><span><b>Revisados</b>carros vistoriados</span></div>
 <div class="flut f2"><svg class="ic" aria-hidden="true"><use href="#i-estrela"/></svg><span><b>4,9 no Google</b>126 avaliações</span></div>      </div>
     </div>
@@ -506,11 +538,11 @@ footer{background:var(--dk);color:#aab0b8;padding:clamp(3rem,6vw,4.5rem) 0 1.5re
   <div class="wrap">
     <div class="cab rv"><div><p class="kicker">Estoque</p><h2>Carros <em>disponíveis</em></h2><p class="sub">Escolha o seu e fale com a gente pelo WhatsApp: mandamos mais fotos, o histórico e as condições.</p></div>
     <a class="link" href="#/estoque">Ver o estoque completo <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></a></div>
-    <div class="estoque rv"><article class="carro" data-c="SUV"><div class="f"><img src="/assets/img/automoveis/acao-3.jpg" alt="SUV automático" loading="lazy" width="800" height="600"><span>2021</span></div>
+    <div class="estoque rv"><article class="carro" data-c="SUV"><div class="f"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/03.jpg" alt="SUV automático" loading="lazy" width="800" height="600"><span>2021</span></div>
   <div class="i"><h3>SUV automático</h3><p class="meta"><span>2021</span><span>38.000 km</span><span>revisado</span></p>
-    <div class="pr"><b>Consulte</b><a class="link" href="https://wa.me/5511952050484?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Moriah%20Multimarcas%20e%20quero%20saber%20dos%20carros%20dispon%C3%ADveis." target="_blank" rel="noopener">Tenho interesse <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></a></div></div></article><article class="carro" data-c="Sedã"><div class="f"><img src="/assets/img/automoveis/acao-4.jpg" alt="Sedã completo" loading="lazy" width="800" height="600"><span>2020</span></div>
+    <div class="pr"><b>Consulte</b><a class="link" href="https://wa.me/5511952050484?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Moriah%20Multimarcas%20e%20quero%20saber%20dos%20carros%20dispon%C3%ADveis." target="_blank" rel="noopener">Tenho interesse <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></a></div></div></article><article class="carro" data-c="Sedã"><div class="f"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/04.jpg" alt="Sedã completo" loading="lazy" width="800" height="600"><span>2020</span></div>
   <div class="i"><h3>Sedã completo</h3><p class="meta"><span>2020</span><span>52.000 km</span><span>revisado</span></p>
-    <div class="pr"><b>Consulte</b><a class="link" href="https://wa.me/5511952050484?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Moriah%20Multimarcas%20e%20quero%20saber%20dos%20carros%20dispon%C3%ADveis." target="_blank" rel="noopener">Tenho interesse <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></a></div></div></article><article class="carro" data-c="Hatch"><div class="f"><img src="/assets/img/automoveis/ambiente-1.jpg" alt="Hatch flex" loading="lazy" width="800" height="600"><span>2022</span></div>
+    <div class="pr"><b>Consulte</b><a class="link" href="https://wa.me/5511952050484?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Moriah%20Multimarcas%20e%20quero%20saber%20dos%20carros%20dispon%C3%ADveis." target="_blank" rel="noopener">Tenho interesse <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></a></div></div></article><article class="carro" data-c="Hatch"><div class="f"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/05.jpg" alt="Hatch flex" loading="lazy" width="800" height="600"><span>2022</span></div>
   <div class="i"><h3>Hatch flex</h3><p class="meta"><span>2022</span><span>21.000 km</span><span>revisado</span></p>
     <div class="pr"><b>Consulte</b><a class="link" href="https://wa.me/5511952050484?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Moriah%20Multimarcas%20e%20quero%20saber%20dos%20carros%20dispon%C3%ADveis." target="_blank" rel="noopener">Tenho interesse <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></a></div></div></article></div>
   </div>
@@ -520,12 +552,12 @@ footer{background:var(--dk);color:#aab0b8;padding:clamp(3rem,6vw,4.5rem) 0 1.5re
   <div class="wrap">
     <div class="cab rv"><div><p class="kicker">Moriah Multimarcas</p><h2>Por que comprar com a gente</h2><p class="sub">Loja de carros seminovos em Jardim Maringá, com atendimento direto pelo WhatsApp.</p></div>
       <a class="link" href="#/servicos">Ver todos <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></a></div>
-    <div class="servs"><a class="serv rv" href="#/servico-1"><div class="f"><img src="/assets/img/automoveis/hero-1.jpg" alt="Seminovos revisados" loading="lazy" width="800" height="500"><span>01</span></div>
-  <div class="i"><h3>Seminovos revisados</h3><p>Todos os carros passam por vistoria antes de ir pro estoque.</p><span class="link">Saiba mais <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></span></div></a><a class="serv rv" href="#/servico-2"><div class="f"><img src="/assets/img/automoveis/acao-1.jpg" alt="Seu usado na troca" loading="lazy" width="800" height="500"><span>02</span></div>
-  <div class="i"><h3>Seu usado na troca</h3><p>Avaliamos o seu carro na hora e usamos como entrada.</p><span class="link">Saiba mais <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></span></div></a><a class="serv rv" href="#/servico-3"><div class="f"><img src="/assets/img/automoveis/hero-3.jpg" alt="Financiamento" loading="lazy" width="800" height="500"><span>03</span></div>
-  <div class="i"><h3>Financiamento</h3><p>Simulação nos principais bancos, com a parcela que cabe no bolso.</p><span class="link">Saiba mais <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></span></div></a><a class="serv rv" href="#/servico-4"><div class="f"><img src="/assets/img/automoveis/ambiente-2.jpg" alt="Documentação" loading="lazy" width="800" height="500"><span>04</span></div>
-  <div class="i"><h3>Documentação</h3><p>Transferência e documentação por nossa conta.</p><span class="link">Saiba mais <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></span></div></a><a class="serv rv" href="#/servico-5"><div class="f"><img src="/assets/img/automoveis/acao-2.jpg" alt="Procedência" loading="lazy" width="800" height="500"><span>05</span></div>
-  <div class="i"><h3>Procedência</h3><p>Histórico do carro e laudo cautelar sob consulta.</p><span class="link">Saiba mais <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></span></div></a><a class="serv rv" href="#/servico-6"><div class="f"><img src="/assets/img/automoveis/alt-2.jpg" alt="Atendimento no WhatsApp" loading="lazy" width="800" height="500"><span>06</span></div>
+    <div class="servs"><a class="serv rv" href="#/servico-1"><div class="f"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/01.jpg" alt="Seminovos revisados" loading="lazy" width="800" height="500"><span>01</span></div>
+  <div class="i"><h3>Seminovos revisados</h3><p>Todos os carros passam por vistoria antes de ir pro estoque.</p><span class="link">Saiba mais <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></span></div></a><a class="serv rv" href="#/servico-2"><div class="f"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/06.jpg" alt="Seu usado na troca" loading="lazy" width="800" height="500"><span>02</span></div>
+  <div class="i"><h3>Seu usado na troca</h3><p>Avaliamos o seu carro na hora e usamos como entrada.</p><span class="link">Saiba mais <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></span></div></a><a class="serv rv" href="#/servico-3"><div class="f"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/07.jpg" alt="Financiamento" loading="lazy" width="800" height="500"><span>03</span></div>
+  <div class="i"><h3>Financiamento</h3><p>Simulação nos principais bancos, com a parcela que cabe no bolso.</p><span class="link">Saiba mais <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></span></div></a><a class="serv rv" href="#/servico-4"><div class="f"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/01.jpg" alt="Documentação" loading="lazy" width="800" height="500"><span>04</span></div>
+  <div class="i"><h3>Documentação</h3><p>Transferência e documentação por nossa conta.</p><span class="link">Saiba mais <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></span></div></a><a class="serv rv" href="#/servico-5"><div class="f"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/02.jpg" alt="Procedência" loading="lazy" width="800" height="500"><span>05</span></div>
+  <div class="i"><h3>Procedência</h3><p>Histórico do carro e laudo cautelar sob consulta.</p><span class="link">Saiba mais <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></span></div></a><a class="serv rv" href="#/servico-6"><div class="f"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/03.jpg" alt="Atendimento no WhatsApp" loading="lazy" width="800" height="500"><span>06</span></div>
   <div class="i"><h3>Atendimento no WhatsApp</h3><p>Mais fotos, vídeo e condições de cada carro em minutos.</p><span class="link">Saiba mais <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></span></div></a></div>
   </div>
 </section>
@@ -583,7 +615,7 @@ footer{background:var(--dk);color:#aab0b8;padding:clamp(3rem,6vw,4.5rem) 0 1.5re
   <div class="wrap">
     <div class="cab rv"><div><p class="kicker">Galeria</p><h2>Veja de <em>perto</em></h2></div>
       <a class="link" href="#/portfolio">Ver tudo <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></a></div>
-    <div class="mosaico rv"><figure data-lb="/assets/img/automoveis/hero-1.jpg" data-cap="Nosso showroom"><img src="/assets/img/automoveis/hero-1.jpg" alt="Nosso showroom" loading="lazy" width="800" height="800"></figure><figure data-lb="/assets/img/automoveis/ambiente-2.jpg" data-cap="Carros selecionados"><img src="/assets/img/automoveis/ambiente-2.jpg" alt="Carros selecionados" loading="lazy" width="800" height="800"></figure><figure data-lb="/assets/img/automoveis/acao-2.jpg" data-cap="Pátio da loja"><img src="/assets/img/automoveis/acao-2.jpg" alt="Pátio da loja" loading="lazy" width="800" height="800"></figure><figure data-lb="/assets/img/automoveis/hero-2.jpg" data-cap="Seminovo revisado"><img src="/assets/img/automoveis/hero-2.jpg" alt="Seminovo revisado" loading="lazy" width="800" height="800"></figure><figure data-lb="/assets/img/automoveis/acao-1.jpg" data-cap="Entrega de chaves"><img src="/assets/img/automoveis/acao-1.jpg" alt="Entrega de chaves" loading="lazy" width="800" height="800"></figure><figure data-lb="/assets/img/automoveis/acao-3.jpg" data-cap="Estoque disponível"><img src="/assets/img/automoveis/acao-3.jpg" alt="Estoque disponível" loading="lazy" width="800" height="800"></figure><figure data-lb="/assets/img/automoveis/hero-3.jpg" data-cap="Atendimento"><img src="/assets/img/automoveis/hero-3.jpg" alt="Atendimento" loading="lazy" width="800" height="800"></figure></div>
+    <div class="mosaico rv"><figure data-lb="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/01.jpg" data-cap="Moriah Multimarcas"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/01.jpg" alt="Moriah Multimarcas" loading="lazy" width="800" height="800"></figure><figure data-lb="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/02.jpg" data-cap="Moriah Multimarcas"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/02.jpg" alt="Moriah Multimarcas" loading="lazy" width="800" height="800"></figure><figure data-lb="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/03.jpg" data-cap="Moriah Multimarcas"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/03.jpg" alt="Moriah Multimarcas" loading="lazy" width="800" height="800"></figure><figure data-lb="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/04.jpg" data-cap="Moriah Multimarcas"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/04.jpg" alt="Moriah Multimarcas" loading="lazy" width="800" height="800"></figure><figure data-lb="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/05.jpg" data-cap="Moriah Multimarcas"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/05.jpg" alt="Moriah Multimarcas" loading="lazy" width="800" height="800"></figure><figure data-lb="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/06.jpg" data-cap="Moriah Multimarcas"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/06.jpg" alt="Moriah Multimarcas" loading="lazy" width="800" height="800"></figure><figure data-lb="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/07.jpg" data-cap="Moriah Multimarcas"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/07.jpg" alt="Moriah Multimarcas" loading="lazy" width="800" height="800"></figure></div>
   </div>
 </section>
 
@@ -598,10 +630,10 @@ footer{background:var(--dk);color:#aab0b8;padding:clamp(3rem,6vw,4.5rem) 0 1.5re
   <div class="wrap">
     <div class="aval rv">
       <div class="nota"><b>4,9</b><span class="estrelas" aria-hidden="true"><svg class="ic" aria-hidden="true"><use href="#i-estrela"/></svg><svg class="ic" aria-hidden="true"><use href="#i-estrela"/></svg><svg class="ic" aria-hidden="true"><use href="#i-estrela"/></svg><svg class="ic" aria-hidden="true"><use href="#i-estrela"/></svg><svg class="ic" aria-hidden="true"><use href="#i-estrela"/></svg></span><span>126 avaliações no Google</span></div>
-      <div><p class="g-logo"><i>G</i>Avaliações de clientes no Google</p><h3>Quem já é cliente recomenda</h3><p>A nota da Moriah Multimarcas vem de clientes reais, publicada no Google. No site final, as avaliações aparecem aqui em destaque, com o nome e o comentário de cada cliente.</p>
+      <div><p class="g-logo"><i>G</i>Avaliações de clientes no Google</p><h3>Quem já é cliente recomenda</h3><p>O que os clientes da Moriah Multimarcas escrevem no Google, com nome e data.</p>
         <a class="btn btn-l" href="https://www.google.com/maps/search/?api=1&amp;query=Moriah%20Multimarcas%20Av.%20Bar%C3%A3o%20de%20Mau%C3%A1%2C%202425%20-%20Jardim%20Maring%C3%A1%2C%20Mau%C3%A1%20-%20SP%2C%2009340-440" target="_blank" rel="noopener">Ler as avaliações no Google <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></a></div>
     </div>
-  </div>
+<div class="depos"><figure class="depo rv"><div class="d-topo"><span class="d-ini" aria-hidden="true">G</span><div><b>guilherme carneiro souza</b><small>9 meses atrás · Google</small></div><span class="estrelas" aria-hidden="true"><svg class="ic" aria-hidden="true"><use href="#i-estrela"/></svg><svg class="ic" aria-hidden="true"><use href="#i-estrela"/></svg><svg class="ic" aria-hidden="true"><use href="#i-estrela"/></svg><svg class="ic" aria-hidden="true"><use href="#i-estrela"/></svg><svg class="ic" aria-hidden="true"><use href="#i-estrela"/></svg></span></div><blockquote>Desde o primeiro contato via whatsapp, ate a entrega do carro, tudo PERFEITO. O atendimento foi impecável, tudo muito bem esclarecido, me deram todo o suporte possível, e a confiança que me deram me fez viajar até Maua para comprar o veículo. Além disso, o preço é ótimo e a forma de negociar dos…</blockquote></figure><figure class="depo rv"><div class="d-topo"><span class="d-ini" aria-hidden="true">D</span><div><b>Douglas Fernandes</b><small>7 meses atrás · Google</small></div><span class="estrelas" aria-hidden="true"><svg class="ic" aria-hidden="true"><use href="#i-estrela"/></svg><svg class="ic" aria-hidden="true"><use href="#i-estrela"/></svg><svg class="ic" aria-hidden="true"><use href="#i-estrela"/></svg><svg class="ic" aria-hidden="true"><use href="#i-estrela"/></svg><svg class="ic" aria-hidden="true"><use href="#i-estrela"/></svg></span></div><blockquote>Há alguns anos comprei um carro particular e infelizmente não tive uma boa experiência. Por isso, no mês passado, quando decidi comprar outro carro, resolvi procurar uma agência para ter mais segurança. Desde o primeiro atendimento até o pós-venda, fui muito bem tratado. A equipe foi sempre…</blockquote></figure><figure class="depo rv"><div class="d-topo"><span class="d-ini" aria-hidden="true">R</span><div><b>Rodrigo Damaso</b><small>8 meses atrás · Google</small></div><span class="estrelas" aria-hidden="true"><svg class="ic" aria-hidden="true"><use href="#i-estrela"/></svg><svg class="ic" aria-hidden="true"><use href="#i-estrela"/></svg><svg class="ic" aria-hidden="true"><use href="#i-estrela"/></svg><svg class="ic" aria-hidden="true"><use href="#i-estrela"/></svg><svg class="ic" aria-hidden="true"><use href="#i-estrela"/></svg></span></div><blockquote>Recomendo essa loja pra qualquer pessoa , ja comprei carro em outras AG mais essa Morian a melhor que viih até hoje em maua , atendimento, top eles da muita atenção para o cliente parabéns a todos dessa AG...</blockquote></figure></div>  </div>
 </section>
 
 <section class="bloco" style="padding-top:0">
@@ -626,7 +658,7 @@ footer{background:var(--dk);color:#aab0b8;padding:clamp(3rem,6vw,4.5rem) 0 1.5re
 </section>
 
 <section class="bloco"><div class="wrap">
-  <div class="chamada rv"><img src="/assets/img/automoveis/hero-3.jpg" alt="" loading="lazy" width="1600" height="900">
+  <div class="chamada rv"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/07.jpg" alt="" loading="lazy" width="1600" height="900">
     <div class="in"><p class="kicker claro">Moriah Multimarcas</p><h2>Vamos conversar sobre o <em>seu projeto?</em></h2><p>Atendimento direto pelo WhatsApp, sem enrolação. Conte o que você precisa e receba a sua proposta.</p>
       <div class="ctas"><a class="btn btn-p" href="#/orcamento">Encontrar meu carro <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></a><a class="btn btn-vidro" href="https://wa.me/5511952050484?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Moriah%20Multimarcas%20e%20quero%20saber%20dos%20carros%20dispon%C3%ADveis." target="_blank" rel="noopener"><svg class="wa" aria-hidden="true"><use href="#i-wa"/></svg>Chamar no WhatsApp</a></div></div>
   </div>
@@ -636,17 +668,17 @@ footer{background:var(--dk);color:#aab0b8;padding:clamp(3rem,6vw,4.5rem) 0 1.5re
 
 <!-- SERVIÇOS -->
 <div class="pg" data-pg="servicos" data-t="Por que comprar com a gente | Moriah Multimarcas" hidden>
-<section class="pg-topo"><img src="/assets/img/automoveis/hero-1.jpg" alt="" loading="lazy" width="1600" height="700">
+<section class="pg-topo"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/01.jpg" alt="" loading="lazy" width="1600" height="700">
   <div class="wrap"><p class="trilha"><a href="#/">Início</a> / Serviços</p><h1>Por que comprar com a gente</h1><p>Loja de carros seminovos em Jardim Maringá. Escolha um item pra ver os detalhes ou peça seu orçamento.</p></div>
 </section>
 
 <section class="bloco">
-  <div class="wrap"><div class="servs"><a class="serv rv" href="#/servico-1"><div class="f"><img src="/assets/img/automoveis/hero-1.jpg" alt="Seminovos revisados" loading="lazy" width="800" height="500"><span>01</span></div>
-  <div class="i"><h3>Seminovos revisados</h3><p>Todos os carros passam por vistoria antes de ir pro estoque.</p><span class="link">Ver detalhes <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></span></div></a><a class="serv rv" href="#/servico-2"><div class="f"><img src="/assets/img/automoveis/acao-1.jpg" alt="Seu usado na troca" loading="lazy" width="800" height="500"><span>02</span></div>
-  <div class="i"><h3>Seu usado na troca</h3><p>Avaliamos o seu carro na hora e usamos como entrada.</p><span class="link">Ver detalhes <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></span></div></a><a class="serv rv" href="#/servico-3"><div class="f"><img src="/assets/img/automoveis/hero-3.jpg" alt="Financiamento" loading="lazy" width="800" height="500"><span>03</span></div>
-  <div class="i"><h3>Financiamento</h3><p>Simulação nos principais bancos, com a parcela que cabe no bolso.</p><span class="link">Ver detalhes <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></span></div></a><a class="serv rv" href="#/servico-4"><div class="f"><img src="/assets/img/automoveis/ambiente-2.jpg" alt="Documentação" loading="lazy" width="800" height="500"><span>04</span></div>
-  <div class="i"><h3>Documentação</h3><p>Transferência e documentação por nossa conta.</p><span class="link">Ver detalhes <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></span></div></a><a class="serv rv" href="#/servico-5"><div class="f"><img src="/assets/img/automoveis/acao-2.jpg" alt="Procedência" loading="lazy" width="800" height="500"><span>05</span></div>
-  <div class="i"><h3>Procedência</h3><p>Histórico do carro e laudo cautelar sob consulta.</p><span class="link">Ver detalhes <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></span></div></a><a class="serv rv" href="#/servico-6"><div class="f"><img src="/assets/img/automoveis/alt-2.jpg" alt="Atendimento no WhatsApp" loading="lazy" width="800" height="500"><span>06</span></div>
+  <div class="wrap"><div class="servs"><a class="serv rv" href="#/servico-1"><div class="f"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/01.jpg" alt="Seminovos revisados" loading="lazy" width="800" height="500"><span>01</span></div>
+  <div class="i"><h3>Seminovos revisados</h3><p>Todos os carros passam por vistoria antes de ir pro estoque.</p><span class="link">Ver detalhes <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></span></div></a><a class="serv rv" href="#/servico-2"><div class="f"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/06.jpg" alt="Seu usado na troca" loading="lazy" width="800" height="500"><span>02</span></div>
+  <div class="i"><h3>Seu usado na troca</h3><p>Avaliamos o seu carro na hora e usamos como entrada.</p><span class="link">Ver detalhes <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></span></div></a><a class="serv rv" href="#/servico-3"><div class="f"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/07.jpg" alt="Financiamento" loading="lazy" width="800" height="500"><span>03</span></div>
+  <div class="i"><h3>Financiamento</h3><p>Simulação nos principais bancos, com a parcela que cabe no bolso.</p><span class="link">Ver detalhes <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></span></div></a><a class="serv rv" href="#/servico-4"><div class="f"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/01.jpg" alt="Documentação" loading="lazy" width="800" height="500"><span>04</span></div>
+  <div class="i"><h3>Documentação</h3><p>Transferência e documentação por nossa conta.</p><span class="link">Ver detalhes <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></span></div></a><a class="serv rv" href="#/servico-5"><div class="f"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/02.jpg" alt="Procedência" loading="lazy" width="800" height="500"><span>05</span></div>
+  <div class="i"><h3>Procedência</h3><p>Histórico do carro e laudo cautelar sob consulta.</p><span class="link">Ver detalhes <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></span></div></a><a class="serv rv" href="#/servico-6"><div class="f"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/03.jpg" alt="Atendimento no WhatsApp" loading="lazy" width="800" height="500"><span>06</span></div>
   <div class="i"><h3>Atendimento no WhatsApp</h3><p>Mais fotos, vídeo e condições de cada carro em minutos.</p><span class="link">Ver detalhes <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></span></div></a></div></div>
 </section>
 <section class="bloco escuro">
@@ -656,7 +688,7 @@ footer{background:var(--dk);color:#aab0b8;padding:clamp(3rem,6vw,4.5rem) 0 1.5re
   </div>
 </section>
 <section class="bloco"><div class="wrap">
-  <div class="chamada rv"><img src="/assets/img/automoveis/hero-3.jpg" alt="" loading="lazy" width="1600" height="900">
+  <div class="chamada rv"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/07.jpg" alt="" loading="lazy" width="1600" height="900">
     <div class="in"><p class="kicker claro">Moriah Multimarcas</p><h2>Vamos conversar sobre o <em>seu projeto?</em></h2><p>Atendimento direto pelo WhatsApp, sem enrolação. Conte o que você precisa e receba a sua proposta.</p>
       <div class="ctas"><a class="btn btn-p" href="#/orcamento">Encontrar meu carro <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></a><a class="btn btn-vidro" href="https://wa.me/5511952050484?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Moriah%20Multimarcas%20e%20quero%20saber%20dos%20carros%20dispon%C3%ADveis." target="_blank" rel="noopener"><svg class="wa" aria-hidden="true"><use href="#i-wa"/></svg>Chamar no WhatsApp</a></div></div>
   </div>
@@ -666,14 +698,14 @@ footer{background:var(--dk);color:#aab0b8;padding:clamp(3rem,6vw,4.5rem) 0 1.5re
 
 <!-- UMA PÁGINA POR SERVIÇO -->
 <div class="pg" data-pg="servico-1" data-t="Seminovos revisados em Jardim Maringá | Moriah Multimarcas" hidden>
-<section class="pg-topo"><img src="/assets/img/automoveis/hero-1.jpg" alt="" loading="lazy" width="1600" height="700">
+<section class="pg-topo"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/01.jpg" alt="" loading="lazy" width="1600" height="700">
   <div class="wrap"><p class="trilha"><a href="#/">Início</a> / Seminovos revisados</p><h1>Seminovos revisados em Jardim Maringá</h1><p>Todos os carros passam por vistoria antes de ir pro estoque.</p></div>
 </section>
 
 <section class="bloco">
   <div class="wrap det">
     <div>
-      <div class="foto rv"><img src="/assets/img/automoveis/hero-1.jpg" alt="Seminovos revisados" loading="lazy" width="1000" height="750"></div>
+      <div class="foto rv"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/01.jpg" alt="Seminovos revisados" loading="lazy" width="1000" height="750"></div>
       <h2 style="margin-top:2.4rem">Seminovos revisados com a <em>Moriah Multimarcas</em></h2>
       <p class="sub">Todos os carros passam por vistoria antes de ir pro estoque. Do primeiro contato à entrega, você fala direto com a nossa equipe e acompanha cada etapa.</p>
       <ul class="lista"><li><svg class="ic" aria-hidden="true"><use href="#i-ok"/></svg>Vistoria completa antes de ir pro estoque</li><li><svg class="ic" aria-hidden="true"><use href="#i-ok"/></svg>Laudo cautelar sob consulta</li><li><svg class="ic" aria-hidden="true"><use href="#i-ok"/></svg>Avaliação do seu usado na troca</li><li><svg class="ic" aria-hidden="true"><use href="#i-ok"/></svg>Simulação nos principais bancos</li><li><svg class="ic" aria-hidden="true"><use href="#i-ok"/></svg>Documentação e transferência por nossa conta</li></ul>
@@ -689,14 +721,14 @@ footer{background:var(--dk);color:#aab0b8;padding:clamp(3rem,6vw,4.5rem) 0 1.5re
 </section>
 </div>
 <div class="pg" data-pg="servico-2" data-t="Seu usado na troca em Jardim Maringá | Moriah Multimarcas" hidden>
-<section class="pg-topo"><img src="/assets/img/automoveis/acao-1.jpg" alt="" loading="lazy" width="1600" height="700">
+<section class="pg-topo"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/06.jpg" alt="" loading="lazy" width="1600" height="700">
   <div class="wrap"><p class="trilha"><a href="#/">Início</a> / Seu usado na troca</p><h1>Seu usado na troca em Jardim Maringá</h1><p>Avaliamos o seu carro na hora e usamos como entrada.</p></div>
 </section>
 
 <section class="bloco">
   <div class="wrap det">
     <div>
-      <div class="foto rv"><img src="/assets/img/automoveis/acao-1.jpg" alt="Seu usado na troca" loading="lazy" width="1000" height="750"></div>
+      <div class="foto rv"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/06.jpg" alt="Seu usado na troca" loading="lazy" width="1000" height="750"></div>
       <h2 style="margin-top:2.4rem">Seu usado na troca com a <em>Moriah Multimarcas</em></h2>
       <p class="sub">Avaliamos o seu carro na hora e usamos como entrada. Do primeiro contato à entrega, você fala direto com a nossa equipe e acompanha cada etapa.</p>
       <ul class="lista"><li><svg class="ic" aria-hidden="true"><use href="#i-ok"/></svg>Vistoria completa antes de ir pro estoque</li><li><svg class="ic" aria-hidden="true"><use href="#i-ok"/></svg>Laudo cautelar sob consulta</li><li><svg class="ic" aria-hidden="true"><use href="#i-ok"/></svg>Avaliação do seu usado na troca</li><li><svg class="ic" aria-hidden="true"><use href="#i-ok"/></svg>Simulação nos principais bancos</li><li><svg class="ic" aria-hidden="true"><use href="#i-ok"/></svg>Documentação e transferência por nossa conta</li></ul>
@@ -712,14 +744,14 @@ footer{background:var(--dk);color:#aab0b8;padding:clamp(3rem,6vw,4.5rem) 0 1.5re
 </section>
 </div>
 <div class="pg" data-pg="servico-3" data-t="Financiamento em Jardim Maringá | Moriah Multimarcas" hidden>
-<section class="pg-topo"><img src="/assets/img/automoveis/hero-3.jpg" alt="" loading="lazy" width="1600" height="700">
+<section class="pg-topo"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/07.jpg" alt="" loading="lazy" width="1600" height="700">
   <div class="wrap"><p class="trilha"><a href="#/">Início</a> / Financiamento</p><h1>Financiamento em Jardim Maringá</h1><p>Simulação nos principais bancos, com a parcela que cabe no bolso.</p></div>
 </section>
 
 <section class="bloco">
   <div class="wrap det">
     <div>
-      <div class="foto rv"><img src="/assets/img/automoveis/hero-3.jpg" alt="Financiamento" loading="lazy" width="1000" height="750"></div>
+      <div class="foto rv"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/07.jpg" alt="Financiamento" loading="lazy" width="1000" height="750"></div>
       <h2 style="margin-top:2.4rem">Financiamento com a <em>Moriah Multimarcas</em></h2>
       <p class="sub">Simulação nos principais bancos, com a parcela que cabe no bolso. Do primeiro contato à entrega, você fala direto com a nossa equipe e acompanha cada etapa.</p>
       <ul class="lista"><li><svg class="ic" aria-hidden="true"><use href="#i-ok"/></svg>Vistoria completa antes de ir pro estoque</li><li><svg class="ic" aria-hidden="true"><use href="#i-ok"/></svg>Laudo cautelar sob consulta</li><li><svg class="ic" aria-hidden="true"><use href="#i-ok"/></svg>Avaliação do seu usado na troca</li><li><svg class="ic" aria-hidden="true"><use href="#i-ok"/></svg>Simulação nos principais bancos</li><li><svg class="ic" aria-hidden="true"><use href="#i-ok"/></svg>Documentação e transferência por nossa conta</li></ul>
@@ -735,14 +767,14 @@ footer{background:var(--dk);color:#aab0b8;padding:clamp(3rem,6vw,4.5rem) 0 1.5re
 </section>
 </div>
 <div class="pg" data-pg="servico-4" data-t="Documentação em Jardim Maringá | Moriah Multimarcas" hidden>
-<section class="pg-topo"><img src="/assets/img/automoveis/ambiente-2.jpg" alt="" loading="lazy" width="1600" height="700">
+<section class="pg-topo"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/01.jpg" alt="" loading="lazy" width="1600" height="700">
   <div class="wrap"><p class="trilha"><a href="#/">Início</a> / Documentação</p><h1>Documentação em Jardim Maringá</h1><p>Transferência e documentação por nossa conta.</p></div>
 </section>
 
 <section class="bloco">
   <div class="wrap det">
     <div>
-      <div class="foto rv"><img src="/assets/img/automoveis/ambiente-2.jpg" alt="Documentação" loading="lazy" width="1000" height="750"></div>
+      <div class="foto rv"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/01.jpg" alt="Documentação" loading="lazy" width="1000" height="750"></div>
       <h2 style="margin-top:2.4rem">Documentação com a <em>Moriah Multimarcas</em></h2>
       <p class="sub">Transferência e documentação por nossa conta. Do primeiro contato à entrega, você fala direto com a nossa equipe e acompanha cada etapa.</p>
       <ul class="lista"><li><svg class="ic" aria-hidden="true"><use href="#i-ok"/></svg>Vistoria completa antes de ir pro estoque</li><li><svg class="ic" aria-hidden="true"><use href="#i-ok"/></svg>Laudo cautelar sob consulta</li><li><svg class="ic" aria-hidden="true"><use href="#i-ok"/></svg>Avaliação do seu usado na troca</li><li><svg class="ic" aria-hidden="true"><use href="#i-ok"/></svg>Simulação nos principais bancos</li><li><svg class="ic" aria-hidden="true"><use href="#i-ok"/></svg>Documentação e transferência por nossa conta</li></ul>
@@ -758,14 +790,14 @@ footer{background:var(--dk);color:#aab0b8;padding:clamp(3rem,6vw,4.5rem) 0 1.5re
 </section>
 </div>
 <div class="pg" data-pg="servico-5" data-t="Procedência em Jardim Maringá | Moriah Multimarcas" hidden>
-<section class="pg-topo"><img src="/assets/img/automoveis/acao-2.jpg" alt="" loading="lazy" width="1600" height="700">
+<section class="pg-topo"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/02.jpg" alt="" loading="lazy" width="1600" height="700">
   <div class="wrap"><p class="trilha"><a href="#/">Início</a> / Procedência</p><h1>Procedência em Jardim Maringá</h1><p>Histórico do carro e laudo cautelar sob consulta.</p></div>
 </section>
 
 <section class="bloco">
   <div class="wrap det">
     <div>
-      <div class="foto rv"><img src="/assets/img/automoveis/acao-2.jpg" alt="Procedência" loading="lazy" width="1000" height="750"></div>
+      <div class="foto rv"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/02.jpg" alt="Procedência" loading="lazy" width="1000" height="750"></div>
       <h2 style="margin-top:2.4rem">Procedência com a <em>Moriah Multimarcas</em></h2>
       <p class="sub">Histórico do carro e laudo cautelar sob consulta. Do primeiro contato à entrega, você fala direto com a nossa equipe e acompanha cada etapa.</p>
       <ul class="lista"><li><svg class="ic" aria-hidden="true"><use href="#i-ok"/></svg>Vistoria completa antes de ir pro estoque</li><li><svg class="ic" aria-hidden="true"><use href="#i-ok"/></svg>Laudo cautelar sob consulta</li><li><svg class="ic" aria-hidden="true"><use href="#i-ok"/></svg>Avaliação do seu usado na troca</li><li><svg class="ic" aria-hidden="true"><use href="#i-ok"/></svg>Simulação nos principais bancos</li><li><svg class="ic" aria-hidden="true"><use href="#i-ok"/></svg>Documentação e transferência por nossa conta</li></ul>
@@ -781,14 +813,14 @@ footer{background:var(--dk);color:#aab0b8;padding:clamp(3rem,6vw,4.5rem) 0 1.5re
 </section>
 </div>
 <div class="pg" data-pg="servico-6" data-t="Atendimento no WhatsApp em Jardim Maringá | Moriah Multimarcas" hidden>
-<section class="pg-topo"><img src="/assets/img/automoveis/alt-2.jpg" alt="" loading="lazy" width="1600" height="700">
+<section class="pg-topo"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/03.jpg" alt="" loading="lazy" width="1600" height="700">
   <div class="wrap"><p class="trilha"><a href="#/">Início</a> / Atendimento no WhatsApp</p><h1>Atendimento no WhatsApp em Jardim Maringá</h1><p>Mais fotos, vídeo e condições de cada carro em minutos.</p></div>
 </section>
 
 <section class="bloco">
   <div class="wrap det">
     <div>
-      <div class="foto rv"><img src="/assets/img/automoveis/alt-2.jpg" alt="Atendimento no WhatsApp" loading="lazy" width="1000" height="750"></div>
+      <div class="foto rv"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/03.jpg" alt="Atendimento no WhatsApp" loading="lazy" width="1000" height="750"></div>
       <h2 style="margin-top:2.4rem">Atendimento no WhatsApp com a <em>Moriah Multimarcas</em></h2>
       <p class="sub">Mais fotos, vídeo e condições de cada carro em minutos. Do primeiro contato à entrega, você fala direto com a nossa equipe e acompanha cada etapa.</p>
       <ul class="lista"><li><svg class="ic" aria-hidden="true"><use href="#i-ok"/></svg>Vistoria completa antes de ir pro estoque</li><li><svg class="ic" aria-hidden="true"><use href="#i-ok"/></svg>Laudo cautelar sob consulta</li><li><svg class="ic" aria-hidden="true"><use href="#i-ok"/></svg>Avaliação do seu usado na troca</li><li><svg class="ic" aria-hidden="true"><use href="#i-ok"/></svg>Simulação nos principais bancos</li><li><svg class="ic" aria-hidden="true"><use href="#i-ok"/></svg>Documentação e transferência por nossa conta</li></ul>
@@ -806,24 +838,24 @@ footer{background:var(--dk);color:#aab0b8;padding:clamp(3rem,6vw,4.5rem) 0 1.5re
 
 <!-- ESTOQUE -->
 <div class="pg" data-pg="estoque" data-t="Estoque | Moriah Multimarcas" hidden>
-<section class="pg-topo"><img src="/assets/img/automoveis/hero-1.jpg" alt="" loading="lazy" width="1600" height="700">
+<section class="pg-topo"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/01.jpg" alt="" loading="lazy" width="1600" height="700">
   <div class="wrap"><p class="trilha"><a href="#/">Início</a> / Estoque</p><h1>Carros disponíveis</h1><p>Seminovos revisados, com procedência. Filtre pelo tipo e fale com a gente pelo WhatsApp.</p></div>
 </section>
 
 <section class="bloco">
   <div class="wrap">
     <div class="filtros" data-alvo="estoque-lista"><button type="button" class="on" data-f="*">Todos</button><button type="button" data-f="SUV">SUV</button><button type="button" data-f="Sedã">Sedã</button><button type="button" data-f="Hatch">Hatch</button><button type="button" data-f="Utilitário">Utilitário</button></div>
-    <div class="estoque" id="estoque-lista"><article class="carro" data-c="SUV"><div class="f"><img src="/assets/img/automoveis/acao-3.jpg" alt="SUV automático" loading="lazy" width="800" height="600"><span>2021</span></div>
+    <div class="estoque" id="estoque-lista"><article class="carro" data-c="SUV"><div class="f"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/03.jpg" alt="SUV automático" loading="lazy" width="800" height="600"><span>2021</span></div>
   <div class="i"><h3>SUV automático</h3><p class="meta"><span>2021</span><span>38.000 km</span><span>revisado</span></p>
-    <div class="pr"><b>Consulte</b><a class="link" href="https://wa.me/5511952050484?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Moriah%20Multimarcas%20e%20quero%20saber%20dos%20carros%20dispon%C3%ADveis." target="_blank" rel="noopener">Tenho interesse <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></a></div></div></article><article class="carro" data-c="Sedã"><div class="f"><img src="/assets/img/automoveis/acao-4.jpg" alt="Sedã completo" loading="lazy" width="800" height="600"><span>2020</span></div>
+    <div class="pr"><b>Consulte</b><a class="link" href="https://wa.me/5511952050484?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Moriah%20Multimarcas%20e%20quero%20saber%20dos%20carros%20dispon%C3%ADveis." target="_blank" rel="noopener">Tenho interesse <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></a></div></div></article><article class="carro" data-c="Sedã"><div class="f"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/04.jpg" alt="Sedã completo" loading="lazy" width="800" height="600"><span>2020</span></div>
   <div class="i"><h3>Sedã completo</h3><p class="meta"><span>2020</span><span>52.000 km</span><span>revisado</span></p>
-    <div class="pr"><b>Consulte</b><a class="link" href="https://wa.me/5511952050484?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Moriah%20Multimarcas%20e%20quero%20saber%20dos%20carros%20dispon%C3%ADveis." target="_blank" rel="noopener">Tenho interesse <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></a></div></div></article><article class="carro" data-c="Hatch"><div class="f"><img src="/assets/img/automoveis/ambiente-1.jpg" alt="Hatch flex" loading="lazy" width="800" height="600"><span>2022</span></div>
+    <div class="pr"><b>Consulte</b><a class="link" href="https://wa.me/5511952050484?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Moriah%20Multimarcas%20e%20quero%20saber%20dos%20carros%20dispon%C3%ADveis." target="_blank" rel="noopener">Tenho interesse <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></a></div></div></article><article class="carro" data-c="Hatch"><div class="f"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/05.jpg" alt="Hatch flex" loading="lazy" width="800" height="600"><span>2022</span></div>
   <div class="i"><h3>Hatch flex</h3><p class="meta"><span>2022</span><span>21.000 km</span><span>revisado</span></p>
-    <div class="pr"><b>Consulte</b><a class="link" href="https://wa.me/5511952050484?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Moriah%20Multimarcas%20e%20quero%20saber%20dos%20carros%20dispon%C3%ADveis." target="_blank" rel="noopener">Tenho interesse <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></a></div></div></article><article class="carro" data-c="SUV"><div class="f"><img src="/assets/img/automoveis/alt-1.jpg" alt="SUV compacto" loading="lazy" width="800" height="600"><span>2019</span></div>
+    <div class="pr"><b>Consulte</b><a class="link" href="https://wa.me/5511952050484?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Moriah%20Multimarcas%20e%20quero%20saber%20dos%20carros%20dispon%C3%ADveis." target="_blank" rel="noopener">Tenho interesse <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></a></div></div></article><article class="carro" data-c="SUV"><div class="f"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/04.jpg" alt="SUV compacto" loading="lazy" width="800" height="600"><span>2019</span></div>
   <div class="i"><h3>SUV compacto</h3><p class="meta"><span>2019</span><span>64.000 km</span><span>revisado</span></p>
-    <div class="pr"><b>Consulte</b><a class="link" href="https://wa.me/5511952050484?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Moriah%20Multimarcas%20e%20quero%20saber%20dos%20carros%20dispon%C3%ADveis." target="_blank" rel="noopener">Tenho interesse <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></a></div></div></article><article class="carro" data-c="Sedã"><div class="f"><img src="/assets/img/automoveis/ambiente-2.jpg" alt="Sedã executivo" loading="lazy" width="800" height="600"><span>2021</span></div>
+    <div class="pr"><b>Consulte</b><a class="link" href="https://wa.me/5511952050484?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Moriah%20Multimarcas%20e%20quero%20saber%20dos%20carros%20dispon%C3%ADveis." target="_blank" rel="noopener">Tenho interesse <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></a></div></div></article><article class="carro" data-c="Sedã"><div class="f"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/01.jpg" alt="Sedã executivo" loading="lazy" width="800" height="600"><span>2021</span></div>
   <div class="i"><h3>Sedã executivo</h3><p class="meta"><span>2021</span><span>45.000 km</span><span>revisado</span></p>
-    <div class="pr"><b>Consulte</b><a class="link" href="https://wa.me/5511952050484?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Moriah%20Multimarcas%20e%20quero%20saber%20dos%20carros%20dispon%C3%ADveis." target="_blank" rel="noopener">Tenho interesse <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></a></div></div></article><article class="carro" data-c="Utilitário"><div class="f"><img src="/assets/img/automoveis/alt-2.jpg" alt="Utilitário" loading="lazy" width="800" height="600"><span>2020</span></div>
+    <div class="pr"><b>Consulte</b><a class="link" href="https://wa.me/5511952050484?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Moriah%20Multimarcas%20e%20quero%20saber%20dos%20carros%20dispon%C3%ADveis." target="_blank" rel="noopener">Tenho interesse <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></a></div></div></article><article class="carro" data-c="Utilitário"><div class="f"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/03.jpg" alt="Utilitário" loading="lazy" width="800" height="600"><span>2020</span></div>
   <div class="i"><h3>Utilitário</h3><p class="meta"><span>2020</span><span>70.000 km</span><span>revisado</span></p>
     <div class="pr"><b>Consulte</b><a class="link" href="https://wa.me/5511952050484?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Moriah%20Multimarcas%20e%20quero%20saber%20dos%20carros%20dispon%C3%ADveis." target="_blank" rel="noopener">Tenho interesse <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></a></div></div></article></div>
     <p class="nota">Estoque de exemplo: no site final entram os carros de vocês, com fotos, preço e quilometragem de cada um.</p>
@@ -846,17 +878,17 @@ footer{background:var(--dk);color:#aab0b8;padding:clamp(3rem,6vw,4.5rem) 0 1.5re
 
 <!-- PORTFÓLIO -->
 <div class="pg" data-pg="portfolio" data-t="Galeria | Moriah Multimarcas" hidden>
-<section class="pg-topo"><img src="/assets/img/automoveis/ambiente-2.jpg" alt="" loading="lazy" width="1600" height="700">
+<section class="pg-topo"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/02.jpg" alt="" loading="lazy" width="1600" height="700">
   <div class="wrap"><p class="trilha"><a href="#/">Início</a> / Galeria</p><h1>Galeria</h1><p>Filtre por categoria e toque em uma foto pra ver em tela cheia.</p></div>
 </section>
 
 <section class="bloco">
   <div class="wrap">
-<div class="filtros" data-alvo="port-lista"><button type="button" class="on" data-f="*">Todos</button><button type="button" data-f="Loja">Loja</button><button type="button" data-f="Pátio">Pátio</button><button type="button" data-f="Estoque">Estoque</button><button type="button" data-f="Entregas">Entregas</button></div>    <div class="port" id="port-lista"><figure data-c="Loja" data-lb="/assets/img/automoveis/hero-1.jpg" data-cap="Nosso showroom"><img src="/assets/img/automoveis/hero-1.jpg" alt="Nosso showroom" loading="lazy" width="800" height="800"><figcaption>Nosso showroom<small>Loja</small></figcaption></figure><figure data-c="Loja" data-lb="/assets/img/automoveis/ambiente-2.jpg" data-cap="Carros selecionados"><img src="/assets/img/automoveis/ambiente-2.jpg" alt="Carros selecionados" loading="lazy" width="800" height="800"><figcaption>Carros selecionados<small>Loja</small></figcaption></figure><figure data-c="Pátio" data-lb="/assets/img/automoveis/acao-2.jpg" data-cap="Pátio da loja"><img src="/assets/img/automoveis/acao-2.jpg" alt="Pátio da loja" loading="lazy" width="800" height="800"><figcaption>Pátio da loja<small>Pátio</small></figcaption></figure><figure data-c="Estoque" data-lb="/assets/img/automoveis/hero-2.jpg" data-cap="Seminovo revisado"><img src="/assets/img/automoveis/hero-2.jpg" alt="Seminovo revisado" loading="lazy" width="800" height="800"><figcaption>Seminovo revisado<small>Estoque</small></figcaption></figure><figure data-c="Entregas" data-lb="/assets/img/automoveis/acao-1.jpg" data-cap="Entrega de chaves"><img src="/assets/img/automoveis/acao-1.jpg" alt="Entrega de chaves" loading="lazy" width="800" height="800"><figcaption>Entrega de chaves<small>Entregas</small></figcaption></figure><figure data-c="Pátio" data-lb="/assets/img/automoveis/acao-3.jpg" data-cap="Estoque disponível"><img src="/assets/img/automoveis/acao-3.jpg" alt="Estoque disponível" loading="lazy" width="800" height="800"><figcaption>Estoque disponível<small>Pátio</small></figcaption></figure><figure data-c="Loja" data-lb="/assets/img/automoveis/hero-3.jpg" data-cap="Atendimento"><img src="/assets/img/automoveis/hero-3.jpg" alt="Atendimento" loading="lazy" width="800" height="800"><figcaption>Atendimento<small>Loja</small></figcaption></figure><figure data-c="Pátio" data-lb="/assets/img/automoveis/acao-4.jpg" data-cap="SUVs e sedãs"><img src="/assets/img/automoveis/acao-4.jpg" alt="SUVs e sedãs" loading="lazy" width="800" height="800"><figcaption>SUVs e sedãs<small>Pátio</small></figcaption></figure><figure data-c="Pátio" data-lb="/assets/img/automoveis/ambiente-1.jpg" data-cap="Utilitários"><img src="/assets/img/automoveis/ambiente-1.jpg" alt="Utilitários" loading="lazy" width="800" height="800"><figcaption>Utilitários<small>Pátio</small></figcaption></figure><figure data-c="Estoque" data-lb="/assets/img/automoveis/alt-1.jpg" data-cap="Picape"><img src="/assets/img/automoveis/alt-1.jpg" alt="Picape" loading="lazy" width="800" height="800"><figcaption>Picape<small>Estoque</small></figcaption></figure><figure data-c="Loja" data-lb="/assets/img/automoveis/alt-2.jpg" data-cap="Showroom"><img src="/assets/img/automoveis/alt-2.jpg" alt="Showroom" loading="lazy" width="800" height="800"><figcaption>Showroom<small>Loja</small></figcaption></figure></div>
-<p class="nota">Fotos ilustrativas: no site final entram os trabalhos da Moriah Multimarcas.</p>  </div>
+    <div class="port" id="port-lista"><figure data-c="Fotos" data-lb="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/01.jpg" data-cap="Moriah Multimarcas"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/01.jpg" alt="Moriah Multimarcas" loading="lazy" width="800" height="800"><figcaption>Moriah Multimarcas<small>Fotos</small></figcaption></figure><figure data-c="Fotos" data-lb="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/02.jpg" data-cap="Moriah Multimarcas"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/02.jpg" alt="Moriah Multimarcas" loading="lazy" width="800" height="800"><figcaption>Moriah Multimarcas<small>Fotos</small></figcaption></figure><figure data-c="Fotos" data-lb="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/03.jpg" data-cap="Moriah Multimarcas"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/03.jpg" alt="Moriah Multimarcas" loading="lazy" width="800" height="800"><figcaption>Moriah Multimarcas<small>Fotos</small></figcaption></figure><figure data-c="Fotos" data-lb="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/04.jpg" data-cap="Moriah Multimarcas"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/04.jpg" alt="Moriah Multimarcas" loading="lazy" width="800" height="800"><figcaption>Moriah Multimarcas<small>Fotos</small></figcaption></figure><figure data-c="Fotos" data-lb="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/05.jpg" data-cap="Moriah Multimarcas"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/05.jpg" alt="Moriah Multimarcas" loading="lazy" width="800" height="800"><figcaption>Moriah Multimarcas<small>Fotos</small></figcaption></figure><figure data-c="Fotos" data-lb="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/06.jpg" data-cap="Moriah Multimarcas"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/06.jpg" alt="Moriah Multimarcas" loading="lazy" width="800" height="800"><figcaption>Moriah Multimarcas<small>Fotos</small></figcaption></figure><figure data-c="Fotos" data-lb="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/07.jpg" data-cap="Moriah Multimarcas"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/07.jpg" alt="Moriah Multimarcas" loading="lazy" width="800" height="800"><figcaption>Moriah Multimarcas<small>Fotos</small></figcaption></figure></div>
+  </div>
 </section>
 <section class="bloco"><div class="wrap">
-  <div class="chamada rv"><img src="/assets/img/automoveis/hero-1.jpg" alt="" loading="lazy" width="1600" height="900">
+  <div class="chamada rv"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/01.jpg" alt="" loading="lazy" width="1600" height="900">
     <div class="in"><p class="kicker claro">Moriah Multimarcas</p><h2>Vamos conversar sobre o <em>seu projeto?</em></h2><p>Atendimento direto pelo WhatsApp, sem enrolação. Conte o que você precisa e receba a sua proposta.</p>
       <div class="ctas"><a class="btn btn-p" href="#/orcamento">Encontrar meu carro <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></a><a class="btn btn-vidro" href="https://wa.me/5511952050484?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Moriah%20Multimarcas%20e%20quero%20saber%20dos%20carros%20dispon%C3%ADveis." target="_blank" rel="noopener"><svg class="wa" aria-hidden="true"><use href="#i-wa"/></svg>Chamar no WhatsApp</a></div></div>
   </div>
@@ -866,7 +898,7 @@ footer{background:var(--dk);color:#aab0b8;padding:clamp(3rem,6vw,4.5rem) 0 1.5re
 
 <!-- SOBRE -->
 <div class="pg" data-pg="sobre" data-t="Sobre | Moriah Multimarcas" hidden>
-<section class="pg-topo"><img src="/assets/img/automoveis/acao-1.jpg" alt="" loading="lazy" width="1600" height="700">
+<section class="pg-topo"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/06.jpg" alt="" loading="lazy" width="1600" height="700">
   <div class="wrap"><p class="trilha"><a href="#/">Início</a> / Sobre</p><h1>Carro bom, negócio transparente</h1></div>
 </section>
 
@@ -874,7 +906,7 @@ footer{background:var(--dk);color:#aab0b8;padding:clamp(3rem,6vw,4.5rem) 0 1.5re
   <div class="wrap det">
     <div class="rv"><p class="kicker">Quem somos</p><h2>Moriah Multimarcas</h2><p class="sub" style="max-width:none">A Moriah Multimarcas vende seminovos selecionados em Jardim Maringá, com procedência, vistoria e atendimento direto. Aqui você escolhe com calma, tira todas as dúvidas e sai com o carro e a documentação resolvidos.</p>
       <div class="valores"><div><b>Confiança</b><span>Histórico e condições de cada carro às claras.</span></div><div><b>Agilidade</b><span>Simulação e avaliação do usado na hora.</span></div><div><b>Pós-venda</b><span>A gente continua aqui depois da compra.</span></div></div></div>
-    <div class="sobre-fotos rv"><div><img src="/assets/img/automoveis/acao-2.jpg" alt="" loading="lazy" width="600" height="800"></div><div><img src="/assets/img/automoveis/ambiente-1.jpg" alt="" loading="lazy" width="600" height="800"></div></div>
+    <div class="sobre-fotos rv"><div><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/02.jpg" alt="" loading="lazy" width="600" height="800"></div><div><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/05.jpg" alt="" loading="lazy" width="600" height="800"></div></div>
   </div>
 </section>
 <section class="bloco escuro">
@@ -890,7 +922,7 @@ footer{background:var(--dk);color:#aab0b8;padding:clamp(3rem,6vw,4.5rem) 0 1.5re
   </div>
 </section>
 <section class="bloco"><div class="wrap">
-  <div class="chamada rv"><img src="/assets/img/automoveis/hero-2.jpg" alt="" loading="lazy" width="1600" height="900">
+  <div class="chamada rv"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/02.jpg" alt="" loading="lazy" width="1600" height="900">
     <div class="in"><p class="kicker claro">Moriah Multimarcas</p><h2>Vamos conversar sobre o <em>seu projeto?</em></h2><p>Atendimento direto pelo WhatsApp, sem enrolação. Conte o que você precisa e receba a sua proposta.</p>
       <div class="ctas"><a class="btn btn-p" href="#/orcamento">Encontrar meu carro <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></a><a class="btn btn-vidro" href="https://wa.me/5511952050484?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Moriah%20Multimarcas%20e%20quero%20saber%20dos%20carros%20dispon%C3%ADveis." target="_blank" rel="noopener"><svg class="wa" aria-hidden="true"><use href="#i-wa"/></svg>Chamar no WhatsApp</a></div></div>
   </div>
@@ -900,7 +932,7 @@ footer{background:var(--dk);color:#aab0b8;padding:clamp(3rem,6vw,4.5rem) 0 1.5re
 
 <!-- ORÇAMENTO -->
 <div class="pg" data-pg="orcamento" data-t="Encontre o seu carro | Moriah Multimarcas" hidden>
-<section class="pg-topo"><img src="/assets/img/automoveis/hero-3.jpg" alt="" loading="lazy" width="1600" height="700">
+<section class="pg-topo"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/07.jpg" alt="" loading="lazy" width="1600" height="700">
   <div class="wrap"><p class="trilha"><a href="#/">Início</a> / Encontre o seu carro</p><h1>Encontre o seu carro</h1><p>Responda 4 perguntas rápidas e receba as opções do estoque pelo WhatsApp.</p></div>
 </section>
 
@@ -943,7 +975,7 @@ footer{background:var(--dk);color:#aab0b8;padding:clamp(3rem,6vw,4.5rem) 0 1.5re
 
 <!-- CONTATO -->
 <div class="pg" data-pg="contato" data-t="Contato | Moriah Multimarcas" hidden>
-<section class="pg-topo"><img src="/assets/img/automoveis/hero-2.jpg" alt="" loading="lazy" width="1600" height="700">
+<section class="pg-topo"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/02.jpg" alt="" loading="lazy" width="1600" height="700">
   <div class="wrap"><p class="trilha"><a href="#/">Início</a> / Contato</p><h1>Fale com a Moriah Multimarcas</h1><p>Atendimento direto pelo WhatsApp. Mande sua mensagem e a gente responde rapidinho.</p></div>
 </section>
 
@@ -951,7 +983,7 @@ footer{background:var(--dk);color:#aab0b8;padding:clamp(3rem,6vw,4.5rem) 0 1.5re
   <div class="wrap contato">
     <div class="info">
       <div class="it"><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg><div><b>Endereço</b><span>Av. Barão de Mauá, 2425 - Jardim Maringá, Mauá - SP, 09340-440</span></div></div>
-      <div class="it"><svg class="ic" aria-hidden="true"><use href="#i-fone"/></svg><div><b>WhatsApp</b><span>(11) 95205-0484</span></div></div>
+<div class="it"><svg class="ic" aria-hidden="true"><use href="#i-relogio"/></svg><div><b>Horário</b><span>Seg a Sex 09:00 às 18:00 · Sáb 09:00 às 16:00</span></div></div>      <div class="it"><svg class="ic" aria-hidden="true"><use href="#i-fone"/></svg><div><b>WhatsApp</b><span>(11) 95205-0484</span></div></div>
       <form class="form" data-tel="5511952050484" data-nome="Moriah Multimarcas">
         <label>Seu nome<input name="nome" type="text" autocomplete="name" required></label>
         <label>Mensagem<textarea name="msg" placeholder="Conte o que você precisa" required></textarea></label>
@@ -974,12 +1006,12 @@ footer{background:var(--dk);color:#aab0b8;padding:clamp(3rem,6vw,4.5rem) 0 1.5re
 <footer>
   <div class="wrap">
     <div class="rod">
-      <div><a href="#/" class="marca"><span class="mark" aria-hidden="true">MM</span><span><b>Moriah Multimarcas</b><small>Loja de veículos · Jardim Maringá</small></span></a>
+      <div><a href="#/" class="marca"><span class="mark tem-logo" aria-hidden="true"><img src="https://buildfy.adt-system.tech/fotos/moriah-multimarcas/logo.png" alt=""></span><span><b>Moriah Multimarcas</b><small>Loja de veículos · Jardim Maringá</small></span></a>
         <p>Seminovos revisados, com procedência e documentação em dia. Veja o estoque, escolha o seu e fale com a gente pelo WhatsApp em um clique.</p>
         <div class="redes"><a href="https://wa.me/5511952050484?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Moriah%20Multimarcas%20e%20quero%20saber%20dos%20carros%20dispon%C3%ADveis." target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="wa" aria-hidden="true"><use href="#i-wa"/></svg></a><a href="https://www.google.com/maps/search/?api=1&amp;query=Moriah%20Multimarcas%20Av.%20Bar%C3%A3o%20de%20Mau%C3%A1%2C%202425%20-%20Jardim%20Maring%C3%A1%2C%20Mau%C3%A1%20-%20SP%2C%2009340-440" target="_blank" rel="noopener" aria-label="Google Maps"><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg></a></div></div>
       <div><h4>Navegação</h4><nav><a href="#/">Início</a><a href="#/servicos">Serviços</a><a href="#/estoque">Estoque</a><a href="#/portfolio">Galeria</a><a href="#/sobre">Sobre</a><a href="#/orcamento">Encontre o seu carro</a><a href="#/contato">Contato</a></nav></div>
       <div><h4>Serviços</h4><nav><a href="#/servico-1">Seminovos revisados</a><a href="#/servico-2">Seu usado na troca</a><a href="#/servico-3">Financiamento</a><a href="#/servico-4">Documentação</a><a href="#/servico-5">Procedência</a><a href="#/servico-6">Atendimento no WhatsApp</a></nav></div>
-      <div><h4>Contato</h4><nav><span>Av. Barão de Mauá, 2425 - Jardim Maringá, Mauá - SP, 09340-440</span><a href="https://wa.me/5511952050484?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Moriah%20Multimarcas%20e%20quero%20saber%20dos%20carros%20dispon%C3%ADveis." target="_blank" rel="noopener">(11) 95205-0484</a></nav></div>
+      <div><h4>Contato</h4><nav><span>Av. Barão de Mauá, 2425 - Jardim Maringá, Mauá - SP, 09340-440</span><a href="https://wa.me/5511952050484?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Moriah%20Multimarcas%20e%20quero%20saber%20dos%20carros%20dispon%C3%ADveis." target="_blank" rel="noopener">(11) 95205-0484</a><span>Seg a Sex 09:00 às 18:00 · Sáb 09:00 às 16:00</span></nav></div>
     </div>
     <div class="rod-base"><span>© 2026 <b>Moriah Multimarcas</b> · Loja de carros seminovos em Jardim Maringá</span><span>Site feito pela Buildfy</span></div>
   </div>
@@ -1085,5 +1117,5 @@ ir();
 setTimeout(function(){$$('.rv:not(.on)').forEach(function(el){if(el.closest('[hidden]'))return;var r=el.getBoundingClientRect();if(r.top<innerHeight)el.classList.add('on')})},2500);
 })();
 </script>
-<script>document.body.classList.add("com-previa")</script><div class="previa">Prévia de site criada para a Moriah Multimarcas. Fotos ilustrativas: no site final entram as fotos de vocês. <a href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Vi%20a%20pr%C3%A9via%20do%20site%20da%20Moriah%20Multimarcas%20e%20quero%20colocar%20no%20ar." target="_blank" rel="noopener">Quero colocar no ar</a></div></body>
+<script>document.body.classList.add("com-previa")</script><div class="previa">Prévia de site criada para a Moriah Multimarcas. <a href="https://wa.me/5511913479449?text=Ol%C3%A1%21%20Vi%20a%20pr%C3%A9via%20do%20site%20da%20Moriah%20Multimarcas%20e%20quero%20colocar%20no%20ar." target="_blank" rel="noopener">Quero colocar no ar</a></div></body>
 </html>
