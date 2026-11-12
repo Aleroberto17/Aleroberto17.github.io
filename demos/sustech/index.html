@@ -8,8 +8,8 @@
 <meta property="og:title" content="Sustech | Energia solar em Vila Colorado">
 <meta property="og:description" content="Projeto, instalação e homologação do seu sistema de energia solar, para casa e empresa. Faça a simulação em segundos e receba o orçamento pelo WhatsAp">
 <meta property="og:image" content="https://buildfy.adt-system.tech/fotos/sustech/01.jpg">
-<meta name="theme-color" content="#0b1f33">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23111'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Arial' font-weight='700' font-size='26' fill='%23fff'%3ES%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#102e1e">
+<link rel="icon" href="https://buildfy.adt-system.tech/fotos/sustech/logo.png">
 <link rel="preload" as="image" href="https://buildfy.adt-system.tech/fotos/sustech/01.jpg" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -17,8 +17,8 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Sustech","telephone":"+5511988826684","address":{"@type":"PostalAddress","streetAddress":"R. Profa. Lu\u00edsa Idaka, 20 - Vila Colorado, Suzano - SP, 08616-330","addressLocality":"São Paulo","addressRegion":"SP","addressCountry":"BR"},"areaServed":["Vila Colorado", "Zona Leste", "Zona Sul", "Zona Oeste", "Zona Norte", "Centro", "ABC e Grande SP"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":3}}</script>
 <style>
 :root{
-  --ac:#e8930c;--ac2:#f5b13d;--dk:#0b1f33;--dk2:#132d47;
-  --bg:#f4f7fa;--card:#ffffff;--tx:#1f2328;--mu:#5f6670;--ln:#e4e2dd;--branco:#ffffff;
+  --ac:#f5b800;--ac2:#ffcc34;--dk:#102e1e;--dk2:#5b4400;
+  --bg:#f4f7fa;--card:#ffffff;--tx:#123522;--mu:#5f6670;--ln:#e4e2dd;--branco:#ffffff;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
@@ -409,6 +409,38 @@ footer{background:var(--dk);color:#aab0b8;padding:clamp(3rem,6vw,4.5rem) 0 1.5re
   body{padding-bottom:76px}
 }
 .aviso{font-size:.8rem;color:var(--mu);text-align:center;margin-top:1.5rem}
+/* topo-b: topo no celular, opção B (10/11/2026, Alessandro): foto primeiro, em cartão, com a nota do
+   Google em cima e um destaque embaixo; nome da loja inteiro no cabeçalho; botões lado a lado. */
+@media (max-width:760px){
+  .marca b{max-width:none;white-space:normal;font-size:1.06rem;line-height:1.15}
+  .marca small{max-width:none;white-space:normal;text-transform:none;letter-spacing:0;font-size:.8rem;line-height:1.25}
+  .hero{padding-top:1rem}
+  .hero .grade-hero{display:flex;flex-direction:column;gap:1.3rem}
+  .hero .foto-hero{order:-1;max-width:none}
+  .hero .badge,.hero .selo-google,.hero .chips{display:none!important}
+  .foto-hero .principal{aspect-ratio:4/3.1;border-radius:24px}
+  .foto-hero .mini{display:none}
+  .foto-hero .flut{animation:none;padding:.5rem .8rem .5rem .5rem;border-radius:999px;font-size:.74rem;gap:.5rem}
+  .foto-hero .flut b{font-size:.86rem}
+  .foto-hero .flut .ic{width:28px;height:28px;padding:6px;border-radius:50%}
+  .foto-hero .flut.f2{left:12px;top:12px;right:auto;bottom:auto}
+  .foto-hero .flut.f1{left:12px;right:auto;bottom:12px;top:auto;border-radius:16px;background:rgb(255 255 255/.92);backdrop-filter:blur(10px)}
+  .hero h1{font-size:2.35rem}
+  .hero p.lead{margin:.7rem 0 1.2rem;font-size:1rem}
+  .hero .ctas{display:grid;grid-template-columns:1fr 1fr;gap:.6rem}
+  .hero .ctas .btn{padding:.9rem .6rem;font-size:.9rem;line-height:1.2;white-space:normal;text-align:center}
+  .hero .ctas .btn .ic{display:none}
+}
+</style>
+
+<style>
+.tem-logo{padding:0!important;overflow:hidden!important;border-radius:50%!important;background:#fff!important;
+  border:0!important;box-shadow:none!important;display:inline-flex!important;flex:none}
+.tem-logo img,img.logo-cli{width:100%;height:100%;object-fit:cover;display:block;border-radius:50%}
+img.logo-cli{flex:none}
+.marca img.logo-cli{width:3.2rem;height:3.2rem;box-shadow:0 0 0 2px rgb(255 255 255/.12)}
+.compo .logo-giro{position:absolute;left:.44rem;top:.44rem;width:4.1rem;height:4.1rem;z-index:3;border-radius:50%;
+  box-shadow:0 10px 24px -8px rgb(0 0 0/.5)}
 </style>
 </head>
 <body>
@@ -442,7 +474,7 @@ footer{background:var(--dk);color:#aab0b8;padding:clamp(3rem,6vw,4.5rem) 0 1.5re
 <header id="topo">
   <div class="wrap topo">
     <a href="#/" class="marca" aria-label="Sustech, início">
-      <span class="mark" aria-hidden="true">S</span>
+      <span class="mark tem-logo" aria-hidden="true"><img src="https://buildfy.adt-system.tech/fotos/sustech/logo.png" alt=""></span>
       <span><b>Sustech</b><small>Energia solar · Vila Colorado</small></span>
     </a>
     <nav class="menu" aria-label="Principal">
@@ -459,7 +491,7 @@ footer{background:var(--dk);color:#aab0b8;padding:clamp(3rem,6vw,4.5rem) 0 1.5re
   </div>
 </header>
 <div class="gaveta" aria-hidden="true">
-  <div class="g-topo"><span class="marca"><span class="mark" aria-hidden="true">S</span><span><b>Sustech</b></span></span><button type="button" class="g-fecha" aria-label="Fechar menu"><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg></button></div>
+  <div class="g-topo"><span class="marca"><span class="mark tem-logo" aria-hidden="true"><img src="https://buildfy.adt-system.tech/fotos/sustech/logo.png" alt=""></span><span><b>Sustech</b></span></span><button type="button" class="g-fecha" aria-label="Fechar menu"><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg></button></div>
   <nav>
     <a href="#/" data-r="inicio">Início <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></a>
     <a href="#/servicos" data-r="servicos">Serviços <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></a>
@@ -936,7 +968,7 @@ footer{background:var(--dk);color:#aab0b8;padding:clamp(3rem,6vw,4.5rem) 0 1.5re
 <footer>
   <div class="wrap">
     <div class="rod">
-      <div><a href="#/" class="marca"><span class="mark" aria-hidden="true">S</span><span><b>Sustech</b><small>Energia solar · Vila Colorado</small></span></a>
+      <div><a href="#/" class="marca"><span class="mark tem-logo" aria-hidden="true"><img src="https://buildfy.adt-system.tech/fotos/sustech/logo.png" alt=""></span><span><b>Sustech</b><small>Energia solar · Vila Colorado</small></span></a>
         <p>Projeto, instalação e homologação do seu sistema de energia solar, para casa e empresa. Faça a simulação em segundos e receba o orçamento pelo WhatsApp.</p>
         <div class="redes"><a href="https://wa.me/5511988826684?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Sustech%20e%20quero%20um%20or%C3%A7amento%20de%20energia%20solar." target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="wa" aria-hidden="true"><use href="#i-wa"/></svg></a><a href="https://www.google.com/maps/search/?api=1&amp;query=Sustech%20R.%20Profa.%20Lu%C3%ADsa%20Idaka%2C%2020%20-%20Vila%20Colorado%2C%20Suzano%20-%20SP%2C%2008616-330" target="_blank" rel="noopener" aria-label="Google Maps"><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg></a></div></div>
       <div><h4>Navegação</h4><nav><a href="#/">Início</a><a href="#/servicos">Serviços</a><a href="#/portfolio">Portfólio</a><a href="#/sobre">Sobre</a><a href="#/orcamento">Orçamento sem compromisso</a><a href="#/contato">Contato</a></nav></div>
