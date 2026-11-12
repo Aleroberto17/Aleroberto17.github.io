@@ -9,7 +9,7 @@
 <meta property="og:description" content="Cozinhas, dormitórios, closets e home office sob medida, com projeto, fabricação própria e montagem. Mande as medidas pelo WhatsApp e receba o seu orç">
 <meta property="og:image" content="https://buildfy.adt-system.tech/fotos/optimum-moveis-planejados/01.jpg">
 <meta name="theme-color" content="#1d1a17">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23111'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Arial' font-weight='700' font-size='26' fill='%23fff'%3EOM%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="https://buildfy.adt-system.tech/fotos/optimum-moveis-planejados/logo.png">
 <link rel="preload" as="image" href="https://buildfy.adt-system.tech/fotos/optimum-moveis-planejados/01.jpg" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Optimum M\u00f3veis Planejados","telephone":"+5511994562546","address":{"@type":"PostalAddress","streetAddress":"R. Ant\u00f4nio Palombo, 87 - Fundos - Tabo\u00e3o, Diadema - SP, 09930-330","addressLocality":"São Paulo","addressRegion":"SP","addressCountry":"BR"},"areaServed":["Tabo\u00e3o", "Santo Andr\u00e9", "S\u00e3o Bernardo do Campo", "S\u00e3o Caetano do Sul", "Diadema", "Mau\u00e1", "Guarulhos", "Osasco", "Barueri", "Carapicu\u00edba", "Tabo\u00e3o da Serra", "Cotia"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":41}}</script>
 <style>
 :root{
-  --ac:#a0673a;--ac2:#c98b57;--dk:#1d1a17;--dk2:#2b2621;
+  --ac:#6d6d6d;--ac2:#909090;--dk:#1d1a17;--dk2:#2b2621;
   --bg:#f7f3ee;--card:#fffdfa;--tx:#1f2328;--mu:#5f6670;--ln:#e4e2dd;--branco:#ffffff;
 }
 *{box-sizing:border-box;margin:0;padding:0}
@@ -409,6 +409,38 @@ footer{background:var(--dk);color:#aab0b8;padding:clamp(3rem,6vw,4.5rem) 0 1.5re
   body{padding-bottom:76px}
 }
 .aviso{font-size:.8rem;color:var(--mu);text-align:center;margin-top:1.5rem}
+/* topo-b: topo no celular, opção B (10/11/2026, Alessandro): foto primeiro, em cartão, com a nota do
+   Google em cima e um destaque embaixo; nome da loja inteiro no cabeçalho; botões lado a lado. */
+@media (max-width:760px){
+  .marca b{max-width:none;white-space:normal;font-size:1.06rem;line-height:1.15}
+  .marca small{max-width:none;white-space:normal;text-transform:none;letter-spacing:0;font-size:.8rem;line-height:1.25}
+  .hero{padding-top:1rem}
+  .hero .grade-hero{display:flex;flex-direction:column;gap:1.3rem}
+  .hero .foto-hero{order:-1;max-width:none}
+  .hero .badge,.hero .selo-google,.hero .chips{display:none!important}
+  .foto-hero .principal{aspect-ratio:4/3.1;border-radius:24px}
+  .foto-hero .mini{display:none}
+  .foto-hero .flut{animation:none;padding:.5rem .8rem .5rem .5rem;border-radius:999px;font-size:.74rem;gap:.5rem}
+  .foto-hero .flut b{font-size:.86rem}
+  .foto-hero .flut .ic{width:28px;height:28px;padding:6px;border-radius:50%}
+  .foto-hero .flut.f2{left:12px;top:12px;right:auto;bottom:auto}
+  .foto-hero .flut.f1{left:12px;right:auto;bottom:12px;top:auto;border-radius:16px;background:rgb(255 255 255/.92);backdrop-filter:blur(10px)}
+  .hero h1{font-size:2.35rem}
+  .hero p.lead{margin:.7rem 0 1.2rem;font-size:1rem}
+  .hero .ctas{display:grid;grid-template-columns:1fr 1fr;gap:.6rem}
+  .hero .ctas .btn{padding:.9rem .6rem;font-size:.9rem;line-height:1.2;white-space:normal;text-align:center}
+  .hero .ctas .btn .ic{display:none}
+}
+</style>
+
+<style>
+.tem-logo{padding:0!important;overflow:hidden!important;border-radius:50%!important;background:#fff!important;
+  border:0!important;box-shadow:none!important;display:inline-flex!important;flex:none}
+.tem-logo img,img.logo-cli{width:100%;height:100%;object-fit:cover;display:block;border-radius:50%}
+img.logo-cli{flex:none}
+.marca img.logo-cli{width:3.2rem;height:3.2rem;box-shadow:0 0 0 2px rgb(255 255 255/.12)}
+.compo .logo-giro{position:absolute;left:.44rem;top:.44rem;width:4.1rem;height:4.1rem;z-index:3;border-radius:50%;
+  box-shadow:0 10px 24px -8px rgb(0 0 0/.5)}
 </style>
 </head>
 <body>
@@ -442,7 +474,7 @@ footer{background:var(--dk);color:#aab0b8;padding:clamp(3rem,6vw,4.5rem) 0 1.5re
 <header id="topo">
   <div class="wrap topo">
     <a href="#/" class="marca" aria-label="Optimum Móveis Planejados, início">
-      <span class="mark" aria-hidden="true">OM</span>
+      <span class="mark tem-logo" aria-hidden="true"><img src="https://buildfy.adt-system.tech/fotos/optimum-moveis-planejados/logo.png" alt=""></span>
       <span><b>Optimum Móveis Planejados</b><small>Móveis planejados · Taboão</small></span>
     </a>
     <nav class="menu" aria-label="Principal">
@@ -459,7 +491,7 @@ footer{background:var(--dk);color:#aab0b8;padding:clamp(3rem,6vw,4.5rem) 0 1.5re
   </div>
 </header>
 <div class="gaveta" aria-hidden="true">
-  <div class="g-topo"><span class="marca"><span class="mark" aria-hidden="true">OM</span><span><b>Optimum Móveis Planejados</b></span></span><button type="button" class="g-fecha" aria-label="Fechar menu"><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg></button></div>
+  <div class="g-topo"><span class="marca"><span class="mark tem-logo" aria-hidden="true"><img src="https://buildfy.adt-system.tech/fotos/optimum-moveis-planejados/logo.png" alt=""></span><span><b>Optimum Móveis Planejados</b></span></span><button type="button" class="g-fecha" aria-label="Fechar menu"><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg></button></div>
   <nav>
     <a href="#/" data-r="inicio">Início <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></a>
     <a href="#/servicos" data-r="servicos">Serviços <svg class="ic" aria-hidden="true"><use href="#i-seta"/></svg></a>
@@ -919,7 +951,7 @@ footer{background:var(--dk);color:#aab0b8;padding:clamp(3rem,6vw,4.5rem) 0 1.5re
 <footer>
   <div class="wrap">
     <div class="rod">
-      <div><a href="#/" class="marca"><span class="mark" aria-hidden="true">OM</span><span><b>Optimum Móveis Planejados</b><small>Móveis planejados · Taboão</small></span></a>
+      <div><a href="#/" class="marca"><span class="mark tem-logo" aria-hidden="true"><img src="https://buildfy.adt-system.tech/fotos/optimum-moveis-planejados/logo.png" alt=""></span><span><b>Optimum Móveis Planejados</b><small>Móveis planejados · Taboão</small></span></a>
         <p>Cozinhas, dormitórios, closets e home office sob medida, com projeto, fabricação própria e montagem. Mande as medidas pelo WhatsApp e receba o seu ...</p>
         <div class="redes"><a href="https://wa.me/5511994562546?text=Ol%C3%A1%21%20Vi%20o%20site%20da%20Optimum%20M%C3%B3veis%20Planejados%20e%20quero%20um%20or%C3%A7amento%20de%20m%C3%B3veis%20planejados." target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="wa" aria-hidden="true"><use href="#i-wa"/></svg></a><a href="https://www.google.com/maps/search/?api=1&amp;query=Optimum%20M%C3%B3veis%20Planejados%20R.%20Ant%C3%B4nio%20Palombo%2C%2087%20-%20Fundos%20-%20Tabo%C3%A3o%2C%20Diadema%20-%20SP%2C%2009930-330" target="_blank" rel="noopener" aria-label="Google Maps"><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg></a></div></div>
       <div><h4>Navegação</h4><nav><a href="#/">Início</a><a href="#/servicos">Serviços</a><a href="#/portfolio">Portfólio</a><a href="#/sobre">Sobre</a><a href="#/orcamento">Orçamento em 1 minuto</a><a href="#/contato">Contato</a></nav></div>
